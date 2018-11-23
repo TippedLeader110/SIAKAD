@@ -9,9 +9,10 @@
 </head>
 <body>
 	<?php include 'navbar.php'; ?>
-	<div class="row">
+	<div class="container" style="margin-top: 60px;border-color: black;border-style: solid;">
+	<div class="row" style="">
 		<div class="col-md-4">
-			Kiri
+			
 		</div>
 		<div class="col-md-auto">
 			<div class="row">
@@ -25,6 +26,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 <script type="text/javascript" src="<?php echo $base_url() ?>script/main.js"></script>
