@@ -10,7 +10,7 @@ class Main extends CI_Controller {
 	}
 	public function loginSiswa()
 	{
-		$data['page']='useview/loginsiswa';
+		$data['page']='userview/loginsiswa';
 		$this->load->view('layout/main', $data);
 	}
 }
