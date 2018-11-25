@@ -1,4 +1,4 @@
-<div class="row" style="margin-bottom: -50px;z-index: -1">
+<div class="row" style="margin-bottom: -100px;">
 		<div class="col-md-4 offset-md-4">
 		<table border="2">
 			<tr>
