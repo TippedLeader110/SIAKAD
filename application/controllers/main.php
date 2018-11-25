@@ -15,4 +15,22 @@ class Main extends CI_Controller {
 		$data['page']='userview/loginsiswa';
 		$this->load->view('layout/main', $data);
 	}
+	public function LoginGuru()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/loginguru';
+		$this->load->view('layout/main', $data);
+	}
+	public function student()
+	{
+		$data['border']='black';
+		$data['page']='userview/awaluser';
+		$this->load->view('layout/home', $data);
+	}
+	public function teacher()
+	{
+		$data['border']='black';
+		$data['page']='userview/awalguru';
+		$this->load->view('layout/home', $data);
+	}
 }
