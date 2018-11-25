@@ -6,7 +6,7 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$data['page']='userview/home';
-		$this->load->view('layout/main', $data);
+		$this->load->view('layout/navbar-kiri', $data);
 	}
 	public function loginSiswa()
 	{
