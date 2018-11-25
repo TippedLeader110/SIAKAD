@@ -5,6 +5,7 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('layout/home');
+		$data['page']='userview/home';
+		$this->load->view('layout/main', $data);
 	}
 }
