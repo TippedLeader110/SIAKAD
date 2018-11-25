@@ -8,4 +8,9 @@ class Main extends CI_Controller {
 		$data['page']='userview/home';
 		$this->load->view('layout/main', $data);
 	}
+	public function loginSiswa()
+	{
+		$data['page']='useview/loginsiswa';
+		$this->load->view('layout/main', $data);
+	}
 }
