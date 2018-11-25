@@ -10,7 +10,7 @@
 </head>
 <body>
 	<?php include 'navbar.php'; ?>
-	<div class="container" style="margin-top: 60px;border-color: black;border-style: solid;">
+	<div class="container" style="margin-top: 60px;border-color: <?php echo $border ?>;border-style: solid;">
 		<?php $this->load->view($page) ?>
 	</div>
 </body>

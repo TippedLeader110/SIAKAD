@@ -5,11 +5,13 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
+		$data['border']='black';
 		$data['page']='userview/home';
-		$this->load->view('layout/navbar-kiri', $data);
+		$this->load->view('layout/main', $data);
 	}
 	public function loginSiswa()
 	{
+		$data['border']='transparent';
 		$data['page']='userview/loginsiswa';
 		$this->load->view('layout/main', $data);
 	}
