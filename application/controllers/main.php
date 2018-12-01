@@ -33,4 +33,24 @@ class Main extends CI_Controller {
 		$data['page']='userview/awalguru';
 		$this->load->view('layout/home', $data);
 	}
+	public function logsis()
+	{
+		$this->form_validation->set_rules('username', 'Username', 'required["%s sudah digunakan"]|is_unique[data_mhs.nim]');
+		$user=$this->input->post('username');
+		$pass=$this->input->post('password');
+		$this->mainmodel->lsiswa($user, $pass);
+	}
+	public function loggur()
+	{
+		$user=$this->input->post('username');
+		$pass=$this->input->post('password');
+		$this->mainmodel->lguru($user, $pass);
+	}
+	
+	// public function logort()
+	// {
+	// 	$user=$this->input->post('username');
+	// 	$pass=$this->input->post('password');
+	// 	$this->mainmodel->lortu($user, $pass);
+	// }		
 }
