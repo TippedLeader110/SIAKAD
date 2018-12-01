@@ -52,18 +52,18 @@ class Main extends CI_Controller {
 		$data['page']='userview/daftarguru';
 		$this->load->view('layout/home', $data);
 	}
-	public function daftarmurid()
+	public function daftarsiswa()
 	{
 		$data['border']='black';
-		$data['page']='userview/daftarmurid';
+		$data['page']='userview/daftarsiswa';
 		$this->load->view('layout/home', $data);
 	}
-	// public function daftarguru()
-	// {
-	// 	$data['border']='black';
-	// 	$data['page']='userview/daftarguru';
-	// 	$this->load->view('layout/home', $data);
-	// }
+	public function daftarnilai()
+	{
+		$data['border']='black';
+		$data['page']='userview/daftarnilai';
+		$this->load->view('layout/home', $data);
+	}
 	
 	// public function logort()
 	// {
