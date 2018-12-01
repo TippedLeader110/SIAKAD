@@ -24,6 +24,7 @@ class Mainmodel extends CI_Model {
 			}
 			$this->session->user = $w->nama;
 			redirect(''); //redirect berhasil
+		}
 	}
 
 	public function lguru($user, $pass)
@@ -42,6 +43,7 @@ class Mainmodel extends CI_Model {
 			}
 			$this->session->user = $w->nama;
 			redirect(''); //redirect berhasil
+		}
 	}
 
 
