@@ -46,6 +46,24 @@ class Main extends CI_Controller {
 		$pass=$this->input->post('password');
 		$this->mainmodel->lguru($user, $pass);
 	}
+	public function daftarguru()
+	{
+		$data['border']='black';
+		$data['page']='userview/daftarguru';
+		$this->load->view('layout/home', $data);
+	}
+	public function daftarmurid()
+	{
+		$data['border']='black';
+		$data['page']='userview/daftarmurid';
+		$this->load->view('layout/home', $data);
+	}
+	// public function daftarguru()
+	// {
+	// 	$data['border']='black';
+	// 	$data['page']='userview/daftarguru';
+	// 	$this->load->view('layout/home', $data);
+	// }
 	
 	// public function logort()
 	// {
