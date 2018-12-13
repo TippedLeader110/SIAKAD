@@ -17,7 +17,8 @@
 	</div>
 	<div class="container-fluid">
 	<div class="row" style="margin-top: 20px">
-		<div class="col-md-3">
+		<?php include 'navbarkiri.php'; ?>
+		<!-- <div class="col-md-3">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -31,7 +32,7 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			
-		</div>
+		</div> -->
 		<div class="col-md-9">
 			<div class="container" style="border-color: <?php echo $border ?>;border-style: solid;">
 				<?php $this->load->view($page) ?>		
