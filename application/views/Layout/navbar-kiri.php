@@ -1,6 +1,6 @@
 <!-- ini navbar-kiri-siswa-->
 
-<div class="col-md-3" style="background-color: #8DB3DA;margin-top: -20px;">
+<div class="col-md-3" style="background-color: #8DB3DA;margin-top: -21px;border-style: solid;border-color: black">
       <div class="profile" align="center">
         <div class="circle">
           <img src="icon-profile.png" style="max-width: 100px; max-height: 100px;">
