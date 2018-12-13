@@ -79,7 +79,7 @@ class Main extends CI_Controller {
 	public function profilwalikelas()
 	{
 		$data['border']='transparent';
-		$data['page']='userview/profilguru';
+		$data['page']='userview/profilwalikelas';
 		$this->load->view('layout/home', $data);
 	}
 	
