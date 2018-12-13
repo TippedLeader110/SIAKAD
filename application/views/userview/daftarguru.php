@@ -5,7 +5,9 @@
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
+      <center>
       <table>
+        
         <tr>
           <td>
             Ketikkan Nama Guru Yang Ingin Anda Cari
@@ -13,13 +15,16 @@
         </tr>
         <tr>
           <td>
-            <input type="text" class="form-control" placeholder="Ketikkan disini">
-            <button type="button" class="btn btn-default btn-lg">
-              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            </button>
+             <input type="text" class="form-control" placeholder="Ketikkan Disini">
+            <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Cari</button>
+      </span>
+     
           </td>
         </tr>
+
       </table>
+      </center>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
