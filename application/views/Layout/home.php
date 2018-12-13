@@ -15,7 +15,8 @@
 			<?php include 'navbar.php'; ?>
 		</div>
 	</div>
-	<div class="row" style="margin-top: 60px">
+	<div class="container-fluid">
+	<div class="row" style="margin-top: 20px">
 		<div class="col-md-3">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -36,6 +37,7 @@
 				<?php $this->load->view($page) ?>		
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 <script type="text/javascript" src="<?php echo $base_url() ?>script/main.js"></script>
