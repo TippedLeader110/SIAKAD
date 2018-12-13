@@ -21,13 +21,13 @@ class Main extends CI_Controller {
 		$data['page']='userview/loginguru';
 		$this->load->view('layout/main', $data);
 	}
-	public function student()
+	public function siswa()
 	{
 		$data['border']='black';
 		$data['page']='userview/awaluser';
 		$this->load->view('layout/home', $data);
 	}
-	public function teacher()
+	public function guru()
 	{
 		$data['border']='black';
 		$data['page']='userview/awalguru';
@@ -62,6 +62,24 @@ class Main extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/daftarnilai';
+		$this->load->view('layout/home', $data);
+	}
+	public function profilsiswa()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/profilsiswa';
+		$this->load->view('layout/home', $data);
+	}
+	public function profilguru()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/profilguru';
+		$this->load->view('layout/home', $data);
+	}
+	public function profilwalikelas()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/profilguru';
 		$this->load->view('layout/home', $data);
 	}
 	
