@@ -2,9 +2,13 @@
 <html>
 <head>
 <style>
+h2 {
+  text-align: center;
+  color: #2F669F;
+}
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #2F669F;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -39,14 +43,14 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #8DB3DA;
 }
 </style>
 </head>
 <body>
-
+<center>
 <h2>Daftar Siswa Per Angkatan</h2>
-<p>Pilih Tahun Angkatan</p>
+<p>Pilih Tahun Angkatan Siswa :</p>
 
 <div class="dropdown">
   <button class="dropbtn">Tahun Angkatan</button>
@@ -56,6 +60,6 @@
   <a href="#">2018</a>
   </div>
 </div>
-
+</center>
 </body>
 </html>
