@@ -10,7 +10,11 @@
 	<title>Siakad</title>
 </head>
 <body>
-	<?php include 'navbar.php'; ?>
+	<div class="row">
+		<div class="col-md-12">
+			<?php include 'navbar.php'; ?>
+		</div>
+	</div>
 	<div class="row" style="margin-top: 60px">
 		<div class="col-md-3">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -29,7 +33,7 @@
 		</div>
 		<div class="col-md-9">
 			<div class="container" style="border-color: <?php echo $border ?>;border-style: solid;">
-				<?php $this->load->view($page) ?>
+				<?php $this->load->view($page) ?>		
 			</div>
 		</div>
 	</div>
