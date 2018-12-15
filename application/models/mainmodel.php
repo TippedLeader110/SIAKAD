@@ -8,7 +8,7 @@ class Mainmodel extends CI_Model {
 		$this->load->view('welcome_message');
 	}
 
-	public function lsiswa($user, $pass)
+	public function loginsiswa($user, $pass)
 	{
 		$this->db->where(['user' => $user, 'pass' => $pass]);
 		$query = $this->db->get('siswa');
@@ -27,7 +27,7 @@ class Mainmodel extends CI_Model {
 		}
 	}
 
-	public function lguru($user, $pass)
+	public function loginguru($user, $pass)
 	{
 		$this->db->where(['user' => $user, 'pass' => $pass]);
 		$query = $this->db->get('guru');
@@ -45,6 +45,41 @@ class Mainmodel extends CI_Model {
 			redirect(''); //redirect berhasil
 		}
 	}
+	public function daftarsiswa($user, $pass)
+	{
+		$this->db->where(['username' => $user]);
+		$query = $this->db->get('siswa');
+		$row = $query->num_rows();
+		 if ($row>0) {
+		 redirect (" ");		 	
+		 }
+		 else if ($row==0) {
+		 $data = array('username' => $user,
+		 			'password' => $pass);
+		 $this->db->insert('login', $data);
+		 			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
+			echo "<div class='alert alert-success'><strong>Berhasil!</strong> Akun anda telah dibuat.</div>";
+			header( " " );
+			 }
+	}
+	public function daftarguru($user, $pass)
+	{
+		$this->db->where(['username' => $user]);
+		$query = $this->db->get('guru');
+		$row = $query->num_rows();
+		 if ($row>0) {
+		 redirect (" ");		 	
+		 }
+		 else if ($row==0) {
+		 $data = array('username' => $user,
+		 			'password' => $pass);
+		 $this->db->insert('login', $data);
+		 			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
+			echo "<div class='alert alert-success'><strong>Berhasil!</strong> Akun anda telah dibuat.</div>";
+			header( " " );
+			 }
+	}
+
 
 
 }
