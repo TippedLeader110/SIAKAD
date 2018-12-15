@@ -18,21 +18,34 @@ class Admin extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
 	public function index()
 	{	
-		if ($_SESSION['admin']=='') {
-			redirect("/Admin/login");
-		}
-		$data['users']="inactive";
-		$data['home']="inactive";
-		$data['news']="inactive";
-		$data['comment']="inactive";
+		$data['murid']="inactive";
+		$data['guru']="inactive";
+		$data['matapel']="inactive";
+		$data['kelas']="inactive";
 		$data['page']="admin/home";
 		$this->load->view('layout/admin', $data);
 	}
 	public function login()
 	{
-
+		$_SESSION['admin'] = '';
+		$data['murid']="inactive";
+		$data['guru']="inactive";
+		$data['matapel']="inactive";
+		$data['kelas']="inactive";
+		$data['page']="admin/login";
+		$this->load->view('layout/admin', $data);	
+	}
+	public function register()
+	{
+		$data['murid']="inactive";
+		$data['guru']="inactive";
+		$data['matapel']="inactive";
+		$data['kelas']="inactive";
+		$data['page']="admin/regis";
+		$this->load->view('layout/admin', $data);
 	}
 }
 

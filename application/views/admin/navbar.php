@@ -51,13 +51,13 @@ hr
 }
 </style>
 <?php 
-if ($this->session->admin=='') {
+if ($this->session->admin!='') {
 	
 echo				"<div class='sidenav' style='margin-top: 50px;border-style: solid;border-color: black;border-width: 2px'> "; 
-echo					"<a class= '$home'  href='/project/admin/home/'style='margin-top: 100px'><h4>Beranda</h4></a>";
-echo 					"<a class= '$users'  href='/project/admin/users'><h4>Murid</h4></a>";
-echo 					"<a class= '$news'  href='/project/admin/news'><h4>Guru</h4></a>";
-echo 					"<a class= '$comment'  href='/project/admin/comment'><h4>Kelas</h4></a>";
+echo					"<a class= '$murid'  href='/project/admin/home/'style='margin-top: 100px'><h4>Beranda</h4></a>";
+echo 					"<a class= '$guru'  href='/project/admin/users'><h4>Murid</h4></a>";
+echo 					"<a class= '$matapel'  href='/project/admin/news'><h4>Guru</h4></a>";
+echo 					"<a class= '$kelas'  href='/project/admin/comment'><h4>Kelas</h4></a>";
 echo 					"<a  href='/project/admin/logout'><h4>Keluar</h4></a>";
 echo				"</div>";
 }
