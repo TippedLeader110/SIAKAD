@@ -6,7 +6,7 @@
 }
 .profile{
   		min-width: 10px;
-  		min-height: 650px;
+  		
   		background-color: #8DB3DA;
   		padding-top: 20px;
   		margin-top: 20px;
@@ -24,20 +24,24 @@
       font-family: "Calibri", Times, sans-serif;
     }
     .field-menu{
+      background: white;
       min-width: 30px;
       max-width: 280px;
       min-height: 200px;
-      background-color: white;
       border-radius: 0px;
-      margin-top: 25px;
+      margin-top: 15px;
       border-color: grey;
       font-family: "Calibri", Times, sans-serif;
       padding-bottom: 10px;
       padding-top: 10px;
+      margin-bottom: 30px;
     }
     .circle {
       width: 100px;
       height: 100px;
       background: white;
       border-radius: 50%
+    }
+    .test{
+      background: black
     }

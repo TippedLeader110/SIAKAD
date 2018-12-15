@@ -34,8 +34,10 @@
 			
 		</div> -->
 		<div class="col-md-9">
-			<div class="container" style="border-color: <?php echo $border ?>;border-style: solid;">
-				<?php $this->load->view($page) ?>		
+			<div class="container" style="border-color: <?php echo $border ?>;border-style: solid; ">
+				<div style=" overflow-x: hidden; height: 500px;">
+					<?php $this->load->view($page) ?>
+				</div>
 			</div>
 		</div>
 	</div>
