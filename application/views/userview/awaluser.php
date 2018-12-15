@@ -16,28 +16,28 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container">
-					<h1>kontent</h1>	
+					<h1>Ali goblog</h1>	
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container">
-					<h1>kontent</h1>		
+					<h1>Ali gblg</h1>		
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container">
-					<h1>kontent</h1>	
+					<h1>Ali koplok</h1>	
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container">
-					<h1>kontent</h1>
+					<h1>BACOTs</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
