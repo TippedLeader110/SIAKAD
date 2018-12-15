@@ -12,7 +12,7 @@
 	<title>Siakad</title>
 </head>
 <body style="background-image: url('<?php echo base_url() ?>img/barik-biru-bg.png'); ">
-	<?php include 'navbar.php'; ?>
+	<?php $this->load->view('layout/navbar') ?>
 	<div class="container" style="border-color: <?php echo $border ?>;border-style: solid;">
 		<?php $this->load->view($page) ?>
 	</div>

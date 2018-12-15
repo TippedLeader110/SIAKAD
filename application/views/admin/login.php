@@ -1,12 +1,31 @@
+<style type="text/css">input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}</style>
 <div class="col-md-12">
 	<center>
-		<div class="container" style="border-style: solid;border-color: black;border-width: 2px;background: white;border-radius: 10px">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="row" style="margin-top: 80px;">
+			<div class="col-md-5 offset-md-3">
+				<img src="<?php echo base_url()?>img/icon/student-icon.png" style="max-width: 100px; max-height: 100px;">
+					<div class="container" style="border-color: transparent;background-color: white;border-radius: 15px;">
+						<table>
+							<tr>
+								<th><h5>Username</h5></th>
+							</tr>
+							<tr>
+								<td><input type="text" name=""></td>
+							</tr>
+							<tr>
+								<th><h5>Password</h5></th>
+							</tr>
+							<tr>
+								<td><input type="Password" name=""></td>
+							</tr>
+						</table>
+					</div>
+			</div>
 		</div>
 	</center>
 </div>
