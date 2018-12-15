@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/lel.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/style.css">
+<script type="text/javascript" src="<?php echo base_url() ?>/script/js/test.js"></script>
 	<title>Siakad</title>
 </head>
 <body style="background-image: url('<?php echo base_url() ?>img/barik-biru-bg.png'); ">

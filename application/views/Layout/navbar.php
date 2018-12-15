@@ -1,4 +1,4 @@
-<div id="navbar" style="margin-top: -30px">
+<div id="navbar" style="margin-top:">
 <nav class="navbar navbar-expand navbar-dark navbar-toggleable-sm py-3" style="background-color: #2F669F;border-style: solid;border-color: black;border-width: 2px;">
    <a class="navbar-brand" href="#">
     <table><tr><td rowspan="2"><img src="<?php echo base_url() ?>img/icon/logohead.png" width="80" height="80" class="d-inline-block align-top" alt=""></td><td>Sistem Informasi Akademik</td></tr><tr><th><h4><b>SIAKAD</b></h4></th></tr></table>

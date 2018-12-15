@@ -10,42 +10,59 @@
 	}</style>
 <div class="col-md-12">
 	<center>
-		<div class="row" style="margin-top: 80px;">
+		<div class="row" style="margin-top: 80px;height: 500px;">
 			<div class="col-md-5 offset-md-3">
 				
 					<div class="container" style="border-color: transparent;background-color: #8DB3DA;border-radius: 15px;
 					">
+					<div class="row">
+						<div class="container-fluid">
 					<img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="margin-top: -50px;max-width: 140px; max-height: 140px;">
-						<table>
-							<tr align="center">
-								<th><h4>Login Staff/</h4></th>
-							</tr>
-							<tr align="center">
-								<th><h4>Admin</h4></th>
-							</tr>
-							<tr>
-								<th>&nbsp;</th>
-							</tr>
-							<tr>
-								<th><h5>Username</h5></th><th></th>
-							</tr>
-							<tr>
-								<td><input type="text" name="" placeholder="Username"></td><th><div style="background: white;border-radius: 900px">?</div></th>
-							</tr>
-							<tr>
-								<th><h5>Password</h5></th>
-							</tr>
-							<tr>
-								<td><input type="Password" name="" placeholder="Password"></td><th><div style="background: white;border-radius: 900px">?</div></th>
-							</tr>
-							<tr><td>&nbsp;</td></tr>
-							<tr align="center">
-								<th align="center" colspan="2"><button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Login</button></th>
-							</tr>
-							<tr align="center">
-								<th>Lupa Password</th><th><div style="background: white;border-radius: 900px">?</div></th>
-							</tr>
-						</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<h4>Login Staff/</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<h4>Admin</h4>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 5px;">
+						<div class="container-fluid">											
+								<h5 style="text-align: left;">&nbsp;&nbsp;Username</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<input style="width: 92%" type="text" name="" placeholder="Username">
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<h5 style="text-align: left;">&nbsp;&nbsp;Password</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<input style="width: 92%" type="Password" name="" placeholder="Password">
+						</div>
+					</div>
+					<div class="row" style="margin-top: 50px;">
+						<div class="container-fluid">
+								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Login</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								Lupa Password
+							
+						</div>
+					</div>		
+							
+							
 					</div>
 			</div>
 		</div>
