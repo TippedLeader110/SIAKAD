@@ -8,14 +8,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/lel.css">
 
 <script type="<?php echo base_url() ?>/script/js/script.jss"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/style.css">
-
-
-
 
 	<title>Siakad</title>
 </head>
-<body>
+<body style="background-image: url('<?php echo base_url() ?>img/barik-biru-bg.png'); ">
 	<?php include 'navbar.php'; ?>
 	<div class="container" style="border-color: <?php echo $border ?>;border-style: solid;">
 		<?php $this->load->view($page) ?>

@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/style.css">
 	<title>Siakad</title>
 </head>
-<body style="background-image: url('<?php echo base_url() ?>img/barik-biru-bg.png'); ">
+<body>
 	<div class="row">
 		<div class="col-md-12">
 			<?php include 'navbar.php'; ?>
