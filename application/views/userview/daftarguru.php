@@ -54,7 +54,7 @@
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color:#DCDDE1; margin-top:  30px;margin-bottom: : 10px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-          <img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
+          <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
          </div>
         <div class="card-body">
         <h6 class="card-title" align="center">NAMA GURU</h6>
@@ -69,7 +69,7 @@
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  10px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-            <img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
+             <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
           </div>
       <div class="card-body">
           <h6 class="card-title" align="center">NAMA GURU</h6>
@@ -83,7 +83,7 @@
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  60px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-            <img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
+             <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
           </div>
       <div class="card-body">
           <h6 class="card-title" align="center">NAMA GURU</h6>
@@ -97,7 +97,7 @@
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  10px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-            <img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
+             <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
           </div>
       <div class="card-body">
           <h6 class="card-title" align="center">NAMA GURU</h6>
