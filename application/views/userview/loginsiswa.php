@@ -22,12 +22,12 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Login Staff/</h4>
+								<h4>Login Siswa/</h4>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Admin</h4>
+								<h4>Siswi</h4>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
