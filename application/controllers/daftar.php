@@ -8,6 +8,12 @@ class Daftar extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = 'aktif';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function siswa()
@@ -15,6 +21,12 @@ class Daftar extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/daftarsiswa';
 		$data['nama'] = 'Daftar Siswa';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = 'aktif';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function daftarsiswa()

@@ -6,7 +6,13 @@ class Absen extends CI_Controller {
 	public function siswa()
 	{
 		$data['border']='black';
-		$data['page']='userview/mapel';
+		$data['page']='userview/';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function inputabsen()
