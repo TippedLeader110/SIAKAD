@@ -5,6 +5,7 @@ class Daftar extends CI_Controller {
 
 	public function guru()
 	{
+		$data['gurudaf']=$this->adminmodel->ambil('guru');
 		$data['border']='black';
 		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';
@@ -18,6 +19,7 @@ class Daftar extends CI_Controller {
 	}
 	public function siswa()
 	{
+
 		$data['border']='black';
 		$data['page']='userview/daftarsiswa';
 		$data['nama'] = 'Daftar Siswa';

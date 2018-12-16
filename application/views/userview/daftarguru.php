@@ -51,71 +51,35 @@
   <div class="col-md-12" style="margin-bottom: 50px;">
 
     <div class="row">
-        <div class="col-md-3">
-          <div class="card" style="width: 200px; height:320px; background-color:#DCDDE1; margin-top:  30px;">
-          <div style="background-color:#70a1ff; height: 200px; width: 200px;">
-          <div class="circle" style="margin: 10px 10px 50px 50px; margin-top:30px;">
-          <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
-         </div>
-        <div class="card-body">
-        <h6 class="card-title" align="center" >NAMA GURU</h6>
-        <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
-        <center>
-            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
-        </center>
-      </div>
-    </div>
-  </div>
-</div>
+        
 
-        <div class="col-md-3">
-          <div class="card" style="width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;">
-          <div style="background-color:#009432; height: 200px; width: 200px;">
-          <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-             <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
-          </div>
-      <div class="card-body">
-          <h6 class="card-title" align="center">NAMA GURU</h6>
-          <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
-          <center>
-            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
-          </center>
-      </div>
-    </div>
-  </div>
-</div>
-        <div class="col-md-3">
-          <div class="card" style="width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;">
-          <div style="background-color:#ff793f; height: 200px; width: 200px;">
-          <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-             <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
-          </div>
-      <div class="card-body">
-          <h6 class="card-title" align="center">NAMA GURU</h6>
-          <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
-          <center>
-            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
-          </center>
-      </div>
-    </div>
-  </div>
-</div>
-        <div class="col-md-3">
-          <div class="card" style="width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;">
-          <div style="background-color:#ff5252; height: 200px; width: 200px;">
-          <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
-             <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
-          </div>
-      <div class="card-body">
-          <h6 class="card-title" align="center">NAMA GURU</h6>
-          <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
-          <center>
-            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
-          </center>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+<?php 
+$max = 0;
+foreach ($gurudaf as $key => $v) {
+echo"          <div class='col-md-3'>";
+echo"          <div class='card' style='width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;'>";
+echo"          <div style='background-color:#009432; height: 200px; width: 200px;'>";
+echo"          <div class='circle' style='margin: 10px 10px 50px 50px; margin-top: 30px;'>";
+echo"             <img src='<?php echo base_url()?>img/icon/icon-profil-guru.png' style='max-width: 100px; max-height: 100px;'>";
+echo"          </div>";
+echo"      <div class='card-body'>";
+echo"          <h6 class='card-title' align='center'>".$v->nama."</h6>";
+echo"          <p class='card-text' align='center' style='font-size: 15px;'>".$v->mapel."</p>";
+echo"          <center>";
+echo"            <a href='#' class='btn btn-primary'><h6>Lihat Profil</h6></a>";
+echo"          </center>";
+echo"      </div>";
+echo"    </div>";
+echo"  </div>";
+echo"</div>";
+  if ($max==4) {
+    break;
+  }
+}
+ ?>
+   
 </div>
 </div>
 </div>
