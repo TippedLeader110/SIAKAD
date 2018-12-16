@@ -22,14 +22,10 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Masuk Siswa/</h4>
+								<h4>Masuk Siswa/i</h4>
 						</div>
 					</div>
-					<div class="row">
-						<div class="container-fluid">
-								<h4>Siswi</h4>
-						</div>
-					</div>
+					
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid">											
 								<h5 style="text-align: left;">&nbsp;&nbsp;Nama Pengguna</h5>
