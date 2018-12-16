@@ -89,7 +89,7 @@ class Mainmodel extends CI_Model {
 	}
 	public function inputabsen($alpa, $izin, $sakit, $bulan)
 	{
-		$this->db->where(['alpa' => $alpa, 'izin' => $izin, 'sakit' => $sakit, 'kehadiran' => $kehadiran);
+		$this->db->where(['alpa' => $alpa, 'izin' => $izin, 'sakit' => $sakit, 'kehadiran' => $kehadiran]);
 		$query = $this->db->get($bulan);
 		$data = array('alpa' => $alpa, 'izin' => $izin, 'sakit' => $sakit, 'kehadiran' => $kehadiran);
 		 $this->db->insert($bulan, $data);
