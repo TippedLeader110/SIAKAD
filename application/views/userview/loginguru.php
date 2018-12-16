@@ -1,7 +1,7 @@
 <style type="text/css">h5{
 	color: white;
 	}h4{
-	color: white;
+	color: black;
 	}input {
   border: 0;
   outline: 0;
@@ -22,47 +22,42 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Login Staff/</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="container-fluid">
-								<h4>Admin</h4>
+								<h4>Masuk Guru/Pegawai</h4>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid">											
-								<h5 style="text-align: left;">&nbsp;&nbsp;Username</h5>
+								<h5 style="text-align: left;">&nbsp;&nbsp;Nama Pengguna</h5>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="text" name="" placeholder="Username">
+								<input style="width: 92%" type="text" name="" placeholder="">
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h5 style="text-align: left;">&nbsp;&nbsp;Password</h5>
+								<h5 style="text-align: left;">&nbsp;&nbsp;Kata Sandi</h5>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="Password" name="" placeholder="Password" id="myInput">
+								<input style="width: 92%" type="Password" name="" placeholder="" id="myInput">
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid" style="color: white">
-							<input type="checkbox" onclick="myFunction()">Tampilkan Password
+							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
 						</div>
 					</div>
 					<div class="row" style="margin-top: 50px;">
 						<div class="container-fluid">
-								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Login</button>
+								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Masuk</button>
 						</div>
 					</div>
 					<div class="row">
-						<div class="container-fluid">
-								Lupa Password
+						<div class="container-fluid" style="color: #2F669F">
+								Lupa Kata Sandi ?
 							
 						</div>
 					</div>		

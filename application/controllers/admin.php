@@ -22,29 +22,36 @@ class Admin extends CI_Controller {
 	public function index()
 	{	
 		$_SESSION['admin'] = 'a';
-		$data['murid']="inactive";
-		$data['guru']="inactive";
-		$data['matapel']="inactive";
-		$data['kelas']="inactive";
+		$data['dashboard']="active";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['kelas']="";
+		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
+		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
+		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
 		$data['page']="admin/awal";
 		$this->load->view('layout/admin', $data);
 	}
-	public function login()
+	public function murid()
 	{
 		$_SESSION['admin'] = '';
-		$data['murid']="inactive";
-		$data['guru']="inactive";
-		$data['matapel']="inactive";
-		$data['kelas']="inactive";
-		$data['page']="admin/login";
+		$data['dashboard']="";
+		$data['murid']="active";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['kelas']="";
+		$data['muridtam'] = $this->adminmodel->ambil('siswa');
+		$data['page']="admin/murid";
 		$this->load->view('layout/admin', $data);	
 	}
-	public function register()
+	public function rMurid()
 	{
-		$data['murid']="inactive";
-		$data['guru']="inactive";
-		$data['matapel']="inactive";
-		$data['kelas']="inactive";
+		$data['dashboard']="active";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['kelas']="";
 		$data['page']="admin/regis";
 		$this->load->view('layout/admin', $data);
 	}

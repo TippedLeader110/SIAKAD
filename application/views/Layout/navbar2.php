@@ -1,7 +1,7 @@
 <div id="navbar" style="margin-top: -30px">
 <nav class="navbar  navbar-expand navbar-dark navbar-toggleable-sm py-3" style="background-color: #2F669F;">
    <a class="navbar-brand" href="#">
-    <button id="tombol" onclick="test()">test</button>  SIAKAD - Pusat kontrol Admin/Staff
+    <button style="background: transparent;border-color: transparent;" id="tombol" onclick="test()"><img src="<?php echo base_url() ?>/img/icon/menu.svg"></button>  SIAKAD - Pusat kontrol Admin/Staff
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,7 @@
       </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="cari" placeholder="Cari" aria-label="Cari">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+      <a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>/img/icon/logohead.png" style="max-width: 60px;"></a>
     </form>
   </div>
 </nav>

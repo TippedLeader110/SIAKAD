@@ -6,28 +6,59 @@ class Nilai extends CI_Controller {
 	public function guru()
 	{
 		$data['border']='black';
-		$data['page']='userview/mapel';
+		$data['page']='userview/inputnilai';
+		$data['nama'] = 'Input Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function raport()
 	{
 		$data['border']='black';
 		$data['page']='userview/raport';
+		$data['nama'] = 'Rapot';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = 'aktif';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
-	public function hasil()
+	public function siswa()
 	{
 		$data['border']='black';
-		$data['page']='userview/nilaisiswa';
+		$data['page']='userview/daftarnilai';
+		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);	
 	}
 	public function walikelas()
 	{
 		$data['border']='black';
 		$data['page']='userview/walikelas';
+		$data['nama'] = 'Wali kelas';
+		$data['border']='black';
+		$data['page']='userview/daftarnilai';
+		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
-	public function nilai()
+	public function inputnilai()
 	{
 		if ($status=='fail') {
 			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";

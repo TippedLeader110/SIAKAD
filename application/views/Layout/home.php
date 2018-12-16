@@ -28,11 +28,11 @@
 </head>
 <body>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12" style="margin-top: -30px;">
 			<?php include 'navbar.php'; ?>
 		</div>
 	</div>
-	<div class="container-fluid" style="overflow-y: hidden; min-height: 500px;">
+	<div class="container-fluid" style="overflow-y: auto; height: auto;">
 	<div class="row" style="margin-top: 20px; ">
 		<?php include 'navbar-kiri.php'; ?>
 		<!-- <div class="col-md-3">
@@ -51,12 +51,12 @@
 						<span style="background-color: black; height: 25px; width: 15px; margin-top: 7px; margin-left: 5px;"></span>
 						<span style="background-color: black; height: 25px; width: 5px; margin-top: 7px; margin-left: 5px;"></span> &nbsp;&nbsp;
 
-						<h3><b></b>Informasi Terkini</h3>	
+						<h3 style="color: #2F669F;"><b></b><?php echo $nama ?></h3>	
 					</div>
 					
 				</div>
 				<div class="container" style="border-width: 1px; border-color: #d6d6c2;margin: 0px 10px 10px 10px; box-shadow: 0.2px 0.2px 0.2px 0.2px grey; ">
-				<div style=" overflow-x: hidden; height: 610px; ">
+				<div style=" overflow-x: hidden; height: 480px; ">
 					<?php $this->load->view($page) ?>
 				</div>
 			</div>
