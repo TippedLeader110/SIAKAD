@@ -1,0 +1,1 @@
+ALTER TABLE absen ADD genap varchar(30); 
