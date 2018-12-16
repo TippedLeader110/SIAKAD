@@ -10,11 +10,11 @@
 					<table style="min-width: 500px;">
 						<tr>
 							<td>Nama Siswa</td>
-							<td><input style="width: 250px;"></td>
+							<td><input type="text" class="form-control" placeholder="Nama Siswa"style="width: 250px;" ></td>
 						</tr>
 						<tr>
 							<td>NIS</td>
-							<td><input style="width: 250px;"></td>
+							<td><input type="text" class="form-control" placeholder="NIS"style="width: 250px;" ></td>
 						</tr>
 						<tr>
 							<td>Jurusan</td>
@@ -97,7 +97,7 @@
 						</tr>
 						<tr>
 							<td>Tahun Pelajaran</td>
-							<td><input style="width: 250px;"></td>
+							<td><input type="text" class="form-control" placeholder="Tahun Pelajaran"style="width: 250px;" ></td>
 						</tr>
 					</table> 
 				</div>
@@ -122,15 +122,15 @@
 					<table style="min-width: 500px;">
 						<tr>
 							<td>Tugas 1</td>
-							<td><input ></td>
+							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
 						<tr>
 							<td>Tugas 2</td>
-							<td><input ></td>
+							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
 						<tr>
 							<td>Tugas 3</td>
-							<td><input ></td>
+							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
 					</table>
 				</div>
@@ -139,11 +139,11 @@
 					<table style="min-width: 500px;">
 						<tr>
 							<td>Nilai UTS</td>
-							<td><input ></td>
+							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
 						<tr>
 							<td>Nilai UAS</td>
-							<td><input ></td>
+							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
 					</table> 
 				</div>
