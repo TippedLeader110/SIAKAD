@@ -31,7 +31,7 @@
 				<img src="<?php echo base_url() ?>/img/icon/kelas.png" style="max-height: 88px;max-width: 88px">
 			</div>
 			<div class="col-md-7">
-				<h4 style="color: white">Total Kelas <br><?php echo $jumlahguru; ?></h4>
+				<h4 style="color: white">Total Kelas <br><?php echo $jumlahkelas; ?></h4>
 			</div>
 		</div>
 	</div>
