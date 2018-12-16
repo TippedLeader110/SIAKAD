@@ -1,14 +1,14 @@
 /* The side navigation menu */
 .navkiri {
-  height: 100%; /* 100% Full-height */
+  height: 100vh; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
-  position: absolute; /* Stay in place */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #2F669F; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 76px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the navkiri */
 }
 
@@ -17,14 +17,18 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .navkiri a:hover {
-  color: #f1f1f1;
+  color: white;
+  background: black;
+}
+.navkiri :hover {
+  color: white;
 }
 
 /* Position and style the close button (top right corner) */
@@ -49,4 +53,29 @@
 }
 #navbar {
   transition: margin-left .5s;
+}
+.container{
+	border-style: solid;
+	border-color: transparent;
+	margin-top: 0px;
+
+}
+.dash{
+	background: white;
+	padding-bottom: 150px;
+}
+.active{
+	background: #EAEDF2;
+	color: black;
+}
+.at a:hover{
+	background: transparent;
+}
+.tab{
+	border-color: transparent;
+	margin-left: -20px;
+	background: white;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }

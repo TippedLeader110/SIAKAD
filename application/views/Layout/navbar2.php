@@ -1,7 +1,7 @@
 <div id="navbar" style="margin-top: -30px">
 <nav class="navbar  navbar-expand navbar-dark navbar-toggleable-sm py-3" style="background-color: #2F669F;">
    <a class="navbar-brand" href="#">
-    <button id="tombol" onclick="test()">test</button>  SIAKAD - Pusat kontrol Admin/Staff
+    <button style="background: transparent;border-color: transparent;" id="tombol" onclick="test()"><img src="<?php echo base_url() ?>/img/icon/menu.svg"></button>  SIAKAD - Pusat kontrol Admin/Staff
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
