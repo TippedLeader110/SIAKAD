@@ -27,24 +27,6 @@ class Home extends CI_Controller {
 		$data['page']='userview/daftarnilai';
 		$this->load->view('layout/home', $data);
 	}
-	public function profilsiswa()
-	{
-		$data['border']='transparent';
-		$data['page']='userview/profilsiswa';
-		$this->load->view('layout/home', $data);
-	}
-	public function profilguru()
-	{
-		$data['border']='transparent';
-		$data['page']='userview/profilguru';
-		$this->load->view('layout/home', $data);
-	}
-	public function profilwalikelas()
-	{
-		$data['border']='transparent';
-		$data['page']='userview/profilwalikelas';
-		$this->load->view('layout/home', $data);
-	}
 	
 	// public function logort()
 	// {
