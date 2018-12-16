@@ -19,7 +19,6 @@
 		<a class="<?php echo $dashboard ?>" href="<?php echo base_url() ?>admin">Dashboard</a>
 		<a class="<?php echo $murid ?>" href="<?php echo base_url() ?>admin/murid">Murid</a>
 		<a class="<?php echo $guru ?>" href="<?php echo base_url() ?>admin/guru">Guru</a>
-		<a class="<?php echo $kelas ?>" href="">Kelas</a>
 		<a href="">Keluar</a>
 		</div>
 	<div class="row">

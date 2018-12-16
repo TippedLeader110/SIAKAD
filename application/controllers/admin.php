@@ -31,7 +31,7 @@ class Admin extends CI_Controller {
 		$data['murid']="";
 		$data['guru']="";
 		$data['matapel']="";
-		$data['kelas']="";
+		
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
@@ -42,11 +42,21 @@ class Admin extends CI_Controller {
 	public function murid()
 	{
 		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
 		if (isset($id)) {
+			if ($tipe=='nama') {
 			$max = $id;	
 			$data['test'] = $max;
 			$nama=$max;
-			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama);	
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'tahun');		
+			}
 		}
 		else
 		{
@@ -56,11 +66,18 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		$data['kelas']="";
+		
 		$data['page']="admin/murid";
 		$this->load->view('layout/admin', $data);	
 	}
-
+	public function guru()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['page'] = "admin/guru";
+		$this->load->view('layout/admin', $data);	
+	}
 
 	public function rMurid()
 	{
@@ -68,7 +85,7 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		$data['kelas']="";
+		
 		$data['page']="admin/regis";
 		$this->load->view('layout/admin', $data);
 	}
@@ -105,7 +122,7 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		$data['kelas']="";
+		
 		$data['nis'] = $nis;
 		$this->load->view('layout/admin', $data);
 	}
@@ -117,7 +134,7 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		$data['kelas']="";
+		
 		$data['page']="admin/regis2";
 		$data['arra'] = $this->adminmodel->ambildata($nis);
 		$this->load->view('layout/admin', $data);
@@ -128,7 +145,7 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		$data['kelas']="";
+		
 		$data['page']="admin/test";
 		$this->load->view('layout/admin')	;
 	}

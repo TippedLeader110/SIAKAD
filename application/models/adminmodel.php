@@ -14,9 +14,9 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
-	public function ambilspes($data,$nama)
+	public function ambilspes($data,$nama,$spes)
 	{
-		$this->db->where(['nama' => $nama]);
+		$this->db->like([$spes => $nama]);
 		$query = $this->db->get($data);
 		return $query->result();
 	}
