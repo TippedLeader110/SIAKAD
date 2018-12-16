@@ -1,7 +1,7 @@
 <style type="text/css">h5{
 	color: white;
 	}h4{
-	color: white;
+	color: black;
 	}input {
   border: 0;
   outline: 0;
@@ -33,7 +33,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="text" name="" placeholder="Nama Pengguna">
+								<input style="width: 92%" type="text" name="" placeholder="">
 						</div>
 					</div>
 					<div class="row">
@@ -43,12 +43,13 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="Password" name="" placeholder="Kata Sandi" id="myInput">
+								<input style="width: 92%" type="Password" name="" placeholder="" id="myInput">
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid" style="color: white">
 							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
+
 						</div>
 					</div>
 					<div class="row" style="margin-top: 50px;">
@@ -57,7 +58,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="container-fluid">
+						<div class="container-fluid" style="color: #2F669F">
 								Lupa Kata Sandi ?
 							
 						</div>
