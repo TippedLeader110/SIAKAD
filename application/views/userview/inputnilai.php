@@ -10,16 +10,16 @@
 					<table style="min-width: 500px;">
 						<tr>
 							<td>Nama Siswa</td>
-							<td><input ></td>
+							<td><input style="width: 250px;"></td>
 						</tr>
 						<tr>
 							<td>NIS</td>
-							<td><input ></td>
+							<td><input style="width: 250px;"></td>
 						</tr>
 						<tr>
 							<td>Jurusan</td>
 							<td>
-								<select class="form-control" style="width: 200px;">
+								<select class="form-control" style="width: 250px;">
 								<option value="jurusan">-Pilih Jurusan-</option>
 								<option value="jurusan">Ilmu Pengetahuan Alam</option>
 								<option value="jurusan">Ilmu Pengetahuan Sosial</option>
@@ -29,7 +29,7 @@
 						<tr>
 							<td>Kelas</td>
 							<td>
-								<select class="form-control" style="width: 200px;">
+								<select class="form-control" style="width: 250px;">
 								<option value="kelas">-Pilih Kelas-</option>
 								<option value="kelas">X IPA 1</option>
 								<option value="kelas">X IPA 2</option>
@@ -59,7 +59,7 @@
 						<tr>
 							<td>Mata Pelajaran</td>
 							<td>
-								<select class="form-control" style="width: 200px;">
+								<select class="form-control" style="width: 250px;">
 									<option value="matpel">-Pilih Mata Pelajaran-</option>
 									<option value="matpel">Akidah Akhlak</option>
 									<option value="matpel">Al-Qur'an Hadist</option>
@@ -88,7 +88,7 @@
 						<tr>
 							<td>Semester</td>
 							<td>
-								<select class="form-control" style="width: 200px;">
+								<select class="form-control" style="width: 250px;">
 									<option value="semester">-Pilih Semester-</option>
 									<option value="semester">Semester Ganjil</option>
 									<option value="semester">Semester Genap</option>
@@ -97,18 +97,19 @@
 						</tr>
 						<tr>
 							<td>Tahun Pelajaran</td>
-							<td><input ></td>
+							<td><input style="width: 250px;"></td>
 						</tr>
 					</table> 
 				</div>
 			</div>
 		</div>	
-		<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;"></div>
+		<div style="background-color:#DCDDE1; width:200px; height:10px; margin-left:350px; margin-top:-15px; margin-bottom: 20px;"></div>
 	</div>
 </div>
 </div>
 
 <div style="width:200px; height:30px; margin-left:350px; margin-top:-15px;"></div>
+
 <div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 10px;">
 <div class="container" style="border-width:1px; background-color:#DCDDE1;">
 	<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">

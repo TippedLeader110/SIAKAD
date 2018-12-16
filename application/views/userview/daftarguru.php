@@ -3,20 +3,20 @@
   <div class="col-lg-6">
     <div class="input-group">
       <center>
-      <table style="margin-bottom: 10px;">
+      <table style="margin-top:10px; margin-bottom: 20px;border-width: 0px; color:#2F669F; font-size: 18px; ">
   
         <tr>
           <td>
-            Ketikkan Nama Guru Yang Ingin Anda Cari
+           Ketikkan Nama Guru Yang Ingin Anda Cari 
           </td>
         </tr>
         <tr>
           <td>
-             <input type="text" class="form-control" placeholder="Ketikkan Disini">
+             <input type="text" class="form-control" placeholder="Ketikkan Disini..">
           </td>
           <td>
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Cari</button>
+              <button class="btn btn-primary" type="button">Cari</button>
             </span>
           </td>
         </tr>
@@ -30,10 +30,8 @@
 
 <div class="row">
   <div class="col-md-12"> 
-    <div class="container" style="border-width: 1px; color:#2F669F; ">
-      <h3>
-        Guru yang mungkin anda cari :
-      </h3>
+    <div class="container" style="border-width: 1px; color:#2F669F; font-size: 20px; ">
+        <b>Guru yang mungkin anda cari :</b>
       <div class="row">
         
       </div>
@@ -60,9 +58,9 @@
          </div>
         <div class="card-body">
         <h6 class="card-title" align="center">NAMA GURU</h6>
-        <p class="card-text" align="center">Guru pada Pelajaran</p>
+        <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
         <center>
-            <a href="#" class="btn btn-primary"><h6>Go somewhere</h6></a>
+            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
         </center>
       </div>
     </div>
@@ -75,9 +73,9 @@
           </div>
       <div class="card-body">
           <h6 class="card-title" align="center">NAMA GURU</h6>
-          <p class="card-text" align="center">Guru pada Pelajaran</p>
+          <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
           <center>
-            <a href="#" class="btn btn-primary"><h6>Go somewhere</h6></a>
+            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
           </center>
       </div>
     </div>
@@ -89,9 +87,9 @@
           </div>
       <div class="card-body">
           <h6 class="card-title" align="center">NAMA GURU</h6>
-          <p class="card-text" align="center">Guru pada Pelajaran</p>
+          <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
           <center>
-            <a href="#" class="btn btn-primary"><h6>Go somewhere</h6></a>
+            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
           </center>
       </div>
     </div>
@@ -103,9 +101,9 @@
           </div>
       <div class="card-body">
           <h6 class="card-title" align="center">NAMA GURU</h6>
-          <p class="card-text" align="center">Guru pada Pelajaran</p>
+          <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
           <center>
-            <a href="#" class="btn btn-primary"><h6>Go somewhere</h6></a>
+            <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
           </center>
       </div>
     </div>
