@@ -52,7 +52,7 @@
 						$wow = $v->kelas-2018+1;
 						$batas++;
 						echo "<tr>
-						<th>".$v->nis."</th><th>".$v->nama."</th><th>".$wow."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th><th><form method='post' action='info'><input type='text' hidden name='nis'><button class='btn btn-warning' name='sub' type='submit'>Info</button></form></th>
+						<th>".$v->nis."</th><th>".$v->nama."</th><th>".$wow."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th><th><form method='post' action='info'><input type='text' hidden name='nis' value='".$v->nis."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
 							</tr>";
 							if ($batas==10) {
 							break;
@@ -66,3 +66,4 @@
 </div>
 </div>
 </div>
+

@@ -60,7 +60,6 @@
 						<td>Tanggal Lahir:<input type="date" name="date" placeholder="Tanggal Lahir"></td><td>&nbsp;</td><td><input type="number" name="anak" placeholder="Anak Ke "></td>
 					</tr>
 					<tr>
-						<td colspan="3"><input type="file" name="file"></td>
 					</tr>
 					<tr>
 						<th><!-- <audio controls>

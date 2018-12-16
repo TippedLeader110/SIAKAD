@@ -48,7 +48,7 @@
 			<?php 
 			$batas = 0;
 			foreach ($muridbaru as $key => $v) {
-				$wow = $v->kelas-2018+1;
+				$wow = $v->tahun-2018+1;
 				$batas++;
 				echo "<tr>
 						<th>".$v->nis."</th><th>".$v->nama."</th><th>".$wow."</th><th>".$v->jurusan."</th>

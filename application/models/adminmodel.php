@@ -20,7 +20,7 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
-	public function ambilspes2($nis)
+	public function ambildata($nis)
 	{
 		$this->db->where(['nis' => $nis]);
 		$query = $this->db->get('siswa');
