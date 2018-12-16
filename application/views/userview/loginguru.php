@@ -1,7 +1,7 @@
 <style type="text/css">h5{
 	color: white;
 	}h4{
-	color: #2F669F;
+	color: black;
 	}input {
   border: 0;
   outline: 0;
@@ -56,7 +56,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="container-fluid">
+						<div class="container-fluid" style="color: #2F669F">
 								Lupa Kata Sandi ?
 							
 						</div>
