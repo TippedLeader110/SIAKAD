@@ -21,6 +21,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/raport';
 		$data['nama'] = 'Rapot';
+
 		$data['beranda'] = '';
 		$data['nilai'] = '';
 		$data['absen'] = '';
