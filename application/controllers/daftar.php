@@ -7,12 +7,14 @@ class Daftar extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/daftarguru';
+		$data['nama'] = 'Daftar Guru';
 		$this->load->view('layout/home', $data);
 	}
 	public function siswa()
 	{
 		$data['border']='black';
 		$data['page']='userview/daftarsiswa';
+		$data['nama'] = 'Daftar Siswa';
 		$this->load->view('layout/home', $data);
 	}
 	public function daftarsiswa()
