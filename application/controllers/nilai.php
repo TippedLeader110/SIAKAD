@@ -45,11 +45,11 @@ class Nilai extends CI_Controller {
 	public function walikelas()
 	{
 		$data['border']='black';
-		$data['page']='userview/walikelas';
+		$data['page']='userview/inputnilaiwalikelas';
 		$data['nama'] = 'Wali kelas';
 		$data['border']='black';
 		$data['page']='userview/daftarnilai';
-		$data['nama'] = 'Daftar Nilai';
+		$data['nama'] = 'Input Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
