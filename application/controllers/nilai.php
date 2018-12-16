@@ -6,25 +6,29 @@ class Nilai extends CI_Controller {
 	public function guru()
 	{
 		$data['border']='black';
-		$data['page']='userview/mapel';
+		$data['page']='userview/input';
+		$data['nama'] = 'Daftar Nilai';
 		$this->load->view('layout/home', $data);
 	}
 	public function raport()
 	{
 		$data['border']='black';
 		$data['page']='userview/raport';
+		$data['nama'] = 'Rapot';
 		$this->load->view('layout/home', $data);
 	}
 	public function hasil()
 	{
 		$data['border']='black';
 		$data['page']='userview/daftarnilai';
+		$data['nama'] = 'Daftar Nilai';
 		$this->load->view('layout/home', $data);	
 	}
 	public function walikelas()
 	{
 		$data['border']='black';
 		$data['page']='userview/walikelas';
+		$data['nama'] = 'Wali kelas';
 		$this->load->view('layout/home', $data);
 	}
 	public function inputnilai()

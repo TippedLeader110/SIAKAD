@@ -13,18 +13,14 @@ class Home extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/awaluser';
+		$data['nama'] = 'Beranda';
 		$this->load->view('layout/home', $data);
 	}
 	public function guru()
 	{
 		$data['border']='black';
 		$data['page']='userview/awalguru';
-		$this->load->view('layout/home', $data);
-	}
-	public function daftarnilai()
-	{
-		$data['border']='black';
-		$data['page']='userview/daftarnilai';
+		$data['nama'] = 'Beranda';
 		$this->load->view('layout/home', $data);
 	}
 	
