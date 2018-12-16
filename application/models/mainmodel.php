@@ -59,7 +59,7 @@ class Mainmodel extends CI_Model {
 		 $this->db->insert('login', $data);
 		 			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
 			echo "<div class='alert alert-success'><strong>Berhasil!</strong> Akun anda telah dibuat.</div>";
-			header( " " );
+			header(" ");
 			 }
 	}
 	public function daftarguru($user, $pass)
@@ -78,6 +78,22 @@ class Mainmodel extends CI_Model {
 			echo "<div class='alert alert-success'><strong>Berhasil!</strong> Akun anda telah dibuat.</div>";
 			header( " " );
 			 }
+	}
+	public function inputnilai($tugas1, $tugas2, $tugas3, $uts, $uas, $mapel)
+	{
+		$this->db->where(['tugas_1' => $tugas1, 'tugas_2' => $tugas2, 'tugas_3' => $tugas3, 'uts' => $uts, 'uas' => $uas]);
+		$query = $this->db->get($mapel);
+		$data = array('tugas_1' => $tugas1, 'tugas_2' => $tugas2, 'tugas_3' => $tugas3, 'uts' => $uts, 'uas' => $uas);
+		 $this->db->insert($mapel, $data);
+			header( " " );
+	}
+	public function inputabsen($alpa, $izin, $sakit, $bulan)
+	{
+		$this->db->where(['alpa' => $alpa, 'izin' => $izin, 'sakit' => $sakit, 'kehadiran' => $kehadiran);
+		$query = $this->db->get($bulan);
+		$data = array('alpa' => $alpa, 'izin' => $izin, 'sakit' => $sakit, 'kehadiran' => $kehadiran);
+		 $this->db->insert($bulan, $data);
+			header( " " );
 	}
 
 
