@@ -59,7 +59,7 @@ class Nilai extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/uas';
-		$data['nama'] = 'Input Nilai';
+		$data['nama'] = 'Daftar Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -72,7 +72,7 @@ class Nilai extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/uts';
-		$data['nama'] = 'Input Nilai';
+		$data['nama'] = 'Daftar Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -85,7 +85,7 @@ class Nilai extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/tugas';
-		$data['nama'] = 'Input Nilai';
+		$data['nama'] = 'Daftar Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';

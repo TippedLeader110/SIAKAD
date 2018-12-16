@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div style="background:#d6f5d6; height: 35px; padding: 5px 5px 5px 5px;">
-			<h5 align="center">Nilai UAS</h5>
+			<h5 align="center">Nilai Ujian Semester</h5>
 		</div>
 	</div>
 	<div style="margin-left: 30px; margin-top: 20px;">
