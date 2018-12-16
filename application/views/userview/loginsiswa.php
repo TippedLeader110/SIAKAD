@@ -22,7 +22,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Login Siswa/</h4>
+								<h4>Masuk Siswa/</h4>
 						</div>
 					</div>
 					<div class="row">
