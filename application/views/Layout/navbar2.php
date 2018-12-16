@@ -31,8 +31,7 @@
       </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="cari" placeholder="Cari" aria-label="Cari">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+      <a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>/img/icon/logohead.png" style="max-width: 60px;"></a>
     </form>
   </div>
 </nav>

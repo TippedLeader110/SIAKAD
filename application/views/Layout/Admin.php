@@ -15,10 +15,10 @@
 	<?php $this->load->view('layout/navbar2') ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/admin.css">
 		<div id="nav" class="navkiri" >
-		<a  style="background: transparent;" href="javascript:void(0)" class="closebtn" onclick="test2()">&times;</a>
-		<a class="active" href="">Dashboard</a>
-		<a class="<?php echo $murid ?>" href="">Murid</a>
-		<a class="<?php echo $guru ?>" href="">Guru</a>
+		
+		<a class="<?php echo $dashboard ?>" href="<?php echo base_url() ?>admin">Dashboard</a>
+		<a class="<?php echo $murid ?>" href="<?php echo base_url() ?>admin/murid">Murid</a>
+		<a class="<?php echo $guru ?>" href="<?php echo base_url() ?>admin/guru">Guru</a>
 		<a class="<?php echo $kelas ?>" href="">Kelas</a>
 		<a href="">Keluar</a>
 		</div>

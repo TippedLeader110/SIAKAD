@@ -33,15 +33,16 @@ class Admin extends CI_Controller {
 		$data['page']="admin/awal";
 		$this->load->view('layout/admin', $data);
 	}
-	public function login()
+	public function murid()
 	{
 		$_SESSION['admin'] = '';
-		$data['dashboard']="active";
-		$data['murid']="";
+		$data['dashboard']="";
+		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
 		$data['kelas']="";
-		$data['page']="";
+		$data['muridtam'] = $this->adminmodel->ambil('siswa');
+		$data['page']="admin/murid";
 		$this->load->view('layout/admin', $data);	
 	}
 	public function rMurid()
