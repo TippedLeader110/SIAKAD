@@ -3,6 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Absen extends CI_Controller {
 
+	public function guru()
+	{
+		$data['border']='black';
+		$data['page']='userview/abseninput';
+		$data['nama'] = 'Absen';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function siswa()
 	{
 		$data['border']='black';
