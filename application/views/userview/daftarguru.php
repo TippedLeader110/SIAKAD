@@ -30,7 +30,7 @@
 
 <div class="row">
   <div class="col-md-12"> 
-    <div class="container" style="border-width: 1px; color:#2F669F; font-size: 20px; ">
+    <div class="container" style="border-width: 1px; color:#2F669F; font-size: 20px;">
         <b>Guru yang mungkin anda cari :</b>
       <div class="row">
         
@@ -48,11 +48,12 @@
   </div>
 -->
 <div class="row">
-  <div class="col-md-12" style="margin-bottom: 20px;">
+  <div class="col-md-12" style="margin-bottom: 120px;">
 
     <div class="row">
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color:#DCDDE1; margin-top:  30px;margin-bottom: : 10px;">
+          <div style="background-color:#70a1ff; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
           <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
          </div>
@@ -64,10 +65,12 @@
         </center>
       </div>
     </div>
-    </div>
+  </div>
+</div>
 
         <div class="col-md-3">
-          <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  10px;">
+          <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom:10px;">
+          <div style="background-color:#009432; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
              <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
           </div>
@@ -80,8 +83,10 @@
       </div>
     </div>
   </div>
+</div>
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  60px;">
+          <div style="background-color:#ff793f; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
              <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
           </div>
@@ -94,8 +99,10 @@
       </div>
     </div>
   </div>
+</div>
         <div class="col-md-3">
           <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  10px;">
+          <div style="background-color:#ff5252; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
              <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
           </div>
@@ -108,6 +115,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 </div>
 </div>
