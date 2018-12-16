@@ -32,7 +32,7 @@
 					</div>
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid">											
-								<h5 style="text-align: left;">&nbsp;&nbsp;Username</h5>
+								<h5 style="text-align: left;">&nbsp;&nbsp;Nama Pengguna</h5>
 						</div>
 					</div>
 					<div class="row">
@@ -42,7 +42,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h5 style="text-align: left;">&nbsp;&nbsp;Password</h5>
+								<h5 style="text-align: left;">&nbsp;&nbsp;Kata Sandi</h5>
 						</div>
 					</div>
 					<div class="row">
@@ -52,17 +52,17 @@
 					</div>
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid" style="color: white">
-							<input type="checkbox" onclick="myFunction()">Tampilkan Password
+							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
 						</div>
 					</div>
 					<div class="row" style="margin-top: 50px;">
 						<div class="container-fluid">
-								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Login</button>
+								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Masuk</button>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								Lupa Password
+								Lupa Kata Sandi ?
 							
 						</div>
 					</div>		
