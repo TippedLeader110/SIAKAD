@@ -119,16 +119,12 @@
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-6">
-					<table style="min-width: 500px;">
+					<table style="min-width: 300px;">
 						<tr>
 							<td>KKM</td>
 							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
-					</table>
-				</div>
-	 
-				<div class="col-md-6">
-					<table style="min-width: 500px;">
+						<tr><td></td></tr>
 						<tr>
 							<td>Ekstrakulikuler</td>
 							<td>
@@ -144,7 +140,100 @@
 							<td></td>
 							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
 						</tr>
-					</table> 
+					</table>
+				</div>
+	 
+
+				<div class="col-md-6">
+					<table style="min-width: 300px;">
+						<tr>
+							<td>Sikap</td>
+						</tr>
+						<tr>
+							<td>Kedisiplinan</td>
+							<td>
+								<select class="form-control" style="width: 250px;">
+									<option value="semester">-Pilih Nilai-</option>
+									<option value="semester">A</option>
+									<option value="semester">B</option>
+									<option value="semester">C</option>
+									<option value="semester">D</option>
+									<option value="semester">E</option>
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Kebersihan</td>
+							<td>
+								<select class="form-control" style="width: 250px;">
+									<option value="semester">-Pilih Nilai-</option>
+									<option value="semester">A</option>
+									<option value="semester">B</option>
+									<option value="semester">C</option>
+									<option value="semester">D</option>
+									<option value="semester">E</option>
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Tanggungjawab</td>
+							<td>
+								<select class="form-control" style="width: 250px;">
+									<option value="semester">-Pilih Nilai-</option>
+									<option value="semester">A</option>
+									<option value="semester">B</option>
+									<option value="semester">C</option>
+									<option value="semester">D</option>
+									<option value="semester">E</option>
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Sopan Santun</td>
+							<td>
+								<select class="form-control" style="width: 250px;">
+									<option value="semester">-Pilih Nilai-</option>
+									<option value="semester">A</option>
+									<option value="semester">B</option>
+									<option value="semester">C</option>
+									<option value="semester">D</option>
+									<option value="semester">E</option>
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Percaya Diri</td>
+							<td>
+								<select class="form-control" style="width: 250px;">
+									<option value="semester">-Pilih Nilai-</option>
+									<option value="semester">A</option>
+									<option value="semester">B</option>
+									<option value="semester">C</option>
+									<option value="semester">D</option>
+									<option value="semester">E</option>
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Kejujuran</td>
+							<td>
+								<select class="form-control" style="width: 250px;">
+									<option value="semester">-Pilih Nilai-</option>
+									<option value="semester">A</option>
+									<option value="semester">B</option>
+									<option value="semester">C</option>
+									<option value="semester">D</option>
+									<option value="semester">E</option>
+
+								</select>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>	
