@@ -21,11 +21,12 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{	
+		$_SESSION['admin'] = 'a';
 		$data['murid']="inactive";
 		$data['guru']="inactive";
 		$data['matapel']="inactive";
 		$data['kelas']="inactive";
-		$data['page']="admin/home";
+		$data['page']="admin/awal";
 		$this->load->view('layout/admin', $data);
 	}
 	public function login()

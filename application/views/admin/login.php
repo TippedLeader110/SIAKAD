@@ -17,7 +17,8 @@
 					">
 					<div class="row">
 						<div class="container-fluid">
-					<img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="margin-top: -50px;max-width: 140px; max-height: 140px;">
+							<div class="cirlce" style="border-radius: 100%">
+					<img  src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="margin-top: -50px;max-width: 140px; max-height: 140px;"></div>
 						</div>
 					</div>
 					<div class="row">

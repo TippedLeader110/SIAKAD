@@ -10,16 +10,22 @@
 <script type="text/javascript" src="<?php echo base_url() ?>/script/js/test.js"></script>
 	<title>Siakad</title>
 </head>
-<body style="background-image: url('<?php echo base_url() ?>img/barik-biru-bg.png'); ">
+<body style="background: gray" ">
 	<?php $this->load->view('layout/navbar2') ?>
-	<div class="row">
-		<div class="col-md-2">
-			<?php $this->load->view('admin/navbar') ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/admin.css">
+		<div id="nav" class="navkiri" >
+		<a href="javascript:void(0)" class="closebtn" onclick="test2()">&times;</a>
+		<a href="">Murid</a>
+		<a href="">Guru</a>
+		<a href="">Kelas</a>
+		<a href="">Keluar</a>
 		</div>
-		<div class="col-md-8" style="margin-top: 140px">
+	<div class="row">
+		<div class="container-fluid" id="main" style="transition: margin-left .5s;">
 			<?php $this->load->view($page) ?>
 		</div>
 	</div>
+		<?php $this->load->view("admin/home") ?>
 </body>
 <script type="text/javascript" src="<?php echo $base_url() ?>script/main.js"></script>
 </html>
