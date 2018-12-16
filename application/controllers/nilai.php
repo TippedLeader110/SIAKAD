@@ -47,9 +47,6 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/inputnilaiwalikelas';
 		$data['nama'] = 'Wali kelas';
-		$data['border']='black';
-		$data['page']='userview/daftarnilai';
-		$data['nama'] = 'Input Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
