@@ -51,7 +51,7 @@
 						<span style="background-color: black; height: 25px; width: 15px; margin-top: 7px; margin-left: 5px;"></span>
 						<span style="background-color: black; height: 25px; width: 5px; margin-top: 7px; margin-left: 5px;"></span> &nbsp;&nbsp;
 
-						<h3><b></b>Informasi Terkini</h3>	
+						<h3 style="color: #2F669F;"><b></b>Informasi Terkini</h3>	
 					</div>
 					
 				</div>
