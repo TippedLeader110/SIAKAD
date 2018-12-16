@@ -111,6 +111,7 @@ class Admin extends CI_Controller {
 	}
 	public function info()
 	{
+
 		$nis = $this->input->post('nis');
 		$data['dashboard']="";
 		$data['murid']="active";
@@ -118,7 +119,7 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['kelas']="";
 		$data['page']="admin/regis2";
-		$data['data'] = $this->adminmodel->ambilspes2($nis);
+		$data['arra'] = $this->adminmodel->ambildata($nis);
 		$this->load->view('layout/admin', $data);
 	}
 	public function test()
@@ -137,7 +138,7 @@ class Admin extends CI_Controller {
         	$nis= $this->input->post('nis');
         		$config['file_name']			= $nis;
                 $config['upload_path']          = './gambar/';
-                $config['allowed_types']        = 'jpg|png|jpeg';
+                $config['allowed_types']        = 'jpg';
                 $config['max_size']             = 100;
                 $config['max_width']            = 1024;
                 $config['max_height']           = 768;
@@ -153,7 +154,6 @@ class Admin extends CI_Controller {
                 {
                 		$w = $config['file_name'];
                         $data = array('upload_data' => $this->upload->data());
-                        
                         $this->db->set('pict', $w); 
                         $this->db->where(['nis' => $nis]);
 						$this->db->update('siswa');

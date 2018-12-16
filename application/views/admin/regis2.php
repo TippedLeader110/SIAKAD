@@ -11,7 +11,28 @@
 		</div>
 	</div>
 	<?php 
-	foreach ($data as $key => $v) {
+	foreach ($arra as $key => $v) {
+		$nis=$v->nis;
+		$nama = $v->nama;
+		$username = $v->username;
+		$password = $v->password;
+		$asal_sekolah = $v->asal_sekolah;
+		$agama = $v->agama;
+		$alamat = $v->alamat;
+		$email = $v->email;
+		$nama_ayah = $v->nama_ayah;
+		$nama_ibu = $v->nama_ibu;
+		$pekerjaan_ayah = $v->pekerjaan_ayah;
+		$pekerjaan_ibu = $v->pekerjaan_ibu;
+		$alamat_ayah = $v->alamat_ayah;
+		$alamat_ibu = $v->alamat_ibu;
+		$no_hp_ayah = $v->no_hp_ayah;
+		$no_hp_ibu = $v->no_hp_ibu;
+		$tahun = $v->tahun;
+		$tempat = $v->tempat;
+		$tanggal_lahir = $v->tanggal_lahir;
+		$anak_ke = $v->anak_ke;
+
 	}
 	 ?>
 	<div class="row">
@@ -20,16 +41,21 @@
 				<form method="post" action="<?php echo base_url() ?>admin/simpanm">
 				<table class="table table-borderless">
 					<tr>
-						<td><input type="number" name="nis" placeholder="NIS" value="<?php echo $v->nis ?>"></td><td>&nbsp;</td><td><input type="text" name="nama" placeholder="Nama" value="<?php echo $v->nama ?>"></td>
+						<th>
+							<img style="max-width: 222px;" src="<?php echo base_url();echo"gambar/"; echo $v->pict ?>.jpg">
+						</th>
 					</tr>
 					<tr>
-						<td><input type="text" value="<?php echo $v->username ?>" name="username" placeholder="Username"></td><td>&nbsp;</td><td><input type="password" value="<?php echo $v->password ?>" name="pass" placeholder="Password"></td>
+						<td><input type="number" name="nis" placeholder="NIS" value="<?php echo $nis ?>"></td><td>&nbsp;</td><td><input type="text" name="nama" placeholder="Nama" value="<?php echo $nama ?>"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="sekolah" placeholder="Asal Sekolah" value="<?php echo $v->asal_sekolah ?>"></td><td>&nbsp;</td><td><input type="text" value="<?php echo $v->agama ?>" name="agama" placeholder="Agama"></td>
+						<td><input type="text" value="<?php echo $username ?>" name="username" placeholder="Username"></td><td>&nbsp;</td><td><input type="password" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
 					</tr>
 					<tr>
-						<td><input type="text" value="<?php echo $v->alamat ?>" name="alamat" placeholder="Alamat"></td><td>&nbsp;</td><td><input type="email" name="email" value="<?php echo $v->email ?>" placeholder="Email"></td>
+						<td><input type="text" name="sekolah" placeholder="Asal Sekolah" value="<?php echo $asal_sekolah ?>"></td><td>&nbsp;</td><td><input type="text" value="<?php echo $agama ?>" name="agama" placeholder="Agama"></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="<?php echo $alamat ?>" name="alamat" placeholder="Alamat"></td><td>&nbsp;</td><td><input type="email" name="email" value="<?php echo $email ?>" placeholder="Email"></td>
 					</tr>
 					<tr>
 						<td>
@@ -46,25 +72,25 @@
 						</select></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="ayah" placeholder="Nama Ayah" value="<?php echo $v->nama_ibu ?>"></td><td>&nbsp;</td><td><input type="text" name="ibu" placeholder="Nama Ibu" value="<?php echo $v->nama_ibu ?>"></td>
+						<td><input type="text" name="ayah" placeholder="Nama Ayah" value="<?php echo $nama_ayah ?>"></td><td>&nbsp;</td><td><input type="text" name="ibu" placeholder="Nama Ibu" value="<?php echo $nama_ibu ?>"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah" value="<?php echo $v->pekerjaan_ayah ?>"></td><td>&nbsp;</td><td><input type="text" name="pibu" value="<?php echo $v->nama_ibu ?>" placeholder="Pekerjaan Ibu"></td>
+						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah" value="<?php echo $pekerjaan_ayah ?>"></td><td>&nbsp;</td><td><input type="text" name="pibu" value="<?php echo $pekerjaan_ibu ?>" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="aayah" placeholder="Alamat Ayah" value="<?php echo $v->alamat_ayah ?>"></td><td>&nbsp;</td><td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $v->alamat_ibu ?>"></td>
+						<td><input type="text" name="aayah" placeholder="Alamat Ayah" value="<?php echo $alamat_ayah ?>"></td><td>&nbsp;</td><td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah" <?php echo $v->no_hp_ayah ?>></td><td>&nbsp;</td><td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $v->no_hp_ibu ?>"></td>
+						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah" <?php echo $no_hp_ayah ?>></td><td>&nbsp;</td><td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="tahun" placeholder="Tahun Angkatan" value="<?php echo $v->tahun ?>"></td><td>&nbsp;</td><td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $v->tanggal_lahir ?>"></td>
+						<td><input type="text" name="tahun" placeholder="Tahun Angkatan" value="<?php echo $tahun ?>"></td><td>&nbsp;</td><td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $tempat ?>"></td>
 					</tr>
 					<tr>
-						<td>Tanggal Lahir:<input type="date" name="date" value="<?php echo $v->tanggal_lahir ?>" placeholder="Tanggal Lahir"></td><td>&nbsp;</td><td><input value="<?php echo $v->anak_ke ?>" type="text" name="anak" placeholder="Anak Ke "></td>
+						<td>Tanggal Lahir:<input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td><td>&nbsp;</td><td><input value="<?php echo $anak_ke ?>" type="text" name="anak" placeholder="Anak Ke "></td>
 					</tr>
 					<tr>
-						<td colspan="3"><input type="file" name="userfile" size="20"></td>
+						
 					</tr>
 					<tr>
 						<th><!-- <audio controls>
