@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="border-width: 1px;">
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">

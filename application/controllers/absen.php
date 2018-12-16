@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Absen extends CI_Controller {
 
-	public function guru()
+	public function walikelas()
 	{
 		$data['border']='black';
 		$data['page']='userview/abseninput';

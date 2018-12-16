@@ -1,1 +1,1 @@
-ALTER TABLE absen ADD genap varchar(30); 
+ALTER TABLE siswa MODIFY nis BIGINT;

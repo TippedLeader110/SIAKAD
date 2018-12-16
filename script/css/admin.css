@@ -79,3 +79,12 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+  width: 400px;
+}
+input:focus {
+  border-color: green
+}

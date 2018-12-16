@@ -1,5 +1,4 @@
 <div class="row">
-				<div class="container" style=" border-width: 1px; border-color: #d6d6c2; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 25px;">
 	<div class="col-md-12" style="margin-top: 10px;">
 		<h4 style="color: #2F669F;">Hasil Rapot pada Semester berapa yang ingin Anda Lihat?</h4>
 	</div>
