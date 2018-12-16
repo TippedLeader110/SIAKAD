@@ -48,11 +48,11 @@
   </div>
 -->
 <div class="row">
-  <div class="col-md-12" style="margin-bottom: 120px;">
+  <div class="col-md-12" style="margin-bottom: 50px;">
 
     <div class="row">
         <div class="col-md-3">
-          <div class="card" style="width: 200px; background-color:#DCDDE1; margin-top:  30px;margin-bottom: : 10px;">
+          <div class="card" style="width: 200px; height:320px; background-color:#DCDDE1; margin-top:  30px;">
           <div style="background-color:#70a1ff; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
           <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
@@ -69,7 +69,7 @@
 </div>
 
         <div class="col-md-3">
-          <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom:10px;">
+          <div class="card" style="width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;">
           <div style="background-color:#009432; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
              <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
@@ -85,7 +85,7 @@
   </div>
 </div>
         <div class="col-md-3">
-          <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  60px;">
+          <div class="card" style="width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;">
           <div style="background-color:#ff793f; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
              <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
@@ -101,7 +101,7 @@
   </div>
 </div>
         <div class="col-md-3">
-          <div class="card" style="width: 200px; background-color: #DCDDE1; margin-top:  30px;margin-bottom: :  10px;">
+          <div class="card" style="width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;">
           <div style="background-color:#ff5252; height: 200px; width: 200px;">
           <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
              <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
