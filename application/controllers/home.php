@@ -5,7 +5,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['border']='black';
+		$data['border']='transparent';
 		$data['page']='userview/home';
 		$this->load->view('layout/main', $data);
 	}
