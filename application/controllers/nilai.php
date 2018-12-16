@@ -18,7 +18,7 @@ class Nilai extends CI_Controller {
 	public function hasil()
 	{
 		$data['border']='black';
-		$data['page']='userview/nilaisiswa';
+		$data['page']='userview/daftarnilai';
 		$this->load->view('layout/home', $data);	
 	}
 	public function walikelas()
@@ -27,7 +27,7 @@ class Nilai extends CI_Controller {
 		$data['page']='userview/walikelas';
 		$this->load->view('layout/home', $data);
 	}
-	public function nilai()
+	public function inputnilai()
 	{
 		if ($status=='fail') {
 			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
