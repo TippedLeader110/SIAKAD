@@ -71,7 +71,28 @@ class Admin extends CI_Controller {
 		$this->load->view('layout/admin', $data);	
 	}
 	public function guru()
-	{
+	{	
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'nip');		
+			}
+		}
+		else
+		{
+		$data['gurutam'] = $this->adminmodel->ambil('guru');
+		}
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";

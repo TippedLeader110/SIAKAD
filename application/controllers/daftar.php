@@ -29,7 +29,7 @@ class Daftar extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
-	}
+	
 
 	// public function logort()
 	// {
