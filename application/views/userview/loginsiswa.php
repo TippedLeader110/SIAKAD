@@ -49,7 +49,7 @@
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid" style="color: white">
 							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
-							<h5 style="text-align: left;"></h5>
+							
 						</div>
 					</div>
 					<div class="row" style="margin-top: 50px;">
