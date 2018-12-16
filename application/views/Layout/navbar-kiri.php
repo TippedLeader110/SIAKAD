@@ -17,7 +17,7 @@
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;" class="aktif">Beranda</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $beranda?>>Beranda</h5>
                </div>
               </a>
              
@@ -25,35 +25,35 @@
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;">Daftar Nilai</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $nilai?>>Daftar Nilai</h5>
                </div>
               </a>
               <a href="#">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;">Rapot</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $rapot?>>Rapot</h5>
                </div>
               </a>
               <a href="#">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;">Rekap Absensi</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $absen?>>Rekap Absensi</h5>
                </div>
               </a>
               <a href="#">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;">Daftar Guru</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $guru?>>Daftar Guru</h5>
                </div>
               </a>
               <a href="#">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;" >Profil</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $profil?>>Profil</h5>
                </div>
               </a>
 

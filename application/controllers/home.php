@@ -14,6 +14,12 @@ class Home extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/awaluser';
 		$data['nama'] = 'Beranda';
+		$data['beranda'] = 'aktif';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function guru()
@@ -21,6 +27,12 @@ class Home extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/awalguru';
 		$data['nama'] = 'Beranda';
+		$data['beranda'] = 'aktif';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	

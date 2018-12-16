@@ -7,7 +7,13 @@ class Nilai extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/inputnilai';
-		$data['nama'] = 'Daftar Nilai';
+		$data['nama'] = 'Input Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function raport()
@@ -15,13 +21,25 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/raport';
 		$data['nama'] = 'Rapot';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = 'aktif';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
-	public function hasil()
+	public function siswa()
 	{
 		$data['border']='black';
 		$data['page']='userview/daftarnilai';
 		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);	
 	}
 	public function walikelas()
@@ -29,6 +47,15 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/walikelas';
 		$data['nama'] = 'Wali kelas';
+		$data['border']='black';
+		$data['page']='userview/daftarnilai';
+		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function inputnilai()
