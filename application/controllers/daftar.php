@@ -29,33 +29,6 @@ class Daftar extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
-	public function daftarsiswa()
-	{
-		$user = $this->input->post('user');
-		$pass = md5($this->input->post('pass'));
-		if ($user=='') {
-			header(" ");
-		}
-		else if ($pass=='') {
-			header(" ");
-		}
-		else{		
-		$this->mainmodel->daftarsiswa($user, $pass);
-		}
-	}
-	public function daftarguru()
-	{
-		$user = $this->input->post('user');
-		$pass = md5($this->input->post('pass'));
-		if ($user=='') {
-			header(" ");
-		}
-		else if ($pass=='') {
-			header(" ");
-		}
-		else{		
-		$this->mainmodel->daftarguru($user, $pass);
-		}
 	}
 
 	// public function logort()
