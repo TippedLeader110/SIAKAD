@@ -35,7 +35,9 @@
 						} ?>
 					</div>
 					<div class="col-md-2" style="text-align: right;">
-						<button class="btn btn-primary">Tambah Murid</button>
+						<form action="<?php echo base_url() ?>admin/rMurid">
+						<button class="btn btn-primary" type="submit">Tambah Murid</button>
+						</form>
 					</div>
 			</div>
 			<div class="row">
