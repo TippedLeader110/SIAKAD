@@ -1,24 +1,18 @@
-.more {
-  background:none;
-  border:none;
-  color:#FFF;
-  font-family:Verdana, Geneva, sans-serif;
-  cursor:pointer;
-}
-.container
-{
-	border-style: solid;
-	border-color: black;
-	margin-top: 10px;
-}
-.profile{
-  		min-width: 10px;
-  		
-  		background-color: #8DB3DA;
-  		padding-top: 20px;
-  		margin-top: 20px;
+    .container
+    {
+      border-style: solid;
+      border-color: black;
+      margin-top: 10px;
+    }
+    .profile{
+          min-width: 10px;
+          
+          background-color: #8DB3DA;
+          padding-top: 20px;
+          margin-top: 20px;
 
-  	}
+
+    }
     .field-wel{
       min-width: 20px;
       max-width: 200px;
@@ -29,6 +23,7 @@
       padding-top:1px;
       padding-bottom: 1px;
       font-family: "Calibri", Times, sans-serif;
+      box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
     }
     .field-menu{
       background: white;
@@ -52,4 +47,16 @@
     .test{
       background: black
     }
+    .img{
+      max-height: 700px;
+      max-width:  1000px;
+    }
+    .car1{
+      max-width: 700px;
+      max-height: 300px;
+    }
     
+    ::-webkit-scrollbar { 
+    display: none; 
+    }
+ 
