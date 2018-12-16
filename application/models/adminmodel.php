@@ -20,6 +20,11 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
+	public function absen($id,$nis){
+		$this->db->where(['semester' => $id, 'nis' => $nis]);
+			$query = $this->db->get('absen');
+			return $query->result();
+	}
 	public function ambildata($nis)
 	{
 		$this->db->where(['nis' => $nis]);

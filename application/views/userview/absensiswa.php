@@ -8,19 +8,19 @@
 <table>
 	<tr>
 		<td><h4 style="margin-left: 1em;margin-right: 1em">Kelas:</h4></td>
-		<td>
-			<select class="form-control">
-				<option><h4>X Semester Ganjil</h4></option>
-				<option><h4>X Semester Genap</h4></option>
-				<option><h4>XI Semester Ganjil</h4></option>
-				<option><h4>XI Semester Genap</h4></option>
-				<option><h4>XII Semester Ganjil</h4></option>
-				<option><h4>XII Semester Genap</h4></option>
+		<td><form method="post" action="<?php echo base_url() ?>Absen/siswa">	
+			<select name="sub" class="form-control">
+				<option value="1"><h4>X Semester Ganjil</h4></option>
+				<option value="2"><h4>X Semester Genap</h4></option>
+				<option value="3"><h4>XI Semester Ganjil</h4></option>
+				<option value="4"><h4>XI Semester Genap</h4></option>
+				<option value="5"><h4>XII Semester Ganjil</h4></option>
+				<option value="6"><h4>XII Semester Genap</h4></option>
 			</select>
 		</td>
 		<td>
 			<button class="btn btn-primary" style="margin-left: 1em">Lihat</button>
-		</td>
+		</td></form>
 	</tr>
 </table>
 </div>

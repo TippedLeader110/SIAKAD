@@ -57,6 +57,7 @@ class Nilai extends CI_Controller {
 	}
 	public function uas()
 	{
+		
 		$data['border']='black';
 		$data['page']='userview/uas';
 		$data['nama'] = 'Daftar Nilai';

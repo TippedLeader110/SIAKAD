@@ -86,7 +86,7 @@ class Admin extends CI_Controller {
 			$max = $id;	
 			$data['test'] = $max;
 			$nama=$max;
-			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'nip');		
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'kode_mapel');		
 			}
 		}
 		else

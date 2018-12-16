@@ -18,6 +18,19 @@ class Absen extends CI_Controller {
 	}
 	public function siswa()
 	{
+		$_SESSION['login']="171402067";
+		if ($_SESSION['login']!='') {
+			$nis = $_SESSION['login']!='';
+		}
+		else
+		{
+			redirect(base_url(),location);
+		}
+		$id=$this->input->post('sub');				
+		if (isset($id)) {
+			
+			$data['absendaf'] = $this->adminmodel->absen($id, $nis);	
+		}
 		$data['border']='black';
 		$data['page']='userview/absensiswa';
 		$data['nama'] = 'Absen';
