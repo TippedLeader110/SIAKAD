@@ -6,7 +6,7 @@ class Daftar extends CI_Controller {
 	public function guru()
 	{
 		$data['border']='black';
-		$data['page']='userview/daftarnilaiguru';
+		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';
 		$data['beranda'] = '';
 		$data['nilai'] = '';

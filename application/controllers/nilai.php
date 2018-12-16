@@ -6,7 +6,7 @@ class Nilai extends CI_Controller {
 	public function guru()
 	{
 		$data['border']='black';
-		$data['page']='userview/inputnilai';
+		$data['page']='userview/daftarnilaiguru';
 		$data['nama'] = 'Input Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
