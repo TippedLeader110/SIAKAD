@@ -54,11 +54,11 @@
         <div class="col-md-3">
           <div class="card" style="width: 200px; height:320px; background-color:#DCDDE1; margin-top:  30px;">
           <div style="background-color:#70a1ff; height: 200px; width: 200px;">
-          <div class="circle" style="margin: 10px 10px 50px 50px; margin-top: 30px;">
+          <div class="circle" style="margin: 10px 10px 50px 50px; margin-top:30px;">
           <img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
          </div>
         <div class="card-body">
-        <h6 class="card-title" align="center">NAMA GURU</h6>
+        <h6 class="card-title" align="center" >NAMA GURU</h6>
         <p class="card-text" align="center" style="font-size: 15px;">Guru pada Pelajaran</p>
         <center>
             <a href="#" class="btn btn-primary"><h6>Lihat Profil</h6></a>
