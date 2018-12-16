@@ -22,12 +22,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Masuk Guru/</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="container-fluid">
-								<h4>Pegawai</h4>
+								<h4>Masuk Guru/Pegawai</h4>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
