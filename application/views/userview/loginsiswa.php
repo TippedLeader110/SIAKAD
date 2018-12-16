@@ -1,7 +1,7 @@
 <style type="text/css">h5{
 	color: white;
 	}h4{
-	color: white;
+	color: #2F669F;
 	}input {
   border: 0;
   outline: 0;
@@ -49,7 +49,7 @@
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid" style="color: white">
 							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
-							
+
 						</div>
 					</div>
 					<div class="row" style="margin-top: 50px;">

@@ -1,7 +1,7 @@
 <style type="text/css">h5{
 	color: white;
 	}h4{
-	color: white;
+	color: #2F669F;
 	}input {
   border: 0;
   outline: 0;
