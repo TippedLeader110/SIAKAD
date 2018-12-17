@@ -20,7 +20,7 @@ class Nilai extends CI_Controller {
 	{
 		$nama = $_SESSION['nis'];
 		$data['border']='black';
-		$data['agama']= spes('akidah_akhlak',$nama,'nis');
+		$data['akidah']= spes('akidah_akhlak',$nama,'nis');
 		$data['bio']= spes('biologi_p',$nama,'nis');
 		$data['arab']= spes('b_arab',$nama,'nis');
 		$data['indo']= spes('b_indo',$nama,'nis');

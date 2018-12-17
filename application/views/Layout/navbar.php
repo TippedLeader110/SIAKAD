@@ -32,9 +32,13 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <form class="form-inline my-2 my-lg-0" action="<?php echo base_url() ?>home/logout">
-      <button type="submit" class="btn btn-default">
-        <span><img src="<?php echo base_url()?>img\icon\logout.png" style="width:25px; height: 25px;"></span> &nbsp;<b>Keluar</b>
-      </button>
+      <?php 
+      if ($_SESSION['user']!='') {
+      echo "<button type='submit' class='btn btn-default'>
+        <span><img src='<?php echo base_url()?>img\icon\logout.png' style='width:25px; height: 25px;'></span> &nbsp;<b>Keluar</b>
+      </button>"   ;
+       } ?>
+      
     </form>
     </form>
   </div>
