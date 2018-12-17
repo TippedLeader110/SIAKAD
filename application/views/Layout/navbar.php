@@ -1,7 +1,7 @@
 <div id="navbar" style="margin-top:">
 <nav class="navbar navbar-expand navbar-dark navbar-toggleable-sm py-3" style="background-color: #2F669F;border-style: solid;border-color: black;border-width: 2px;">
    <a class="navbar-brand" href="#">
-    <table><tr><td rowspan="2"><img src="<?php echo base_url() ?>img/icon/logohead.png" width="80" height="80" class="d-inline-block align-top" alt=""></td><td>Sistem Informasi Akademik</td></tr><tr><th><h4><b>SIAKAD</b></h4></th></tr></table>
+    <table><tr><td rowspan="2"><img src="<?php echo base_url() ?>img/icon/logohead.png" width="80" height="80" class="d-inline-block align-top" alt=""></td><td>Sistem Informasi Akademik</td></tr><tr><th><h4><b style="color: white">SIAKAD</b></h4></th></tr></table>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,11 @@
       </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="Cari" placeholder="Cari" aria-label="Cari">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+      <form class="form-inline my-2 my-lg-0" action="<?php echo base_url() ?>home/logout">
+      <button type="submit" class="btn btn-default">
+        <span><img src="<?php echo base_url()?>img\icon\logout.png" style="width:25px; height: 25px;"></span> &nbsp;<b>Keluar</b>
+      </button>
+    </form>
     </form>
   </div>
 </nav>

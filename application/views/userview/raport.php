@@ -1,5 +1,4 @@
 <div class="row">
-				<div class="container" style=" border-width: 1px; border-color: #d6d6c2; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 25px;">
 	<div class="col-md-12" style="margin-top: 10px;">
 		<h4 style="color: #2F669F;">Hasil Rapot pada Semester berapa yang ingin Anda Lihat?</h4>
 	</div>
@@ -260,6 +259,43 @@
 				<td></td>
 				<td></td>
 			</tr>
+			<tr>
+				<td colspan="7" align="left" style="padding-left: 10px;"><b>Kelompok D (Ekstrakulikuler)</b></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td align="left">Pramuka</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="3">2</td>
+				<td align="left">Lainnya</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; text-align: left;">a. </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td  style="padding-left: 10px; text-align: left;">b. </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
 		</table>
 		<!-- 
 		 // INI ADALAH TABEL RAPORT JURUSAN IPS
@@ -435,6 +471,43 @@
 			<tr>
 				<td>4.</td>
 				<td align="left">Ekonomi</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="7" align="left" style="padding-left: 10px;"><b>Kelompok D (Ekstrakulikuler)</b></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td align="left">Pramuka</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="3">2</td>
+				<td align="left">Lainnya</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px; text-align: left;">a. </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td  style="padding-left: 10px; text-align: left;">b. </td>
 				<td></td>
 				<td></td>
 				<td></td>

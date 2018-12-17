@@ -26,6 +26,10 @@
 								</select> 
 							</td>
 						</tr>
+					</table>
+				</div>
+				<div class="col-md-6">
+					<table style="min-width: 500px;">
 						<tr>
 							<td>Kelas</td>
 							<td>
@@ -49,39 +53,6 @@
 								<option value="kelas">XII IPS 1</option>
 								<option value="kelas">XII IPS 2</option>
 								<option value="kelas">XII IPS 3</option>
-								</select>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<table style="min-width: 500px;">
-						<tr>
-							<td>Mata Pelajaran</td>
-							<td>
-								<select class="form-control" style="width: 250px;">
-									<option value="matpel">-Pilih Mata Pelajaran-</option>
-									<option value="matpel">Akidah Akhlak</option>
-									<option value="matpel">Al-Qur'an Hadist</option>
-									<option value="matpel">Bahasa Arab</option>
-									<option value="matpel">Bahasa Indonesia</option>
-									<option value="matpel">Bahasa Inggris</option>
-									<option value="matpel">Bahasa Jerman Peminatan</option>
-									<option value="matpel">Biologi Peminatan</option>
-									<option value="matpel">Ekonomi Peminatan</option>
-									<option value="matpel">Fikih</option>
-									<option value="matpel">Fisika Peminatan</option>
-									<option value="matpel">Geografi</option>
-									<option value="matpel">Kimia Peminatan</option>
-									<option value="matpel">Matematikan</option>
-									<option value="matpel">Pendidikan Jasmani</option>
-									<option value="matpel">Pendidikan Kewarganegaraan</option>
-									<option value="matpel">Prakarya Kewirausahaan</option>
-									<option value="matpel">Sejarah</option>
-									<option value="matpel">Sejarah Indonesia</option>
-									<option value="matpel">Sejarah Kebudayaan Islam</option>
-									<option value="matpel">Seni Budaya</option>
-									<option value="matpel">Sosiologi</option>
 								</select>
 							</td>
 						</tr>
@@ -112,40 +83,40 @@
 
 <div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 10px;">
 <div class="container" style="border-width:1px; background-color:#DCDDE1;">
-	<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">
-		<h5 align="center"><b>DATA NILAI</b></h5>	
+	<div style="background-color:#DCDDE1; width:250px; height:30px; margin-left:325px; margin-top:-15px;">
+		<h5 align="center"><b>DATA NILAI ABSENSI</b></h5>	
 	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-6">
-					<table style="min-width: 500px;">
+					<table style="min-width: 310px;">
 						<tr>
-							<td>Tugas 1</td>
-							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
+							<td>Jumlah Kehadiran</td>
+							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 100px;"></td>
+							<td>Hari</td>
 						</tr>
 						<tr>
-							<td>Tugas 2</td>
-							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
+							<td>Ketidakhadiran</td>
 						</tr>
-						<tr>
-							<td>Tugas 3</td>
-							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
-						</tr>
+						<table style="margin-left: 110px; min-width: 200px;">
+							<tr>
+								<td>Izin</td>
+								<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 100px;"></td>
+								<td>Hari</td>
+							</tr>
+							<tr>
+								<td>Sakit</td>
+								<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 100px;"></td>
+								<td>Hari</td>
+							</tr>
+							<tr>
+								<td>Alpa</td>
+								<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 100px;"></td>
+								<td>Hari</td>
+							</tr>
+						</table>
 					</table>
-				</div>
-	 
-				<div class="col-md-6">
-					<table style="min-width: 500px;">
-						<tr>
-							<td>Nilai UTS</td>
-							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
-						</tr>
-						<tr>
-							<td>Nilai UAS</td>
-							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
-						</tr>
-					</table> 
 				</div>
 			</div>
 		</div>	

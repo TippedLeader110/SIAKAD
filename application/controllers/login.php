@@ -17,15 +17,15 @@ class Login extends CI_Controller {
 	}
 	public function loginsiswa()
 	{
-		if ($status=='fail') {
+		$status = $this->uri->segment(3);
+		if ($status=='fail'){
 			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
 			echo "<div class='alert alert-danger'><strong>Error!</strong> Password atau Username tidak valid.</div>";
 		}
 		else{
-		$user = $this->input->post('user');
-		$pass = md5($this->input->post('pass'));
-		$this->load->model("mainmodel");
-		$this->mainmodel->loginsiswa($user, $pass);
+			$user = $this->input->post('username');
+			$pass = md5($this->input->post('password'));
+			$this->mainmodel->loginsiswa($user, $pass);
 		}
 	}
 	public function loginguru()
@@ -37,7 +37,6 @@ class Login extends CI_Controller {
 		else{
 		$user = $this->input->post('user');
 		$pass = md5($this->input->post('pass'));
-		$this->load->model("mainmodel");
 		$this->mainmodel->loginguru($user, $pass);
 		}
 	}

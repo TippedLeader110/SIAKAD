@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 15 Des 2018 pada 13.01
--- Versi Server: 10.1.26-MariaDB
+-- Generation Time: Dec 16, 2018 at 04:12 PM
+-- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -25,191 +25,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `abs_agustus`
+-- Table structure for table `absen`
 --
 
-CREATE TABLE `abs_agustus` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
+CREATE TABLE `absen` (
+  `nis` bigint NOT NULL,
+  `bulan` varchar(30) DEFAULT NULL,
+  `hadir` int(11) DEFAULT NULL,
+  `alpha` int(11) DEFAULT NULL,
   `izin` int(11) DEFAULT NULL,
   `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
+  `total` int(11) DEFAULT NULL,
+  `semester` varchar(50) DEFAULT NULL,
+  `tahun` varchar(30) DEFAULT NULL,
+  `kelas` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `abs_april`
---
-
-CREATE TABLE `abs_april` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_desember`
---
-
-CREATE TABLE `abs_desember` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_februari`
---
-
-CREATE TABLE `abs_februari` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_januari`
---
-
-CREATE TABLE `abs_januari` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_juli`
---
-
-CREATE TABLE `abs_juli` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_juni`
---
-
-CREATE TABLE `abs_juni` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_maret`
---
-
-CREATE TABLE `abs_maret` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_mei`
---
-
-CREATE TABLE `abs_mei` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_november`
---
-
-CREATE TABLE `abs_november` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_oktober`
---
-
-CREATE TABLE `abs_oktober` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `abs_september`
---
-
-CREATE TABLE `abs_september` (
-  `nis` int(11) NOT NULL,
-  `alpa` int(11) DEFAULT NULL,
-  `izin` int(11) DEFAULT NULL,
-  `sakit` int(11) DEFAULT NULL,
-  `kehadiran` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
-  `nip` int(11) NOT NULL,
+  `nip` bigint NOT NULL,
   `username` varchar(30) DEFAULT NULL,
   `password` varchar(30) DEFAULT NULL,
   `nama` varchar(30) DEFAULT NULL,
@@ -220,11 +59,11 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `akidah_akhlak`
+-- Table structure for table `akidah_akhlak`
 --
 
 CREATE TABLE `akidah_akhlak` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -239,11 +78,11 @@ CREATE TABLE `akidah_akhlak` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `biologi_p`
+-- Table structure for table `biologi_p`
 --
 
 CREATE TABLE `biologi_p` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -252,17 +91,18 @@ CREATE TABLE `biologi_p` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `b_arab`
+-- Table structure for table `b_arab`
 --
 
 CREATE TABLE `b_arab` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -271,17 +111,18 @@ CREATE TABLE `b_arab` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `b_indo`
+-- Table structure for table `b_indo`
 --
 
 CREATE TABLE `b_indo` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -290,17 +131,18 @@ CREATE TABLE `b_indo` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `b_ing`
+-- Table structure for table `b_ing`
 --
 
 CREATE TABLE `b_ing` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -309,17 +151,18 @@ CREATE TABLE `b_ing` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `b_jerman_p`
+-- Table structure for table `b_jerman_p`
 --
 
 CREATE TABLE `b_jerman_p` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -328,17 +171,18 @@ CREATE TABLE `b_jerman_p` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ekonomi_p`
+-- Table structure for table `ekonomi_p`
 --
 
 CREATE TABLE `ekonomi_p` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -347,17 +191,18 @@ CREATE TABLE `ekonomi_p` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fikih`
+-- Table structure for table `fikih`
 --
 
 CREATE TABLE `fikih` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -366,17 +211,18 @@ CREATE TABLE `fikih` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fisika_p`
+-- Table structure for table `fisika_p`
 --
 
 CREATE TABLE `fisika_p` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -385,17 +231,18 @@ CREATE TABLE `fisika_p` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `geografi`
+-- Table structure for table `geografi`
 --
 
 CREATE TABLE `geografi` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -404,17 +251,18 @@ CREATE TABLE `geografi` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `guru`
+-- Table structure for table `guru`
 --
 
 CREATE TABLE `guru` (
-  `nip` int(11) NOT NULL,
+  `nip` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(10) DEFAULT NULL,
@@ -431,14 +279,35 @@ CREATE TABLE `guru` (
   `foto` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `guru`
+--
+
+INSERT INTO `guru` (`nip`, `kode_mapel`, `username`, `password`, `nama`, `tanggal`, `jk`, `agama`, `alamat`, `email`, `mapel`, `gol`, `no_hp`, `wali_kelas`, `foto`) VALUES
+(13456, 'bi10', 'paksanca', 'pakSanca', 'paksanca', '0000-00-00', 'Laki-laki', 'islam', 'Jl Mu no 3', 'Paksanca@gmail.com', 'b_indo', '3A', '08134567123', '11IPA1', ''),
+(15456, 'mm10', 'paksanca', 'pakSanca', 'paksanca', '0000-00-00', 'Laki-laki', 'islam', 'Jl Mu no 3', 'Paksanca@gmail.com', 'b_indo', '3A', '08134567123', '11IPA1', ''),
+(16756, 's10', 'paksanca', 'pakSanca', 'paksanca', '0000-00-00', 'Laki-laki', 'islam', 'Jl Mu no 3', 'Paksanca@gmail.com', 'b_indo', '3A', '08134567123', '11IPA1', '');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kimia_p`
+-- Table structure for table `kelas`
+--
+
+CREATE TABLE `kelas` (
+  `kelas` varchar(50) NOT NULL,
+  `tingkat` varchar(60) DEFAULT NULL,
+  `jum_siswa` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kimia_p`
 --
 
 CREATE TABLE `kimia_p` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -447,17 +316,29 @@ CREATE TABLE `kimia_p` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `matematika`
+-- Table structure for table `marcing_band`
+--
+
+CREATE TABLE `marcing_band` (
+  `nis` bigint NOT NULL,
+  `jum_nilai` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `matematika`
 --
 
 CREATE TABLE `matematika` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -466,17 +347,29 @@ CREATE TABLE `matematika` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `penjas`
+-- Table structure for table `paskibra`
+--
+
+CREATE TABLE `paskibra` (
+  `nis` bigint NOT NULL,
+  `jum_nilai` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `penjas`
 --
 
 CREATE TABLE `penjas` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -485,17 +378,18 @@ CREATE TABLE `penjas` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pkn`
+-- Table structure for table `pkn`
 --
 
 CREATE TABLE `pkn` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -504,17 +398,18 @@ CREATE TABLE `pkn` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `prakarya_kewirausahaan`
+-- Table structure for table `prakarya_kewirausahaan`
 --
 
 CREATE TABLE `prakarya_kewirausahaan` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -523,17 +418,29 @@ CREATE TABLE `prakarya_kewirausahaan` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `quran_hadis`
+-- Table structure for table `pramuka`
+--
+
+CREATE TABLE `pramuka` (
+  `nis` bigint NOT NULL,
+  `jum_nilai` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quran_hadis`
 --
 
 CREATE TABLE `quran_hadis` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -542,17 +449,18 @@ CREATE TABLE `quran_hadis` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sejarah`
+-- Table structure for table `sejarah`
 --
 
 CREATE TABLE `sejarah` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -561,17 +469,18 @@ CREATE TABLE `sejarah` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sejarah_indo`
+-- Table structure for table `sejarah_indo`
 --
 
 CREATE TABLE `sejarah_indo` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -580,17 +489,18 @@ CREATE TABLE `sejarah_indo` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `seni_budaya`
+-- Table structure for table `seni_budaya`
 --
 
 CREATE TABLE `seni_budaya` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -599,17 +509,18 @@ CREATE TABLE `seni_budaya` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `siswa`
+-- Table structure for table `siswa`
 --
 
 CREATE TABLE `siswa` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(10) DEFAULT NULL,
   `nama` varchar(50) DEFAULT NULL,
@@ -629,17 +540,20 @@ CREATE TABLE `siswa` (
   `no_hp_ayah` varchar(16) DEFAULT NULL,
   `no_hp_ibu` varchar(16) DEFAULT NULL,
   `anak_ke` int(11) DEFAULT NULL,
-  `pict` text
+  `pict` text,
+  `tanggal_lahir` varchar(50) DEFAULT NULL,
+  `tempat` varchar(50) DEFAULT NULL,
+  `tahun` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ski`
+-- Table structure for table `ski`
 --
 
 CREATE TABLE `ski` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -648,17 +562,18 @@ CREATE TABLE `ski` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sosiologi`
+-- Table structure for table `sosiologi`
 --
 
 CREATE TABLE `sosiologi` (
-  `nis` int(11) NOT NULL,
+  `nis` bigint NOT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
@@ -667,7 +582,22 @@ CREATE TABLE `sosiologi` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `terkini`
+--
+
+CREATE TABLE `terkini` (
+  `id` int(11) NOT NULL,
+  `judul` varchar(60) DEFAULT NULL,
+  `waktu` varchar(30) DEFAULT NULL,
+  `isi` text,
+  `penulis` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -675,75 +605,9 @@ CREATE TABLE `sosiologi` (
 --
 
 --
--- Indexes for table `abs_agustus`
+-- Indexes for table `absen`
 --
-ALTER TABLE `abs_agustus`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_april`
---
-ALTER TABLE `abs_april`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_desember`
---
-ALTER TABLE `abs_desember`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_februari`
---
-ALTER TABLE `abs_februari`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_januari`
---
-ALTER TABLE `abs_januari`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_juli`
---
-ALTER TABLE `abs_juli`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_juni`
---
-ALTER TABLE `abs_juni`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_maret`
---
-ALTER TABLE `abs_maret`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_mei`
---
-ALTER TABLE `abs_mei`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_november`
---
-ALTER TABLE `abs_november`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_oktober`
---
-ALTER TABLE `abs_oktober`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `abs_september`
---
-ALTER TABLE `abs_september`
+ALTER TABLE `absen`
   ADD PRIMARY KEY (`nis`);
 
 --
@@ -830,6 +694,12 @@ ALTER TABLE `guru`
   ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
 
 --
+-- Indexes for table `kelas`
+--
+ALTER TABLE `kelas`
+  ADD PRIMARY KEY (`kelas`);
+
+--
 -- Indexes for table `kimia_p`
 --
 ALTER TABLE `kimia_p`
@@ -837,11 +707,23 @@ ALTER TABLE `kimia_p`
   ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
 
 --
+-- Indexes for table `marcing_band`
+--
+ALTER TABLE `marcing_band`
+  ADD PRIMARY KEY (`nis`);
+
+--
 -- Indexes for table `matematika`
 --
 ALTER TABLE `matematika`
   ADD PRIMARY KEY (`nis`),
   ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+
+--
+-- Indexes for table `paskibra`
+--
+ALTER TABLE `paskibra`
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `penjas`
@@ -863,6 +745,12 @@ ALTER TABLE `pkn`
 ALTER TABLE `prakarya_kewirausahaan`
   ADD PRIMARY KEY (`nis`),
   ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+
+--
+-- Indexes for table `pramuka`
+--
+ALTER TABLE `pramuka`
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `quran_hadis`
@@ -896,7 +784,8 @@ ALTER TABLE `seni_budaya`
 -- Indexes for table `siswa`
 --
 ALTER TABLE `siswa`
-  ADD PRIMARY KEY (`nis`);
+  ADD PRIMARY KEY (`nis`),
+  ADD UNIQUE KEY `kelas` (`kelas`);
 
 --
 -- Indexes for table `ski`
@@ -913,208 +802,136 @@ ALTER TABLE `sosiologi`
   ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Indexes for table `terkini`
+--
+ALTER TABLE `terkini`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `abs_agustus`
---
-ALTER TABLE `abs_agustus`
-  ADD CONSTRAINT `abs_agustus_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_april`
---
-ALTER TABLE `abs_april`
-  ADD CONSTRAINT `abs_april_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_desember`
---
-ALTER TABLE `abs_desember`
-  ADD CONSTRAINT `abs_desember_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_februari`
---
-ALTER TABLE `abs_februari`
-  ADD CONSTRAINT `abs_februari_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_januari`
---
-ALTER TABLE `abs_januari`
-  ADD CONSTRAINT `abs_januari_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_juli`
---
-ALTER TABLE `abs_juli`
-  ADD CONSTRAINT `abs_juli_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_juni`
---
-ALTER TABLE `abs_juni`
-  ADD CONSTRAINT `abs_juni_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_mei`
---
-ALTER TABLE `abs_mei`
-  ADD CONSTRAINT `abs_mei_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_november`
---
-ALTER TABLE `abs_november`
-  ADD CONSTRAINT `abs_november_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_oktober`
---
-ALTER TABLE `abs_oktober`
-  ADD CONSTRAINT `abs_oktober_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `abs_september`
---
-ALTER TABLE `abs_september`
-  ADD CONSTRAINT `abs_september_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `akidah_akhlak`
---
-ALTER TABLE `akidah_akhlak`
-  ADD CONSTRAINT `akidah_akhlak_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `biologi_p`
+-- Constraints for table `biologi_p`
 --
 ALTER TABLE `biologi_p`
   ADD CONSTRAINT `biologi_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `b_arab`
+-- Constraints for table `b_arab`
 --
 ALTER TABLE `b_arab`
   ADD CONSTRAINT `b_arab_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `b_indo`
+-- Constraints for table `b_indo`
 --
 ALTER TABLE `b_indo`
   ADD CONSTRAINT `b_indo_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `b_ing`
+-- Constraints for table `b_ing`
 --
 ALTER TABLE `b_ing`
   ADD CONSTRAINT `b_ing_ibfk_1` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `b_ing_ibfk_2` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `b_jerman_p`
+-- Constraints for table `b_jerman_p`
 --
 ALTER TABLE `b_jerman_p`
   ADD CONSTRAINT `b_jerman_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `ekonomi_p`
+-- Constraints for table `ekonomi_p`
 --
 ALTER TABLE `ekonomi_p`
   ADD CONSTRAINT `ekonomi_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `fikih`
+-- Constraints for table `fikih`
 --
 ALTER TABLE `fikih`
   ADD CONSTRAINT `fikih_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `fisika_p`
+-- Constraints for table `fisika_p`
 --
 ALTER TABLE `fisika_p`
   ADD CONSTRAINT `fisika_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `geografi`
+-- Constraints for table `geografi`
 --
 ALTER TABLE `geografi`
   ADD CONSTRAINT `geografi_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `kimia_p`
+-- Constraints for table `kelas`
+--
+ALTER TABLE `kelas`
+  ADD CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`kelas`) REFERENCES `siswa` (`kelas`) ON DELETE CASCADE ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `kimia_p`
 --
 ALTER TABLE `kimia_p`
   ADD CONSTRAINT `kimia_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `matematika`
+-- Constraints for table `matematika`
 --
 ALTER TABLE `matematika`
   ADD CONSTRAINT `matematika_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `penjas`
+-- Constraints for table `penjas`
 --
 ALTER TABLE `penjas`
   ADD CONSTRAINT `penjas_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `pkn`
+-- Constraints for table `pkn`
 --
 ALTER TABLE `pkn`
   ADD CONSTRAINT `pkn_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `pkn_ibfk_2` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `prakarya_kewirausahaan`
+-- Constraints for table `prakarya_kewirausahaan`
 --
 ALTER TABLE `prakarya_kewirausahaan`
   ADD CONSTRAINT `prakarya_kewirausahaan_ibfk_1` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `prakarya_kewirausahaan_ibfk_2` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `quran_hadis`
+-- Constraints for table `quran_hadis`
 --
 ALTER TABLE `quran_hadis`
   ADD CONSTRAINT `quran_hadis_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `sejarah`
+-- Constraints for table `sejarah`
 --
 ALTER TABLE `sejarah`
   ADD CONSTRAINT `sejarah_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `sejarah_indo`
---
-ALTER TABLE `sejarah_indo`
-  ADD CONSTRAINT `sejarah_indo_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `seni_budaya`
+-- Constraints for table `seni_budaya`
 --
 ALTER TABLE `seni_budaya`
   ADD CONSTRAINT `seni_budaya_ibfk_1` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `seni_budaya_ibfk_2` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `siswa`
---
-ALTER TABLE `siswa`
-  ADD CONSTRAINT `siswa_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `sejarah_indo` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Ketidakleluasaan untuk tabel `ski`
+-- Constraints for table `ski`
 --
 ALTER TABLE `ski`
   ADD CONSTRAINT `ski_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `ski_ibfk_2` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Ketidakleluasaan untuk tabel `sosiologi`
+-- Constraints for table `sosiologi`
 --
 ALTER TABLE `sosiologi`
   ADD CONSTRAINT `sosiologi_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION,

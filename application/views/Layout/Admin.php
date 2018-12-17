@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/lel.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/style.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>script/css/admin.css">
 <script type="text/javascript" src="<?php echo base_url() ?>/script/js/test.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>script/css/admin.css">
 	<title>Siakad</title>
 </head>
 <body style="background: #EAEDF2">
@@ -19,7 +19,7 @@
 		<a class="<?php echo $dashboard ?>" href="<?php echo base_url() ?>admin">Dashboard</a>
 		<a class="<?php echo $murid ?>" href="<?php echo base_url() ?>admin/murid">Murid</a>
 		<a class="<?php echo $guru ?>" href="<?php echo base_url() ?>admin/guru">Guru</a>
-		<a class="<?php echo $kelas ?>" href="">Kelas</a>
+		<a class="<?php echo $post ?>" href="<?php echo base_url() ?>admin/post">Post Artikel</a>
 		<a href="">Keluar</a>
 		</div>
 	<div class="row">

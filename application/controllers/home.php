@@ -5,9 +5,14 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['border']='black';
+		$data['border']='transparent';
 		$data['page']='userview/home';
 		$this->load->view('layout/main', $data);
+	}
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect(base_url('home'));
 	}
 	public function siswa()
 	{

@@ -55,6 +55,46 @@ class Nilai extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
+	public function uas()
+	{
+		
+		$data['border']='black';
+		$data['page']='userview/uas';
+		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
+	public function uts()
+	{
+		$data['border']='black';
+		$data['page']='userview/uts';
+		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
+	public function tugas()
+	{
+		$data['border']='black';
+		$data['page']='userview/tugas';
+		$data['nama'] = 'Daftar Nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function inputnilai()
 	{
 		if ($status=='fail') {

@@ -13,7 +13,7 @@
 
         <div class="field-menu scrollable">
           <div class="row">
-              <a href="http://localhost/SIAKAD/home/siswa">
+              <a href="http://localhost/SIAKAD/home/guru">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
@@ -28,18 +28,11 @@
                 <h5 style="color: black; text-align: left;" class=<?php echo $nilai?>>Daftar Nilai</h5>
                </div>
               </a>
-              <a href="http://localhost/SIAKAD/Nilai/raport">
+              <a href="http://localhost/SIAKAD/Nilai/guru">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;" class=<?php echo $rapot?>>Rapot</h5>
-               </div>
-              </a>
-              <a href="http://localhost/SIAKAD/Absen/siswa">
-                 <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
-                <span class="kotak"></span>
-                <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;" class=<?php echo $absen?>>Rekap Absensi</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $rapot?>>Input Nilai</h5>
                </div>
               </a>
               <a href="http://localhost/SIAKAD/Daftar/guru">
@@ -49,7 +42,7 @@
                 <h5 style="color: black; text-align: left;" class=<?php echo $guru?>>Daftar Guru</h5>
                </div>
               </a>
-              <a href="http://localhost/SIAKAD/Profil/siswa">
+              <a href="http://localhost/SIAKAD/Profil/guru">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
