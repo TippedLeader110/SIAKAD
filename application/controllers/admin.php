@@ -24,12 +24,17 @@ class Admin extends CI_Controller {
                 parent::__construct();
                 $this->load->helper(array('form', 'url'));
         }
+    public function logout()
+    {
+    	session_destroy();
+    	redirect('admin/login', location);
+    }
 	public function index()
 	{	
-
 		if ($_SESSION['admin']=='') {
-			redirect("admin/login", location);
+			redirect('admin/login', location);
 		}
+		else{
 		$data['dashboard']="active";
 		$data['murid']="";
 		$data['guru']="";
@@ -41,17 +46,18 @@ class Admin extends CI_Controller {
 		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
 		$data['page']="admin/awal";
 		$this->load->view('layout/admin', $data);
+		}
 	}
 	public function login()
 	{
 		$data['page'] = 'admin/login';
-		$this->load->view('layout/home', $data);
+		$this->load->view('layout/admin2', $data);
 	}
 	public function logpro()
 	{
 		$user = $this->input->post('username');
 		$pass = $this->input->post('password');
-			$this->adminmodel->login($user, $pass);
+		$this->adminmodel->login($user, $pass);
 	}
 	public function atur()
 	{

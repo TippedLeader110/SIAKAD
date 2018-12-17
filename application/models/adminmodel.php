@@ -17,8 +17,7 @@ class Adminmodel extends CI_Model {
 		$data = $query->result();
 			foreach ($data as $key => $w) {
 			}
-			$this->session->user = $w->nama;
-			$this->session->nis = $w->nis;
+			$this->session->admin = $w->username;
 			redirect('admin');
 		}
 

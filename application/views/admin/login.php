@@ -12,7 +12,7 @@
 	<center>
 		<div class="row" style="margin-top: 80px;height: 500px;">
 			<div class="col-md-5 offset-md-3">
-				<form method="post" action="admin/logpro">
+				<form method="post" action="logpro">
 					<div class="container" style="border-color: transparent;background-color: #8DB3DA;border-radius: 15px;
 					">
 					<div class="row">
