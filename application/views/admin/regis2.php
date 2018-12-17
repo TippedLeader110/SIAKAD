@@ -52,7 +52,16 @@
 						<td><input type="text" value="<?php echo $username ?>" name="username" placeholder="Username"></td><td>&nbsp;</td><td><input type="password" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="sekolah" placeholder="Asal Sekolah" value="<?php echo $asal_sekolah ?>"></td><td>&nbsp;</td><td><input type="text" value="<?php echo $agama ?>" name="agama" placeholder="Agama"></td>
+						<td><input type="text" name="sekolah" placeholder="Asal Sekolah" value="<?php echo $asal_sekolah ?>"></td><td>&nbsp;</td>
+						<td><select name="agama" class="form-control">
+							<option>Agama</option>
+							<option value="Islam">Islam</option>
+							<option value="Kristen Katolik">Kristen Katolik</option>
+							<option value="Kristen Protestan">Kristen Protestan</option>
+							<option value="Hindu">Hindu</option>
+							<option value="Buddha">Buddha</option>
+							<option value="Lainnya">Lainnya</option>
+						</select></td>
 					</tr>
 					<tr>
 						<td><input type="text" value="<?php echo $alamat ?>" name="alamat" placeholder="Alamat"></td><td>&nbsp;</td><td><input type="email" name="email" value="<?php echo $email ?>" placeholder="Email"></td>
@@ -87,11 +96,19 @@
 						<td><input type="text" name="tahun" placeholder="Tahun Angkatan" value="<?php echo $tahun ?>"></td><td>&nbsp;</td><td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $tempat ?>"></td>
 					</tr>
 					<tr>
-						<td>Tanggal Lahir:<input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td><td>&nbsp;</td><td><input value="<?php echo $anak_ke ?>" type="text" name="anak" placeholder="Anak Ke "></td>
+						<td>Tanggal Lahir:<input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir Anda"></td><td>&nbsp;</td><td><input value="<?php echo $anak_ke ?>" type="text" name="anak" placeholder="Anda Anak Ke "></td>
 					</tr>
 					<tr>
-						
+						<td>
+							<select name="kelas" class="form-control">
+							<option>Kelas</option>
+							<option value="a">A</option>
+							<option value="b">B</option>
+							<option value="C">C</option>
+						</select>
+						</td>
 					</tr>
+
 					<tr>
 						<th><!-- <audio controls>
   								<source src="<?php echo base_url() ?>img/sm.mp3" type="audio/mpeg">

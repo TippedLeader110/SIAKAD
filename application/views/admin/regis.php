@@ -63,13 +63,23 @@
 						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah"></td><td>&nbsp;</td><td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="tahun" placeholder="Tahun Angkatan"></td><td>&nbsp;</td><td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
+						<td><input type="text" name="tahun" placeholder="Tahun Angkatan"></td><td>&nbsp;</td><td><input type="text" name="tlahir" placeholder="Tempat Lahir Anda"></td>
 					</tr>
 					<tr>
-						<td>Tanggal Lahir </td><td>&nbsp;</td><td><input type="number" name="anak" placeholder="Anak Ke "></td>
+						<td>Tanggal Lahir </td><td>&nbsp;</td><td><input type="number" name="anak" placeholder="Anda Anak Ke "></td>
 					</tr>
 					<tr>
 						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
+					</tr>
+					<tr>
+						<td>
+							<select name="kelas" class="form-control">
+							<option>Kelas</option>
+							<option value="a">A</option>
+							<option value="b">B</option>
+							<option value="C">C</option>
+						</select>
+						</td>
 					</tr>
 					<tr>
 						<th><!-- <audio controls>
