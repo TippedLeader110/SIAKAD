@@ -12,7 +12,7 @@
 	<center>
 		<div class="row" style="margin-top: 80px;height: 500px;">
 			<div class="col-md-5 offset-md-3" style="padding-left: 100px;">
-				
+				<form method="post" action="<?php echo base_url() ?>login/loginsiswa">
 					<div class="container" style="border-color: transparent;background-color: #8DB3DA;border-radius: 15px;
 					">
 					<div class="row">
@@ -32,7 +32,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="text" name="" placeholder="">
+								<input style="width: 92%" type="text" name="username" placeholder="">
 						</div>
 					</div>
 					<div class="row">
@@ -42,7 +42,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="Password" name="" placeholder="" id="myInput">
+								<input style="width: 92%" type="Password" name="password" placeholder="" id="myInput">
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
@@ -62,7 +62,7 @@
 						</div>
 					</div>		
 							
-							
+		</form>					
 					</div>
 			</div>
 		</div>
