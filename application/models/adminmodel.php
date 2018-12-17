@@ -3,6 +3,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Adminmodel extends CI_Model {
 
+	public function login($user, $pass)
+	{
+		$this->db->where(['username' => $user, 'password' => $pass]);
+		$query = $this->db->get('admin');
+		$query = $query->num_rows();
+		if ($query==0) {
+			redirect('home/login');
+		}
+		else if ($query==1) {
+		$this->db->where(['username' => $user, 'password' => $pass]);
+		$query = $this->db->get('admin');
+		$data = $query->result();
+			foreach ($data as $key => $w) {
+			}
+			$this->session->user = $w->nama;
+			$this->session->nis = $w->nis;
+			redirect('admin');
+		}
+
+	}
 	public function hitung($s)
 	{
 		$query = $this->db->get($s);
