@@ -205,7 +205,7 @@ class Admin extends CI_Controller {
 		$nohpi = $this->input->post('nohpi');
 		$this->db->set('no_hp_ibu', $nohpi);
 		$anak = $this->input->post('anak');
-		$this->db->set('anak', $anak);
+		$this->db->set('anak_ke', $anak);
 		$username = $this->input->post('username');
 		$this->db->set('username', $username);
 		$pass = $this->input->post('pass');
