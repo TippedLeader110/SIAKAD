@@ -6,8 +6,8 @@
 		<h5 align="center">DATA NIS</h5>
 	</div>
 </div>
-<div class="row" style="margin-top: 50px;">
-	<a href="#" style="">
+<div class="row" style="margin-top: 50px; margin-left: 60px;" >
+	<a href="<?php base_url() ?>uas" style="">
 		<div style="margin-left: 150px; margin-top: 20px;">
 		<div style="background-color: #b3ffb3; width: 160px; height: 160px;">
 			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uas.jpg">
@@ -17,17 +17,17 @@
 		</div>
 	</div>
 	</a>
-	<a href="#">
+	<a href="<?php base_url() ?>uts">
 		<div style="margin-left: 30px; margin-top: 20px;">
 		<div style="background-color: #8080ff; width: 160px; height: 160px;">
 				<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uts.jpg">
 		</div>
-		<div style="background:#9999ff; height: 60px;padding: 17px 10px 10px 10px; width: 167px;">
+		<div style="background:#8080ff; height: 60px;padding: 17px 10px 10px 10px; width: 167px;">
 			<h5 align="center">Nilai UTS</h5>
 		</div>
 	</div>
 	</a>
-	<a href="#">
+	<a href="<?php base_url() ?>tugas">
 		<div style="margin-left: 30px; margin-top: 20px;">
 		<div style="background-color: #ffcc80; width: 160px; height: 160px;">
 			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\tugas.jpg">
