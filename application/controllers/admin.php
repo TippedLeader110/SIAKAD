@@ -194,31 +194,54 @@ class Admin extends CI_Controller {
 	}
 	public function simpanm2()
 	{
+		
 		$id = $this->input->post('id');
 		$nis = $this->input->post('nis');
+		$this->db->set('nis', $nis);
 		$nama = $this->input->post('nama');
+		$this->db->set('nama', $nama);
 		$nohpa = $this->input->post('nohpa');
+		$this->db->set('no_hp_ayah', $nohpa);
 		$nohpi = $this->input->post('nohpi');
+		$this->db->set('no_hp_ibu', $nohpi);
 		$anak = $this->input->post('anak');
+		$this->db->set('anak', $anak);
 		$username = $this->input->post('username');
+		$this->db->set('username', $username);
 		$pass = $this->input->post('pass');
+		$this->db->set('password', $pass);
 		$sekolah = $this->input->post('sekolah');
+		$this->db->set('asal_sekolah', $sekolah);
 		$agama = $this->input->post('agama');
+		$this->db->set('agama', $agama);
 		$alamat = $this->input->post('alamat');
+		$this->db->set('alamat', $alamat);
 		$email = $this->input->post('email');
+		$this->db->set('email', $email);
 		$jkel = $this->input->post('jkel');
+		$this->db->set('jk', $jkel);
 		$jurusan = $this->input->post('jurusan');
+		$this->db->set('jurusan', $jurusan);
 		$kelas = $this->input->post('kelas');
+		$this->db->set('kelas', $kelas);
 		$ayah = $this->input->post('ayah');
+		$this->db->set('nama_ayah', $ayah);
 		$ibu = $this->input->post('ibu');
+		$this->db->set('nama_ibu', $ibu);
 		$payah = $this->input->post('payah');
+		$this->db->set('pekerjaan_ayah', $payah);
 		$pibu = $this->input->post('pibu');
+		$this->db->set('pekerjaan_ibu', $pibu);
 		$aayah = $this->input->post('aayah');
+		$this->db->set('alamat_ayah', $aayah);
 		$aibu = $this->input->post('aibu');
+		$this->db->set('alamat_ibu', $aibu);
 		$tahun = $this->input->post('tahun');
+		$this->db->set('tahun', $tahun);
 		$tlahir = $this->input->post('tlahir');
+		$this->db->set('tempat', $tlahir);
 		$date = $this->input->post('date');
-		$this->db->set('pict', $w); 
+		$this->db->set('tanggal_lahir', $date);
                         $this->db->where(['nis' => $id]);
 						$this->db->update('siswa');
                         redirect("admin/murid");
@@ -250,7 +273,7 @@ class Admin extends CI_Controller {
 		$date = $this->input->post('date');
 		$file = $this->input->post('file');
 		$nfile = "/gambar/$nis";
-		$this->adminmodel->kirimsiswa($nis,$nama,$username,$pass,$sekolah,$agama,$alamat,$email,$jkel,$jurusan,$ayah,$ibu,$payah,$pibu,$aayah,$aibu,$tahun,$tlahir,$date,$nfile, $anak, $nohpa, $nohpi);
+		$this->adminmodel->kirimsiswa($nis,$nama,$username,$pass,$sekolah,$agama,$alamat,$email,$jkel,$jurusan,$ayah,$ibu,$payah,$pibu,$aayah,$aibu,$tahun,$tlahir,$date,$nfile, $anak, $nohpa, $nohpi,$kelas);
 		
 		$data['page'] = 'admin/test';
 		$data['dashboard']="";
