@@ -22,7 +22,16 @@
 						<td><input type="text" name="username" placeholder="Username"></td><td>&nbsp;</td><td><input type="text" placeholder="Password" name="pass"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="sekolah" placeholder="Asal Sekolah"></td><td>&nbsp;</td><td><input type="text" name="agama" placeholder="Agama"></td>
+						<td><input type="text" name="sekolah" placeholder="Asal Sekolah"></td><td>&nbsp;</td>
+						<td><select name="agama" class="form-control">
+							<option>Agama</option>
+							<option value="Islam">Islam</option>
+							<option value="Kristen Katolik">Kristen Katolik</option>
+							<option value="Kristen Protestan">Kristen Protestan</option>
+							<option value="Hindu">Hindu</option>
+							<option value="Buddha">Buddha</option>
+							<option value="Lainnya">Lainnya</option>
+						</select></td>
 					</tr>
 					<tr>
 						<td><input type="text" name="alamat" placeholder="Alamat"></td><td>&nbsp;</td><td><input type="email" name="email" placeholder="Email"></td>
