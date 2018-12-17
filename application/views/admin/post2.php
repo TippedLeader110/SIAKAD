@@ -14,17 +14,20 @@
 	<div class="row">
 		<div class="col-md-12" style="background: white">
 			<div class="table-responsive">
-				<form method="post" action="<?php echo base_url() ?>admin/simpanPOST">
+				<form method="post" action="<?php echo base_url() ?>admin/editPOST">
 				<table class="table table-borderless">
 					<tr>
+						<?php 
+						foreach ($art as $key => $v) {
+						 } ?>
 						<th><h4>Judul Artikel</h4></th>
 					</tr>
 					<tr>
-						<td><input type="text" name="judul"></td><input type="text" hidden value="<?php echo date("Y/m/d") ?>" name="waktu">
+						<td><input type="text" value="<?php echo $v->judul ?>" name="judul"></td><input type="text" hidden value="<?php echo date("Y/m/d") ?>" name="waktu">
 					</tr>
 					<tr>
 						<td>
-							<textarea name="editor1" style="height: 500px;"></textarea>
+							<textarea name="editor1" style="height: 500px;"><?php echo $v->isi ?></textarea>
 		<script>
 			CKEDITOR.replace( 'editor1' );
 		</script>

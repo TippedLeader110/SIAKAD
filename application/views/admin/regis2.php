@@ -38,14 +38,14 @@
 	<div class="row">
 		<div class="col-md-12" style="background: white">
 			<div class="table-responsive">
-				<form method="post" action="<?php echo base_url() ?>admin/simpanm">
+				<form method="post" action="<?php echo base_url() ?>admin/simpanm2">
 				<table class="table table-borderless">
 					<tr>
 						<th>
 							<img style="max-width: 222px;" src="<?php echo base_url();echo"gambar/"; echo $v->pict ?>.jpg">
 						</th>
 					</tr>
-					<tr>
+					<tr><input type="text" hidden name="id" value="<?php echo $nis ?>">
 						<td><input type="number" name="nis" placeholder="NIS" value="<?php echo $nis ?>"></td><td>&nbsp;</td><td><input type="text" name="nama" placeholder="Nama" value="<?php echo $nama ?>"></td>
 					</tr>
 					<tr>

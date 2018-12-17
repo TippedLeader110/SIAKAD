@@ -31,8 +31,11 @@
       </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="Cari" placeholder="Cari" aria-label="Cari">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+      <form class="form-inline my-2 my-lg-0">
+      <button type="submit" class="btn btn-default">
+        <span><img src="<?php echo base_url()?>img\icon\logout.png" style="width:25px; height: 25px;"></span> &nbsp;<b>Keluar</b>
+      </button>
+    </form>
     </form>
   </div>
 </nav>

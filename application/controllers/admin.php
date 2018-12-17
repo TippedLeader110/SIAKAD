@@ -102,6 +102,37 @@ class Admin extends CI_Controller {
 	}
 	public function post()
 	{
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['art'] = $this->adminmodel->ambilspes('terkini', $nama, 'penulis');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['art'] = $this->adminmodel->ambilspes('terkini', $nama, 'isi');		
+			}
+		}
+		else
+		{
+		$data['art'] = $this->adminmodel->ambil('terkini');
+		}
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="active";
+		$data['page']="admin/artikel";
+		$this->load->view('layout/admin', $data);
+	}
+	public function rPost()
+	{
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="";
@@ -109,7 +140,7 @@ class Admin extends CI_Controller {
 		$data['post']="active";
 		$data['page']="admin/post";
 		$this->load->view('layout/admin', $data);
-	}
+	}	
 	public function rMurid()
 	{
 		$data['dashboard']="";
@@ -129,6 +160,36 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['page']="admin/regisg";
 		$this->load->view('layout/admin', $data);
+	}
+	public function simpanm2()
+	{
+		$id = $this->input->post('id');
+		$nis = $this->input->post('nis');
+		$nama = $this->input->post('nama');
+		$nohpa = $this->input->post('nohpa');
+		$nohpi = $this->input->post('nohpi');
+		$anak = $this->input->post('anak');
+		$username = $this->input->post('username');
+		$pass = $this->input->post('pass');
+		$sekolah = $this->input->post('sekolah');
+		$agama = $this->input->post('agama');
+		$alamat = $this->input->post('alamat');
+		$email = $this->input->post('email');
+		$jkel = $this->input->post('jkel');
+		$jurusan = $this->input->post('jurusan');
+		$ayah = $this->input->post('ayah');
+		$ibu = $this->input->post('ibu');
+		$payah = $this->input->post('payah');
+		$pibu = $this->input->post('pibu');
+		$aayah = $this->input->post('aayah');
+		$aibu = $this->input->post('aibu');
+		$tahun = $this->input->post('tahun');
+		$tlahir = $this->input->post('tlahir');
+		$date = $this->input->post('date');
+		$this->db->set('pict', $w); 
+                        $this->db->where(['nis' => $id]);
+						$this->db->update('siswa');
+                        redirect("admin/murid");
 	}
 	public function simpanm()
 	{
@@ -207,6 +268,19 @@ class Admin extends CI_Controller {
 		$data['arra'] = $this->adminmodel->ambildata($nis);
 		$this->load->view('layout/admin', $data);
 	}
+	public function edit()
+	{
+
+		$nis = $this->input->post('nis');
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="active";
+		$data['page']="admin/post2";
+		$data['art'] = $this->adminmodel->ambilart($nis);
+		$this->load->view('layout/admin', $data);
+	}	
 	public function test()
 	{
 		$data['dashboard']="";
@@ -245,6 +319,16 @@ class Admin extends CI_Controller {
                         redirect("admin/murid");
                 }
         }
+        public function simpanPOST()
+	{
+		$penulis = $_SESSION['admin'];
+		$judul = $this->input->post('judul');
+		$isi = $this->input->post('editor1');
+		$waktu = $this->input->post('waktu');
+		$penulis = $this->input->post('penulis');
+		$this->adminmodel->post($judul,$isi,$waktu,$penulis);
+		redirect("admin/post", location);
+		}
 }
 
 ?>
