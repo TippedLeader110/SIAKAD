@@ -48,10 +48,9 @@
 			<?php 
 			$batas = 0;
 			foreach ($muridbaru as $key => $v) {
-				$wow = $v->tahun-2018+1;
 				$batas++;
 				echo "<tr>
-						<th>".$v->nis."</th><th>".$v->nama."</th><th>".$wow."</th><th>".$v->jurusan."</th>
+						<th>".$v->nis."</th><th>".$v->nama."</th><th>".$v->kelas."</th><th>".$v->jurusan."</th>
 					</tr>";
 				if ($batas==10) {
 					break;
