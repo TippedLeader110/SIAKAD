@@ -52,6 +52,7 @@ h2 {
 <h2>Daftar Siswa Per Angkatan</h2>
 <p>Pilih Tahun Angkatan Siswa :</p>
 
+<form action="<?php echo base_url() ?> Daftar/Siswa">
 <div class="dropdown">
   <button class="dropbtn">Tahun Angkatan</button>
   <div class="dropdown-content">
@@ -61,5 +62,23 @@ h2 {
   </div>
 </div>
 </center>
+<table class="table table-bordered table-striped">
+            <tr>
+              <th>NIS</th><th>Nama</th><th>Kelas</th><th>Jurusan</th><th>Angkatan</th><th>Perintah</th>
+            </tr>
+            <?php 
+              $batas = 0;
+            foreach ($muridtam as $key => $v) {
+            $wow = $v->kelas-2018+1;
+            $batas++;
+            echo "<tr>
+            <th>".$v->nis."</th><th>".$v->nama."</th><th>".$wow."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th><th><form method='post' action='".base_url()."admin/info'><input type='text' hidden name='nis' value='".$v->nis."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
+              </tr>";
+              if ($batas==10) {
+              break;
+              } 
+            } ?>
+          </table>
+</form>
 </body>
 </html>
