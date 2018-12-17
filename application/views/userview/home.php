@@ -8,7 +8,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<div class="container" style="background: white;border-width: 1px;border-color: #d6d6c2;padding-bottom: 123px">
+				<div class="container" style="background: white;border-width: 1px;border-color: #d6d6c2;padding-bottom: 75px">
 					<h3  style="color: #2F669F;">Tentang</h3>
 					<p>Sistem Informasi Akademin (SIAKAD) adalah sebuah aplikasi yang dibuat untuk Siswa/i yang dapat diakases oleh orangtua siswa/i dan guru/wali kelas agar dapat mengakses informasi seputar lingkungan akademik secara online dimana dan kapan saja.</p>
 					<p>
@@ -48,7 +48,7 @@
 								<tr>
 									<td style="background: rgba(128,128,128,0.5);  padding: 5px 5px 5px 5px;" width="120px" height="120px">
 										<div class="circle">
-											<img src="<?php echo base_url()?>img/icon/icon-profil-guru.png" style="max-width: 100px; max-height: 100px;">
+											<img src="<?php echo base_url()?>img/icon/student-icon.png" style="max-width: 100px; max-height: 100px;">
 										</div>
 									</td>
 								</tr>
@@ -94,17 +94,6 @@
 								</tr>
 							</table>
 						</div>
-					</div>
-					<div class="row" style="background: white;padding-bottom: 2em;padding-top: 2em;border-color: #d6d6c2; margin-top: -50px;">
-						<div style="padding-left: 50px">
-							<table style="border-color: #d6d6c2">
-								<tr>
-									<td style="background: rgba(128,128,128,0.5);  padding: 5px 5px 5px 5px;" width="260px" height="30px" align="center">
-										<a href="#">Belum punya akun ?</a>
-									</td>
-								</tr>
-							</table>
-						</div>						
 					</div>
 				</div>
 			</div>
