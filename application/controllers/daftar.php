@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Daftar extends CI_Controller {
 
+	function __construct(){
+		parent::__construct();		
+		session_start();
+ 
+	}
+
 	public function guru()
 	{
 		$data['gurudaf']=$this->adminmodel->ambil('guru');
@@ -29,6 +35,8 @@ class Daftar extends CI_Controller {
 		$data['rapot'] = '';
 		$data['guru'] = 'aktif';
 		$data['profil'] = '';
+		$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'tahun');
+
 		$this->load->view('layout/home', $data);
 	}
 	
