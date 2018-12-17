@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
 	<title>	</title>
@@ -263,6 +263,248 @@
 	<div class="col-md-4">
 		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
 			<h4 style="margin-left: 120px">Juni</h4>			
+		</div>
+	</div>
+</div>
+<div class="row" style="padding-top: 2em">
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;">
+			<table style="margin-left: 1em;">
+				<tr>
+					<td><h6 style="padding-top: 2em;margin-right: 10px"><b>Jumlah Kehadiran&nbsp;:</b></h6></td>
+					<td><h6 style="padding-top: 2em">jlh_kehadiran</h6></td>
+					<td><h6 style="padding-top: 2em;margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px"><b>Ketidakhadiran</b></h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">1) Izin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_izin</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">2) Sakit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Sakit</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">3) Alpa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Alpa</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-left: 95px">Total :</h6></td>
+					<td><h6 style="margin-left: 5px">total</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+			</table>
+		</div>
+	</div>	
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;">
+			<table style="margin-left: 1em;">
+				<tr>
+					<td><h6 style="padding-top: 2em;margin-right: 10px"><b>Jumlah Kehadiran&nbsp;:</b></h6></td>
+					<td><h6 style="padding-top: 2em">jlh_kehadiran</h6></td>
+					<td><h6 style="padding-top: 2em;margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px"><b>Ketidakhadiran</b></h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">1) Izin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_izin</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">2) Sakit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Sakit</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">3) Alpa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Alpa</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-left: 95px">Total :</h6></td>
+					<td><h6 style="margin-left: 5px">total</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;">
+			<table style="margin-left: 1em;">
+				<tr>
+					<td><h6 style="padding-top: 2em;margin-right: 10px"><b>Jumlah Kehadiran&nbsp;:</b></h6></td>
+					<td><h6 style="padding-top: 2em">jlh_kehadiran</h6></td>
+					<td><h6 style="padding-top: 2em;margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px"><b>Ketidakhadiran</b></h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">1) Izin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_izin</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">2) Sakit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Sakit</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">3) Alpa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Alpa</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-left: 95px">Total :</h6></td>
+					<td><h6 style="margin-left: 5px">total</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+			</table>
+		</div>
+	</div>		
+</div>
+<div class="row" style="margin-top: -10px;">
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
+			<h4 style="margin-left: 120px">Juli</h4>			
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
+			<h4 style="margin-left: 120px">Agustus</h4>			
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
+			<h4 style="margin-left: 120px">September</h4>			
+		</div>
+	</div>
+</div>
+<div class="row" style="padding-top: 2em">
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;">
+			<table style="margin-left: 1em;">
+				<tr>
+					<td><h6 style="padding-top: 2em;margin-right: 10px"><b>Jumlah Kehadiran&nbsp;:</b></h6></td>
+					<td><h6 style="padding-top: 2em">jlh_kehadiran</h6></td>
+					<td><h6 style="padding-top: 2em;margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px"><b>Ketidakhadiran</b></h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">1) Izin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_izin</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">2) Sakit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Sakit</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">3) Alpa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Alpa</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-left: 95px">Total :</h6></td>
+					<td><h6 style="margin-left: 5px">total</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+			</table>
+		</div>
+	</div>	
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;">
+			<table style="margin-left: 1em;">
+				<tr>
+					<td><h6 style="padding-top: 2em;margin-right: 10px"><b>Jumlah Kehadiran&nbsp;:</b></h6></td>
+					<td><h6 style="padding-top: 2em">jlh_kehadiran</h6></td>
+					<td><h6 style="padding-top: 2em;margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px"><b>Ketidakhadiran</b></h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">1) Izin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_izin</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">2) Sakit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Sakit</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">3) Alpa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Alpa</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-left: 95px">Total :</h6></td>
+					<td><h6 style="margin-left: 5px">total</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;">
+			<table style="margin-left: 1em;">
+				<tr>
+					<td><h6 style="padding-top: 2em;margin-right: 10px"><b>Jumlah Kehadiran&nbsp;:</b></h6></td>
+					<td><h6 style="padding-top: 2em">jlh_kehadiran</h6></td>
+					<td><h6 style="padding-top: 2em;margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px"><b>Ketidakhadiran</b></h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">1) Izin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_izin</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">2) Sakit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Sakit</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-right: 10px">3) Alpa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h6></td>
+					<td><h6 style="margin-left: 5px">jlh_Alpa</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+				<tr>
+					<td><h6 style="margin-left: 95px">Total :</h6></td>
+					<td><h6 style="margin-left: 5px">total</h6></td>
+					<td><h6 style="margin-left: 5px">Hari</h6></td>
+				</tr>
+			</table>
+		</div>
+	</div>		
+</div>
+<div class="row" style="margin-top: -10px;">
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
+			<h4 style="margin-left: 120px">Oktober</h4>			
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
+			<h4 style="margin-left: 120px">November</h4>			
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="container" style="border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;">
+			<h4 style="margin-left: 120px">Desember</h4>			
 		</div>
 	</div>
 </div>
