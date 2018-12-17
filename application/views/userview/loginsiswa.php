@@ -1,59 +1,80 @@
-<div class="row" style="margin-top: 30px;margin-bottom: -50px;z-index: -1">
-		<div class="col-md-4 offset-md-4" style="background: white;padding-top: 2em;padding-bottom: 2em">
-		<table  width="300" align="center">
-			<tr>
-				<td align="center"><div class="circle">
-					<img src="<?php echo base_url()?>img/icon/student-icon.png" style="max-width: 100px; max-height: 100px;">
-				</div></td>
-			</tr>
-			<tr>
-				<td>
-					<div>
-				<form>
-					<table align="center">
-						<tr align="center">
-							<th colspan="2">Login Siswa</th>
-						</tr>
-						<tr><td></td></tr>
-						<tr>
-					<td>
-						<label>Username</label>
-					</td>
-				</tr>
-				<tr>
-					<td>
-					<input type="text" name="username" placeholder="Username">
-					</td>
-					<td></td>
-					<td><span style="background:white;border-radius: 50%;">?</span></td>
-				</tr>		
-				<tr>
-					<td>
-						<label>Password</label>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="password" name="password" placeholder="Password" >
-					</td>
-					<td></td>
-					<td><span style="background:white;border-radius: 50%;">?</span></td>
-				</tr>
-			</table>
-			<div style="padding-top: 2em;">
-				<center>
-				<button class="btn btn-success">Masuk</button>
-				</center>
-				</form>
-					</div>
-						</td>
-					</tr>
-				</table>
+<style type="text/css">h5{
+	color: white;
+	}h4{
+	color: black;
+	}input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+	}</style>
+<div class="col-md-12">
+	<center>
+		<div class="row" style="margin-top: 80px;height: 500px;">
+			<div class="col-md-5 offset-md-3" style="padding-left: 100px;">
 				
+					<div class="container" style="border-color: transparent;background-color: #8DB3DA;border-radius: 15px;
+					">
+					<div class="row">
+						<div class="container-fluid">
+					<img src="<?php echo base_url()?>img/icon/student-icon.png" style="margin-top: -50px;max-width: 140px; max-height: 140px;">
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<h4>Masuk Siswa/i</h4>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 5px;">
+						<div class="container-fluid">											
+								<h5 style="text-align: left;">&nbsp;&nbsp;Nama Pengguna</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<input style="width: 92%" type="text" name="" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<h5 style="text-align: left;">&nbsp;&nbsp;Kata Sandi</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid">
+								<input style="width: 92%" type="Password" name="" placeholder="" id="myInput">
+						</div>
+					</div>
+					<div class="row" style="margin-top: 5px;">
+						<div class="container-fluid" style="color: white">
+							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
+						</div>
+					</div>
+					<div class="row" style="margin-top: 50px;">
+						<div class="container-fluid">
+								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Masuk</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container-fluid" style="color: #2F669F">
+								Lupa Kata Sandi ?
+							
+						</div>
+					</div>		
+							
+							
+					</div>
 			</div>
-	
+		</div>
+	</center>
 </div>
-<div class="row">
-	
-	</div>
-</div>
+<script type="text/javascript">
+	function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>

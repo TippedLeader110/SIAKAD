@@ -7,7 +7,7 @@ class Absen extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/abseninput';
-		$data['nama'] = 'Absen';
+		$data['nama'] = 'Absen Siswa';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
 		$data['absen'] = 'aktif';
