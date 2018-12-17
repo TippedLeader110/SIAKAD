@@ -16,22 +16,22 @@
     <div class="carousel-item active">
       <img src="https://wallpapercave.com/wp/46IcIP8.jpg" width="1100" height="500">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
+        <h3>Judul Konten</h3>
+        <p>Keterangan Konten</p>
       </div>   
     </div>
     <div class="carousel-item">
       <img src="https://wallpapercave.com/wp/46IcIP8.jpg" width="1100" height="500">
       <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
+        <h3>Judul Konten</h3>
+        <p>Keterangan Konten</p>
       </div>   
     </div>
     <div class="carousel-item">
       <img src="https://wallpapercave.com/wp/46IcIP8.jpg" width="1100" height="500">
       <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
+        <h3>Judul Konten</h3>
+        <p>Keterangan Konten</p>
       </div>   
     </div>
   </div>
