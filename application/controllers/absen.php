@@ -28,7 +28,7 @@ class Absen extends CI_Controller {
 		}
 		$id=$this->input->post('sub');				
 		if (isset($id)) {
-			if ($id<=6) {
+			if ($id%2=0) {
 				# code...
 			$data['ab1'] = $this->adminmodel->absen($id, $nis, '1');	
 			$data['ab2'] = $this->adminmodel->absen($id, $nis, '2');
