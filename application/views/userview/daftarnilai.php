@@ -7,32 +7,34 @@
 	</div>
 </div>
 <div class="row" style="margin-top: 50px;">
-	<div style="margin-left: 150px; margin-top: 20px;">
-		<div style="background-color: #b3ffb3; width: 210px; height: 210px;">
+	<a href="#" style="">
+		<div style="margin-left: 150px; margin-top: 20px;">
+		<div style="background-color: #b3ffb3; width: 160px; height: 160px;">
 			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uas.jpg">
 		</div>
-		<div style="background:#d6f5d6; height: 35px; padding: 5px 5px 5px 5px;">
-			<h5 align="center">Nilai Ujian Semester</h5>
+		<div style="background:#d6f5d6; height: 60px; padding: 5px 5px 5px 5px; width: 162px;">
+			<h5 align="center">Nilai Ujian <br>Semester</h5>
 		</div>
 	</div>
-	<div style="margin-left: 30px; margin-top: 20px;">
-		<div style="background-color: #8080ff; width: 210px; height: 210px;">
-			<div class="circle" style="background-color:#1a1aff; height: 200px; width: 200px; margin-left: 5px; ">
-				<img src="https://static.thenounproject.com/png/630729-200.png">
-			</div>
+	</a>
+	<a href="#">
+		<div style="margin-left: 30px; margin-top: 20px;">
+		<div style="background-color: #8080ff; width: 160px; height: 160px;">
+				<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uts.jpg">
 		</div>
-		<div style="background:#9999ff; height: 35px; padding: 5px 5px 5px 5px;">
+		<div style="background:#9999ff; height: 60px;padding: 17px 10px 10px 10px; width: 167px;">
 			<h5 align="center">Nilai UTS</h5>
 		</div>
 	</div>
-	<div style="margin-left: 30px; margin-top: 20px;">
-		<div style="background-color: #ffcc80; width: 210px; height: 210px;">
-			<div class="circle" style="background-color:#ff9900; height: 200px; width: 200px; margin-left: 5px; ">
-				<img src="https://static.thenounproject.com/png/630729-200.png">
-			</div>
+	</a>
+	<a href="#">
+		<div style="margin-left: 30px; margin-top: 20px;">
+		<div style="background-color: #ffcc80; width: 160px; height: 160px;">
+			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\tugas.jpg">
 		</div>
-		<div style="background:#ffe0b3; height: 35px; padding: 5px 5px 5px 5px;">
+		<div style="background:#ffe0b3; height: 60px; padding: 17px 10px 10px 10px;  width: 167px;">
 			<h5 align="center">Nilai Tugas</h5>
 		</div>
 	</div>
+	</a>
 </div>

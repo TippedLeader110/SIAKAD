@@ -296,6 +296,63 @@
 				<td></td>
 				<td></td>
 			</tr>
+			<tr>
+				<td colspan="7" align="left" style="padding-left: 10px;"><b>Kelompok E (Sikap)</b></td>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td align="left">Kedisplinan</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td align="left">Kebersihan</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td align="left">Tanggungjawab</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td align="left">Sopan Santun</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td align="left">Percaya Diri</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td align="left">Kejujuran</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
 		</table>
 		<!-- 
 		 // INI ADALAH TABEL RAPORT JURUSAN IPS

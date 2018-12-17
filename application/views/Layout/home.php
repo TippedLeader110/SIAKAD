@@ -24,6 +24,10 @@
   .aktif{
   	font-weight: 900;
   }
+  a, a:hover{
+  	color: black;
+  	font-weight: bold;
+  }
   </style>
 </head>
 <body>
