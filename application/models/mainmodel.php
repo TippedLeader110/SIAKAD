@@ -14,18 +14,18 @@ class Mainmodel extends CI_Model {
 		$query = $this->db->get('siswa');
 		$query = $query->num_rows();
 		if ($query==0) {
-			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
-			echo "<div class='alert alert-danger'><strong>Error!</strong> Password atau Username tidak valid.</div>"; 
+			redirect('home/login/fail');
 		}
 		else if ($query==1) {
-		$this->db->where(['user' => $user, 'pass' => $pass]);
+		$this->db->where(['username' => $user, 'password' => $pass]);
 		$query = $this->db->get('siswa');
 		$data = $query->result();
-		foreach ($data as $key => $w) {
-			$this->session->user = $w->nama;
+			foreach ($data as $key => $w) {
 			}
-			$this->load->view('userview/main'); //redirect berhasil
+			$this->session->user = $w->nama;
+			redirect('home/siswa');
 		}
+
 	}
 
 	public function loginguru($user, $pass)
@@ -34,7 +34,7 @@ class Mainmodel extends CI_Model {
 		$query = $this->db->get('guru');
 		$query = $query->num_rows();
 		if ($query==0) {
-			redirect(''); //redirect gagal
+			redirect('home'); //redirect gagal
 		}
 		else if ($query==1) {
 		$this->db->where(['user' => $user, 'pass' => $pass]);

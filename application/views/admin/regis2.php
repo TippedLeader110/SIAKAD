@@ -42,7 +42,7 @@
 				<table class="table table-borderless">
 					<tr>
 						<th>
-							<img style="max-width: 222px;" src="<?php echo base_url();echo"gambar/"; echo $v->pict ?>.jpg">
+							<img style="max-width: 222px;" src="<?php echo base_url();echo"gambar/"; echo $v->pict ?>.png">
 						</th>
 					</tr>
 					<tr><input type="text" hidden name="id" value="<?php echo $nis ?>">

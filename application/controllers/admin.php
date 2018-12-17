@@ -297,7 +297,7 @@ class Admin extends CI_Controller {
         	$nis= $this->input->post('nis');
         		$config['file_name']			= $nis;
                 $config['upload_path']          = './gambar/';
-                $config['allowed_types']        = 'jpg';
+                $config['allowed_types']        = 'jpg|png|jpeg';
                 $config['max_size']             = 100;
                 $config['max_width']            = 1024;
                 $config['max_height']           = 768;

@@ -19,7 +19,7 @@
 						<td><input type="number" name="nis" placeholder="NIS"></td><td>&nbsp;</td><td><input type="text" name="nama" placeholder="Nama"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="username" placeholder="Username"></td><td>&nbsp;</td><td><input type="password" name="pass" placeholder="Password"></td>
+						<td><input type="text" name="username" placeholder="Username"></td><td>&nbsp;</td><td><input type="text" placeholder="Password" name="pass"></td>
 					</tr>
 					<tr>
 						<td><input type="text" name="sekolah" placeholder="Asal Sekolah"></td><td>&nbsp;</td><td><input type="text" name="agama" placeholder="Agama"></td>
@@ -57,9 +57,10 @@
 						<td><input type="text" name="tahun" placeholder="Tahun Angkatan"></td><td>&nbsp;</td><td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
 					</tr>
 					<tr>
-						<td>Tanggal Lahir:<input type="date" name="date" placeholder="Tanggal Lahir"></td><td>&nbsp;</td><td><input type="number" name="anak" placeholder="Anak Ke "></td>
+						<td>Tanggal Lahir </td><td>&nbsp;</td><td><input type="number" name="anak" placeholder="Anak Ke "></td>
 					</tr>
 					<tr>
+						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
 					</tr>
 					<tr>
 						<th><!-- <audio controls>

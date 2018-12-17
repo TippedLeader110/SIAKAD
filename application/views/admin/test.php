@@ -20,7 +20,7 @@
 							<td><input type="file" name="userfile" size="20" /></td>
 						</tr>
 						<tr>
-							<td>Maksimum ukuran file : 100kb , Jenis file harus jpg</td>
+							<td>Maksimum ukuran file : 100kb , Jenis file harus png</td>
 						</tr>
 						<tr>
 							<td><input style="max-width: 100px" type="submit" value="upload" /></td>
