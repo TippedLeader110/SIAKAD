@@ -11,8 +11,9 @@ class Home extends CI_Controller {
 	}
 	public function logout()
 	{
-		$this->session->sess_destroy();
-		redirect(base_url('home'));
+		session_destroy();
+		$w = base_url();
+		redirect("$w", location);
 	}
 	public function siswa()
 	{
