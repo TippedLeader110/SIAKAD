@@ -80,7 +80,7 @@
 							<table style="border-color: #d6d6c2">
 								<tr>
 									<td style="background: rgba(128,128,128,0.5);  padding: 5px 5px 5px 5px;" width="120px" height="30px" align="center">
-										<img src="<?php echo base_url()?>img/icon/login-icon.png" style="height: 20px;width: 20px">
+										<a href="<?php echo base_url() ?>login/guru"><img src="<?php echo base_url()?>img/icon/login-icon.png" style="height: 20px;width: 20px"></a>
 									</td>
 								</tr>
 							</table>
@@ -89,7 +89,7 @@
 							<table style="border-color: #d6d6c2">
 								<tr>
 									<td style="background: rgba(128,128,128,0.5);  padding: 5px 5px 5px 5px;" width="120px" height="30px" align="center">
-											<img src="<?php echo base_url()?>img/icon/login-icon.png" style="height: 20px;width: 20px">
+											<a href="<?php echo base_url() ?>login/siswa"> <img href="<?php echo base_url() ?>login/siswa" src="<?php echo base_url()?>img/icon/login-icon.png" style="height: 20px;width: 20px"></a>
 									</td>
 								</tr>
 							</table>
