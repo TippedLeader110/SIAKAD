@@ -18,7 +18,26 @@ class Nilai extends CI_Controller {
 	}
 	public function raport()
 	{
+		$nama = $_SESSION['nis'];
 		$data['border']='black';
+		$data['agama']= spes('akidah_akhlak',$nama,'nis');
+		$data['bio']= spes('biologi_p',$nama,'nis');
+		$data['arab']= spes('b_arab',$nama,'nis');
+		$data['indo']= spes('b_indo',$nama,'nis');
+		$data['ing']= spes('b_ing',$nama,'nis');
+		$data['jerman']= spes('b_jerman_p',$nama,'nis');
+		$data['eko']= spes('ekonomi_p',$nama,'nis');
+		$data['fikih']= spes('fikih',$nama,'nis');
+		$data['fisika_p']= spes('fisika_p',$nama,'nis');
+		$data['geo']= spes('geografi',$nama,'nis');
+		$data['kimia']= spes('kimia_p',$nama,'nis');
+		$data['mm']= spes('matematika',$nama,'nis');
+		$data['penjas']= ambilspes('penjas',$nama,'nis');
+		$data['pkn']= ambilspes('pkn',$nama,'nis');
+		$data['sejarah']= ambilspes('sejarah',$nama,'nis');
+		$data['sejarah_indo']= ambilspes('sejarah_indo',$nama,'nis');
+		$data['seni_budaya']= ambilspes('seni_budaya',$nama,'nis');
+		$data['sosiologi']= ambilspes('sosiologi',$nama,'nis');
 		$data['page']='userview/raport';
 		$data['nama'] = 'Rapot';
 		$data['beranda'] = '';

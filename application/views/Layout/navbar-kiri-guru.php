@@ -7,7 +7,7 @@
         <h4 align="center" style="margin-top: 20px; color: white;"><b>Selamat Datang,</b></h4>
         <div class="field-wel">
           <h4 align="center">
-            <b>nama_user</b>
+            <b><?php echo $_SESSION['user']; ?></b>
           </h4>
         </div>
 

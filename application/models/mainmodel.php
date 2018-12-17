@@ -23,6 +23,7 @@ class Mainmodel extends CI_Model {
 			foreach ($data as $key => $w) {
 			}
 			$this->session->user = $w->nama;
+			$this->session->nis = $w->nis;
 			redirect('home/siswa');
 		}
 
@@ -30,20 +31,21 @@ class Mainmodel extends CI_Model {
 
 	public function loginguru($user, $pass)
 	{
-		$this->db->where(['user' => $user, 'pass' => $pass]);
+		$this->db->where(['username' => $user, 'password' => $pass]);
 		$query = $this->db->get('guru');
 		$query = $query->num_rows();
 		if ($query==0) {
-			redirect('home'); //redirect gagal
+			redirect('home/login/fail');
 		}
 		else if ($query==1) {
-		$this->db->where(['user' => $user, 'pass' => $pass]);
+		$this->db->where(['username' => $user, 'password' => $pass]);
 		$query = $this->db->get('guru');
 		$data = $query->result();
-		foreach ($data as $key => $w) {
+			foreach ($data as $key => $w) {
 			}
 			$this->session->user = $w->nama;
-			redirect(''); //redirect berhasil
+			$this->session->nip = $w->nis;
+			redirect('home/guru');
 		}
 	}
 	public function daftarsiswa($user, $pass)
