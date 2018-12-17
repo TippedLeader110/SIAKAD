@@ -18,6 +18,34 @@ class Absen extends CI_Controller {
 	}
 	public function siswa()
 	{
+		$_SESSION['user']="171402067";
+		if ($_SESSION['user']!='') {
+			$nis = $_SESSION['user']!='';
+		}
+		else
+		{
+			redirect(base_url(),location);
+		}
+		$id=$this->input->post('sub');				
+		if (isset($id)) {
+			if ($id<=6) {
+				# code...
+			$data['ab1'] = $this->adminmodel->absen($id, $nis, '1');	
+			$data['ab2'] = $this->adminmodel->absen($id, $nis, '2');
+			$data['ab3'] = $this->adminmodel->absen($id, $nis, '3');
+			$data['ab4'] = $this->adminmodel->absen($id, $nis, '4');
+			$data['ab5'] = $this->adminmodel->absen($id, $nis, '5');
+			$data['ab6'] = $this->adminmodel->absen($id, $nis, '6');
+			}
+			else{
+			$data['ab1'] = $this->adminmodel->absen($id, $nis, '7');	
+			$data['ab2'] = $this->adminmodel->absen($id, $nis, '8');
+			$data['ab3'] = $this->adminmodel->absen($id, $nis, '9');
+			$data['ab4'] = $this->adminmodel->absen($id, $nis, '10');
+			$data['ab5'] = $this->adminmodel->absen($id, $nis, '11');
+			$data['ab6'] = $this->adminmodel->absen($id, $nis, '12');	
+			}
+		}
 		$data['border']='black';
 		$data['page']='userview/absensiswa';
 		$data['nama'] = 'Absen';

@@ -9,12 +9,10 @@
 <div class="row" style="margin-top: 50px;">
 	<div style="margin-left: 150px; margin-top: 20px;">
 		<div style="background-color: #b3ffb3; width: 210px; height: 210px;">
-			<div class="circle" style="background-color:#47d147; height: 200px; width: 200px; margin-left: 5px; ">
-				<img src="https://static.thenounproject.com/png/630729-200.png">
-			</div>
+			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uas.jpg">
 		</div>
 		<div style="background:#d6f5d6; height: 35px; padding: 5px 5px 5px 5px;">
-			<h5 align="center">Nilai UAS</h5>
+			<h5 align="center">Nilai Ujian Semester</h5>
 		</div>
 	</div>
 	<div style="margin-left: 30px; margin-top: 20px;">

@@ -5,6 +5,7 @@ class Daftar extends CI_Controller {
 
 	public function guru()
 	{
+		$data['gurudaf']=$this->adminmodel->ambil('guru');
 		$data['border']='black';
 		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';
@@ -18,6 +19,7 @@ class Daftar extends CI_Controller {
 	}
 	public function siswa()
 	{
+
 		$data['border']='black';
 		$data['page']='userview/daftarsiswa';
 		$data['nama'] = 'Daftar Siswa';
@@ -29,34 +31,7 @@ class Daftar extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
-	public function daftarsiswa()
-	{
-		$user = $this->input->post('user');
-		$pass = md5($this->input->post('pass'));
-		if ($user=='') {
-			header(" ");
-		}
-		else if ($pass=='') {
-			header(" ");
-		}
-		else{		
-		$this->mainmodel->daftarsiswa($user, $pass);
-		}
-	}
-	public function daftarguru()
-	{
-		$user = $this->input->post('user');
-		$pass = md5($this->input->post('pass'));
-		if ($user=='') {
-			header(" ");
-		}
-		else if ($pass=='') {
-			header(" ");
-		}
-		else{		
-		$this->mainmodel->daftarguru($user, $pass);
-		}
-	}
+	
 
 	// public function logort()
 	// {

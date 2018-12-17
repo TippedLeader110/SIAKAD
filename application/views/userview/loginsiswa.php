@@ -9,7 +9,7 @@
 			<tr>
 				<td>
 					<div>
-				<form>
+				<form action="<?php echo base_url(). 'login/siswa'; ?>" method="post">
 					<table align="center">
 						<tr align="center">
 							<th colspan="2">Login Siswa</th>
@@ -42,7 +42,7 @@
 			</table>
 			<div style="padding-top: 2em;">
 				<center>
-				<button class="btn btn-success">Masuk</button>
+				<button type="submit" class="btn btn-success">Masuk</button>
 				</center>
 				</form>
 					</div>

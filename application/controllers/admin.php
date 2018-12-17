@@ -31,7 +31,7 @@ class Admin extends CI_Controller {
 		$data['murid']="";
 		$data['guru']="";
 		$data['matapel']="";
-		
+		$data['post']="";
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
@@ -66,27 +66,68 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		
+		$data['post']="";
 		$data['page']="admin/murid";
 		$this->load->view('layout/admin', $data);	
 	}
 	public function guru()
-	{
+	{	
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'kode_mapel');		
+			}
+		}
+		else
+		{
+		$data['gurutam'] = $this->adminmodel->ambil('guru');
+		}
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
+		$data['post']="";
 		$data['page'] = "admin/guru";
 		$this->load->view('layout/admin', $data);	
 	}
-
+	public function post()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="active";
+		$data['page']="admin/post";
+		$this->load->view('layout/admin', $data);
+	}
 	public function rMurid()
 	{
 		$data['dashboard']="";
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		
+		$data['post']="";
 		$data['page']="admin/regis";
+		$this->load->view('layout/admin', $data);
+	}
+	public function rGuru()
+	{
+		$data['post']="";
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['page']="admin/regisg";
 		$this->load->view('layout/admin', $data);
 	}
 	public function simpanm()
@@ -122,7 +163,34 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
+		$data['post']="";
+		$data['nis'] = $nis;
+		$this->load->view('layout/admin', $data);
+	}
+	public function simpang()
+	{
+		$nama = $this->input->post('nama');
+		$nip = $this->input->post('nip');
+		$kode_mapel = $this->input->post('kode_mapel');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$tanggal = $this->input->post('tanggal');
+		$agama = $this->input->post('agama');
+		$alamat = $this->input->post('alamat');
+		$email = $this->input->post('email');
+		$mapel = $this->input->post('mapel');
+		$jk = $this->input->post('jk');
+		$gol = $this->input->post('gol');
+		$no_hp = $this->input->post('no_hp');
+		$nfile = "/gambar/$nis";
+		$this->adminmodel->kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp);
 		
+		$data['page'] = 'admin/test2';
+		$data['dashboard']="";
+		$data['murid']="active";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="";
 		$data['nis'] = $nis;
 		$this->load->view('layout/admin', $data);
 	}
@@ -134,7 +202,7 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		
+		$data['post']="";
 		$data['page']="admin/regis2";
 		$data['arra'] = $this->adminmodel->ambildata($nis);
 		$this->load->view('layout/admin', $data);
@@ -145,7 +213,7 @@ class Admin extends CI_Controller {
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
-		
+		$data['post']="";
 		$data['page']="admin/test";
 		$this->load->view('layout/admin')	;
 	}

@@ -20,6 +20,11 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
+	public function absen($id,$nis,$a){
+		$this->db->where(['semester' => $id, 'nis' => $nis, 'bulan' => $a]);
+			$query = $this->db->get('absen');
+			return $query->result();
+	}
 	public function ambildata($nis)
 	{
 		$this->db->where(['nis' => $nis]);
@@ -30,5 +35,10 @@ class Adminmodel extends CI_Model {
 	{
 		$adata = array('nis' =>$nis,'nama' =>$nama,'username' =>$username,'password' =>$pass,'asal_sekolah' =>$sekolah,'agama' =>$agama,'alamat' =>$alamat,'email' =>$email,'jk' =>$jkel,'jurusan' =>$jurusan,'nama_ayah' =>$ayah,'nama_ibu' =>$ibu,'pekerjaan_ayah' =>$payah,'pekerjaan_ibu' =>$pibu,'alamat_ayah' =>$aayah,'alamat_ibu' =>$aibu,'tahun' =>$tahun,'tempat' =>$tlahir,'tanggal_lahir' =>$date,'pict' =>$nfile, 'anak_ke' => $anak, 'no_hp_ayah' => $nohpa,'no_hp_ibu' => $nohpi);
 		$this->db->insert('siswa', $adata);
+	}
+	public function kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp)
+	{
+		$adata = array('nama' =>$nama,'nip' =>$nip,'kode_mapel' =>$kode_mapel,'username' =>$username,'password' =>$password,'tanggal' =>$tanggal,'agama' =>$agama,'alamat' =>$alamat,'email' =>$email,'mapel' =>$mapel,'jk' =>$jk,'gol' =>$gol,'no_hp' =>$no_hp);
+		$this->db->insert('guru', $adata);
 	}
 }
