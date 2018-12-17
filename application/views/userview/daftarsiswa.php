@@ -64,16 +64,26 @@ h2 {
 </center>
 <table class="table table-bordered table-striped">
             <tr>
-              <th>NIS</th><th>Nama</th><th>Kelas</th><th>Jurusan</th><th>Angkatan</th><th>Perintah</th>
+              <th>No</th>
+      <th>Nis</th>
+      <th>Nama</th>
+      <th>Stambuk</th>
+      <th>Jurusan</th>
+      <th>Kelas</th>
+      <th>Aksi</th>
             </tr>
             <?php 
               $batas = 0;
             foreach ($muridtam as $key => $v) {
-            $wow = $v->kelas-2018+1;
             $batas++;
             echo "<tr>
-            <th>".$v->nis."</th><th>".$v->nama."</th><th>".$wow."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th><th><form method='post' action='".base_url()."admin/info'><input type='text' hidden name='nis' value='".$v->nis."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
-              </tr>";
+      <td></td><td>".$v->nis."</td>
+      <td>".$v->nama."</td>
+      <td>".$v->tahun."</td>
+      <td>".$v->jurusan."</td>
+      <td>".$v->kelas."</td>
+      <td><form action=''><button class='btn btn-primary' type='submit'>Lihat Profil</button></form></td>
+    </tr>";
               if ($batas==10) {
               break;
               } 

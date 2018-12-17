@@ -44,6 +44,27 @@ class Daftar extends CI_Controller {
 	}
 	public function siswa()
 	{
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'tahun');		
+			}
+		}
+		else
+		{
+		$data['muridtam'] = $this->adminmodel->ambil('siswa');
+		}
 
 		$data['border']='black';
 		$data['page']='userview/daftarsiswa';
@@ -54,7 +75,6 @@ class Daftar extends CI_Controller {
 		$data['rapot'] = '';
 		$data['guru'] = 'aktif';
 		$data['profil'] = '';
-		$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'tahun');
 
 		$this->load->view('layout/home', $data);
 	}
