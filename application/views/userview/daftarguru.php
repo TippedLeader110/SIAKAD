@@ -12,13 +12,24 @@
         </tr>
         <tr>
           <td>
-             <input type="text" class="form-control" placeholder="Ketikkan Disini..">
+             <form method="post">
+              <input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama Guru..." type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">&nbsp;
+            </form>
           </td>
-          <td>
-            <span class="input-group-btn">
-              <button class="btn btn-primary" type="button">Cari</button>
-            </span>
-          </td>
+          <?php 
+            if (isset($_POST['cari'])) {
+            if ($_POST['cari']=='') {
+              $_POST['cari']=2;
+              $s=$_POST['cari'];
+            redirect("daftar/guru/",location);
+            }
+            else{
+              $s=$_POST['cari'];
+            redirect("daftar/guru/$s/nama",location);
+            }
+
+          }
+           ?>
         </tr>
 
       </table>

@@ -5,13 +5,32 @@ class Daftar extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();		
-		session_start();
  
 	}
 
 	public function guru()
 	{
-		$data['gurudaf']=$this->adminmodel->ambil('guru');
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurudaf'] = $this->adminmodel->ambilspes('guru', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurudaf'] = $this->adminmodel->ambilspes('guru', $nama, 'tahun');		
+			}
+		}
+		else
+		{
+		$data['gurudaf'] = $this->adminmodel->ambil('guru');
+		}
 		$data['border']='black';
 		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';

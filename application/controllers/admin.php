@@ -91,8 +91,8 @@ class Admin extends CI_Controller {
 		}
 		else
 		{
-		$data['muridtam'] = $this->adminmodel->ambil('siswa');
 		}
+		$data['muridtam'] = $this->adminmodel->ambil('siswa');
 		$data['dashboard']="";
 		$data['murid']="active";
 		$data['guru']="";

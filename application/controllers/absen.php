@@ -34,12 +34,12 @@ class Absen extends CI_Controller {
 			$data['ab4'] = $this->adminmodel->absen($id, $nis, '4');
 			$data['ab5'] = $this->adminmodel->absen($id, $nis, '5');
 			$data['ab6'] = $this->adminmodel->absen($id, $nis, '6');
-			$data['ab1'] = $this->adminmodel->absen($id, $nis, '7');	
-			$data['ab2'] = $this->adminmodel->absen($id, $nis, '8');
-			$data['ab3'] = $this->adminmodel->absen($id, $nis, '9');
-			$data['ab4'] = $this->adminmodel->absen($id, $nis, '10');
-			$data['ab5'] = $this->adminmodel->absen($id, $nis, '11');
-			$data['ab6'] = $this->adminmodel->absen($id, $nis, '12');	
+			$data['ab7'] = $this->adminmodel->absen($id, $nis, '7');	
+			$data['ab8'] = $this->adminmodel->absen($id, $nis, '8');
+			$data['ab9'] = $this->adminmodel->absen($id, $nis, '9');
+			$data['ab10'] = $this->adminmodel->absen($id, $nis, '10');
+			$data['ab11'] = $this->adminmodel->absen($id, $nis, '11');
+			$data['ab12'] = $this->adminmodel->absen($id, $nis, '12');	
 			}
 		else {
 			$data['ab1'] = $this->adminmodel->absen($id, $nis, '1');	
