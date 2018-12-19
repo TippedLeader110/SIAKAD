@@ -19,6 +19,7 @@ class Home extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/awaluser';
+		$data['caro']=$this->mainmodel->caro();
 		$data['nama'] = 'Beranda';
 		$data['beranda'] = 'aktif';
 		$data['nilai'] = '';

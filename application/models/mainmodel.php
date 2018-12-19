@@ -8,6 +8,12 @@ class Mainmodel extends CI_Model {
 		$this->load->view('welcome_message');
 	}
 
+	public function caro()
+	{
+		$query = $this->db->get('terkini');
+		return $query->result();		
+	}
+
 	public function loginsiswa($user, $pass)
 	{
 		$this->db->where(['username' => $user, 'password' => $pass]);
