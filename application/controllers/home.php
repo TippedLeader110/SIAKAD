@@ -17,6 +17,10 @@ class Home extends CI_Controller {
 	}
 	public function siswa()
 	{
+		if ($_SESSION['user']=='') {
+			redirect('login/siswa', location);
+		}
+		else{
 		$data['border']='black';
 		$data['page']='userview/awaluser';
 		$data['caro']=$this->mainmodel->caro();
@@ -28,9 +32,14 @@ class Home extends CI_Controller {
 		$data['guru'] = '';
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
+		}
 	}
 	public function guru()
 	{
+		if ($_SESSION['user']=='') {
+			redirect('login/guru', location);
+		}
+		else{
 		$data['border']='black';
 		$data['page']='userview/awalguru';
 		$data['nama'] = 'Beranda';
@@ -41,6 +50,7 @@ class Home extends CI_Controller {
 		$data['guru'] = '';
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
+		}
 	}
 	
 	// public function logort()

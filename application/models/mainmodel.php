@@ -30,6 +30,7 @@ class Mainmodel extends CI_Model {
 			}
 			$this->session->user = $w->nama;
 			$this->session->nis = $w->nis;
+			$this->session->img = $w->pict;
 			redirect('home/siswa');
 		}
 
@@ -51,6 +52,7 @@ class Mainmodel extends CI_Model {
 			}
 			$this->session->user = $w->nama;
 			$this->session->nip = $w->nis;
+			$this->session->img = $w->pict;
 			redirect('home/guru');
 		}
 	}
