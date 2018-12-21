@@ -8,6 +8,9 @@
 	<div class="row" style="background: white;padding-top: 20px;">
 		<div class="col-md-12">
 			<h4>Informasi Dasar Siswa</h4>
+			<?php  if (validation_errors()!="") {
+				echo "<div class='alert'></span><strong>ERROR !</strong> ".validation_errors()." </div>";
+			} ?>
 		</div>
 	</div>
 	<div class="row">

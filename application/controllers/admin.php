@@ -293,8 +293,21 @@ class Admin extends CI_Controller {
 		$date = $this->input->post('date');
 		$file = $this->input->post('file');
 		$nfile = "/gambar/$nis";
+		$this->form_validation->set_rules('nis', 'NIS', 'required["%s wajib diisi"]|is_unique[siswa.nis]',array('is_unique' => '%s sudah digunakan'));
+		if ($this->form_validation->run()==FALSE) {
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/regis";
+			$this->load->view('layout/admin', $data);
+		}
+		else {
+			
+			$this->session->set_flashdata('success', 'Data berhasil disimpan');
 		$this->adminmodel->kirimsiswa($nis,$nama,$username,$pass,$sekolah,$agama,$alamat,$email,$jkel,$jurusan,$ayah,$ibu,$payah,$pibu,$aayah,$aibu,$tahun,$tlahir,$date,$nfile, $anak, $nohpa, $nohpi,$kelas);
-		
+
 		$data['page'] = 'admin/test';
 		$data['dashboard']="";
 		$data['murid']="active";
@@ -303,6 +316,7 @@ class Admin extends CI_Controller {
 		$data['post']="";
 		$data['nis'] = $nis;
 		$this->load->view('layout/admin', $data);
+		}
 	}
 	public function simpang()
 	{
