@@ -14,7 +14,7 @@
 		
 		<div class="row">
 				<div class="col-md-4">
-					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
+					<div class="container" style="background-color:#2F669F; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
 						<center><a href="http://localhost/SIAKAD/Profil/guru">Data Sekolah</a></center>
 					</div>
 				</div>
