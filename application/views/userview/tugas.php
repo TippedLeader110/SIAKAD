@@ -88,61 +88,83 @@
 	<div>
 		<table border="2" style="width:800px; text-align: center;">
 			<tr>
-				<th >No.</th>
+				<th style="width: 60px;">No.</th>
 				<th style="width: 660px;">Mata Pelajaran</th>
-				<th>Nilai</th>
+				<th>Nilai 1</th>
+				<th>Nilai 2</th>
+				<th>Nilai 3</th>
 			</tr>
 			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok A (Umum)</b></td>
+				<td colspan="5" align="left" style="padding-left: 10px;"><b>Kelompok A (Umum)</b></td>
 			</tr>
 			<tr>
 				<td>1.</td>
 				<td>Al-Quran Hadits</td>
 				<td></td>
+				<td></td>
+				<td></td>	
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Akidah Akhlak</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Fiqih</td>
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Sejarah Kebudayaan Islam</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>5.</td>
 				<td>Pendidikan Pancasila dan Kewarganegaraan</td>		
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>6.</td>
 				<td>Bahasa Indonesia</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>7.</td>
 				<td>Bahasa Arab</td>				
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>8.</td>
 				<td>Matematika</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>9.</td>
 				<td>Sejarah Indonesia</td>				
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>10.</td>
 				<td>Bahasa Inggris</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 		</table>
@@ -154,26 +176,34 @@
 	<div>
 		<table border="2" style="width:800px; text-align: center;">
 			<tr>
-				<th>No.</th>
-				<th>Mata Pelajaran</th>
-				<th>Nilai</th>
+				<th style="width: 60px;">No.</th>
+				<th style="width: 660px;">Mata Pelajaran</th>
+				<th>Nilai 1</th>
+				<th>Nilai 2</th>
+				<th>Nilai 3</th>
 			</tr>
 			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok B (Wajib)</b></td>
+				<td colspan="5" align="left" style="padding-left: 10px;"><b>Kelompok B (Wajib)</b></td>
 			</tr>
 			<tr>
 				<td>1.</td>
 				<td>Seni Budaya</td>		
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Pendidikan Jasmani, Olahraga, dan Kesehatan</td>				
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Prakarya dan Kewirausahaan</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 		</table>
@@ -186,29 +216,39 @@
 			<tr>
 				<th style="width: 60px;">No.</th>
 				<th style="width: 660px;">Mata Pelajaran</th>				
-				<th>Nilai</th>
+				<th>Nilai 1</th>
+				<th>Nilai 2</th>
+				<th>Nilai 3</th>
 			</tr>
 			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok C (Peminatan)</b></td>
+				<td colspan="5" align="left" style="padding-left: 10px;"><b>Kelompok C (Peminatan)</b></td>
 			</tr>
 			<tr>
 				<td>1.</td>
 				<td>Matematika</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Biologi</td>				
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Fisika</td>				
 				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Kimia</td>				
+				<td></td>
+				<td></td>
 				<td></td>
 			</tr>
 		</table>
