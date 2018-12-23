@@ -23,7 +23,7 @@
 		<a href="<?php echo base_url() ?>admin/logout">Keluar</a>
 		</div>
 	<div class="row">
-		<div class="container-fluid" id="main" style="transition: margin-left .5s;margin-left: 40px;margin-right: 40px;">
+		<div class="container-fluid" id="main" style="margin-left: 40px;margin-right: 40px;">
 			<?php $this->load->view($page) ?>
 		</div>
 	</div>

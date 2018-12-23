@@ -6,34 +6,90 @@
 </div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-4">
-				<div class="container" style="background: white">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<div class="col-md-6">
+				<div class="container" style="background: white;height: 150px;">
+					<table>
+						<tr>
+							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Alumni :</h4></td>
+						</tr>
+						<tr>
+							<td><h4>Murid Aktif :</h4></td>
+						</tr>
+						<tr><td><h4>Murid Non Aktif :</h4></td></tr>
+					</table>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="container" style="background: white">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<div class="col-md-6">
+				<div class="container" style="background: white;height: 150px;">
+					<table>
+						<tr>
+							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/kelas.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Murid : <?php echo "$jumlahmurid"; ?></h4></td>
+						</tr>
+						<tr>
+							<td><h4>Jumlah Siswa : <?php echo "$jumlahmurida"; ?></h4></td>
+						</tr>
+						<tr>
+							<td><h4>Jumlah Siswi : <?php echo "$jumlahmuridi"; ?></h4></td>
+						</tr>
+					</table>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="container" style="background: white">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="row" style="margin-top: 20px;">
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table>
+						<tr align="center">
+							<td><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Lihat Semua Murid</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table style="margin-top: 0px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/Alumni.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Lihat Daftar Alumni</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table style="margin-top: 10px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Atur Kelas Murid</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table style="margin-top: 0px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Atur Status Murid</h4></td>
+						</tr>
+					</table>
+				</center>
 				</div>
 			</div>
 		</div>
