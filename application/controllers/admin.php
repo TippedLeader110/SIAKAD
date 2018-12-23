@@ -41,7 +41,7 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['post']="";
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
-		
+		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
 		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
 		$data['page']="admin/awal";
@@ -345,7 +345,6 @@ class Admin extends CI_Controller {
 		$data['guru']="";
 		$data['matapel']="";
 		$data['post']="";
-		$data['nis'] = $nis;
 		$this->load->view('layout/admin', $data);
 	}
 	public function info()
