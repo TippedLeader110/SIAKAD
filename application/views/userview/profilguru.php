@@ -38,12 +38,12 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Status Kepegawaian
+						Pangkat/Golongan PNS
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Jabatan
+						Mata Pelajaran
 				</div>
 			</div>
 		</div>
