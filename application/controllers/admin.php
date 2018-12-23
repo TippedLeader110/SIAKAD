@@ -124,6 +124,38 @@ class Admin extends CI_Controller {
 		$data['page']="admin/murid";
 		$this->load->view('layout/admin', $data);	
 	}
+	public function Daftar_murid()
+	{
+		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'tahun');		
+			}
+		}
+		else
+		{
+		}
+		$data['muridtam'] = $this->adminmodel->ambil('siswa');
+		$data['dashboard']="";
+		$data['murid']="active";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/smurid";
+		$this->load->view('layout/admin', $data);	
+	}
 	public function guru()
 	{	
 		$id=$this->uri->segment(3);

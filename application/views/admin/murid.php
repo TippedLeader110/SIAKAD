@@ -41,10 +41,10 @@
 				<center>
 					<table>
 						<tr align="center">
-							<td><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/Daftar_murid"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Lihat Semua Murid</h4></td>
+							<td><h4>Lihat Semua Murid</a></h4></td>
 						</tr>
 					</table>
 				</center>
