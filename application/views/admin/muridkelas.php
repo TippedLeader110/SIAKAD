@@ -13,14 +13,6 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row" style="margin-bottom: 10px;">
-					<div class="col-md-1" style="margin-right: 50px;">
-						<form method="post" >
-						<button class="btn btn-primary" name="tampil">Tampil Semua</button>
-						</form>
-						<?php if (isset($_POST['tampil'])) {
-							redirect("/admin/murid", location);
-						} ?>
-					</div>
 					 <div class="col-md-1" style="margin-right: 50px;">
 						<form method="post" action="<?php echo base_url() ?>admin/kelassimpan">
 						<button class="btn btn-primary" name="tampil">Atur Kelas</button>
@@ -35,18 +27,6 @@
 							<option value="c">C</option>
 						</select>
 					</div>
-					<?php 
-
-					if (isset($_POST['cari'])) {
-						$s=$_POST['cari'];
-						redirect("/admin/murid/$s/nama",location);
-					}
-					if (isset($_POST['angkatan'])) {
-						$w=$_POST['angkatan'];
-						redirect("/admin/murid/$w/angkatan",location);
-					}
-					
-					 ?>
 			</div>
 			<div class="row">
 					<div class="col-md-3">
@@ -56,18 +36,18 @@
 					</div>
 					<div class="col-md-3">
 						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari TahunAngkatan" type="text" name="angkatan" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="angkatan">
+							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Tahun Angkatan" type="text" name="angkatan" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="angkatan">
 						</form>
 					</div>
 					<?php 
 
 					if (isset($_POST['cari'])) {
 						$s=$_POST['cari'];
-						redirect("/admin/murid/$s/nama",location);
+						redirect("/admin/jurusan/$s/nama",location);
 					}
 					if (isset($_POST['angkatan'])) {
 						$w=$_POST['angkatan'];
-						redirect("/admin/murid/$w/angkatan",location);
+						redirect("/admin/jurusan/$w/angkatan",location);
 					}
 					
 					 ?>

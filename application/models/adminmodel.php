@@ -46,6 +46,12 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
+	public function ambilspes2nd($data,$nama,$spes,$jur)
+	{
+		$this->db->like([$spes => $nama, 'jurusan' => $jur]);
+		$query = $this->db->get($data);
+		return $query->result();
+	}
 	public function spes($data,$nama,$spes)
 	{
 		$this->db->where([$spes => $nama]);

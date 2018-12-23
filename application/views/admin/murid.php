@@ -7,8 +7,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="container" style="background: white;height: 150px;">
-					<table>
+				<div class="container" style="background: white;height: 185px;">
+					<table style="margin-top: 15px;">
 						<tr>
 							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Alumni :</h4></td>
 						</tr>
@@ -20,8 +20,8 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="container" style="background: white;height: 150px;">
-					<table>
+				<div class="container" style="background: white;height: 185px;">
+					<table style="margin-top: 15px;">
 						<tr>
 							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/kelas.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Murid : <?php echo "$jumlahmurid"; ?></h4></td>
 						</tr>
