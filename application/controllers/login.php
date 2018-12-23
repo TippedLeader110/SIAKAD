@@ -23,15 +23,9 @@ class Login extends CI_Controller {
 	}
 	public function loginguru()
 	{
-		if ($status=='fail') {
-			echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>";
-			echo "<div class='alert alert-danger'><strong>Error!</strong> Password atau Username tidak valid.</div>";
-		}
-		else{
-		$user = $this->input->post('user');
-		$pass = md5($this->input->post('pass'));
-		$this->mainmodel->loginguru($user, $pass);
-		}
+			$user = $this->input->post('username');
+			$pass = $this->input->post('password');
+			$this->mainmodel->loginguru($user, $pass);
 	}
 	
 	// public function logort()

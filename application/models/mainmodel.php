@@ -44,7 +44,7 @@ class Mainmodel extends CI_Model {
 		if ($query==0) {
 			redirect('home/login/fail');
 		}
-		else if ($query==1) {
+		else if ($query!=0) {
 		$this->db->where(['username' => $user, 'password' => $pass]);
 		$query = $this->db->get('guru');
 		$data = $query->result();
