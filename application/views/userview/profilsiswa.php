@@ -14,18 +14,18 @@
 		
 		<div class="row">
 				<div class="col-md-4">
-					<div class="container" style="background-color:#2F669F; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
-						<center>Data Sekolah</center>
+					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
+						<center><a href="">Data Sekolah</a></center>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; font-weight: 500; margin-top: 30px; margin-bottom: 15px;">
-						<center>Data Pribadi</center>
+						<center><a href="">Data Pribadi</a></center>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; font-weight: 500;margin-left: 10px;  margin-top: 30px; margin-bottom: 15px;">
-						<center>Data Orangtua</center>
+						<center><a href="">Data Orangtua</a></center>
 					</div>
 				</div>
 		</div>
@@ -72,21 +72,11 @@
 				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
 			</div>
 				<div class="container" style="width: 150px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px;">
-				<center>Ubah Foto</center>
-
-			</div>
-	<div class="col-md-3">
-		<div class="row">
-			
+					<center>Ubah Foto</center>
+				</div>
 		</div>
 	</div>
 </div>
-		<div class="row">
-			<div class="container" style="width: 200px;background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px;">
-				<center>Ubah Profil Anda</center>	
-			</div>
-		</div>
 	</div>
-</div>
 </div>
 </div>
