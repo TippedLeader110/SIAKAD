@@ -11,15 +11,14 @@
 		<div class="container" style="border-width: 1px; ">
 <div class="row">
 	<div class="col-md-8">
-		
 		<div class="row">
 				<div class="col-md-4">
-					<div class="container" style="background-color:#2F669F; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
+					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
 						<center><a href="">Data Sekolah</a></center>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="container" style="background-color:#8DB3DA; border-width: 0px; font-weight: 500; margin-top: 30px; margin-bottom: 15px;">
+					<div class="container" style="background-color:#2F669F; border-width: 0px; font-weight: 500; margin-top: 30px; margin-bottom: 15px;">
 						<center><a href="">Data Pribadi</a></center>
 					</div>
 				</div>
@@ -33,32 +32,32 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NIS
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 						Nama
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NISN
+						Tempat Lahir
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Jurusan
+						Tanggal Lahir
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tahun Masuk
+						Alamat
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Anak ke Berapa
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Angkatan
+						Agama
 				</div>
 			</div>
 		</div>
