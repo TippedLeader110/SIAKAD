@@ -14,17 +14,17 @@
 		<div class="row">
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
-						<center><a href="">Data Sekolah</a></center>
+						<center><a href="http://localhost/SIAKAD/Profil/siswa">Data Sekolah</a></center>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="container" style="background-color:#2F669F; border-width: 0px; font-weight: 500; margin-top: 30px; margin-bottom: 15px;">
-						<center><a href="">Data Pribadi</a></center>
+						<center><a href="http://localhost/SIAKAD/Profil/siswa1">Data Pribadi</a></center>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; font-weight: 500;margin-left: 10px;  margin-top: 30px; margin-bottom: 15px;">
-						<center><a href="">Data Orangtua</a></center>
+						<center><a href="http://localhost/SIAKAD/Profil/siswa2">Data Orangtua</a></center>
 					</div>
 				</div>
 		</div>
