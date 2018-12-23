@@ -24,13 +24,7 @@
 					</div>
 				</div>
 		</div>
-
 		<div class="row">
-			<div class="col-md-12">
-				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NIP
-				</div>
-			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 						Nama
@@ -38,12 +32,27 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Status Kepegawaian
+						Tempat
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Tanggal Lahir
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Jenis Kelamin
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Nomor HP
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Jabatan
+						Alamat
 				</div>
 			</div>
 		</div>
