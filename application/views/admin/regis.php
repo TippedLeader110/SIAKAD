@@ -7,10 +7,14 @@
 </div>
 	<div class="row" style="background: white;padding-top: 20px;">
 		<div class="col-md-12">
-			<h4>Informasi Dasar Siswa</h4>
-			<?php  if (validation_errors()!="") {
-				echo "<div class='alert'></span><strong>ERROR !</strong> ".validation_errors()." </div>";
-			} ?>
+			<table class="table table-borderless">
+				<td><h4>Informasi Dasar Siswa</h4></td>
+					<?php  if (validation_errors()!="") {
+					echo "<div class='alert'></span><strong>ERROR !</strong> ".validation_errors()." </div>";
+					} ?>
+				<td><h4>Informasi Data Pribadi</h4></td>
+			</table>
+			
 		</div>
 	</div>
 	<div class="row">
@@ -26,7 +30,7 @@
 					</tr>
 					<tr>
 						<td><input type="text" name="sekolah" placeholder="Asal Sekolah"></td><td>&nbsp;</td>
-						<td><select name="agama" class="form-control">
+						<td><select name="agama" class="form-control" style="width: 400px;">
 							<option>Agama</option>
 							<option value="Islam" checked>Islam</option>
 						</select></td>
@@ -36,13 +40,13 @@
 					</tr>
 					<tr>
 						<td>
-							<select name="jkel" class="form-control">
+							<select name="jkel" class="form-control" style="width: 400px;">
 							<option>Jenis Kelamin</option>
 							<option value="Laki-laki">Laki-Laki</option>
 							<option value="Perempuan">Perempuan</option>
 						</select>
 						</td>
-						<td>&nbsp;</td><td><select name="jurusan" class="form-control">
+						<td>&nbsp;</td><td><select name="jurusan" class="form-control" style="width: 400px;">
 							<option>Jurusan</option>
 							<option value="IPA">IPA</option>
 							<option value="IPS">IPS</option>
@@ -71,7 +75,7 @@
 					</tr>
 					<tr>
 						<td>
-							<select name="kelas" class="form-control">
+							<select name="kelas" class="form-control" style="width: 400px;">
 							<option>Kelas</option>
 							<option value="a">A</option>
 							<option value="b">B</option>
