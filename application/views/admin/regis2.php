@@ -116,8 +116,11 @@
 							</audio> --></th><th></th>
 					</tr>
 					<tr>
-						<td><button class="btn btn-primary" type="submit" name="simpan">Simpan</button></td><td colspan="3"><button class="btn btn-alert" type="reset">Ulangi</button></td>
-					</tr>
+      					<td><button class="btn btn-primary" type="submit" name="simpan">Simpan</button></td>
+      					<td colspan="3"><form method="post" action="<?php echo base_url() ?>admin/disable">
+      						<input type="text" hidden value="<?php echo $nis ?>" name="disable">
+      						<button class="btn btn-alert" type="submit">Hapus Murid</button></td>
+     			</tr></form>
 				</table>
 				</form>
 			</div>
