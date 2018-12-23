@@ -55,7 +55,7 @@
 						</select></td>
 					</tr>
 					<tr>	
-						<td><h4>Kelas</h4></td>
+						<td><h4>Mengajar di Kelas</h4></td>
 						<td><h4>Nomor HP</h4></td>
 					</tr>
 					<tr>	

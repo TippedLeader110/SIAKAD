@@ -57,9 +57,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 	<div class="col-md-4">
 		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; ">
 			<div class="circle"style="margin: 10px 10px 50px 60px; margin-top: 30px;">
@@ -74,11 +71,6 @@
 		</div>
 	</div>
 </div>
-		<div class="row">
-			<div class="container" style="width: 200px;background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px;">
-				<center>Ubah Profil Anda</center>	
-			</div>
-		</div>
 	</div>
 </div>
 </div>
