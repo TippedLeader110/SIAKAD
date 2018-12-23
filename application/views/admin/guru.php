@@ -4,81 +4,141 @@
 		<h3>Kontrol Guru</h3>
 		<hr>
 </div>
-	<div class="container-fluid" style="background: white;padding-top: 20px;margin-left: -10px;" >
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12">
-				<h4>Daftar Semua Guru</h4>
-			</div>
-		</div>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row" style="margin-bottom: 10px;">
-					<div class="col-md-4">
-						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">&nbsp;
-						</form>
-					</div>
-					<div class="col-md-4">
-						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Kode Mapel" type="text" name="angkatan" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="angkatan">
-						</form>
-					</div>
-					<?php 
-
-					if (isset($_POST['cari'])) {
-						$s=$_POST['cari'];
-						redirect("/admin/guru/$s/nama",location);
-					}
-					if (isset($_POST['angkatan'])) {
-						$w=$_POST['angkatan'];
-						redirect("/admin/guru/$w/angkatan",location);
-					}
-					
-					 ?>
-					<div class="col-md-1" style="margin-right: 50px;">
-						<form method="post" >
-						<button class="btn btn-primary" name="tampil">Tampil Semua</button>
-						</form>
-						<?php if (isset($_POST['tampil'])) {
-							redirect("/admin/guru", location);
-						} ?>
-					</div>
-					<div class="col-md-2" style="text-align: right;">
-						<form action="<?php echo base_url() ?>admin/rguru">
-						<button class="btn btn-primary" type="submit">Tambah guru</button>
-						</form>
-					</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<table class="table table-bordered table-striped">
+			<div class="col-md-6">
+				<div class="container" style="background: white;height: 185px;">
+					<table style="margin-top: 15px;">
 						<tr>
-							<th>NIP</th><th>Nama</th><th>Kode Mapel</th><th>Wali Kelas</th><th>Golongan PNS</th><th>Perintah</th>
+							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Total Guru : <?php echo "$jumlahguru"; ?></h4></td>
 						</tr>
-						<?php 
-							$batas = 0;
-						foreach ($gurutam as $key => $v) {
-						$batas++;
-						$x=$v->wali_kelas;
-						if ($x=='1') {
-							$x='Ya';
-						}
-						else{
-							$x='Tidak';
-						}
-						echo "<tr>
-						<th>".$v->nip."</th><th>".$v->nama."</th><th>".$v->kode_mapel."</th><th>".$x."</th><th>".$v->gol."</th><th><form method='post' action='".base_url()."admin/info'><input type='text' hidden name='nis' value='".$v->nip."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
-							</tr>";
-							if ($batas==10) {
-							break;
-							}	
-						} ?>
+						<tr>
+							<td><h4>Guru Aktif :</h4></td>
+						</tr>
+						<tr><td><h4>Guru Non Aktif :</h4></td></tr>
 					</table>
 				</div>
 			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+					<center>
+					<table style="margin-top: 15px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/post.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Lihat Postingan</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+					<center>
+					<table style="margin-top: 15px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Daftar Mata Pelajaran</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 20px;">
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table>
+						<tr align="center">
+							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Lihat Semua Guru</a></h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table style="margin-top: 0px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Atur Wali Kelas</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table style="margin-top: 10px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Atur Kode Guru </h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="container" style="background: white;height: 185px;">
+				<center>
+					<table style="margin-top: 0px">
+						<tr align="center" style="">
+							<td><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></td>
+						</tr>
+						<tr align="center">
+							<td><h4>Atur Status Guru</h4></td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			</div>
+		</div>
+		<div>
+			
 		</div>
 	</div>
 </div>
 </div>
-</div>
-
+				<!-- <div class="col-md-3 offset-md-1" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
+				<div class="row" style="padding-top: 15px;">
+					<div class="col-md-5" style="margin-right: px;">
+						<img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 88px;max-width: 88px">
+					</div>
+						<div class="col-md-7">
+							<h4 style="color: white">Total Murid <br><?php echo $jumlahmurid; ?></h4>
+						</div>
+					</div>
+			</div>
+				<div class="col-md-3" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
+				<div class="row" style="padding-top: 15px;">
+					<div class="col-md-5" style="margin-right: px;">
+						<img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 88px;max-width: 88px">
+					</div>
+						<div class="col-md-7">
+							<h4 style="color: white">Total Siswa <br><?php echo $jumlahmurida; ?></h4>
+						</div>
+					</div>
+			</div>
+				<div class="col-md-3" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
+				<div class="row" style="padding-top: 15px;">
+					<div class="col-md-5" style="margin-right: px;">
+						<img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 88px;max-width: 88px">
+					</div>
+						<div class="col-md-7">
+							<h4 style="color: white">Total Siswi <br><?php echo $jumlahmurid; ?></h4>
+						</div>
+					</div>
+			</div> -->

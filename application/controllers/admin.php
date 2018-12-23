@@ -157,33 +157,16 @@ class Admin extends CI_Controller {
 		$this->load->view('layout/admin', $data);	
 	}
 	public function guru()
-	{	
-		$id=$this->uri->segment(3);
-		$tipe=$this->uri->segment(4);
-		if (isset($id)) {
-			if ($tipe=='nama') {
-			$max = $id;	
-			$data['test'] = $max;
-			$nama=$max;
-			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'nama');	
-			}
-			else
-			{
-			$max = $id;	
-			$data['test'] = $max;
-			$nama=$max;
-			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $nama, 'kode_mapel');		
-			}
-		}
-		else
-		{
-		$data['gurutam'] = $this->adminmodel->ambil('guru');
-		}
+	{
+		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
+		$data['jumlahmurida'] = $this->adminmodel->hitungda('siswa','Laki-laki');
+		$data['jumlahmuridi'] = $this->adminmodel->hitungda('siswa','Perempuan');
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
+		$data['matapel']="";
 		$data['post']="";
-		$data['page'] = "admin/guru";
+		$data['page']="admin/guru";
 		$this->load->view('layout/admin', $data);	
 	}
 	public function post()
@@ -378,6 +361,105 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['post']="";
 		$this->load->view('layout/admin', $data);
+	}
+
+	public function kelas()
+	{
+		$data['dashboard']="";
+		$data['murid']="active";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/kelas";
+		$this->load->view('layout/admin', $data);
+	}
+	public function jurusan()
+	{
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		$jur=$this->uri->segment(5);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'nama', $jur);	
+			}
+			else
+			{
+			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'tahun', $jur);		
+			}
+		}
+		else
+		{}
+		$_SESSION['flash'] = '';
+		if ($this->input->post('jurusan')=='ipa') {
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/muridkelas";
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ipa', 'jurusan');
+			$this->load->view('layout/admin', $data);
+		}
+		elseif ($this->input->post('jurusan')=='ips') {
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/muridkelas";
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ips', 'jurusan');
+			$this->load->view('layout/admin', $data);
+		}
+		elseif (isset($id)) {
+			if ($jur=='ipa') {
+				if ($tipe=='nama') {
+					$data['dashboard']="";
+					$data['murid']="active";
+					$data['guru']="";
+					$data['matapel']="";
+					$data['post']="";
+					$data['page']="admin/muridkelas";
+					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'nama', ipa);		
+					$this->load->view('layout/admin', $data);
+				}
+				else{
+					$data['dashboard']="";
+					$data['murid']="active";
+					$data['guru']="";
+					$data['matapel']="";
+					$data['post']="";
+					$data['page']="admin/muridkelas";
+					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'tahun', ipa);		
+					$this->load->view('layout/admin', $data);
+				}
+			}
+			else{
+				if ($tipe=='nama') {
+					$data['dashboard']="";
+					$data['murid']="active";
+					$data['guru']="";
+					$data['matapel']="";
+					$data['post']="";
+					$data['page']="admin/muridkelas";
+					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'nama', ips);		
+					$this->load->view('layout/admin', $data);
+				}
+				else{
+					$data['dashboard']="";
+					$data['murid']="active";
+					$data['guru']="";
+					$data['matapel']="";
+					$data['post']="";
+					$data['page']="admin/muridkelas";
+					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'tahun', ips);		
+					$this->load->view('layout/admin', $data);
+				}
+			}
+		}
+		elseif ($this->input->post('jurusan')=='jurusan') {
+			$_SESSION['flash'] = '1';
+			redirect(base_url().'admin/kelas',location);
+		}
 	}
 	public function info()
 	{
