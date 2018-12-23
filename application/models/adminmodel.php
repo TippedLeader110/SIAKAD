@@ -28,6 +28,13 @@ class Adminmodel extends CI_Model {
 		$query = $query->num_rows();
 		return $query;
 	}
+	public function hitungda($s, $w)
+	{
+		$this->db->where(['jk' => $w]);
+		$query = $this->db->get($s);
+		$query = $query->num_rows();
+		return $query;
+	}
 	public function ambil($data)
 	{
 		$query = $this->db->get($data);

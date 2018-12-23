@@ -6,72 +6,40 @@
 </div>
 	<div class="container-fluid" style="background: white;padding-top: 20px;margin-left: -10px;" >
 		<div class="row">
-			<div class="col-md-12">
-				<h4>Daftar Semua Murid</h4>
+				<div class="col-md-3 offset-md-1" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
+				<div class="row" style="padding-top: 15px;">
+					<div class="col-md-5" style="margin-right: px;">
+						<img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 88px;max-width: 88px">
+					</div>
+						<div class="col-md-7">
+							<h4 style="color: white">Total Murid <br><?php echo $jumlahmurid; ?></h4>
+						</div>
+					</div>
+			</div>
+				<div class="col-md-3" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
+				<div class="row" style="padding-top: 15px;">
+					<div class="col-md-5" style="margin-right: px;">
+						<img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 88px;max-width: 88px">
+					</div>
+						<div class="col-md-7">
+							<h4 style="color: white">Total Siswa <br><?php echo $jumlahmurida; ?></h4>
+						</div>
+					</div>
+			</div>
+				<div class="col-md-3" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
+				<div class="row" style="padding-top: 15px;">
+					<div class="col-md-5" style="margin-right: px;">
+						<img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 88px;max-width: 88px">
+					</div>
+						<div class="col-md-7">
+							<h4 style="color: white">Total Siswi <br><?php echo $jumlahmurid; ?></h4>
+						</div>
+					</div>
 			</div>
 		</div>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row" style="margin-bottom: 10px;">
-					<div class="col-md-4">
-						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">&nbsp;
-						</form>
-					</div>
-					<div class="col-md-4">
-						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari TahunAngkatan" type="text" name="angkatan" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="angkatan">
-						</form>
-					</div>
-					<?php 
-
-					if (isset($_POST['cari'])) {
-						$s=$_POST['cari'];
-						redirect("/admin/murid/$s/nama",location);
-					}
-					if (isset($_POST['angkatan'])) {
-						$w=$_POST['angkatan'];
-						redirect("/admin/murid/$w/angkatan",location);
-					}
-					
-					 ?>
-					<div class="col-md-1" style="margin-right: 50px;">
-						<form method="post" >
-						<button class="btn btn-primary" name="tampil">Tampil Semua</button>
-						</form>
-						<?php if (isset($_POST['tampil'])) {
-							redirect("/admin/murid", location);
-						} ?>
-					</div>
-					<div class="col-md-2" style="text-align: right;">
-						<form action="<?php echo base_url() ?>admin/rMurid">
-						<button class="btn btn-primary" type="submit">Tambah Murid</button>
-						</form>
-					</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<table class="table table-bordered table-striped">
-						<tr>
-							<th>NIS</th><th>Nama</th><th>Kelas</th><th>Jurusan</th><th>Angkatan</th><th>Perintah</th>
-						</tr>
-						<?php 
-							$batas = 0;
-						foreach ($muridtam as $key => $v) {
-						$batas++;
-						echo "<tr>
-						<th>".$v->nis."</th><th>".$v->nama."</th><th>".$v->kelas."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th><th><form method='post' action='".base_url()."admin/info'><input type='text' hidden name='nis' value='".$v->nis."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
-							</tr>";
-							if ($batas==10) {
-							break;
-							}	
-						} ?>
-					</table>
-				</div>
-			</div>
+		<div>
+			
 		</div>
 	</div>
 </div>
 </div>
-</div>
-

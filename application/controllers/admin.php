@@ -41,7 +41,7 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['post']="";
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
-		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
+		
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
 		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
 		$data['page']="admin/awal";
@@ -92,6 +92,9 @@ class Admin extends CI_Controller {
 	}
 	public function murid()
 	{
+		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
+		$data['jumlahmurida'] = $this->adminmodel->hitungda('siswa','Laki-laki');
+		$data['jumlahmuridi'] = $this->adminmodel->hitungda('siswa','Perempuan');
 		$id=$this->uri->segment(3);
 		$tipe=$this->uri->segment(4);
 		if (isset($id)) {
