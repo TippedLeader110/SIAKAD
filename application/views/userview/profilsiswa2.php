@@ -31,6 +31,9 @@
 
 		<div class="row">
 			<div class="col-md-12">
+				<h3>Data Ayah</h3>
+			</div>
+			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 						Nama Ayah
 				</div>
@@ -54,6 +57,9 @@
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 						Nomor HP Ayah
 				</div>
+			</div>&nbsp;
+			<div class="col-md-12">
+				<h3>Data Ibu</h3>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
