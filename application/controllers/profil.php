@@ -31,6 +31,20 @@ class Profil extends CI_Controller {
 		$data['profil'] = 'aktif';
 		$this->load->view('layout/home', $data);
 	}
+	public function siswa2()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/profilsiswa1';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
+		$data['nama'] = 'Profil';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = 'aktif';
+		$this->load->view('layout/home', $data);
+	
 	public function guru()
 	{
 		$data['border']='transparent';
