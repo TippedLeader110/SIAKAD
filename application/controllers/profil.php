@@ -44,6 +44,7 @@ class Profil extends CI_Controller {
 		$data['guru'] = '';
 		$data['profil'] = 'aktif';
 		$this->load->view('layout/home', $data);
+	}
 	
 	public function guru()
 	{
