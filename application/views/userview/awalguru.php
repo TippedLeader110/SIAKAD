@@ -53,7 +53,7 @@
 		echo "<div class='row'>
 					<div class='col-md-12'>
 						<div class='container' style=' border-width: 1px; border-color: #d6d6c2; padding: 10px 10px 10px 10px; margin: 25px 10px 5px 25px; min-width: 920px;'>
-							<h5><a href='".$v->id."'>".$v->judul."</a></h5>	
+							<h5><a href='".base_url()."home/post/".$v->id."'>".$v->judul."</a></h5>  
 						</div>
 					</div>
 				</div>";

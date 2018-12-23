@@ -2,7 +2,7 @@
 <div class="col-md-3 scrollable" style="background-color: #8DB3DA;margin-top: -22px;border-style: solid; height: auto;" >
       <div class="profile" align="center">
         <div class="circle">
-          <img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
+          <img src="<?php echo base_url(); ?>gambar/<?php echo $_SESSION['img']; ?>.png" style="max-width: 100px; max-height: 100px;">
         </div>
         <h4 align="center" style="margin-top: 20px; color: white;"><b>Selamat Datang,</b></h4>
         <div class="field-wel">

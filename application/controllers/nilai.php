@@ -51,7 +51,6 @@ class Nilai extends CI_Controller {
 	public function siswa()
 	{
 		$data['border']='black';
-		$data['page']='userview/daftarnilai';
 		$data['nama'] = 'Daftar Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
@@ -59,6 +58,8 @@ class Nilai extends CI_Controller {
 		$data['rapot'] = '';
 		$data['guru'] = '';
 		$data['profil'] = '';
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		$data['page']='userview/daftarnilai';
 		$this->load->view('layout/home', $data);	
 	}
 	public function walikelas()

@@ -21,6 +21,7 @@ class Home extends CI_Controller {
 			redirect('login/siswa', location);
 		}
 		else{
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['border']='black';
 		$data['page']='userview/awaluser';
 		$data['caro']=$this->mainmodel->caro();
@@ -45,6 +46,7 @@ class Home extends CI_Controller {
 		$data['nama'] = 'Beranda';
 		$data['caro']=$this->mainmodel->caro();
 		$data['beranda'] = 'aktif';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nilai'] = '';
 		$data['absen'] = '';
 		$data['rapot'] = '';
