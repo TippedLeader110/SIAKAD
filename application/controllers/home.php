@@ -42,6 +42,7 @@ class Home extends CI_Controller {
 		}
 		else{
 		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['page']='userview/awalguru';
 		$data['nama'] = 'Beranda';
 		$data['caro']=$this->mainmodel->caro();

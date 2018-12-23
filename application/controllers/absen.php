@@ -7,6 +7,7 @@ class Absen extends CI_Controller {
 	{
 		$data['border']='black';
 		$data['page']='userview/abseninput';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nama'] = 'Absen Siswa';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -38,6 +39,7 @@ class Absen extends CI_Controller {
 		}
 		$data['t']=$this->input->post('sub');	
 		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['page']='userview/absensiswa';
 		$data['nama'] = 'Absen';
 		$data['beranda'] = '';

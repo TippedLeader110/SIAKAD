@@ -8,6 +8,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/inputnilai';
 		$data['nama'] = 'Input Nilai';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -39,6 +40,7 @@ class Nilai extends CI_Controller {
 		$data['seni_budaya']= ambilspes('seni_budaya',$nama,'nis');
 		$data['sosiologi']= ambilspes('sosiologi',$nama,'nis');
 		$data['page']='userview/raport';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['nama'] = 'Rapot';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -54,6 +56,7 @@ class Nilai extends CI_Controller {
 		$data['nama'] = 'Daftar Nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = '';
@@ -69,6 +72,7 @@ class Nilai extends CI_Controller {
 		$data['nama'] = 'Wali kelas';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = '';
@@ -81,6 +85,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/uas';
 		$data['nama'] = 'Daftar Nilai';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -94,6 +99,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/uts';
 		$data['nama'] = 'Daftar Nilai';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -107,6 +113,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/tugas';
 		$data['nama'] = 'Daftar Nilai';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';

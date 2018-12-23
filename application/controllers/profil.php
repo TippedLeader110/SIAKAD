@@ -7,6 +7,7 @@ class Profil extends CI_Controller {
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -20,6 +21,7 @@ class Profil extends CI_Controller {
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilguru';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -33,6 +35,7 @@ class Profil extends CI_Controller {
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilwalikelas';
+		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';

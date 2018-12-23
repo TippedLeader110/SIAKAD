@@ -32,6 +32,7 @@ class Daftar extends CI_Controller {
 		$data['gurudaf'] = $this->adminmodel->ambil('guru');
 		}
 		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';
 		$data['beranda'] = '';
@@ -67,6 +68,7 @@ class Daftar extends CI_Controller {
 		}
 
 		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['page']='userview/daftarsiswa';
 		$data['nama'] = 'Daftar Siswa';
 		$data['beranda'] = '';
