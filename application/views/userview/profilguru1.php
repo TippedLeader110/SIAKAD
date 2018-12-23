@@ -59,18 +59,13 @@
 	</div>
 	<div class="col-md-4">
 		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; ">
-			<div class="circle"style="margin: 10px 10px 50px 60px; margin-top: 30px;">
-				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 100px; max-height: 100px;">
+			<div style="margin: 60px; margin-top: 30px;">
+				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
 			</div>
-				<div class="container" style="width: 150px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px;">
-				<center>Ubah Foto</center>
-			</div>
-	<div class="col-md-3">
-		<div class="row">
-				
 		</div>
-	</div>
-</div>
+			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px;">
+				<center>Ubah Profil Anda</center>	
+			</div>
 	</div>
 </div>
 </div>

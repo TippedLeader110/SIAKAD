@@ -11,10 +11,9 @@
 		<div class="container" style="border-width: 1px; ">
 <div class="row">
 	<div class="col-md-8">
-		
 		<div class="row">
 				<div class="col-md-4">
-					<div class="container" style="background-color:#2F669F; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
+					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
 						<center><a href="">Data Sekolah</a></center>
 					</div>
 				</div>
@@ -24,7 +23,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="container" style="background-color:#8DB3DA; border-width: 0px; font-weight: 500;margin-left: 10px;  margin-top: 30px; margin-bottom: 15px;">
+					<div class="container" style="background-color:#2F669F; border-width: 0px; font-weight: 500;margin-left: 10px;  margin-top: 30px; margin-bottom: 15px;">
 						<center><a href="">Data Orangtua</a></center>
 					</div>
 				</div>
@@ -33,32 +32,52 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NIS
+						Nama Ayah
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama
+						Pendidikan Ayah
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NISN
+						Pekerjaan Ayah
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Jurusan
+						Alamat Ayah
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tahun Masuk
+						Nomor HP Ayah
 				</div>
 			</div>
 			<div class="col-md-12">
-				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Angkatan
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Nama Ibu
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Pendidikan Ibu
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Pekerjaan Ibu
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Alamat Ibu
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+						Nomor HP Ibu
 				</div>
 			</div>
 		</div>
