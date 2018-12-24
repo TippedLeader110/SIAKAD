@@ -1,55 +1,43 @@
 <div class="container-fluid" onclick="test3()" onmousewheel="test3()" onmouseover="test3()">
 <div class="col-md-10 offset-md-1" >
 <div class="row" style="margin-bottom: 50px;">
-		<h3>Kontrol Guru</h3>
+		<h3>Semua guru</h3>
 		<hr>
 </div>
 	<div class="container-fluid" style="background: white;padding-top: 20px;margin-left: -10px;" >
 		<div class="row">
 			<div class="col-md-12">
-				<h4>Daftar Semua Guru</h4>
+				<h4>Semua guru</h4>
 			</div>
 		</div>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="row" style="margin-bottom: 10px;">
-					<div class="col-md-4">
-						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">&nbsp;
-						</form>
-					</div>
-					<div class="col-md-4">
-						<form method="post">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Kode Mapel" type="text" name="angkatan" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="angkatan">
-						</form>
-					</div>
-					<?php 
-
-					if (isset($_POST['cari'])) {
-						$s=$_POST['cari'];
-						redirect("/admin/guru/$s/nama",location);
-					}
-					if (isset($_POST['angkatan'])) {
-						$w=$_POST['angkatan'];
-						redirect("/admin/guru/$w/angkatan",location);
-					}
-					
-					 ?>
-					<div class="col-md-1" style="margin-right: 50px;">
-						<form method="post" >
-						<button class="btn btn-primary" name="tampil">Tampil Semua</button>
-						</form>
-						<?php if (isset($_POST['tampil'])) {
-							redirect("/admin/guru", location);
-						} ?>
-					</div>
-					<div class="col-md-2" style="text-align: right;">
-						<form action="<?php echo base_url() ?>admin/rguru">
-						<button class="btn btn-primary" type="submit">Tambah guru</button>
-						</form>
-					</div>
-			</div>
 			<div class="row">
+				<div class="col-md-12">
+					<table>
+					<tr>
+						<td><form method="post" action="<?php echo base_url() ?>admin/daftar_guru_cari"><input type="text" hidden name="tent" value="nama">
+							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td>
+						<td>
+							<form method="post" action="<?php echo base_url() ?>admin/daftar_guru_cari">
+							<input hidden type="text" name="tent" value="tahun">
+							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Tahun Angkatan" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form>	
+						</td>
+						<td>
+							<form action="<?php echo base_url() ?>admin/daftar_guru">
+							<button class="btn" type="submit">Tampilkan Semua</button>
+							</form>	
+						</td>
+						<td>
+							<form action="<?php echo base_url() ?>admin/rguru">
+							<button class="btn btn-primary" type="submit">Tambah guru</button>
+							</form>	
+						</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 10px;">
 				<div class="col-md-12">
 					<table class="table table-bordered table-striped">
 						<tr>
@@ -73,7 +61,7 @@
 							break;
 							}	
 						} ?>
-					</table>
+					</table></form>
 				</div>
 			</div>
 		</div>
@@ -81,4 +69,3 @@
 </div>
 </div>
 </div>
-

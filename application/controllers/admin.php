@@ -41,6 +41,7 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['post']="";
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
+		$data['jumlahterkini'] = $this->adminmodel->hitung('terkini');
 		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
 		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
@@ -179,6 +180,17 @@ class Admin extends CI_Controller {
 		$data['post']="";
 		$data['page']="admin/guru";
 		$this->load->view('layout/admin', $data);	
+	}
+	public function Daftar_guru()
+	{
+		$data['gurutam'] = $this->adminmodel->ambil('guru');
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/sguru";
+		$this->load->view('layout/admin', $data);
 	}
 	public function post()
 	{

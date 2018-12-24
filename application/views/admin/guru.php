@@ -27,7 +27,7 @@
 							<td><img src="<?php echo base_url() ?>/img/icon/post.png" style="max-height: 104px;max-width: 104px"></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Lihat Postingan</h4></td>
+							<td><h4>Buat Pengumuman</h4></td>
 						</tr>
 					</table>
 				</center>
