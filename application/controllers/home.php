@@ -11,9 +11,21 @@ class Home extends CI_Controller {
 	}
 	public function logout()
 	{
-		$_SESSION['user']='';
-		$w = base_url();
-		redirect("$w", location);
+		if($_SESSION['user']=='guru')
+		{
+			base_url();
+			redirect("login/guru", location);
+		}
+		elseif($_SESSION['user']=='siswa')
+		{
+			base_url();
+			redirect("login/siswa", location);	
+		}
+		else
+		{
+			$w = base_url();
+			redirect("$w", location);	
+		}
 	}
 	public function siswa()
 	{

@@ -321,7 +321,7 @@ class Admin extends CI_Controller {
 		$agama = $this->input->post('agama');
 		$alamat = $this->input->post('alamat');
 		$email = $this->input->post('email');
-		$jkel = $this->input->post('jkel');
+		$jkel = $this->input->post('jk');
 		$jurusan = $this->input->post('jurusan');
 		$ayah = $this->input->post('ayah');
 		$ibu = $this->input->post('ibu');
