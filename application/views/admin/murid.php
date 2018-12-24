@@ -41,10 +41,10 @@
 				<center>
 					<table>
 						<tr align="center">
-							<td><a href="<?php echo base_url() ?>admin/Daftar_murid"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/Daftar_murid"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Lihat Semua Murid</a></h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/Daftar_murid">Lihat Semua Murid</a></h4></td>
 						</tr>
 					</table>
 				</center>
@@ -55,10 +55,10 @@
 				<center>
 					<table style="margin-top: 0px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/Alumni.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/Daftar_alumni"><img src="<?php echo base_url() ?>/img/icon/Alumni.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Lihat Daftar Alumni</h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/Daftar_alumni">Lihat Daftar Alumni</a></h4></td>
 						</tr>
 					</table>
 				</center>
@@ -83,10 +83,10 @@
 				<center>
 					<table style="margin-top: 0px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/muridstatus"><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Atur Status Murid</h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/muridstatus">Atur Status Murid</a></h4></td>
 						</tr>
 					</table>
 				</center>

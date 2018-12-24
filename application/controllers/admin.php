@@ -396,6 +396,26 @@ class Admin extends CI_Controller {
 			$this->load->view('layout/admin', $data);
 	}
 
+	public function Daftar_murid_cari()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $w, 'tahun');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $w, 'nama');
+		}
+		else{}
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/smurid";
+			$this->load->view('layout/admin', $data);
+	}
+
 	public function jurusanIPACari()
 	{
 		if ($this->input->post('tent')=='tahun') {
@@ -447,6 +467,7 @@ class Admin extends CI_Controller {
 			$data['page']="admin/statusmurid";
 			$this->load->view('layout/admin', $data);
 	}
+
 	public function aturstatus(){
 		$d = $_POST['ck'];
 		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
