@@ -17,6 +17,20 @@ class Nilai extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
+	public function input()
+	{
+		$data['border']='black';
+		$data['page']='userview/nilai';
+		$data['nama'] = 'Input Nilai';
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function raport()
 	{
 		$nama = $_SESSION['nis'];

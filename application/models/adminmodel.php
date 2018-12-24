@@ -58,6 +58,12 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
+	public function ambilspes3($data,$nama,$spes)
+	{
+		$this->db->like([$spes => $nama]);
+		$query = $this->db->get($data);
+		return $query->result();
+	}
 	public function absen($id,$nis,$a){
 		$this->db->where(['semester' => $id, 'nis' => $nis, 'bulan' => $a]);
 			$query = $this->db->get('absen');

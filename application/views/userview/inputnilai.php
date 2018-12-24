@@ -11,13 +11,13 @@
 						<tr><td>Jurusan</td></tr>
 						<tr>
 							<td>
+							<form action="<?php echo base_url() ?> nilai/guru">
 								<select name="jurusam" class="form-control" style="width: 250px;">
 								<option value="jurusan">-Pilih Jurusan-</option>
 								<option value="Ilmu Pengetahuan Alam">Ilmu Pengetahuan Alam</option>
 								<option value="Ilmu Pengetahuan Sosial">Ilmu Pengetahuan Sosial</option>
 								</select> 
 							</td>
-							<td><button type="submit" class="btn btn-primary">Cari</button></td>
 						</tr>
 					</table> 
 				</div>
@@ -29,4 +29,36 @@
 </div>
 
 <div style="width:200px; height:30px; margin-left:350px; margin-top:-15px;"></div>
+	<table class="table table-bordered table-striped">
+					<tr>
+					<th>No</th>
+					<th>Nis</th>
+					<th>Nama</th>
+					<th>Stambuk</th>
+					<th>Jurusan</th>
+					<th>Kelas</th>
+					<th>Aksi</th>
+           </tr>
+            <?php
 
+            
+              $batas = 0;
+  
+            foreac
+            h ($muridtam a
+            	s $key => $v) {
+            $batas++;
+            echo "<tr>
+      <td></td><td>".$v->nis."</td>
+      <td>".$v->nama."</td>
+      <td>".$v->tahun."</td>
+      <td>".$v->jurusan."</td>
+      <td>".$v->kelas."</td>
+      <td><form action=''><button class='btn btn-primary' type='submit'>Lihat Profil</button></form></td>
+    </tr>";
+              if ($batas==10) {
+              break;
+              } 
+            } ?>
+          </table>
+		</form>
