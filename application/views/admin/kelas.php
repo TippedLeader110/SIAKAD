@@ -13,6 +13,7 @@
 							echo "<div class='alert alert-warning'>
   									<strong>Perhatian!</strong> Tolong pilih jurusan.
 								</div>";
+								$_SESSION['flash']='';
 						} ?></h4></td></tr>
 						<tr>
 							<th><h3>Atur Kelas</h3></th>
@@ -20,7 +21,7 @@
 						<tr><th colspan="2"><hr></th></tr>
 						<tr>
 							<td><h4>Jurusan </h4></td>
-							<td><form method="post" action="<?php echo base_url() ?>admin/jurusan">
+							<td><form method="post">
 								<select name="jurusan" class="form-control" style="width: 250px;">
 								<option value="jurusan">-Pilih Jurusan-</option>
 								<option value="ipa">Ilmu Pengetahuan Alam</option>
@@ -35,6 +36,22 @@
 	</div>
 </div>
 </div>
+
+<?php 
+if (isset($_POST['jurusan'])) {
+	if ($_POST['jurusan']=='ipa') {
+		redirect('admin/jurusanIPA');
+	}
+	elseif ($_POST['jurusan']=='ips') {
+		redirect('admin/jurusanIPS');	
+	}
+	else
+	{
+		redirect('admin/kelas');
+		$_SESSION['flash']=='1';
+	}
+}
+ ?>
 				<!-- <div class="col-md-3 offset-md-1" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
 				<div class="row" style="padding-top: 15px;">
 					<div class="col-md-5" style="margin-right: px;">
