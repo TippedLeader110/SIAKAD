@@ -30,7 +30,7 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Pangkat/Golongan PNS
+						Golongan PNS
 				</div>
 			</div>
 			<div class="col-md-12">
