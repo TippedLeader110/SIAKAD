@@ -77,6 +77,20 @@ class Profil extends CI_Controller {
 	public function walikelas()
 	{
 		$data['border']='transparent';
+		$data['page']='userview/profilwalikelas';
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		$data['nama'] = 'Profil';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = 'aktif';
+		$this->load->view('layout/home', $data);
+	}
+	public function walikelas1()
+	{
+		$data['border']='transparent';
 		$data['page']='userview/profilwalikelas1';
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nama'] = 'Profil';

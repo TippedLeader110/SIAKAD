@@ -76,7 +76,7 @@
 					</tr>
 					<tr>
 						<td><input type="text" name="alamat" placeholder="Alamat Murid"></td>
-						<td><input type="text" name="nopi" placeholder="Nomor HP Ibu"></td>
+						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
 					</tr>
 					<tr>
 						<td><input type="text" name="email" placeholder="Email"></td>

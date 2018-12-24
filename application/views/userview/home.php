@@ -29,31 +29,39 @@
 				<div class="container" style="background-color: white; margin-left: -5px; border-width: 0px;min-height: 255px; padding: 5px 5px 5px 5px;">
 					<div class="row" style=" margin-top: 15px;">
 						<!--ini kotak pertama -->
-						<div class="col-5" style="background-color: grey; margin-right: 2px; margin-left: 25px; min-height: 130px; max-height: 110px; padding-left: 25px; padding-top: 13px; max-width: 150px;">
-							<div class="circle">
-								<img src="<?php echo base_url()?>img/icon/login-icon.png" style="max-width: 100px; max-height: 100px;height: 100px;width: 100px">
+							<div class="col-5" style="background-color: #2F669F; margin-right: 2px; margin-left: 25px; min-height: 130px; max-height: 110px; padding-left: 25px; padding-top: 13px; max-width: 150px;">
+								<div class="circle">
+									<a href="<?php echo base_url()?>login/guru">
+										<img src="<?php echo base_url()?>img/icon/icon-guru.png" style="max-width: 100px; max-height: 100px;height: 100px;width: 100px">
+									</a>
+								</div>
 							</div>
-						</div>
-
-						<!--ini kotak kedua -->		
-						<div class="col-5" style="background-color: grey; margin-left: 10px; min-height: 130px; max-height: 110px; padding-left: 25px; padding-top: 13px;">
+						<!--ini kotak kedua -->
+						<div class="col-5" style="background-color: #2F669F; margin-left: 10px; min-height: 130px; max-height: 110px; padding-left: 25px; padding-top: 13px;">
 							<div class="circle">
-								<img src="<?php echo base_url()?>img/icon/login-icon.png" style="max-width: 100px; max-height: 100px;height: 100px;width: 100px">
+								<a href="<?php echo base_url()?>login/siswa">
+									<img src="<?php echo base_url()?>img/icon/student-icon.png" style="max-width: 100px; max-height: 100px;height: 100px;width: 100px">
+								</a>
 							</div>
 						</div>		
 					</div>
 
-					<!-- ----------->
+					<!-- ----------- -- ----------- -- ----------- -- ----------->
 
 					<div class="row" style=" margin-top: 5px;">
 						<!--ini kotak pertama -->
-						<div class="col-5" style="background-color: grey; margin-right: 2px; margin-left: 25px; min-height: 30px; max-height: 30px; padding: 5px 5px 5px 5px; max-width: 150px;">
-							<h5><b>Guru</b></h5>
+
+						<div class="col-5" style="background-color: #2F669F; margin-right: 2px; margin-left: 25px; min-height: 30px; padding: 2px 2px 2px 2px; max-width: 150px;">
+							<a href="<?php echo base_url()?>login/guru">
+								<center><h5 style="color: white;">Guru/Walikelas</h5></center>
+							</a>
 						</div>
 						
 						<!--ini kotak kedua -->		
-						<div class="col-5" style="background-color: grey; margin-right: 2px; margin-left: 10px; min-height: 30px; max-height: 30px;padding: 5px 5px 5px 5px; max-width: 150px;">
-							<h5><b>Siswa</b></h5>
+						<div class="col-5" style="background-color: #2F669F; margin-left: 10px; min-height: 30px;padding: 2px 2px 2px 2px; min-width: 150px;">
+							<a href="<?php echo base_url()?>login/siswa">
+								<center><h5 style="color: white;">Siswa</h5></center>
+							</a>
 						</div>
 					</div>
 				</div>		

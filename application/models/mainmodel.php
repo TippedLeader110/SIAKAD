@@ -20,7 +20,7 @@ class Mainmodel extends CI_Model {
 		$query = $this->db->get('siswa');
 		$query = $query->num_rows();
 		if ($query==0) {
-			redirect('home/login/fail');
+			redirect('login/siswa');
 		}
 		else if ($query==1) {
 		$this->db->where(['username' => $user, 'password' => $pass]);

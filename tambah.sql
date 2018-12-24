@@ -1,0 +1,1 @@
+ALTER TABLE terkini ADD url text; 
