@@ -46,21 +46,8 @@ class Daftar extends CI_Controller {
 	public function siswa()
 	{
 		$id=$this->uri->segment(3);
-		$tipe=$this->uri->segment(4);
 		if (isset($id)) {
-			if ($tipe=='nama') {
-			$max = $id;	
-			$data['test'] = $max;
-			$nama=$max;
-			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'nama');	
-			}
-			else
-			{
-			$max = $id;	
-			$data['test'] = $max;
-			$nama=$max;
-			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $nama, 'tahun');		
-			}
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $id, 'tahun');		
 		}
 		else
 		{

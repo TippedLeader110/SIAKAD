@@ -55,7 +55,7 @@
 							$x='Tidak';
 						}
 						echo "<tr>
-						<th>".$v->nip."</th><th>".$v->nama."</th><th>".$v->kode_mapel."</th><th>".$x."</th><th>".$v->gol."</th><th><form method='post' action='".base_url()."admin/info'><input type='text' hidden name='nis' value='".$v->nip."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
+						<th>".$v->nip."</th><th>".$v->nama."</th><th>".$v->kode_mapel."</th><th>".$x."</th><th>".$v->gol."</th><th><form method='post' action='".base_url()."admin/infoguru'><input type='text' hidden name='nip' value='".$v->nip."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
 							</tr>";
 							if ($batas==10) {
 							break;

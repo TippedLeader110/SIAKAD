@@ -27,7 +27,7 @@
 							<td><a href="<?php echo base_url() ?>admin/post"><img src="<?php echo base_url() ?>/img/icon/post.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4><a href="<?php echo base_url() ?>admin/post">Buat Pengumuman</a></h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/post">Pengumuman</a></h4></td>
 						</tr>
 					</table>
 				</center>

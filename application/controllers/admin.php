@@ -68,7 +68,7 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['post']="";
 		$data['page']="admin/kode";
-		$this->load->view('layout/admin'. $data);
+		$this->load->view('layout/admin', $data);
 	}
 	public function aturkelas()
 	{
@@ -366,11 +366,12 @@ class Admin extends CI_Controller {
 		$jk = $this->input->post('jk');
 		$gol = $this->input->post('gol');
 		$no_hp = $this->input->post('no_hp');
-		$nfile = "/gambar/$nis";
+		$nfile = "/gambar/$nip";
 		$this->adminmodel->kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp);
 		
 		$data['page'] = 'admin/test2';
 		$data['dashboard']="";
+		$data['nip'] = $nip;
 		$data['murid']="active";
 		$data['guru']="";
 		$data['matapel']="";
@@ -544,6 +545,19 @@ class Admin extends CI_Controller {
 		$data['arra'] = $this->adminmodel->ambildata($nis);
 		$this->load->view('layout/admin', $data);
 	}
+	public function infoguru()
+	{
+
+		$nip = $this->input->post('nip');
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/regisg2";
+		$data['arra'] = $this->adminmodel->ambilspes('guru', $nip, 'nip');
+		$this->load->view('layout/admin', $data);
+	}
 	public function edit()
 	{
 
@@ -567,6 +581,34 @@ class Admin extends CI_Controller {
 		$data['page']="admin/test";
 		$this->load->view('layout/admin')	;
 	}
+		public function do_upload2()
+        {
+
+        	$nip= $this->input->post('nip');
+        		$config['file_name']			= $nis;
+                $config['upload_path']          = './gambar/';
+                $config['allowed_types']        = 'jpg|png|jpeg';
+                $config['max_size']             = 100;
+                $config['max_width']            = 1024;
+                $config['max_height']           = 768;
+
+                $this->load->library('upload', $config);
+
+                if ( ! $this->upload->do_upload('userfile'))
+                {
+                        $error = array('error' => $this->upload->display_errors());
+                        $this->load->view('admin/foto', $error);
+                }
+                else
+                {
+                		$w = $config['file_name'];
+                        $data = array('upload_data' => $this->upload->data());
+                        $this->db->set('foto', $w); 
+                        $this->db->where(['nip' => $nip]);
+						$this->db->update('guru');
+                        redirect("admin/daftar_guru");
+                }
+        }
 	public function do_upload()
         {
 
@@ -605,6 +647,17 @@ class Admin extends CI_Controller {
 		$this->adminmodel->post($judul,$isi,$waktu,$penulis);
 		redirect("admin/post", location);
 		}
+		public function guruIPA()
+	{
+			$data['dashboard']="";
+			$data['murid']="";
+			$data['guru']="active";
+			$data['matapel']="";
+			$data['post']="";
+			$data['kelas'] = $this->adminmodel->ambilspes('kelas', 'ipa', 'jurusan');
+			$data['page']="admin/guruIPA";
+			$this->load->view('layout/admin', $data);
+	}
 }
 
 ?>

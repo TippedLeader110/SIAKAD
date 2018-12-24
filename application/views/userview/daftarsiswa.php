@@ -56,9 +56,9 @@ h2 {
 <div class="dropdown" style="padding-bottom: 2em">
   <button class="dropbtn">Tahun Angkatan</button>
   <div class="dropdown-content">
-  <a href="#">2016</a>
-  <a href="#">2017</a>
-  <a href="#">2018</a>
+  <a href="<?php echo base_url()?>daftar/siswa/2016">2016</a>
+  <a href="<?php echo base_url()?>daftar/siswa/2017">2017</a>
+  <a href="<?php echo base_url()?>daftar/siswa/2018">2018</a>
   </div>
 </div>
 </center>
@@ -84,9 +84,6 @@ h2 {
       <td>".$v->kelas."</td>
       <td><form action=''><button class='btn btn-primary' type='submit'>Lihat Profil</button></form></td>
     </tr>";
-              if ($batas==10) {
-              break;
-              } 
             } ?>
           </table>
 </form>
