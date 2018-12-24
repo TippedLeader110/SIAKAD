@@ -89,7 +89,7 @@ class Adminmodel extends CI_Model {
 	}
 	public function kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp, $tmpt)
 	{
-		$adata = array('nama' =>$nama,'nip' =>$nip,'kode_mapel' =>$kode_mapel,'username' =>$username,'password' =>$password,'tgl_lahir' =>$tanggal,'agama' =>$agama,'alamat' =>$alamat,'email' =>$email,'mapel' =>$mapel,'jk' =>$jk,'gol' =>$gol,'no_hp' =>$no_hp, 'tmpt_lahir' => $tmpt);
+		$adata = array('nama' =>$nama,'nip' =>$nip,'kode_mapel' =>$kode_mapel,'username' =>$username,'password' =>$password,'tgl_lahir' =>$tanggal,'alamat' =>$alamat,'email' =>$email,'mapel' =>$mapel,'jk' =>$jk,'gol' =>$gol,'no_hp' =>$no_hp, 'tmpt_lahir' => $tmpt);
 		$this->db->insert('guru', $adata);
 	}
 	public function post($judul,$isi,$waktu,$penulis)
