@@ -25,39 +25,40 @@
 								<h4>Masuk Siswa/i</h4>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 5px;">
+					<div class="row" style="margin-top: 20px;">
 						<div class="container-fluid">											
-								<h5 style="text-align: left;">&nbsp;&nbsp;Nama Pengguna</h5>
+								<h6 style="text-align: left; color: white;">&nbsp;&nbsp;Nama Pengguna</h6>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="text" name="username" placeholder="">
+								<input style="width: 92%" type="text" name="username" placeholder="Ketik disini..">
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="container-fluid">
+								<h6 style="text-align: left; color: white;">&nbsp;&nbsp;Kata Sandi</h6>
 						</div>
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h5 style="text-align: left;">&nbsp;&nbsp;Kata Sandi</h5>
-						</div>
-					</div>
-					<div class="row">
-						<div class="container-fluid">
-								<input style="width: 92%" type="Password" name="password" placeholder="" id="myInput">
+								<input style="width: 92%" type="Password" name="password" placeholder="Ketik disini.." id="myInput">
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px;">
-						<div class="container-fluid" style="color: white">
-							<input type="checkbox" onclick="myFunction()">Tampilkan Kata Sandi
+						<div class="container-fluid" style="color: white; margin-left: 10px;" align="left">
+							<input type="checkbox" onclick="myFunction()">
+							<span style="margin-left: 5px;">Tampilkan Kata Sandi</span>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 50px;">
+					<div class="row" style="margin-top: 30px;">
 						<div class="container-fluid">
-								<button class="more" type="submit" style="background: #32669B;padding-left: 30px;padding-right: 30px;border-color: transparent;border-radius: 20px;">Masuk</button>
+								<button class="btn btn-primary" type="submit">Masuk</button>
 						</div>
 					</div>
 					<div class="row">
-						<div class="container-fluid" style="color: #2F669F">
-								Lupa Kata Sandi ?
+						<div class="container-fluid" style="color: #2F669F; padding-bottom: 20px; margin-top: 10px;">
+								<a href="#" style="text-decoration: none;">Lupa Kata Sandi?</a>
 							
 						</div>
 					</div>		
