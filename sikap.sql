@@ -1,1 +1,0 @@
-CREATE TABLE SIKAP(kedisiplinan Varchar(4),kebersihan varchar(4),tng_jawab varchar(4),sopan varchar(4),per_diri varchar(4), kejujuran varchar(4));
