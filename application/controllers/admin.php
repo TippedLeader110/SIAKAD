@@ -325,6 +325,8 @@ class Admin extends CI_Controller {
 		$jurusan = $this->input->post('jurusan');
 		$ayah = $this->input->post('ayah');
 		$ibu = $this->input->post('ibu');
+		$payah = $this->input->post('payah');
+		$pibu = $this->input->post('pibu');
 		$penayah = $this->input->post('penayah');
 		$penibu = $this->input->post('penibu');
 		$aayah = $this->input->post('aayah');
@@ -347,7 +349,7 @@ class Admin extends CI_Controller {
 		else {
 			
 			$this->session->set_flashdata('success', 'Data berhasil disimpan');
-		$this->adminmodel->kirimsiswa($nis,$nama,$username,$pass,$sekolah,$agama,$alamat,$email,$jkel,$jurusan,$ayah,$ibu,$penayah,$penibu,$aayah,$aibu,$tahun,$tlahir,$date,$nfile, $anak, $nohpa, $nohpi,$kelas);
+		$this->adminmodel->kirimsiswa($nis,$nama,$username,$pass,$sekolah,$agama,$alamat,$email,$jkel,$jurusan,$ayah,$ibu,$payah,$pibu,$aayah,$aibu,$tahun,$tlahir,$date,$nfile, $anak, $nohpa, $nohpi,$kelas, $penibu, $penayah);
 
 		$data['page'] = 'admin/test';
 		$data['dashboard']="";
