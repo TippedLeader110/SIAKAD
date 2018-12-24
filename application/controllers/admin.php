@@ -340,7 +340,8 @@ class Admin extends CI_Controller {
 		$aayah = $this->input->post('aayah');
 		$aibu = $this->input->post('aibu');
 		$tahun = $this->input->post('tahun');
-		$tlahir = $this->input->post('tlahir');
+		$tlahir = date("Y-m-d",strtotime($this->input->post('tlahir')));
+		// $tlahir = $this->input->post('tlahir');
 		$date = $this->input->post('date');
 		$file = $this->input->post('file');
 		$nfile = "/gambar/$nis";
@@ -376,7 +377,8 @@ class Admin extends CI_Controller {
 		$kode_mapel = $this->input->post('kode_mapel');
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
-		$tanggal = $this->input->post('tanggal');
+		$tanggal = date("Y-m-d",strtotime($this->input->post('tanggal')));
+		// $tanggal = $this->input->post('tanggal');
 		$tmpt = $this->input->post('tmpt');
 		$agama = $this->input->post('agama');
 		$alamat = $this->input->post('alamat');
