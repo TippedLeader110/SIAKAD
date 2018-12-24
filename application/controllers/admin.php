@@ -81,6 +81,24 @@ class Admin extends CI_Controller {
 		redirect('admin/kelas');
 	}
 
+	public function aturkelasguru()
+	{
+		$w = $_POST['kelas'];
+		$d = $_POST['ck'];
+		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+		$this->db->where(['nip' => $d[$i]]);
+		$query = $this->db->get('guru');
+		$data = $query->result();
+		foreach ($data as $key => $v) {
+			$kode = $v->mapel;
+		}
+		$kode = "$kode $w";
+		$this->db->where('nip', $d[$i]);
+		$this->db->set('kode_mapel', $kode);
+		$this->db->update('guru');
+		}
+		redirect('admin/guruIPA');
+	}
 	public function atur()
 	{
 		$id=$this->uri->segment(3);
@@ -359,6 +377,7 @@ class Admin extends CI_Controller {
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$tanggal = $this->input->post('tanggal');
+		$tmpt = $this->input->post('tmpt');
 		$agama = $this->input->post('agama');
 		$alamat = $this->input->post('alamat');
 		$email = $this->input->post('email');
@@ -367,7 +386,7 @@ class Admin extends CI_Controller {
 		$gol = $this->input->post('gol');
 		$no_hp = $this->input->post('no_hp');
 		$nfile = "/gambar/$nip";
-		$this->adminmodel->kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp);
+		$this->adminmodel->kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp, $tmpt);
 		
 		$data['page'] = 'admin/test2';
 		$data['dashboard']="";
@@ -438,6 +457,26 @@ class Admin extends CI_Controller {
 			$data['matapel']="";
 			$data['post']="";
 			$data['page']="admin/sguru";
+			$this->load->view('layout/admin', $data);
+	}
+
+	public function guruIPACari()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		else{}
+			$data['dashboard']="";
+			$data['murid']="";
+			$data['guru']="active";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/guruIPA";
 			$this->load->view('layout/admin', $data);
 	}
 
@@ -585,7 +624,7 @@ class Admin extends CI_Controller {
         {
 
         	$nip= $this->input->post('nip');
-        		$config['file_name']			= $nis;
+        		$config['file_name']			= $nip;
                 $config['upload_path']          = './gambar/';
                 $config['allowed_types']        = 'jpg|png|jpeg';
                 $config['max_size']             = 100;
@@ -654,7 +693,7 @@ class Admin extends CI_Controller {
 			$data['guru']="active";
 			$data['matapel']="";
 			$data['post']="";
-			$data['kelas'] = $this->adminmodel->ambilspes('kelas', 'ipa', 'jurusan');
+			$data['kelas'] = $this->adminmodel->ambil('guru');
 			$data['page']="admin/guruIPA";
 			$this->load->view('layout/admin', $data);
 	}
