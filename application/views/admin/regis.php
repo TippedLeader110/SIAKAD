@@ -67,12 +67,19 @@
 						<td><input type="text" name="pibu" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="alamat" placeholder="Alamat Murid"></td>
+						<td><select name="jk" class="form-control" style="width: 400px;">
+							<option>Jenis Kelamin</option>
+							<option>Laki-laki</option>
+							<option>Perempuan</option>
+						</select></td>
 						<td><input type="text" name="aibu" placeholder="Alamat Ibu"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="email" placeholder="Email"></td>
+						<td><input type="text" name="alamat" placeholder="Alamat Murid"></td>
 						<td><input type="text" name="nopi" placeholder="Nomor HP Ibu"></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="email" placeholder="Email"></td>
 					</tr>
 					<tr>
 						<td><select name="agama" class="form-control" style="width: 400px;">
