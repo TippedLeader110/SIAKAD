@@ -98,11 +98,11 @@
 						<td rowspan="15"><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"></textarea></td>
 					</tr>
 					<tr>
-						<td><h4>Pangkat/Golongan PNS</h4></td>
+						<td><h4>Golongan PNS</h4></td>
 					</tr>	
 					<tr>
 						<td><select name="pg" class="form-control" style="width: 400px;">
-							<option>Pangkat/Golongan PNS</option>
+							<option>Golongan PNS</option>
 							<option value="I/A">I/A</option>
 							<option value="I/B">I/B</option>
 							<option value="I/C">I/C</option>
