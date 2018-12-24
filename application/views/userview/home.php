@@ -26,7 +26,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="container" style="background-color: white; margin-left: -5px; border-width: 0px;min-height: 255px; padding: 5px 5px 5px 5px;">
+				<div class="container" style="background-color: white; margin-left: -5px; border-width: 0px;min-height: 210px; padding: 5px 5px 5px 5px;">
 					<div class="row" style=" margin-top: 15px;">
 						<!--ini kotak pertama -->
 							<div class="col-5" style="background-color: #2F669F; margin-right: 2px; margin-left: 25px; min-height: 130px; max-height: 110px; padding-left: 25px; padding-top: 13px; max-width: 150px;">

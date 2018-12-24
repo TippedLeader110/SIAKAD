@@ -7,7 +7,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="container" style="background: white;height: 185px;">
+				<div class="container" style="background: #98f6b3;height: 185px;">
 					<table style="margin-top: 15px;">
 						<tr>
 							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Total Guru : <?php echo "$jumlahguru"; ?></h4></td>
@@ -24,10 +24,10 @@
 					<center>
 					<table style="margin-top: 15px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/post.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/post"><img src="<?php echo base_url() ?>/img/icon/post.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4>Buat Pengumuman</h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/post">Buat Pengumuman</a></h4></td>
 						</tr>
 					</table>
 				</center>
@@ -36,9 +36,9 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 					<center>
-					<table style="margin-top: 15px">
+					<table style="margin-top: 20px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><img src="<?php echo base_url() ?>/img/icon/buku.png" style="max-height: 104px;max-width: 104px"></td>
 						</tr>
 						<tr align="center">
 							<td><h4>Daftar Mata Pelajaran</h4></td>
@@ -52,7 +52,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table>
+					<table style="margin-top: 10px">
 						<tr align="center">
 							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
 						</tr>
@@ -66,7 +66,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table style="margin-top: 0px">
+					<table style="margin-top: 10px">
 						<tr align="center" style="">
 							<td><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 104px;max-width: 104px"></td>
 						</tr>
@@ -80,12 +80,12 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table style="margin-top: 10px">
+					<table style="margin-top: 20px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/kode"><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4>Atur Kode Guru </h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/kode">Atur Kode Guru</a></h4></td>
 						</tr>
 					</table>
 				</center>
@@ -94,7 +94,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table style="margin-top: 0px">
+					<table style="margin-top: 10px">
 						<tr align="center" style="">
 							<td><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></td>
 						</tr>

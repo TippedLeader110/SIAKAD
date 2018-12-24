@@ -53,7 +53,7 @@ h2 {
 <p>Pilih Tahun Angkatan Siswa :</p>
 
 <form action="<?php echo base_url() ?> Daftar/Siswa">
-<div class="dropdown">
+<div class="dropdown" style="padding-bottom: 2em">
   <button class="dropbtn">Tahun Angkatan</button>
   <div class="dropdown-content">
   <a href="#">2016</a>
@@ -62,7 +62,7 @@ h2 {
   </div>
 </div>
 </center>
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped" style="text-align: center;">
             <tr>
               <th>No</th>
       <th>Nis</th>

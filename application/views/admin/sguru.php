@@ -21,7 +21,7 @@
 						<td>
 							<form method="post" action="<?php echo base_url() ?>admin/daftar_guru_cari">
 							<input hidden type="text" name="tent" value="tahun">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Tahun Angkatan" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form>	
+							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Kode Mapel Angkatan" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form>	
 						</td>
 						<td>
 							<form action="<?php echo base_url() ?>admin/daftar_guru">

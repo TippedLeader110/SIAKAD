@@ -21,7 +21,7 @@
                </div>
               </a>
              
-              <a href="http://localhost/SIAKAD/Nilai/siswa">
+              <a href="http://localhost/SIAKAD/Nilai/guru">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
