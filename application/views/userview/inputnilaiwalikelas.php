@@ -61,27 +61,27 @@
 							<td>
 								<select name="mapel" class="form-control" style="width: 400px;">
 									<option>Mata Pelajaran</option>
-									<option value="akidah akhlak">Akidah Akhlak</option>
-									<option value="al quran hadist">Al-Qur'an Hadist</option>
-									<option value="bahasa arab">Bahasa Arab</option>
-									<option value="bahasa indonesia">Bahasa Indonesia</option>
-									<option value="bahasa inggris">Bahasa Inggris</option>
-									<option value="bahasa jerman peminatan">Bahasa Jerman Peminatan</option>
-									<option value="biologi peminatan">Biologi Peminatan</option>
-									<option value="ekonomi peminatan">Ekonomi Peminatan</option>
-									<option value="fikih">Fikih</option>
-									<option value="fisika peminatan">Fisika Peminatan</option>
-									<option value="geografi">Geografi</option>
-									<option value="kimia peminatan">Kimia Peminatan</option>
-									<option value="matematika">Matematika</option>
-									<option value="pendidikan jasmani">Pendidikan Jasmani</option>
-									<option value="pendidikan kewarganegaraan">Pendidikan Kewarganegaraan</option>
-									<option value="prakarya kewirausahaan">Prakarya Kewirausahaan</option>
-									<option value="sejarah">Sejarah</option>
-									<option value="sejarah indonesia">Sejarah Indonesia</option>
-									<option value="sejarah kebudayaan islam">Sejarah Kebudayaan Islam</option>
-									<option value="seni budaya">Seni Budaya</option>
-									<option value="sosiologi">Sosiologi</option>
+									<option value="Akidah Akhlak">Akidah Akhlak</option>
+									<option value="Al Quran Hadist">Al-Qur'an Hadist</option>
+									<option value="Bahasa Arab">Bahasa Arab</option>
+									<option value="Bahasa Indonesia">Bahasa Indonesia</option>
+									<option value="Bahasa Inggris">Bahasa Inggris</option>
+									<option value="Bahasa Jerman Peminatan">Bahasa Jerman Peminatan</option>
+									<option value="Biologi Peminatan">Biologi Peminatan</option>
+									<option value="Ekonomi Peminatan">Ekonomi Peminatan</option>
+									<option value="Fikih">Fikih</option>
+									<option value="Fisika Peminatan">Fisika Peminatan</option>
+									<option value="Geografi">Geografi</option>
+									<option value="Kimia Peminatan">Kimia Peminatan</option>
+									<option value="Matematika">Matematika</option>
+									<option value="Pendidikan Jasmani">Pendidikan Jasmani</option>
+									<option value="Pendidikan Kewarganegaraan">Pendidikan Kewarganegaraan</option>
+									<option value="Prakarya Kewirausahaan">Prakarya Kewirausahaan</option>
+									<option value="Sejarah">Sejarah</option>
+									<option value="Sejarah Indonesia">Sejarah Indonesia</option>
+									<option value="Sejarah Kebudayaan Islam">Sejarah Kebudayaan Islam</option>
+									<option value="Seni Budaya">Seni Budaya</option>
+									<option value="Sosiologi">Sosiologi</option>
 								</select>
 							</td>
 						</tr>
