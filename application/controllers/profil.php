@@ -77,7 +77,7 @@ class Profil extends CI_Controller {
 	public function walikelas()
 	{
 		$data['border']='transparent';
-		$data['page']='userview/profilwalikelas1';
+		$data['page']='userview/profilwalikelas';
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
