@@ -69,10 +69,10 @@
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/kelas"><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Atur Kelas Murid</h4></td>
+							<td><a href="<?php echo base_url() ?>admin/kelas"><h4>Atur Kelas Murid</a></h4></td>
 						</tr>
 					</table>
 				</center>

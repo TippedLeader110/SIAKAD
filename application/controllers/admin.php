@@ -59,6 +59,17 @@ class Admin extends CI_Controller {
 		$pass = $this->input->post('password');
 		$this->adminmodel->login($user, $pass);
 	}
+	public function aturkelas()
+	{
+		$d = $_POST['ck'];
+		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+		$this->db->where('nis', $d[$i]);
+		$this->db->set('kelas', $_POST['kelas']);
+		$this->db->update('siswa');
+		}
+		redirect('admin/kelas');
+	}
+
 	public function atur()
 	{
 		$id=$this->uri->segment(3);
@@ -373,24 +384,99 @@ class Admin extends CI_Controller {
 		$data['page']="admin/kelas";
 		$this->load->view('layout/admin', $data);
 	}
-	public function jurusan()
+	public function jurusanIPA()
 	{
-		$id=$this->uri->segment(3);
-		$tipe=$this->uri->segment(4);
-		$jur=$this->uri->segment(5);
-		if (isset($id)) {
-			if ($tipe=='nama') {
-			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'nama', $jur);	
-			}
-			else
-			{
-			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'tahun', $jur);		
-			}
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ipa', 'jurusan');
+			$data['page']="admin/muridkelasIPA";
+			$this->load->view('layout/admin', $data);
+	}
+
+	public function jurusanIPACari()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'tahun','ipa');
 		}
-		else
-		{}
-		$_SESSION['flash'] = '';
-		if ($this->input->post('jurusan')=='ipa') {
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'nama','ipa');
+		}
+		else{}
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/muridkelasIPA";
+			$this->load->view('layout/admin', $data);
+	}
+	public function jurusanIPS()
+	{
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ips', 'jurusan');
+			$data['page']="admin/muridkelasIPA";
+			$this->load->view('layout/admin', $data);
+	}
+	public function muridstatus()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $w, 'tahun');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', $w, 'nama');
+		}
+		else{
+			$data['muridtam'] = $this->adminmodel->ambil('siswa');
+		}
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/statusmurid";
+			$this->load->view('layout/admin', $data);
+	}
+	public function aturstatus(){
+		$d = $_POST['ck'];
+		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+		$this->db->where('nis', $d[$i]);
+		$this->db->set('status', $_POST['status']);
+		$this->db->update('siswa');
+		}
+		redirect('admin/muridstatus', refresh);
+	}
+	public function jurusanIPSCari()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'tahun','IPS');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'nama','IPS');
+		}
+		else{}
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/muridkelasIPS";
+			$this->load->view('layout/admin', $data);
+	}
+	public function jurusanIPACariNama()
+	{
 			$data['dashboard']="";
 			$data['murid']="active";
 			$data['guru']="";
@@ -399,67 +485,6 @@ class Admin extends CI_Controller {
 			$data['page']="admin/muridkelas";
 			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ipa', 'jurusan');
 			$this->load->view('layout/admin', $data);
-		}
-		elseif ($this->input->post('jurusan')=='ips') {
-			$data['dashboard']="";
-			$data['murid']="active";
-			$data['guru']="";
-			$data['matapel']="";
-			$data['post']="";
-			$data['page']="admin/muridkelas";
-			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ips', 'jurusan');
-			$this->load->view('layout/admin', $data);
-		}
-		elseif (isset($id)) {
-			if ($jur=='ipa') {
-				if ($tipe=='nama') {
-					$data['dashboard']="";
-					$data['murid']="active";
-					$data['guru']="";
-					$data['matapel']="";
-					$data['post']="";
-					$data['page']="admin/muridkelas";
-					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'nama', ipa);		
-					$this->load->view('layout/admin', $data);
-				}
-				else{
-					$data['dashboard']="";
-					$data['murid']="active";
-					$data['guru']="";
-					$data['matapel']="";
-					$data['post']="";
-					$data['page']="admin/muridkelas";
-					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'tahun', ipa);		
-					$this->load->view('layout/admin', $data);
-				}
-			}
-			else{
-				if ($tipe=='nama') {
-					$data['dashboard']="";
-					$data['murid']="active";
-					$data['guru']="";
-					$data['matapel']="";
-					$data['post']="";
-					$data['page']="admin/muridkelas";
-					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'nama', ips);		
-					$this->load->view('layout/admin', $data);
-				}
-				else{
-					$data['dashboard']="";
-					$data['murid']="active";
-					$data['guru']="";
-					$data['matapel']="";
-					$data['post']="";
-					$data['page']="admin/muridkelas";
-					$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $id, 'tahun', ips);		
-					$this->load->view('layout/admin', $data);
-				}
-			}
-		}
-		elseif ($this->input->post('jurusan')=='jurusan') {
-			$_SESSION['flash'] = '1';
-			redirect(base_url().'admin/kelas',location);
-		}
 	}
 	public function info()
 	{
