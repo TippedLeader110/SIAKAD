@@ -14,7 +14,6 @@
 		<div class="col-md-12">
 			<div class="row" style="margin-bottom: 10px;">
 					 <div class="col-md-1" style="margin-right: 50px;">
-						<form method="post" action="<?php echo base_url() ?>admin/kelassimpan">
 						<button class="btn btn-primary" name="tampil">Atur Kelas</button>
 						<?php if (isset($_POST['atur'])) {
 							redirect("/admin/atur", location);
