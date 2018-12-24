@@ -1,2 +1,22 @@
-ALTER TABLE siswa ADD status varchar(30);
-ALTER TABLE guru ADD status varchar(30);
+INSERT INTO kelas(
+	`kelas`, `tingkat`, `jum_siswa`, `wali_kelas`, `jurusan`) 
+VALUES 
+	('A','1','','','IPA'),
+	('B','1','','','IPA'),
+	('C','1','','','IPA'),
+	('A','2','','','IPA'),
+	('B','2','','','IPA'),
+	('C','2','','','IPA'),
+	('A','3','','','IPA'),
+	('B','3','','','IPA'),
+	('C','3','','','IPA'),
+	('A','1','','','IPS'),
+	('B','1','','','IPS'),
+	('C','1','','','IPS'),
+	('A','2','','','IPS'),
+	('B','2','','','IPS'),
+	('C','2','','','IPS'),
+	('A','3','','','IPS'),
+	('B','3','','','IPS'),
+	('C','3','','','IPS');
+
