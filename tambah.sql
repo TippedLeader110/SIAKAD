@@ -1,1 +1,2 @@
-ALTER TABLE siswa MODIFY nis BIGINT;
+ALTER TABLE siswa ADD status varchar(30);
+ALTER TABLE guru ADD status varchar(30);
