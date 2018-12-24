@@ -23,7 +23,7 @@
 				<div class="container" style="background: #92c9ed;height: 185px;">
 					<table style="margin-top: 15px;">
 						<tr>
-							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/settings.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Pemberitahuan : <?php echo "$jumlahterkini"; ?></h4></td>
+							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/settings.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Selamat datang <?php echo $_SESSION['admin']; ?></h4></td>
 						</tr>
 						<tr>
 							<td><h4>Waktu Sekarang : <p id="time"></p> </h4></td>
@@ -77,10 +77,10 @@ $(function(){
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center" style="">
-							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></a></td>
+							<td><a href="<?php echo base_url() ?>admin/TheAdmin"><img src="<?php echo base_url() ?>/img/icon/admin.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><h4>Lihat Daftar Guru</a></h4></td>
+							<td><a href="<?php echo base_url() ?>admin/TheAdmin"><h4>Daftar Admin</a></h4></td>
 						</tr>
 					</table>
 				</center>

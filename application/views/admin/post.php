@@ -19,7 +19,7 @@
 					<tr>
 						<th><h4>Judul Artikel</h4></th>
 					</tr>
-					<tr>
+					<tr><input type="text" hidden name="penulis" value="<?php echo $_SESSION['admin'] ?>">
 						<td><input type="text" name="judul"></td><input type="text" hidden value="<?php echo date("Y/m/d") ?>" name="waktu">
 					</tr>
 					<tr>

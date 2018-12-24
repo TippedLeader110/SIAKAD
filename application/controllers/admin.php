@@ -60,6 +60,16 @@ class Admin extends CI_Controller {
 		$pass = $this->input->post('password');
 		$this->adminmodel->login($user, $pass);
 	}
+	public function kode()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/kode";
+		$this->load->view('layout/admin'. $data);
+	}
 	public function aturkelas()
 	{
 		$d = $_POST['ck'];
@@ -194,32 +204,12 @@ class Admin extends CI_Controller {
 	}
 	public function post()
 	{
-		$id=$this->uri->segment(3);
-		$tipe=$this->uri->segment(4);
-		if (isset($id)) {
-			if ($tipe=='nama') {
-			$max = $id;	
-			$data['test'] = $max;
-			$nama=$max;
-			$data['art'] = $this->adminmodel->ambilspes('terkini', $nama, 'penulis');	
-			}
-			else
-			{
-			$max = $id;	
-			$data['test'] = $max;
-			$nama=$max;
-			$data['art'] = $this->adminmodel->ambilspes('terkini', $nama, 'isi');		
-			}
-		}
-		else
-		{
-		$data['art'] = $this->adminmodel->ambil('terkini');
-		}
+		$data['gurutam'] = $this->adminmodel->ambil('terkini');
 		$data['dashboard']="";
 		$data['murid']="";
-		$data['guru']="";
+		$data['guru']="active";
 		$data['matapel']="";
-		$data['post']="active";
+		$data['post']="";
 		$data['page']="admin/artikel";
 		$this->load->view('layout/admin', $data);
 	}
@@ -427,6 +417,26 @@ class Admin extends CI_Controller {
 			$data['matapel']="";
 			$data['post']="";
 			$data['page']="admin/smurid";
+			$this->load->view('layout/admin', $data);
+	}
+
+	public function Daftar_guru_cari()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		else{}
+			$data['dashboard']="";
+			$data['murid']="";
+			$data['guru']="active";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/sguru";
 			$this->load->view('layout/admin', $data);
 	}
 
