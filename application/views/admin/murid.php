@@ -7,7 +7,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="container" style="background: white;height: 185px;">
+				<div class="container" style="background: #ffa500;height: 185px;">
 					<table style="margin-top: 15px;">
 						<tr>
 							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Alumni :</h4></td>
@@ -20,10 +20,10 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="container" style="background: white;height: 185px;">
+				<div class="container" style="background: #577170;height: 185px;">
 					<table style="margin-top: 15px;">
 						<tr>
-							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/kelas.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Murid : <?php echo "$jumlahmurid"; ?></h4></td>
+							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/sekolah.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Murid : <?php echo "$jumlahmurid"; ?></h4></td>
 						</tr>
 						<tr>
 							<td><h4>Jumlah Siswa : <?php echo "$jumlahmurida"; ?></h4></td>
@@ -39,7 +39,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table>
+					<table style="margin-top: 10px">
 						<tr align="center">
 							<td><a href="<?php echo base_url() ?>admin/Daftar_murid"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
@@ -53,7 +53,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table style="margin-top: 0px">
+					<table style="margin-top: 10px">
 						<tr align="center" style="">
 							<td><a href="<?php echo base_url() ?>admin/Daftar_alumni"><img src="<?php echo base_url() ?>/img/icon/Alumni.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
@@ -67,7 +67,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table style="margin-top: 10px">
+					<table style="margin-top: 20px">
 						<tr align="center" style="">
 							<td><a href="<?php echo base_url() ?>admin/kelas"><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
@@ -81,7 +81,7 @@
 			<div class="col-md-3">
 				<div class="container" style="background: white;height: 185px;">
 				<center>
-					<table style="margin-top: 0px">
+					<table style="margin-top: 10px">
 						<tr align="center" style="">
 							<td><a href="<?php echo base_url() ?>admin/muridstatus"><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
