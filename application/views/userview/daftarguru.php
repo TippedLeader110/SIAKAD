@@ -7,13 +7,16 @@
   
         <tr>
           <td>
-           Ketikkan Nama Guru Yang Ingin Anda Cari 
+            <h5><b>Ketikkan Nama Guru Yang Ingin Anda Cari </b></h5>
           </td>
         </tr>
         <tr>
           <td>
              <form method="post">
-              <input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama Guru..." type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">&nbsp;
+              <div class="row" style="margin-left: 5px;">
+                <input  class="form-control" style="max-width: 320px;" placeholder="Cari Nama Guru..." type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">&nbsp;
+              <button class="btn btn-primary" type="submit"> Cari</button>
+              </div>
             </form>
           </td>
           <?php 
@@ -42,7 +45,8 @@
 <div class="row">
   <div class="col-md-12"> 
     <div class="container" style="border-width: 1px; color:#2F669F; font-size: 20px;">
-        <b>Guru yang mungkin anda cari :</b>
+        <h5 style="padding-top: 10px;"><b>Guru yang mungkin Anda cari :</b></h5>
+        
       <div class="row">
         
       </div>
@@ -75,7 +79,7 @@ echo"          <div style='background-color:#009432; height: 200px; width: 200px
 echo"          <div class='circle' style='margin: 10px 10px 50px 50px; margin-top: 30px;'>";
 echo"             <img src='<?php echo base_url()?>img/icon/icon-profil-guru.png' style='max-width: 100px; max-height: 100px;'>";
 echo"          </div>";
-echo"      <div class='card-body'>";
+echo"      <div class='card-body' style='max-height='100px;'>";
 echo"          <h6 class='card-title' align='center'>".$v->nama."</h6>";
 echo"          <p class='card-text' align='center' style='font-size: 15px;'>".$v->mapel."</p>";
 echo"          <center>";
