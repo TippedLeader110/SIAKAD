@@ -88,3 +88,9 @@
       text-decoration: none;
     }
   */
+    .circle-2{
+      width: 150px;
+      height: 150px;
+      background: white;
+      border-radius: 50%
+    }

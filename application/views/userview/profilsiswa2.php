@@ -1,14 +1,6 @@
 <div class="row">
 	<div class="col-md-12">	
-		<div class="container" style="border-width: 1px; color:#2F669F; ">
-	<h3>Profil</h3>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-12">	
-		<div class="container" style="border-width: 1px; ">
+		<div class="container" style="border-width: 0px; ">
 <div class="row">
 	<div class="col-md-8">
 		<div class="row">
@@ -90,12 +82,12 @@
 	</div>
 
 	<div class="col-md-4">
-		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; ">
-			<div style="margin: 60px; margin-top: 30px;">
+		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 30px;">
+			<div class="circle-2" style="margin: 10px; margin-top: 10px;">
 				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
 			</div>
 		</div>
-			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px;">
+			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px; padding: 5px 5px 5px 5px; ">
 				<center>Ubah Profil Anda</center>	
 			</div>
 	</div>
