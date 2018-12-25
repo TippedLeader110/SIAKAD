@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2018 at 08:48 AM
+-- Generation Time: Dec 25, 2018 at 08:52 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -590,7 +590,6 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`nis`, `username`, `password`, `nama`, `jk`, `agama`, `alamat`, `email`, `jurusan`, `asal_sekolah`, `kelas`, `nama_ayah`, `nama_ibu`, `pekerjaan_ayah`, `pekerjaan_ibu`, `alamat_ayah`, `alamat_ibu`, `no_hp_ayah`, `no_hp_ibu`, `pendidikan_ibu`, `pendidikan_ayah`, `anak_ke`, `pict`, `tanggal_lahir`, `tempat`, `tahun`, `status`) VALUES
-(2222, '', '', '', 'Jenis Kelami', '', '', '', 'Jurusan', '', NULL, '', '', '', '', '', '', '', '', NULL, NULL, 0, '/gambar/2222', '', '', '', NULL),
 (123722001, 'Fatimah', 'fatimah32', 'Fatimah Azzahra', 'Perempuan', 'Islam', 'Jl. Patimura', 'fatimah.azahra@gmail', 'IPA', 'SMP 2 Sabang', 'a', 'Suhartono', 'Azalea', 'Wiraswasta', 'PNS', 'Jl. Patimura', 'Jl. Patimura', '0812365498764', '08523798352', NULL, NULL, 3, '001237229', '2002-12-23', 'Medan', '2016', NULL),
 (123722002, 'Azhar', 'azhar12', 'M. Azhar', 'Laki-laki', 'Islam', 'Jl. Glugur darat', 'azhar12@gmail.com', 'IPS', 'SMP 2 Medan', 'b', 'fadli', 'erikawati', 'PNS', 'Guru', 'Jl. Glugur darat', 'Jl. Glugur Darat', '082345454421', '082134567765', NULL, NULL, 1, '123722002', '2001-05-29', 'Medan', '2017', NULL),
 (123722003, 'Naufal', 'naufal12', 'Naufal Azhari', 'Laki-laki', 'Islam', 'jl. kuningan', 'naufal12@gmail.com', 'IPS', 'smp 1 binjai', 'C', 'Ali hidayat', 'siti hajar', 'Designer', 'Dokter gigi', 'Jl. kuningan ', 'Jl. kuningan', '082134346523', '082134348532', NULL, NULL, 2, '123722003', '2000-02-06', 'Padang', '2018', NULL),
@@ -621,7 +620,97 @@ INSERT INTO `siswa` (`nis`, `username`, `password`, `nama`, `jk`, `agama`, `alam
 (123722030, 'kamila', 'kamila12', 'Kamila', 'Perempuan', 'Islam', 'binjai', 'kamila@gmail.com', 'IPA', 'smp 2 binjai', 'C', 'boby', 'yusniah', 'Guru', 'guru', 'binjai', 'binjai', '082144569987', '08534457655', NULL, NULL, 3, '123722030', '2000-12-23', 'binjai', '2016', NULL),
 (123722031, 'fitria', 'fitria1', 'Fitria', 'Perempuan', 'Islam', 'jl. setia budi', 'ria@gmail.com', 'IPA', 'SMP 2 Sabang', 'a', 'muhammad', 'rosminah', 'dokter', 'IRT', 'jl.setia budi', 'jl. setia budi', '085342233222', '08523798432', NULL, NULL, 1, '123722031', '2002-11-12', 'sabang', '2018', NULL),
 (123722032, 'adelia', 'adelia12', 'Adelia', 'Perempuan', 'Islam', 'jl. pembangunan', 'adel@gmail.com', 'IPS', 'smp helvetia', 'b', 'syamsudin', 'hanna', 'Wiraswasta', 'wiraswasta', 'jl. pembagunan', 'jl. pembangunan', '082144567654', '08523790876', NULL, NULL, 3, '123722032', '2001-12-05', 'medan', '2017', NULL),
-(171402067, 'bayhaqi101', 'bayha101', 'Muhammad Bayhaqi Daulay', 'Laki-laki', 'ISLAM', 'adjwkandajda', 'bayhaqi101@gmail.com', 'IPA', 'SMA', NULL, 'dawdad', 'awdadwa', 'dawdadw', 'dawdada', 'awdadad', 'dadadaw', 'adawdad', 'dawdad', NULL, NULL, 0, '171402067', '2018-12-29', 'awdadaw', 'adawdad', NULL);
+(123722073, 'Fakhri rizha ananda', 'fakhri12', 'Fakhri riza ananda', 'Laki-laki', 'Islam', 'deli serdang', 'fakhri@gmail.com', 'IPS', 'smp 18 medan', NULL, 'Ananda muharris', 'aminah', 'Designer', 'PNS', 'deli serdang', 'deli serdang', '08123654976', '-', 'D1 pajak', 'SI  teknologi informasi', 3, '123722073', '2001-12-23', 'medan', '2017', NULL),
+(123722074, 'faris', 'faris32', 'Faris Zharfan', 'Laki-laki', 'Islam', 'medan', 'faris@gmail.com', 'IPS', 'smp 9 medan', NULL, 'Ibrahim', 'Ardilla', 'Wiraswasta', 'Guru', 'medan', 'medan', '08213454123', '08523799876', 'SI Fkip', 'SMA', 2, '123722074', '2002-02-23', 'Medan', '2017', NULL),
+(123722075, 'Firmansyah', 'firman12', 'Firmansyah', 'Laki-laki', 'Islam', 'medan', 'firman@gmail.com', 'IPS', 'smp 1 medan', NULL, 'taufiq hidayat', 'Adelina', 'PNS', 'PNS', 'medan', 'medan', '082345054021', '085344046888', 'D1 pajak', 'SI  teknologi informasi', 2, '123722075', '2002-10-21', 'Medan', '2017', 'Aktif'),
+(123722076, 'Azzahra putri', 'zahra32', 'Azzahra putri', 'Perempuan', 'Islam', 'Jl. Glugur darat', 'azzahra@gmail.com', 'IPS', 'smp 1 sidimpuan', NULL, 'miftah rafid', 'roslaili', 'PNS', 'guru', 'Jl. Glugur darat', 'Jl. Glugur Darat', '08214406798', '08212348065', 'SI Fkip', 'SI  teknologi informasi', 4, '123722076', '2000-04-12', 'medan', '2016', NULL),
+(123722077, 'Millea', 'millea', 'meillea', 'Perempuan', 'Islam', 'binjai', 'millea@gmail.com', 'IPS', 'smp 2 binjai', NULL, 'Baskoro', 'siska', 'Guru', 'PNS', 'binjai', 'binjai', '08123654987', '08123245869', 'D1 pajak', 'SI  teknologi informasi', 1, '123722077', '2003-12-22', 'binjai', '2018', NULL),
+(123722078, 'Zikri daulay', 'zikricakep', 'zikri daulay', 'Laki-laki', 'Islam', 'medan', 'zikri2gmail.com', 'IPA', 'smp 9 medan', NULL, 'abdi daulay', 'sarah', 'PNS', 'PNS', 'medan', 'medan', '082134346765', '082134346534zike', 'D1 pajak', 'SI Manajemen', 3, '123722078', '2001-09-05', 'Medan', '2017', NULL),
+(123722079, 'M. syafriansyah', 'safriansya', 'M. syafriansyah', 'Laki-laki', 'Islam', 'medan', 'syafriansyah@gmail.c', 'IPS', 'smp 9 medan', NULL, 'bambang', 'siti sarah', 'PNS', 'PNS', 'medan', 'medan', '082345477654', '08523876654', 'SI teknologi Informasi', 'SI Manajemen', 4, '123722079', '2003-07-31', 'medan', '2018', NULL),
+(123722080, 'myudhakwr', 'yudha12', 'M. Yudha Kurniawan', 'Laki-laki', 'Islam', 'Jl. Brengam', 'myudhakurniawan@gmai', 'IPA', 'smp 12 Medan', NULL, 'Indra Aulia', 'Nia Indriani', 'Dosen', 'IRT', 'Jl. Brengam', 'Jl. Brengam', '087834562345', '081235498002', 'SMA', 'S2 Ilmu Komputer', 1, '123722080', '2000-03-17', 'Binjai', '2016', NULL),
+(123722081, 'dindasyahfitri', 'dinda123', 'Dinda Syahfitri', 'Perempuan', 'Islam', 'Jl. Yosudarso no. 3 b', 'dindasyahfitri12@gma', 'IPS', 'smp swasta tamansiswa medan', NULL, 'Hagel Nst', 'Indah Sofi', 'Dokter Gigi', 'Psikolog', 'Jl. Yosudarso no. 3 b', 'Jl. Yosudarso no. 3 b', '081578345627', '081234562340', 'S1 Psikologi', 'S2 Dokter Gigi', 3, '123722081', '2001-07-11', 'siantar', '2017', NULL),
+(123722082, 'ari.pratama', 'ari12345', 'Adi Pratama', 'Laki-laki', 'Islam', 'jl. jamin ginting', 'adi.pratama@gmail.co', 'IPS', 'smp budi murni mdan', NULL, 'Dimas Prasetyo', 'Anggi Putri', 'Petani', 'IRT', 'jl. jamin ginting', 'jl. jamin ginting', '08123456755', '081367239087', 'SMA', 'S1 Kehutanan', 2, '123722082', '2003-12-03', 'Sibolga', '2018', NULL),
+(123722083, 'amelia_salsabila', 'amelia000', 'Amelia Salsabila', 'Perempuan', 'Islam', 'jl. karakatau', 'ameliasalsabila@gmai', 'IPA', 'smp 1 binjai', NULL, 'Teguh Rizal', 'Cahya Fitri', 'Wiraswasta', 'Penjahit', 'Jl. Karakatau', 'Jl. Karakatau', '081290998977', '-', 'SMA', 'SMA', 4, '123722083', '2001-12-03', 'siantar', '2017', NULL),
+(123722084, 'sintialeoni.putri', 'sintialeo1', 'Sintia Leoni Putri', 'Perempuan', 'Islam', 'jl. amaliun no. 2 ', 'sintialeoniputri@gma', 'IPS', 'smp 6 medan', NULL, 'Rafli Akbar', 'Nadra Anggraini', 'Guru', 'IRT', 'jl. amaliun no. 2', 'jl. amaliun no. 3', '081389007656', '-', 'SMA', 'S1 Pendidikan fisika', 2, '123722084', '2001-02-12', 'Medan', '2017', NULL),
+(123722085, 'nadasyahputra', 'nada12', 'Nada Syahputra', 'Laki-laki', 'Islam', 'jl. adam malik', 'nadasyahputra@gmail.', 'IPS', 'smp 2 medan', NULL, 'Rozzi Nadira', 'Ayu Priyanti', 'Beternak ikan lele', 'Pedagang] pecel lele', 'jl. adam malik', 'jl. adam malik', '081345231700', '085890786654', 'SMA', 'S1 Peternakan', 1, '123722085', '2001-02-23', 'medan', '2016', NULL),
+(123722086, 'Hawwariyyun', 'hawwariyun', 'hawwariyyun', 'Laki-laki', 'Islam', 'jl. pembangunan', 'hawwariyyun@gmail.co', 'IPA', 'smp 2 jakarta', NULL, 'abdullah', 'malahayati', 'guru', 'IRT', 'jl. pembagunan', 'jl. pembangunan', '082387664532', '-', 'SMA', 'SI Pdi', 2, '123722086', '2002-05-24', 'Sabang', '2017', NULL),
+(123722087, 'aisyah', 'aisyah17', 'Aisyah nabila', 'Jenis Kelami', 'Islam', 'jl. Universitas', 'aisyah@gmail.com', 'IPS', 'smp 18 medan', NULL, 'ahmad adil', 'Mardilla', 'dosen', 'PNS', 'Jl. universitas', 'jl. universitas', '08214450998', '08534098876', 'D1 pajak', 'SI Pdi', 3, '123722087', '2003-09-29', 'Jakarta', '2018', NULL),
+(123722088, 'Kayla', 'kayla54', 'Kayla nadira', 'Perempuan', 'Islam', 'jl. alumni', 'kayla.nadi@gmail.com', 'IPS', 'smp 1 jabotabek', NULL, 'Alif syahputra', 'ashanty', 'PNS', 'Psikolog', 'jl. alumni', 'jl. alumni', '082344321234', '0877967998765', 'S1 Psikologi', 'SI  teknologi informasi', 2, '123722088', '2002-03-28', 'Jakarta', '2017', NULL),
+(123722089, 'Ahmed', 'ahmed66', 'ahmed zam zam', 'Laki-laki', 'Agama', 'jl. dr mansyur', 'zamzam@gmail.com', 'IPA', 'smp 1 jabotabek', NULL, 'Sohibul ikhlas', 'ruqayyah', 'guru', 'guru ngaji', 'jl. dr mansyur', 'jl. dr mansyur', '082134343212', '08213887645', 'SMA', 'SI Pdi', 1, '123722089', '2003-07-04', 'Padang', '2018', NULL),
+(123722090, 'Jelita', 'jelita65', 'Jelita asmara', 'Perempuan', 'Islam', 'binjai', 'jelita@gmail.com', 'IPA', 'smp 2 binjai', NULL, 'syamsul', 'rosmawarni', 'PNS', 'IRT', 'binjai', 'binjai', '0821345509', '-', 'SMA', 'SI Manajemen', 1, '1237220745', '2003-01-17', 'Pekan baru', '2018', NULL),
+(123722091, 'Ana altafunnisa', 'ana234', 'ana alta funnisa', 'Perempuan', 'Islam', 'binjai', 'ana.alta@gmail.com', 'IPS', 'smp 1 binjai', NULL, 'abdul ', 'suriati', 'petani', 'guru ngaji', 'binjai', 'binjai', '0823478404421', '087798780132', 'SMA', 'SMA', 3, '123722091', '2000-08-15', 'siantar', '2016', NULL),
+(123722092, 'Ayra dewi', 'aira43', 'Ayra dewi', 'Perempuan', 'Islam', '', 'ayradewi@gmail.com', 'IPA', 'smp 1 medan', NULL, 'Erlangga', 'salsabila', 'TNI', 'IRT', 'medan', 'medan', '08213433046523', '08520708052', 'SMA', 'SMA', 2, '123722092', '2002-11-21', 'medan', '2017', NULL),
+(123722093, 'Leny aggraini', 'leny65', 'Leny aggraini', 'Perempuan', 'Islam', 'jl. jamin ginting', 'leni@gmail.com', 'IPS', 'smp 9 medan', NULL, 'hasannuddin', 'syarifah', 'PNS', 'wiraswasta', 'jl. jamin ginting', 'jl. jamin ginting', '08213050650', '08530090876', 'D1 pajak', 'S2 Ilmu Komputer', 1, '123722093', '2003-09-26', 'medan', '2018', NULL),
+(123722094, 'ahmadi', 'ahmadi34', 'ahmadi', 'Laki-laki', 'Islam', 'binjai', 'ahmadi@gmail.com', 'IPS', 'smp 2 binjai', NULL, 'Surya darma', 'sulastri', 'guru', 'IRT', 'binjai', 'binjai', '082144007688', '-', 'SMA', 'SI Manajemen', 5, '123722094', '2000-09-06', 'medan', '2016', NULL),
+(123722095, 'Rauzatul jannah', 'rauza12', 'Rauzatul jannah', 'Perempuan', 'Islam', 'medan', 'rauzah@gmail.com', 'IPS', 'smp 9 medan', NULL, 'herlambang', 'Minda pulungan', 'PNS', 'PNS', 'medan', 'medan', '082345453221', '085344876555', 'SI Ilmu komputer', 'SI Manajemen', 3, '123722095', '2002-11-25', 'Medan', '2017', 'Aktif'),
+(123722096, 'M. fadly nasution', 'fadly12', 'M. fadly nasution', 'Laki-laki', 'Islam', 'medan', 'fadly@gmail.com', 'IPS', 'smp 9 medan', NULL, 'firza nasution', 'Ulfi handayani', 'Guru', 'PNS', 'medan', 'medan', '081236509876', '082138768765', 'D1 pajak', 'SI Fkip', 1, '123722096', '2003-11-12', 'Medan', '2018', 'Aktif'),
+(123722097, 'Dea amanda', 'dea43', 'Dea amanda', 'Perempuan', 'Islam', 'medan', 'deaamanda@gmail.com', 'IPA', 'smp 18 medan', NULL, 'Tata Mukarram', 'Gistya farhani', 'PNS', 'PNS', 'medan', 'medan', '082134776654', '085343346555', 'SI teknologi Informasi', 'SI  teknologi informasi', 3, '123722097', '2002-03-28', 'Medan', '2017', 'Aktif'),
+(123722098, 'Rina ayu', 'rinayu12', 'rina ayu', 'Perempuan', 'Islam', 'binjai', 'rina@gmail.com', 'IPS', 'smp 2 binjai', NULL, 'dedy wahyudi', 'Andini', 'petani', 'PNS', 'binjai', 'binjai', '082355478421', '085344546000', 'SI teknologi Informasi', 'SMA', 2, '123722098', '2000-04-23', 'binjai', '2016', 'Aktif'),
+(123722099, 'Agusti ramadhan', 'agusti54', 'Agusti ramadhan', 'Perempuan', 'Islam', 'medan', 'gusti@gmail.com', 'IPA', 'smp 1 medan', NULL, 'Ahmad amin', 'Galuh pramesti', 'dosen', 'Guru', 'medan', 'medan', '08213434456', '085344946805', 'SI Fkip', 'SI Pdi', 2, '123722099', '2002-06-11', 'Medan', '2017', 'Aktif'),
+(123722100, 'Geubrina ', 'brina32', 'Geubrina', 'Perempuan', 'Islam', 'medan', 'geubrina@gmail.com', 'IPS', 'smp 1 medan', NULL, 'adi nugraha', 'ernawti', 'Guru', 'dosen', 'medan', 'medan', '081239540087', '082139348700', 'SI Ilmu komputer', 'SI Fkip', 3, '123722100', '2003-12-02', 'Medan', '2018', 'Aktif'),
+(123722101, 'Hisyam', 'hisyam123', 'Hisyam', 'Laki-laki', 'Islam', 'Padangsidimpuan', 'hisyam@gmail.com', 'IPA', 'SMP Nurul \'Ilmi Padangsidimpua', NULL, 'Ahmad', 'Adel', 'PNS', 'PNS', 'Padangsidimpuan', 'Padangsidimpuan', '085234987800', '085270114199', 'S1 Kedokteran', 'S1 Kedokteran', 2, '123722101', '1999-01-21', 'Padangsidimpuan', '2018', NULL),
+(123722102, 'Qiara', 'qiqi', 'Qiara', 'Perempuan', 'Islam', 'jl dr.Mansyur no 12,Medan', 'qiqicantik@gmail.com', 'IPA', 'MTs N 1 Medan', NULL, 'Rafid Miftah', 'Aminah', 'Pengusaha', 'PNS', 'jl dr.Mansyur no 12,Medan', 'jl dr.Mansyur no 12,Medan', '082134567888', '085270114188', 'S2 Ekonomi', 'S1 Pertanian', 3, '123722102', '2000-01-23', 'Medan', '2018', NULL),
+(123722103, 'Cantika', 'akucantika', 'Cantika', 'Perempuan', 'Islam', 'jl ahmad yani no 12,Medan', 'cantika@gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Agustami', 'Rahma', 'PNS', 'Wiraswasta', 'jl ahmad yani no 12,Medan', 'jl ahmad yani no 12,Medan', '082234125678', '082213456299', 'S1 Manajemen', 'S1 Teknologi Informasi', 3, '123722103', '2000-08-14', 'Jakarta', '2018', NULL),
+(123722104, 'Gladys', 'gladys', 'Gladys Shafura Halimi Pohan', 'Perempuan', 'Islam', 'Jl H.M.Yamin,Medan', 'gladys@gmail.com', 'IPA', 'SMP Nurul \'Ilmi Padangsidimpua', NULL, 'Fandi', 'Indah Khai', 'PNS', 'PNS', 'Jl H.M.Yamin,Medan', 'Jl H.M.Yamin,Medan', '082234125678', '085823641098', 'S1 Kedokteran', 'S1 Matematika', 1, '123722104', '2002-09-12', 'Padangsidimpuan', '2017', NULL),
+(123722105, 'Feby Wijayanti Hadi', 'ebyyy', 'Feby Wijayanti Hadi', 'Perempuan', 'Agama', 'Binjai', 'febyw@gmail.com', 'IPA', 'SMP N 1 Binjai', NULL, 'Hadi', 'Tati', 'PNS', 'PNS', 'Binjai', 'Binjai', '082370886544', '081376390288', 'S1 Kebidanan', 'S2 Manajemen', 2, '123722105', '1999-11-11', 'Jakarta', '2017', NULL),
+(123722106, 'Amirullah Aulia', 'aulia', 'Amirullah Aulia', 'Laki-laki', 'Islam', 'Medan', 'aamirullah@gmail.com', 'IPS', 'SMP N 6 Medan', NULL, 'Babang', 'Ainiyah', 'PNS', 'PNS', 'Medan', 'Medan', '087756340981', '085230918765', 'SMA', 'S2 Ilmu Komputer', 4, '123722106', '1998-05-30', 'Medan', '2016', NULL),
+(123722107, 'Elma Nesa', 'nesa', 'Elma Nesa', 'Perempuan', 'Islam', 'Binjai', 'nesa@gmail.com', 'IPS', 'SMP 18 Medan', NULL, 'Bagus Pratama', 'Putri Andini', 'Guru', 'IRT', 'Binjai', 'Binjai', '085312709433', '081376543211', 'SMA', 'D3 Kimia', 35, '123722107', '2001-08-17', 'Jakarta', '2016', NULL),
+(123722108, 'Adi Habibi', 'habibiadi', 'Adi Habibi', 'Laki-laki', 'Islam', 'Medan', 'habibi@gmail.com', 'IPS', 'SMP N 9 Medan', NULL, 'Ihsan Tanjung', 'Ira Nofriani', 'Apoteker', 'PNS', 'Medan', 'Medan', '081260908065', '085216523200', 'S1 Farmasi', 'S1 Farmasi', 5, '123722108', '2001-11-19', 'Jakarta', '2017', NULL),
+(123722109, 'Reza Prasetyo', 'eza', 'Reza Prasetyo', 'Laki-laki', 'Islam', 'Medan', 'reza@gmail.com', 'IPS', 'MTs N 1 Medan', NULL, 'Dika Prasetyo', 'Ayak', 'Pengusaha', 'Perawat', 'Medan', 'Medan', '087745329087', '081276098077', 'S1 Keperawatan', 'S2 Ilmu Komputer', 5, '123722109', '2002-08-19', 'Padangsidimpuan', '2017', NULL),
+(123722110, 'Ariel Nugraha', 'aariel', 'Ariel Nugraha', 'Laki-laki', 'Agama', 'Medan', 'aariel@gmail.com', 'IPS', 'SMP N 6 Medan', NULL, 'Muhammad Syahputra', 'Rahmayani', 'Dokter', 'IRT', 'Medan', 'Medan', '085341227654', '08214357800', 'S1 Farmasi', 'S1 Kedokteran', 4, '123722110', '2001-06-23', 'Jakarta', '2017', NULL),
+(123722111, 'Umar Lubis', 'umarlubs', 'Umar Lubis', 'Laki-laki', 'Islam', 'Medan', 'umarlbs@gmail.com', 'IPS', 'SMP N 6 Medan', NULL, 'Ahmad Rozi Lubis', 'Khairunnisa', 'PNS', 'Wiraswasta', 'Medan', 'Medan', '085312879800', '082287654321', 'SMA', 'S1 Farmasi', 4, '123722111', '2003-03-18', '1970-01-01', '2018', NULL),
+(123722112, 'Elsa Siregar', 'elsacuanti', 'Elsa Siregar', 'Perempuan', 'Islam', 'Medan', 'elsa@gmail.com', 'IPS', 'SMP 1 Medan', NULL, 'Ahmad Rizal', 'Alya', 'Dosen', 'PNS', 'Medan', 'Medan', '082265218990', '082112234567', 'S1 Ekonomi', 'S2 Ilmu Komputer', 2, '123722112', '2003-06-13', '1970-01-01', '2018', NULL),
+(123722113, 'Aulia Rizky Ritonga', 'auliar', 'Aulia Rizky Ritonga', 'Laki-laki', 'Islam', 'Medan', 'auliar@gmail.com', 'IPA', 'MTs N 1 Medan', NULL, 'Parlindungan Ritonga', 'Laila Wahyuni', 'Pengusaha', 'PNS', 'Medan', 'Medan', '082278452711', '081209887065', 'S1 Kebidanan', 'S2 Manajemen', 3, '123722113', '2001-09-29', '1970-01-01', '2016', NULL),
+(123722114, 'Heru Supriadi', 'Herus', 'Heru Supriadi', 'Laki-laki', 'Islam', 'Medan', 'herusup@gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Muhammad Ali Akbar', 'Mahardiani', 'Dosen', 'Dokter', 'Medan', 'Medan', '082312903980', '081242178906', 'S1 Kedokteran', 'S2 Psiklogi', 4, '123722114', '2001-07-22', '1970-01-01', '2016', NULL),
+(123722115, 'Hary Akhmadi', 'akhmadi', 'Hary Akhmadi', 'Laki-laki', 'Islam', 'Medan', 'akhmadih@gmail.com', 'IPA', 'SMP N 1 Jakarta', NULL, 'Sutrisno', 'Fitri Azzahra', 'Dosen', 'PNS', 'Medan', 'Medan', '081209441230', '085311782309', 'S1 Farmasi', 'S2 Teknik Sipil', 1, '123722115', '2001-10-10', '1970-01-01', '2016', NULL),
+(123722116, 'Ghaisan Azzam Alfaris', 'azzam', 'Ghaisan Azzam Alfaris', 'Laki-laki', 'Islam', 'Medan', 'g_azzam@gmail.com', 'IPA', 'SMP N 2 Medan', NULL, 'Hariyono', 'Elmi Juliana', 'Polisi', 'Guru', 'Medan', 'Medan', '082168635122', '085823197865', 'S1 Matematika', 'S1 Hukum', 1, '123722116', '2002-09-29', '1970-01-01', '2017', NULL),
+(123722117, 'Aulia Ahmad', 'aahmadau', 'Aulia Ahmad', 'Laki-laki', 'Islam', 'Medan', 'aaul@gmail.com', 'IPA', 'SMP Nurul \'Ilmi Padangsidimpua', NULL, 'Rahmad Abadi', 'Adelia Susanti', 'PNS', 'PNS', 'Medan', 'Medan', '082176340321', '081232009976', 'S1 Farmasi', 'S1 Hukum', 2, '123722117', '2002-09-20', '1970-01-01', '2017', NULL),
+(123722118, 'M.Yusuf', 'yusuf', 'Muhammad Yusuf', 'Laki-laki', 'Islam', 'Medan', 'yusufm@gmail.com', 'IPA', 'SMP 3 Medsan', NULL, 'Resi Muhammad', 'Issyafira', 'Pengusaha', 'PNS', 'Medan', 'Medan', '082276549022', '082369237521', 'S2 Ekonomi', 'S1 Teknologi Informasi', 2, '123722118', '2001-06-21', '1970-01-01', '2017', NULL),
+(123722119, 'Fakhrizal', 'fakhri123', 'Muhammad Fakhrizal', 'Laki-laki', 'Islam', 'Medan', 'mfakhri@gmail.com', 'IPS', 'MTs N 1 Medan', NULL, 'Ahmad yusuf', 'Aisyah Hazalif', 'PNS', 'PNS', 'Medan', 'Medan', '081278239508', '082165228964', 'S1 Kebidanan', 'S1 Pertanian', 1, '123722119', '2002-02-12', '1970-01-01', '2017', NULL),
+(123722120, 'Rika', 'rikaa', 'Rika Syahriani', 'Perempuan', 'Islam', 'Jl pancing ,Medan', 'rikasy@gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Suyono', 'SitI Nurhayati', 'Pengusaha', 'IRT', 'Jl pancing ,Medan', 'Jl pancing ,Medan', '081230218823', '082123106922', 'SMA', 'S2 Manajemen', 1, '123722120', '2002-03-30', '1970-01-01', '2017', NULL),
+(123722121, 'Alwi', 'alwii', 'Alwi Daffa', 'Laki-laki', 'Islam', 'jl dr.mansyur no 13,Medan', 'alwidaf@gmailcom', 'IPA', 'SMP N 1 Binjai', NULL, 'Hisyam Alif', 'Aini Qanita', 'Apoteker', 'Wiraswasta', 'jl dr.mansyur no 13,Medan', 'jl dr.mansyur no 13,Medan', '082112883028', '081288921362', 'SMA', 'S1 Farmasi', 2, '123722121', '2002-03-17', '1970-01-01', '2017', NULL),
+(123722122, 'Hana', 'hana122', 'Hana Annisah', 'Perempuan', 'Islam', 'jl pancing no 13,Medan', 'hanas@gmail.com', 'IPA', 'SMP N 1 Binjai', NULL, 'Aulia Akbar', 'Rara', 'PNS', 'Pengusaha', 'jl pancing no 13,Medan', 'jl pancing no 13,Medan', '081221896832', '081276805621', 'SMA', 'S1 Teknologi Informasi', 1, '123722122', '2001-02-22', '1970-01-01', '2016', NULL),
+(123722123, 'Rara', 'tiara123', 'Tiara Anastasya', 'Perempuan', 'Islam', 'jl.Sisimangaraja No 40,Medan', 'rara@gmail.com', 'IPA', 'SMP N 1 Binjai', NULL, 'Rahmad Shadri', ' Amalia Retno Wulandari', 'PNS', 'Wiraswasta', 'jl.Sisimangaraja No 40,Medan', 'jl.Sisimangaraja No 40,Medan', '082367229134', '081270226965', 'SMA', 'S1 Kehutanan', 2, '123722123', '2001-07-28', '1970-01-01', '2016', NULL),
+(123722124, 'Dhanie', 'dhanie', 'Dhanie Prananta', 'Laki-laki', 'Islam', 'Jl jamin ginting no 123,Medan', 'dhanie@gmail.com', 'IPS', 'SMP N 6 Medan', NULL, 'Abul Rizal', 'Andini Permata', 'Pengusaha', 'PNS', 'Jl jamin ginting no 123,Medan', 'Jl jamin ginting no 123,Medan', '085230983970', '081288902619', 'S1 Kedokteran', 'S1 Teknologi Informasi', 1, '123722124', '2001-02-10', '1970-01-01', '2016', NULL),
+(123722125, 'Fadli', 'adli125', 'Fadli Ibrahim', 'Laki-laki', 'Islam', 'Jl pancing No 16,Medan', '', 'IPA', 'SMP N 6 Medan', NULL, 'Azzam Alfarizi', 'Siti Nurhalizah', 'Dokter', 'PNS', 'Jl pancing No 16,Medan', 'Jl pancing No 16,Medan', '082341746920', '085621887600', 'S1 Farmasi', 'S1 Kedokteran', 2, '123722125', '2003-12-30', '1970-01-01', '2018', NULL),
+(123722126, 'Abadi', 'abadi126', 'Putra Abadi', 'Laki-laki', 'Islam', 'jl T.Amir Hamzah No 1,Medan', 'abadi@gmail.com', 'IPS', 'SMP N 3 Medan', NULL, 'Ahmad Rozak', 'Melati Rahmadhani', 'Pengusaha', 'IRT', 'jl T.Amir Hamzah No 1,Medan', 'jl T.Amir Hamzah No 1,Medan', '085812317890', '081254920880', 'SMA', 'SMA', 4, '123722126', '2002-02-12', '1970-01-01', '2017', NULL),
+(123722127, 'Afif', 'afif127', 'Afif Maulana', 'Laki-laki', 'Islam', 'jl wahid Hasyim No 12,Medan', 'afif@gmail.com', 'IPA', 'SMP N 2 Medan', NULL, 'Razali', 'Diana', 'Pengusaha', 'Guru', 'jl wahid Hasyim No 12,Medan', 'jl wahid Hasyim No 12,Medan', '082180398512', '08112341876', 'S2 Ekonomi', 'S2 Ilmu Komputer', 3, '123722127', '2003-05-02', '1970-01-01', '2018', NULL),
+(123722128, 'Dwi', 'wiwi', 'Dwi Permata', 'Perempuan', 'Islam', 'jl Mawar No 11,Binjai', 'wiwi@gmail.com', 'IPS', 'SMP N 1 Binjai', NULL, 'Donny Abidin', 'Endah Ratnasari', 'PNS', 'Wiraswasta', 'jl Mawar No 11,Binjai', 'jl Mawar No 11,Binjai', '087789301288', '082366519056', 'SMA', 'S1 Hukum', 3, '123722128', '2001-06-08', '1970-01-01', '2016', NULL),
+(123722129, 'Feri', 'erikk', 'Feri Afriyanto', 'Laki-laki', 'Islam', 'Jl jamin ginting no 120,Medan', 'feriafriyanto@gmail.', 'IPA', 'SMP N 5 Medan', NULL, 'Imam Kurniawan', 'Intan Rahayu', 'Dosen', 'Dosen', 'Jl jamin ginting no 120,Medan', 'Jl jamin ginting no 120,Medan', '081280427421', '087645912088', 'S2 Ekonomi', 'S2 Manajemen', 6, '123722129', '2001-12-25', '1970-01-01', '2016', NULL),
+(123722130, 'Irfan ', 'ifan130', 'Irfan Hidayat', 'Laki-laki', 'Islam', 'jl sei agul no 200,Medan', 'irfanhidayat@gmail.c', 'IPA', 'SMP Nurul \'Ilmi Padangsidimpua', NULL, 'Iskandar Muda', 'Leli', 'PNS', 'Apoteker', 'jl sei agul no 200,Medan', 'jl sei agul no 200,Medan', '082184045598', '082355658097', 'S1 Farmasi', 'S1 Farmasi', 3, '123722130', '2001-04-04', '1970-01-01', '2016', NULL),
+(123722131, 'Oji', 'oomji', 'Oji Nur Faozi', 'Laki-laki', 'Islam', 'jl sei agul No 12,Medan', 'oomji@gmail.com', 'IPS', 'SMP N 1 Medan', NULL, 'Ozi Fahrurozi', 'Siti Aisyah', 'Pengusaha', 'Perawat', 'jl sei agul No 12,Medan', 'jl sei agul No 12,Medan', '082378990055', '081223785700', 'S1 Kebidanan', 'S1 Pertanian', 1, '123722131', '2002-07-22', '1970-01-01', '2017', NULL),
+(123722151, 'andara', 'andara123', 'Andara Vasya Mardiah', 'Perempuan', 'Islam', 'Jl. Dr. Mansyur', 'andaravasya@gmail.co', 'IPA', 'MTs N 1 Rantau Prapat', NULL, 'Surya Putra', 'Sri Sediani', 'Wiraswasta', 'Guru', 'Jl. Dr. Mansyur', 'Jl. Dr. Mansyur', '081354621887', '082187652456', 'S1 Pendidikan Matematika', 'S1 Agribisnis', 3, '123722151', '2001-04-22', 'Rantau Prapat', '2016', NULL),
+(123722152, 'Tia', 'tiarisdian', 'Tia Risdiana', 'Perempuan', 'Islam', 'Jl. Bukit Barisan II', 'tiarisdiana@gmail.co', 'IPA', 'SMP 7 Medan', NULL, 'Novri Karno', 'Miatri Handayani', 'Wiraswasta', 'Akuntasi', 'Jl. Bukit Barisan II', 'Jl. Bukit Barisan II', '081245786635', '081356243190', 'S1 Pendidikan Matematika', 'S1 Agribisnis', 2, '123722152', '2002-11-05', 'Rantau Prapat', '2017', NULL),
+(123722153, 'Lolika', 'lolika123', 'Loilka', 'Perempuan', 'Islam', 'Jl. Adam Malik', 'lolika2gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Irwansyah', 'Retno Laras', 'Wiraswasta', 'Guru', 'Jl.Adam Malik', 'Jl. Adam Malik', '081376231456', '081256427898', 'S1 Pendidikan Kimia', 'S1 Agribisnis', 3, '123722153', '2001-10-27', 'Medan', '2016', NULL),
+(123722154, 'aida', 'aida123', 'Aida Fitri Nasution', 'Perempuan', 'Islam', 'Jl. Gatot Subroto', 'aidafitri@gmail.com', 'IPS', 'SMP 7 Medan', NULL, 'Deddy Alamsyah', 'Nur Rizkanti', 'Guru', 'Guru', 'Jl. Gatot Subroto', 'Jl. Gatot Subroto', '082278653457', '081256312345', 'S1 Pendidikan Biologi', 'S1 Pendidikan Kimia', 1, '123722154', '2001-12-31', 'Medan', '2016', NULL),
+(123722155, 'Bayu', 'bayu123', 'Bayu Ardiansyah', 'Laki-laki', 'Islam', 'Jl. Aluminium I', 'bayuardiansyah@gmail', 'IPS', 'SMP 3 Medan', NULL, 'Sultan Idris', 'Wiwik Indrayani', 'BUMN', 'Guru', 'Jl. Aluminium I', 'Jl. Aluminium I', '082145632478', '082145678438', 'S1 Pendidikan Fisika', 'S1 Teknik Industri', 3, '123722155', '0002-03-14', 'Aceh', '2017', NULL),
+(123722156, 'Bella', 'bella123', 'Bella Annisa', 'Perempuan', 'Islam', 'Jl. Waringin', 'bellaannisa@gmail.co', 'IPS', 'SMP 1 Medan', NULL, 'Ramli Hari', 'Erna Wati', 'Guru ', 'Ibu Rumah Tangga', 'Jl. Waringin', 'Jl. Waringin', '082167543218', '081345216154', 'SMA', 'S1 Pendidikan Bahasa Inggris', 2, '123722156', '2003-12-10', 'Medan', '2018', NULL),
+(123722157, 'Husna', 'husna123', 'Husna Nur Aisyah', 'Perempuan', 'Islam', 'Jl. Wahid Hayim', 'husnanur@gmail.com', 'IPS', 'SMP 10 Medan', NULL, 'Hermansyah', 'Dini Sari', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. Wahid Hayim', 'Jl. Wahid Hayim', '082156437890', '081345327890', 'SMA', 'SMA', 2, '123722157', '2001-04-06', 'Binjai', '2016', NULL),
+(123722158, 'Hizkia', 'hizkia123', 'Hizkia Putra', 'Laki-laki', 'Islam', 'Jl. Durung', 'hizkiaputra@yahoo.co', 'IPS', 'SMP 2 Medan', NULL, 'Budiono', 'Purnawati', 'Wiraswasta', 'Guru', 'Jl. Durung', 'Jl. Durung', '081345765432', '081245673215', 'S1 Pendidikan Matematika', 'S1 Agribisnis', 3, '123722158', '2001-02-08', 'Medan', '2016', NULL),
+(123722159, 'Ridho', 'ridho123', 'Muhammad Ridho', 'Laki-laki', 'Islam', 'Jl. Sutomo', 'muhammadridho@gmail.', 'IPS', 'SMP 1 Medan', NULL, 'Edi Subekti', 'Yana Sundari', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. Sutomo', 'Jl. Sutomo', '082134678765', '082267543289', 'SMA', 'S1 Ilmu Komputer', 1, '123722159', '0003-04-16', 'Kisaran', '2018', NULL),
+(123722160, 'Fakhira', 'fakhira123', 'Fakhira Mentaya', 'Perempuan', 'Islam', 'Jl. Marelan', 'fakhiramentaya@gmail', 'IPA', 'SMP 12 Medan', NULL, 'Hasanuddin', 'Nur Hasanah', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. Marelan', 'Jl. Marelan', '082145873256', '082276542121', 'SMA', 'S1 Agribisnis', 2, '123722160', '2002-03-04', 'Medan', '2017', NULL),
+(123722161, 'Ilham', 'ilham123', 'Ilham Syahputra', 'Laki-laki', 'Islam', 'Jl.Gunung Krakatau', 'ilhamsyahputra2yahoo', 'IPA', 'SMP 18 Medan', NULL, 'Sawaludin', 'Yuni Sharah', 'Guru', 'Ibu Rumah Tangga', 'Jl.Gunung Krakatau', 'Jl.Gunung Krakatau', '081356876345', '082267432122', 'SMA', 'S1 Ilmu Komputer', 1, '123722161', '2003-07-13', 'Palembang', '2018', NULL),
+(123722162, 'Raska', 'raska123', 'Raska Alma Syura', 'Perempuan', 'Islam', 'Jl. Setia Budi', 'raskaalma@yahoo.com', 'IPS', 'SMP 10 Medan', NULL, 'Hadi Tanto', 'Murtini', 'BUMN', 'Bidan', 'Jl. Setia Budi', 'Jl. Setia Budi', '082356718921', '081367983425', 'D3 Kebidanan', 'S1 Teknik Industri', 1, '123722162', '2003-08-24', 'Medan', '2018', NULL),
+(123722163, 'Ade', 'ade123', 'Ade Ananda', 'Laki-laki', 'Islam', 'Jl. KH Dewantara', 'adeananda@yahoo.com', 'IPS', 'SMP 12 Medan', NULL, 'Ahmad Yudhi', 'Susiani', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. KH Dewantara', 'Jl. KH Dewantara', '082156893456', '081211789845', 'SMA', 'SMA', 2, '123722163', '2003-12-17', 'Medan', '2018', NULL),
+(123722164, 'Aldrin', 'aldrin123', 'Aldrin Sanova', 'Laki-laki', 'Islam', 'Jl. Aluminium IV', 'aldrinsanova@gmail.c', 'IPS', 'SMP 1 Medan', NULL, 'Sulaiman', 'Fitriani', 'Wiraswasta', 'Guru', 'Jl. Aluminium IV', 'Jl. Aluminium IV', '082145679832', '0821345676123', 'S1 Pendidikan Matematika', 'SMA', 1, '123722164', '2002-02-05', 'Medan', '2017', NULL),
+(123722165, 'Mawaddah', 'Mawaddah12', 'Nur Mawaddah', 'Perempuan', 'Islam', 'Jl. Sutomo', 'mawaddah@gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Hanafi Siregar', 'Suci Almira', 'Guru', 'Ibu Rumah Tangga', 'Jl. Sutomo', 'Jl. Sutomo', '081276498776', '081254688776', 'SMA', 'S1 Ekonomi', 2, '123722165', '2001-02-04', 'Medan', '2016', NULL),
+(123722166, 'Putri', 'Putri123', 'Putri Mentari', 'Perempuan', 'Islam', 'Jl. Abdullah Lubis', 'putrimentari@yahoo.c', 'IPS', 'SMP 7 Medan', NULL, 'Maulana Ichsan', 'Alya Raihan', 'Polisi', 'Ibu Rumah Tangga', 'Jl. Abdullah Lubis', 'Jl. Abdullah Lubis', '081254877695', '081268799456', 'SMA', 'S1 Ilmu Kepolisian', 3, '123722066', '2003-03-18', 'Aceh', '2018', NULL),
+(123722167, 'Nabila', 'nabila', 'Nabila Sagita', 'Perempuan', 'Agama', 'Jl. Meranti', 'nabilasagita@yahoo.c', 'IPS', 'SMP 11 Medan', NULL, 'Harianto', 'Fatimah Sari', 'Guru', 'Ibu Rumah Tangga', 'Jl. Meranti', 'Jl. Meranti', '082134562134', '082145673289', 'SMA', 'S1 Pendidikan Biologi', 3, '123722167', '2001-07-05', 'Binjai', '2016', NULL),
+(123722168, 'Alvira', 'Alvira123', 'Alvira Nasution', 'Jenis Kelami', 'Islam', 'Jl. Thamrin', 'alviranst@yahoo.co.i', 'IPS', 'SMP 3 Medan', NULL, 'Rezqi Ahmad', 'Dede Nurmaliza', 'Wiraswasta', 'Jurnalis', 'Jl. Thamrin', 'Jl. Thamrin', '081254788695', '085127835647', 'SMA', 'SMA', 2, '123722068', '2002-01-10', 'Kisaran', '2017', NULL),
+(123722169, 'Dewi', 'Dewi123', 'Dewi Purnama Sari', 'Perempuan', 'Islam', 'Jl. Yos Sudarso', 'dewipurnama@yahoo.co', 'IPA', 'SMP 12 Medan', NULL, 'Rozy Harahap', 'Nurul Azima', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. Yos Sudarso', 'Jl. Yos Sudarso', '081575844901', '081258955094', 'SMA', 'SMA', 1, '123722069', '2002-06-24', 'Sabang', '2017', NULL),
+(123722170, 'Fakhrul', 'Fakhrul123', 'Fakhrul Arifin', 'Laki-laki', 'Islam', 'Jl. Merbau', 'fakhrularifin@yahoo.', 'IPA', 'SMP 10 Medan', NULL, 'Adha Zulkhair', 'Anisa Putri', 'Arsitek', 'Guru', 'Jl. Merbau', 'Jl. Merbau', '081247688798', '081289477592', 'S1 Pendidikan Biologi', 'S1 Arsitektur', 2, '123722170', '2002-03-30', 'Medan', '2017', NULL),
+(123722171, 'Ghinafi', 'Ghinafi123', 'Ghinafi Ilhamsyah', 'Laki-laki', 'Islam', 'Jl. Bogor', 'ghinafilhamsyah', 'IPA', 'SMP 1 Medan', NULL, 'Imam Prakarsa', 'Nurul Hazzah', 'Pengacara', 'Designer', 'Jl. Bogor', 'Jl. Bogor', '081537866541', '085987966583', 'S1 Pertanian', 'S1 Hukum', 4, '123722171', '2001-03-17', 'Medan', '2016', NULL),
+(123722172, 'Maudy', 'Maudy123', 'Maudy Dianty', 'Perempuan', 'Islam', 'Jl. Krakatau', 'maudydianty@gmail.co', 'IPA', 'SMP 7 Medan', NULL, 'Delfi Rizky', 'Dinda Cyntia', 'Penulis', 'Ibu Rumah Tangga', 'Jl. Krakatau', 'Jl. Krakatau', '085768894022', '081278799253', 'S1 Pendidikan Biologi', 'SMA', 2, '123722172', '2002-08-19', 'Palembang', '2017', NULL),
+(123722173, 'Utami', 'Utami123', 'Utami Putri', 'Perempuan', 'Islam', 'Jl. Marelan', 'utamiputri@yahoo.co.', 'IPA', 'SMP 10 Medan', NULL, 'Gilang Kurnia', 'Syahfira Widya', 'Dokter', 'Penjahit', 'Jl. Marelan', 'Jl. Marelan', '081258799472', '081528967754', 'SMA', 'S1 Pendidikan Kimia', 2, '123722173', '2002-10-03', 'Kisaran', '2017', NULL),
+(123722174, 'Arka', 'Arka123', 'Arka Kharisma', 'Laki-laki', 'Islam', 'Jl. Sunggal', 'arkakharisma@yahoo.c', 'IPS', 'SMP 12 Medan', NULL, 'Muhammad Ravie ', 'Silvia Mawarni', 'Pengusaha', 'Ibu Rumah Tangga', 'Jl. Sunggal', 'Jl. Sunggal', '081275487965', '085789022643', 'SMA', 'S1 Agribisnis', 3, '123722174', '2002-05-17', 'Aceh', '2017', NULL),
+(123722175, 'Gisti', 'Gisti123', 'Gisti Putri', 'Perempuan', 'Islam', 'Jl. Adam Malik', 'gistiputri@gmail.com', 'IPS', '', NULL, 'Yogi Syahputra', 'Sinta Putri', 'Pengusaha', 'Ibu Rumah Tangga', 'Jl.Adam Malik', 'Jl. Adam Malik', '081258477693', '081254877964', 'S1 Ekonomi', 'S1 Ekonomi', 1, '123722175', '2002-06-14', 'Medan', '2017', NULL),
+(123722176, 'Fariz', 'Fariz123', 'Fariz Pratama', 'Laki-laki', 'Islam', 'Jl. Sutomo', 'farizpratama@yahoo.c', 'IPA', 'SMP 7 Medan', NULL, 'Yahya Muharrom', 'Dina Fahira', 'Wiraswasta', 'Penulis', 'Jl. Sutomo', 'Jl. Sutomo', '085273588494', '081254676982', 'SMA', 'SMA', 2, '123722176', '2003-01-01', 'Binjai', '2018', NULL),
+(123722177, 'Reza', 'Reza123', 'Reza Fadli', 'Laki-laki', 'Islam', 'Jl. Zainul Arifin', 'rezafadli@gmail.com', 'IPS', 'SMP 2 Medan', NULL, 'Rifqi Muda', 'Viola Manisha', 'Dokter', 'Jurnalis', 'Jl. Zainul Arifin', 'Jl. Zainul Arifin', '081278949352', '081273298754', 'SMA', 'S1 Kedokteran', 2, '123722177', '2003-04-18', 'Medan', '2018', NULL),
+(123722178, 'Jihan', 'Jihan123', 'Jihan Camilia', 'Perempuan', 'Islam', 'Jl. Iskandar Muda', 'jihancamilia@yahoo.c', 'IPS', 'SMP 10 Medan', NULL, 'Ade Rizky', 'Novita Dewi', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. Iskandar Muda', 'Jl. Iskandar Muda', '085276455398', '08128769854', 'D3 Akuntasi', 'S1 Agribisnis', 2, '123722178', '2001-11-05', 'Medan', '2016', NULL),
+(123722179, 'Rizka', 'Rizka123', 'Rizka Fitrisa', 'Perempuan', 'Islam', 'Jl. Simpang Gajahmada', 'rizkafitrisa@yahoo.c', 'IPA', 'SMP 7 Medan', NULL, 'Dwi Yasa', 'Hana Shofiyyah', 'Wiraswasta', 'Guru', 'Jl. Simpang Gajahmada', 'Jl. Simpang Gajahmada', '081287499862', '081298700956', 'S1 Pendidikan Biologi', 'SMA', 3, '123722179', '2002-06-27', 'Kisaran', '2017', NULL),
+(123722180, 'Mufti', 'Mufti123', 'Mufti Azizi', 'Laki-laki', 'Islam', 'Jl. Aluminium I', 'muftiazizi@gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Sutan Thoriq', 'Olivia Lisa', 'Wiraswasta', 'Ibu Rumah Tangga', 'Jl. Aluminium I', 'Jl. Aluminium I', '081268743572', '085897465321', 'SMA', 'S1 Teknik Industri', 1, '123722180', '2003-03-20', 'Medan', '2018', NULL),
+(171402067, 'bayhaqi101', 'bayha101', 'Muhammad Bayhaqi Daulay', 'Laki-laki', 'ISLAM', 'adjwkandajda', 'bayhaqi101@gmail.com', 'IPA', 'SMA', NULL, 'dawdad', 'awdadwa', 'dawdadw', 'dawdada', 'awdadad', 'dadadaw', 'adawdad', 'dawdad', NULL, NULL, 0, '171402067', '2018-12-29', 'awdadaw', 'adawdad', NULL),
+(9223372036854775807, '', '', '', 'Jenis Kelami', 'Agama', '', '', 'Jurusan', '', NULL, '', '', '', '', '', '', '', '', '', '', 0, '/gambar/12345678909876543212', '', '', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -706,85 +795,73 @@ ALTER TABLE `admin`
 -- Indexes for table `akidah_akhlak`
 --
 ALTER TABLE `akidah_akhlak`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `biologi_p`
 --
 ALTER TABLE `biologi_p`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `b_arab`
 --
 ALTER TABLE `b_arab`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `b_indo`
 --
 ALTER TABLE `b_indo`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `b_ing`
 --
 ALTER TABLE `b_ing`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `b_jerman_p`
 --
 ALTER TABLE `b_jerman_p`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `ekonomi_p`
 --
 ALTER TABLE `ekonomi_p`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `fikih`
 --
 ALTER TABLE `fikih`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `fisika_p`
 --
 ALTER TABLE `fisika_p`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `geografi`
 --
 ALTER TABLE `geografi`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `guru`
 --
 ALTER TABLE `guru`
-  ADD PRIMARY KEY (`nip`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nip`);
 
 --
 -- Indexes for table `kimia_p`
 --
 ALTER TABLE `kimia_p`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `marcing_band`
@@ -796,8 +873,7 @@ ALTER TABLE `marcing_band`
 -- Indexes for table `matematika`
 --
 ALTER TABLE `matematika`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `paskibra`
@@ -809,22 +885,19 @@ ALTER TABLE `paskibra`
 -- Indexes for table `penjas`
 --
 ALTER TABLE `penjas`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `pkn`
 --
 ALTER TABLE `pkn`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `prakarya_kewirausahaan`
 --
 ALTER TABLE `prakarya_kewirausahaan`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `pramuka`
@@ -836,29 +909,25 @@ ALTER TABLE `pramuka`
 -- Indexes for table `quran_hadis`
 --
 ALTER TABLE `quran_hadis`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `sejarah`
 --
 ALTER TABLE `sejarah`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `sejarah_indo`
 --
 ALTER TABLE `sejarah_indo`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `seni_budaya`
 --
 ALTER TABLE `seni_budaya`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `siswa`
@@ -870,155 +939,19 @@ ALTER TABLE `siswa`
 -- Indexes for table `ski`
 --
 ALTER TABLE `ski`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `sosiologi`
 --
 ALTER TABLE `sosiologi`
-  ADD PRIMARY KEY (`nis`),
-  ADD UNIQUE KEY `kode_mapel` (`kode_mapel`);
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `terkini`
 --
 ALTER TABLE `terkini`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `terkini`
---
-ALTER TABLE `terkini`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `biologi_p`
---
-ALTER TABLE `biologi_p`
-  ADD CONSTRAINT `biologi_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `b_arab`
---
-ALTER TABLE `b_arab`
-  ADD CONSTRAINT `b_arab_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `b_indo`
---
-ALTER TABLE `b_indo`
-  ADD CONSTRAINT `b_indo_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `b_ing`
---
-ALTER TABLE `b_ing`
-  ADD CONSTRAINT `b_ing_ibfk_1` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `b_ing_ibfk_2` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `b_jerman_p`
---
-ALTER TABLE `b_jerman_p`
-  ADD CONSTRAINT `b_jerman_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `ekonomi_p`
---
-ALTER TABLE `ekonomi_p`
-  ADD CONSTRAINT `ekonomi_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `fikih`
---
-ALTER TABLE `fikih`
-  ADD CONSTRAINT `fikih_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `fisika_p`
---
-ALTER TABLE `fisika_p`
-  ADD CONSTRAINT `fisika_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `geografi`
---
-ALTER TABLE `geografi`
-  ADD CONSTRAINT `geografi_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `kimia_p`
---
-ALTER TABLE `kimia_p`
-  ADD CONSTRAINT `kimia_p_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `matematika`
---
-ALTER TABLE `matematika`
-  ADD CONSTRAINT `matematika_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `penjas`
---
-ALTER TABLE `penjas`
-  ADD CONSTRAINT `penjas_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `pkn`
---
-ALTER TABLE `pkn`
-  ADD CONSTRAINT `pkn_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `pkn_ibfk_2` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `prakarya_kewirausahaan`
---
-ALTER TABLE `prakarya_kewirausahaan`
-  ADD CONSTRAINT `prakarya_kewirausahaan_ibfk_1` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `prakarya_kewirausahaan_ibfk_2` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `quran_hadis`
---
-ALTER TABLE `quran_hadis`
-  ADD CONSTRAINT `quran_hadis_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `sejarah`
---
-ALTER TABLE `sejarah`
-  ADD CONSTRAINT `sejarah_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `seni_budaya`
---
-ALTER TABLE `seni_budaya`
-  ADD CONSTRAINT `seni_budaya_ibfk_1` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `seni_budaya_ibfk_2` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `ski`
---
-ALTER TABLE `ski`
-  ADD CONSTRAINT `ski_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `ski_ibfk_2` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `sosiologi`
---
-ALTER TABLE `sosiologi`
-  ADD CONSTRAINT `sosiologi_ibfk_1` FOREIGN KEY (`nis`) REFERENCES `siswa` (`nis`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `sosiologi_ibfk_2` FOREIGN KEY (`kode_mapel`) REFERENCES `guru` (`kode_mapel`) ON DELETE CASCADE ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
