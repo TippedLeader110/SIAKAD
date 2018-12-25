@@ -41,7 +41,7 @@
 				<div class="col-md-12">
 					<table class="table table-bordered table-striped">
 						<tr>
-							<th>NIP</th><th>Nama</th><th>Kode Mapel</th><th>Wali Kelas</th><th>Golongan PNS</th><th>Perintah</th>
+							<th>NIP</th><th>Nama</th><th>Kode Mapel</th><th>Mata Pelajaran</th><th>Wali Kelas</th><th>Golongan PNS</th><th>Perintah</th>
 						</tr>
 						<?php 
 							$batas = 0;
@@ -55,7 +55,7 @@
 							$x='Tidak';
 						}
 						echo "<tr>
-						<th>".$v->nip."</th><th>".$v->nama."</th><th>".$v->kode_mapel."</th><th>".$x."</th><th>".$v->gol."</th><th><form method='post' action='".base_url()."admin/infoguru'><input type='text' hidden name='nip' value='".$v->nip."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
+						<th>".$v->nip."</th><th>".$v->nama."</th><th>".$v->kode_mapel."</th><th>".$v->mapel."</th><th>".$x."</th><th>".$v->gol."</th><th><form method='post' action='".base_url()."admin/infoguru'><input type='text' hidden name='nip' value='".$v->nip."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
 							</tr>";
 							if ($batas==10) {
 							break;
