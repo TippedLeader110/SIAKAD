@@ -5,12 +5,24 @@ class Login extends CI_Controller {
 
 	public function siswa()
 	{
+		if ($_SESSION['nip']!='') {
+			redirect('home/guru');
+		}
+		if ($_SESSION['nis']!='') {
+			redirect('home/siswa');
+		}
 		$data['border']='transparent';
 		$data['page']='userview/loginsiswa';
 		$this->load->view('layout/main', $data);
 	}
 	public function guru()
 	{
+		if ($_SESSION['nip']!='') {
+			redirect('home/guru');
+		}
+		if ($_SESSION['nis']!='') {
+			redirect('home/siswa');
+		}
 		$data['border']='transparent';
 		$data['page']='userview/loginguru';
 		$this->load->view('layout/main', $data);

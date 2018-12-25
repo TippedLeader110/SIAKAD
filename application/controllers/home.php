@@ -5,30 +5,27 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
+		if ($_SESSION['nip']!='') {
+			redirect('home/guru');
+		}
+		if ($_SESSION['nis']!='') {
+			redirect('home/siswa');
+		}
 		$data['border']='transparent';
 		$data['page']='userview/home';
 		$this->load->view('layout/main', $data);
 	}
 	public function logout()
 	{
-		if($_SESSION['user']=='guru')
-		{
-			base_url();
-			redirect("login/guru", location);
-		}
-		elseif($_SESSION['user']=='siswa')
-		{
-			base_url();
-			redirect("login/siswa", location);	
-		}
-		else
-		{
-			$w = base_url();
-			redirect("$w", location);	
-		}
+		session_destroy();
+		$w = base_url();
+		redirect("$w");
 	}
 	public function siswa()
 	{
+		if ($_SESSION['nip']!='') {
+			redirect('home/guru');
+		}
 		if ($_SESSION['user']=='') {
 			redirect('login/siswa', location);
 		}
@@ -49,6 +46,9 @@ class Home extends CI_Controller {
 	}
 	public function guru()
 	{
+		if ($_SESSION['nis']!='') {
+			redirect('home/siswa');
+		}
 		if ($_SESSION['user']=='') {
 			redirect('login/guru', location);
 		}

@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/lel.css">
 
 <script type="<?php echo base_url() ?>/script/js/script.jss"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 	<title>Siakad</title>
 </head>

@@ -6,8 +6,9 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
-				<div class="col-md-6" style="padding-top: 10px; margin-right: -200px;margin-left: 200px">
-					<table style="min-width: 500px;">
+				<div class="col-md-6" style="padding-top: 10px; margin-right: -200px;margin-left: 20px">
+					<form>
+						<table style="min-width: 300px;">
 						<tr><td><h4>Jurusan</h4></td></tr>
 						<tr>
 							<td>
@@ -20,7 +21,7 @@
 						</tr>
 					</table> 
 				</div>
-				<div class="col-md-6" style="padding-top: 10px;padding-bottom: 10px">
+				<div class="col-md-6" style="padding-top: 10px;padding-bottom: 10px; margin-left: 50px;">
 					<table style="min-width: 500px;margin-left: -70px;">
 						<tr><td><h4>Kelas</h4></td></tr>
 						<tr>
@@ -50,6 +51,7 @@
 							<td><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
 						</tr>
 					</table> 
+					</form>					
 				</div>
 			</div>
 		</div>	
@@ -59,7 +61,7 @@
 			<div class="row">
 				<table class="table table-bordered table-stripped" style="margin-left: 30px;background: white;margin-right: 30px;text-align: center;">
 					<tr>
-						<th>Nis</th>
+						<th>NIS</th>
 						<th>Nama</th>
 						<th>Jurusan</th>
 						<th>Kelas</th>
