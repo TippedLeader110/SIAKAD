@@ -27,25 +27,10 @@
 						<tr>
 							<td>
 								<select name="kelas" class="form-control" style="width: 250px;">
-								<option value="kelas">-Pilih Kelas-</option>
-								<option value="10ipaA">X IPA 1</option>
-								<option value="10ipaB">X IPA 2</option>
-								<option value="10ipaC">X IPA 3</option>
-								<option value="11ipaA">XI IPA 1</option>
-								<option value="11ipaB">XI IPA 2</option>
-								<option value="11ipaC">XI IPA 3</option>
-								<option value="12ipaA">XII IPA 1</option>
-								<option value="12ipaB">XII IPA 2</option>
-								<option value="12ipaC">XII IPA 3</option>
-								<option value="10ipsA">X IPS 1</option>
-								<option value="10ipsB">X IPS 2</option>
-								<option value="10ipsC">X IPS 3</option>
-								<option value="11ipsA">XI IPS 1</option>
-								<option value="11ipsB">XI IPS 2</option>
-								<option value="11ipsC">XI IPS 3</option>
-								<option value="12ipsA">XII IPS 1</option>
-								<option value="12ipsB">XII IPS 2</option>
-								<option value="12ipsC">XII IPS 3</option>
+								<option value="kelas">-Pilih Tingkat-</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
 								</select> 
 							</td>
 							<td><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
@@ -67,13 +52,15 @@
 						<th>Kelas</th>
 						<th>Aksi</th>
 					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><form action="<?php echo base_url() ?>nilai/input"><button type="submit" class="btn btn-info">Input Nilai</button></form></td>
-					</tr>
+					<?php foreach ($murid as $key => $v) {
+						echo "<tr>
+						<td>".$v->nis."</td>
+						<td>".$v->nama."</td>
+						<td>".$v->jurusan."</td>
+						<td>".$v->kelas."</td>
+						<td><form method='post' action='".base_url()."nilai/input'><input hidden type='text' value='".$v->nis."' name='nis'><button type='submit' class='btn btn-info'>Input Nilai</button></form></td>
+					</tr>";
+					} ?>
 				</table>
 			</div>
 		</div>		

@@ -5,22 +5,20 @@ class Nilai extends CI_Controller {
 
 	public function guru()
 	{
-		$this->input->post('jurusan');
-		if ($this->input->post('jurusan')=='ipa') {
-			if ($this->input->post('jurusan')=='ipa') {
-				
-			}
-			$data['murid'] = $this->adminmodel->ambilspesx('siswa',$nama,'nis');
+		$naruto = $this->input->post('kelas');
+		if ($this->input->post('jurusan')=='ips') {
+			$data['murid'] = $this->adminmodel->ambilspesx('siswa','ips','jurusan',$naruto);	
 		}
-		elseif ($this->input->post('jurusan')=='ips') {
-			
+		if ($this->input->post('jurusan')=='ipa') {
+			$data['murid'] = $this->adminmodel->ambilspesx('siswa','ipa','jurusan',$naruto);
 		}
 		$data['border']='black';
 		$data['page']='userview/inputnilai';
 		$data['nama'] = 'Input Nilai';
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['beranda'] = '';
-		$data['nilai'] = 'aktif';
+		$data['nilai'] = '';
+		$data['input'] = 'aktif';
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = '';
@@ -29,6 +27,8 @@ class Nilai extends CI_Controller {
 	}
 	public function input()
 	{
+		$f = $this->input->post('nis');
+		$data['murid'] = $this->adminmodel->ambilspes('siswa',$data,'nis');
 		$data['border']='black';
 		$data['page']='userview/nilai';
 		$data['nama'] = 'Input Nilai';

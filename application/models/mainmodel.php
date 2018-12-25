@@ -49,8 +49,8 @@ class Mainmodel extends CI_Model {
 		$query = $this->db->get('guru');
 		$query = $query->num_rows();
 		if ($query==0) {
-			redirect('login/guru');
 			$_SESSION['flash'] = 'no';
+			redirect('login/guru');
 		}
 		else if ($query!=0) {
 		$this->db->where(['username' => $user, 'password' => $pass]);
@@ -65,8 +65,8 @@ class Mainmodel extends CI_Model {
 			redirect('home/guru');
 			}
 			else{
-				redirect('login/siswa');
 			$_SESSION['flash'] = 'ban';
+			redirect('login/guru');
 			}
 		}
 	}

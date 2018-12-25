@@ -53,6 +53,29 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
+	public function ambilspesx($data2,$nama,$spes,$naruto)
+	{
+		$w = date('Y');
+		if ($naruto=='1') {
+			$w = $w;
+		}
+		if ($naruto=='2') {
+			$w = 1-$w;
+		}
+		if ($naruto=='3') {
+			$w = 2-$w;
+		}
+		$anj = $_SESSION['nip'];
+		$this->db->where(['nip' => $anj ]);
+		$query = $this->db->get('guru');
+		$data = $query->result();
+		foreach ($data as $key => $v) {	}
+
+			$b = $v->kode_mapel;
+		$this->db->like([$spes => $nama, 'tahun' => $w, 'kelas' => $b]);
+		$query = $this->db->get($data2);
+		return $query->result();
+	}
 	public function ambilspesg($data,$nama,$spes)
 	{
 		$this->db->where([$spes => $nama]);
