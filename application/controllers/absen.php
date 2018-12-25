@@ -64,7 +64,32 @@ class Absen extends CI_Controller {
 		$bulan = $this->input->post('bulan');
 		$this->mainmodel->inputabsen($alpa, $izin, $sakit, $kehadiran, $bulan);}
 	}
-
+	public function IsiAbsen()
+	{
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/abseninput';
+		$data['nama'] = 'Absen';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+	}
+	public function presensi()
+	{
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/presensi';
+		$data['nama'] = 'Absen';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+	}
 	// public function logort()
 	// {
 	// 	$user=$this->input->post('username');
