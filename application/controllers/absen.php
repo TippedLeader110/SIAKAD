@@ -76,6 +76,7 @@ class Absen extends CI_Controller {
 		$data['rapot'] = '';
 		$data['guru'] = '';
 		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
 	}
 	public function presensi()
 	{
@@ -89,6 +90,7 @@ class Absen extends CI_Controller {
 		$data['rapot'] = '';
 		$data['guru'] = '';
 		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
 	}
 	// public function logort()
 	// {
