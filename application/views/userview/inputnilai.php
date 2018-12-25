@@ -7,7 +7,7 @@
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-6" style="padding-top: 10px; margin-right: -200px;margin-left: 20px">
-					<form>
+					<form method="post" action="<?php echo base_url() ?>Nilai/guru">
 						<table style="min-width: 300px;">
 						<tr><td><h4>Jurusan</h4></td></tr>
 						<tr>
@@ -51,7 +51,7 @@
 							<td><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
 						</tr>
 					</table> 
-					</form>					
+					</form>				
 				</div>
 			</div>
 		</div>	

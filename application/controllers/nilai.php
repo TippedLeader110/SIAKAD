@@ -5,6 +5,16 @@ class Nilai extends CI_Controller {
 
 	public function guru()
 	{
+		$this->input->post('jurusan');
+		if ($this->input->post('jurusan')=='ipa') {
+			if ($this->input->post('jurusan')=='ipa') {
+				
+			}
+			$data['murid'] = $this->adminmodel->ambilspesx('siswa',$nama,'nis');
+		}
+		elseif ($this->input->post('jurusan')=='ips') {
+			
+		}
 		$data['border']='black';
 		$data['page']='userview/inputnilai';
 		$data['nama'] = 'Input Nilai';

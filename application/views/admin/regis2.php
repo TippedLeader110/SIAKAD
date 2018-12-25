@@ -51,7 +51,7 @@
 						<td><h5>NIS</h5></td>
 						<td><h5>Nama Ayah</h5></td>
 					</tr>
-					<tr>
+					<tr><input type="text" name="id" hidden value="<?php echo $v->nis ?>">
 						<td><input type="number" name="nis" placeholder="NIS" value="<?php echo $nis ?>"></td>
 						<td><input type="text" name="ayah" placeholder="Nama Ayah" value="<?php echo $nama_ayah ?>"></td>
 					</tr>
