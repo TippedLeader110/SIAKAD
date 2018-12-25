@@ -42,6 +42,7 @@ class Admin extends CI_Controller {
 		$data['post']="";
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$data['jumlahterkini'] = $this->adminmodel->hitung('terkini');
+		$data['alum'] = $this->adminmodel->hitungda();
 		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
 		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
@@ -74,6 +75,7 @@ class Admin extends CI_Controller {
 	{
 		$d = $_POST['ck'];
 		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+
 		$this->db->where('nis', $d[$i]);
 		$this->db->set('kelas', $_POST['kelas']);
 		$this->db->update('siswa');
