@@ -170,7 +170,6 @@
 					</tr>
 					<tr>
 						<td><select name="agama" class="form-control" style="width: 400px;">
-							<option>Agama</option>
 							<option value="Islam">Islam</option>
 						</select></td>
 					</tr>

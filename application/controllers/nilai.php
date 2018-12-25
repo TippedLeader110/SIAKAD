@@ -85,7 +85,6 @@ class Nilai extends CI_Controller {
 		$data['rapot'] = '';
 		$data['guru'] = '';
 		$data['profil'] = '';
-		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['page']='userview/daftarnilai';
 		$this->load->view('layout/home', $data);	
 	}
