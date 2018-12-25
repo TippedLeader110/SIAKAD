@@ -482,6 +482,25 @@ class Admin extends CI_Controller {
 			$this->load->view('layout/admin', $data);
 	}
 
+	public function guruIPSCari()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		else{}
+			$data['dashboard']="";
+			$data['murid']="";
+			$data['guru']="active";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/guruIPS";
+			$this->load->view('layout/admin', $data);
+	}
 	public function jurusanIPACari()
 	{
 		if ($this->input->post('tent')=='tahun') {
@@ -533,7 +552,25 @@ class Admin extends CI_Controller {
 			$data['page']="admin/statusmurid";
 			$this->load->view('layout/admin', $data);
 	}
-
+	public function gurustatus()
+	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'mapel');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['gurutam'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		else{$data['gurutam'] = $this->adminmodel->ambil('guru');}
+			$data['dashboard']="";
+			$data['murid']="";
+			$data['guru']="active";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/statusguru";
+			$this->load->view('layout/admin', $data);
+	}
 	public function aturstatus(){
 		$d = $_POST['ck'];
 		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
@@ -542,6 +579,15 @@ class Admin extends CI_Controller {
 		$this->db->update('siswa');
 		}
 		redirect('admin/muridstatus', refresh);
+	}
+	public function aturstatusguru(){
+		$d = $_POST['ck'];
+		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+		$this->db->where('nip', $d[$i]);
+		$this->db->set('status', $_POST['status']);
+		$this->db->update('guru');
+		}
+		redirect('admin/gurustatus', refresh);
 	}
 	public function jurusanIPSCari()
 	{
@@ -688,16 +734,27 @@ class Admin extends CI_Controller {
 		$this->adminmodel->post($judul,$isi,$waktu,$penulis);
 		redirect("admin/post", location);
 		}
-		public function guruIPA()
+	public function guruIPA()
 	{
-			$data['dashboard']="";
-			$data['murid']="";
-			$data['guru']="active";
-			$data['matapel']="";
-			$data['post']="";
-			$data['kelas'] = $this->adminmodel->ambil('guru');
-			$data['page']="admin/guruIPA";
-			$this->load->view('layout/admin', $data);
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['kelas'] = $this->adminmodel->ambil('guru');
+		$data['page']="admin/guruIPA";
+		$this->load->view('layout/admin', $data);
+	}
+	public function guruIPS()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['kelas'] = $this->adminmodel->ambil('guru');
+		$data['page']="admin/guruIPS";
+		$this->load->view('layout/admin', $data);
 	}
 }
 
