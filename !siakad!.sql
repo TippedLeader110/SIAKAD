@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 25, 2018 at 09:52 AM
+-- Generation Time: Dec 25, 2018 at 10:17 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -79,7 +79,8 @@ CREATE TABLE `akidah_akhlak` (
   `tugas_2` int(11) DEFAULT NULL,
   `tugas_3` int(11) DEFAULT NULL,
   `rata_rata` int(11) DEFAULT NULL,
-  `semester` int(11) DEFAULT NULL
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -375,6 +376,26 @@ CREATE TABLE `marcing_band` (
 
 CREATE TABLE `matematika` (
   `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `matematika_p`
+--
+
+CREATE TABLE `matematika_p` (
+  `nis` bigint(20) DEFAULT NULL,
   `kode_mapel` varchar(12) DEFAULT NULL,
   `jurusan` varchar(20) DEFAULT NULL,
   `uts` int(11) DEFAULT NULL,
