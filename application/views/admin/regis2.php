@@ -78,9 +78,14 @@
 					<tr>
 						<td>
 							<select name="jurusan" class="form-control" style="width: 400px;">
-								<option>Jurusan</option>
-								<option value="IPA">IPA</option>
-								<option value="IPS">IPS</option>
+							<?php if ($v->jurusan=='IPA'): ?>
+							<option value="IPA">IPA</option>
+							<option value="IPA">IPS</option>
+							<?php endif ?>
+							<?php if ($v->jurusan=='IPS'): ?>
+							<option value="IPS">IPS</option>
+							<option value="IPA">IPA</option>
+							<?php endif ?>
 							</select>
 						</td>
 						<td><input type="text" name="aayah" placeholder="Alamat Ayah" value="<?php echo $alamat_ayah ?>"></td>
@@ -134,9 +139,14 @@
 					<tr>
 						<td>
 							<select name="jkel" class="form-control" style="width: 400px;">
-								<option>Jenis Kelamin</option>
+								<?php if ($v->jk=='Laki-laki'): ?>
 								<option value="Laki-laki">Laki-Laki</option>
 								<option value="Perempuan">Perempuan</option>
+								<?php endif ?>
+								<?php if ($v->jk=='Perempuan'): ?>
+								<option value="Perempuan">Perempuan</option>
+								<option value="Laki-laki">Laki-Laki</option>
+								<?php endif ?>
 							</select>
 						</td>
 						<td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>

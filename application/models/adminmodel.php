@@ -114,4 +114,8 @@ class Adminmodel extends CI_Model {
 	function data($number,$offset, $w){
 		return $query = $this->db->get($w,$number,$offset)->result();		
 	}
+	function dataspes($number,$offset, $w, $ww){
+		$this->db->where(['jurusan' => $ww]);
+		return $query = $this->db->get($w,$number,$offset)->result();		
+	}
 }

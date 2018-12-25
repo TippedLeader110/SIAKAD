@@ -75,6 +75,7 @@ class Admin extends CI_Controller {
 	{
 		$d = $_POST['ck'];
 		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+			
 
 		$this->db->where('nis', $d[$i]);
 		$this->db->set('kelas', $_POST['kelas']);
@@ -465,12 +466,21 @@ class Admin extends CI_Controller {
 	}
 	public function jurusanIPA()
 	{
+			$this->load->library('pagination');
+			$config['base_url'] = base_url().'admin/jurusanIPA';
+			$jumlah_data = $this->adminmodel->hitung('siswa');
+			$config['total_rows'] = $jumlah_data;
+			$config['per_page'] = 10;
+			$from = $this->uri->segment(3);
+			$this->pagination->initialize($config);		
+			$tipe = 'siswa';
+			$data['muridtam'] = $this->adminmodel->dataspes($config['per_page'],$from, $tipe, 'ipa');
 			$data['dashboard']="";
 			$data['murid']="active";
 			$data['guru']="";
 			$data['matapel']="";
 			$data['post']="";
-			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ipa', 'jurusan');
+
 			$data['page']="admin/muridkelasIPA";
 			$this->load->view('layout/admin', $data);
 	}
@@ -580,7 +590,20 @@ class Admin extends CI_Controller {
 			$data['guru']="";
 			$data['matapel']="";
 			$data['post']="";
-			$data['muridtam'] = $this->adminmodel->ambilspes('siswa', 'ips', 'jurusan');
+			$this->load->library('pagination');
+			$config['base_url'] = base_url().'admin/jurusanIPS';
+			$jumlah_data = $this->adminmodel->hitung('siswa');
+			$config['total_rows'] = $jumlah_data;
+			$config['per_page'] = 10;
+			$from = $this->uri->segment(3);
+			$this->pagination->initialize($config);		
+			$tipe = 'siswa';
+			$data['muridtam'] = $this->adminmodel->dataspes($config['per_page'],$from, $tipe, 'ips');
+			$data['dashboard']="";
+			$data['murid']="active";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
 			$data['page']="admin/muridkelasIPA";
 			$this->load->view('layout/admin', $data);
 	}
