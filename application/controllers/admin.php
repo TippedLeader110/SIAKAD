@@ -426,7 +426,7 @@ class Admin extends CI_Controller {
 		$this->db->set('nama', $nama);
 		$nip = $this->input->post('nip');
 		$this->db->set('nip', $nip);
-		$kode_mapel = $this->input->post('kode_mapel');
+		$kode_mapel = $this->input->post('kelas');
 		$this->db->set('kode_mapel', $kode_mapel);
 		$username = $this->input->post('username');
 		$this->db->set('username', $username);
@@ -452,7 +452,7 @@ class Admin extends CI_Controller {
 		$this->db->set('no_hp', $no_hp);
 		$this->db->where(['nip' => $id]);
 		$this->db->update('guru');
-        redirect("admin/guru");
+        redirect("admin/Daftar_guru");
 	}
 	public function kelas()
 	{

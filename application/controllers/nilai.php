@@ -25,10 +25,129 @@ class Nilai extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
+	public function gurusimpan()
+	{
+		$tugas1 = $this->input->post('tugas1');
+		$nis = $this->input->post('nis');
+		$semester = $this->input->post('semester');
+		$tugas2 = $this->input->post('tugas2');
+		$tugas3 = $this->input->post('tugas3');
+		$mapel = $this->input->post('mapel');
+		if($mapel=='Akidah Akhlak')
+		{
+			$mapel = 'akidah_akhlak';
+		}
+		if($mapel=='Al Quran Hadist')
+		{
+			$mapel = 'quran_hadis';
+		}
+		if($mapel=='Bahasa Arab')
+		{
+			$mapel = 'b_arab' ;
+		}
+		if($mapel=='Bahasa Indonesia')
+		{
+			$mapel = 'b_indo' ;
+		}
+		if($mapel=='Bahasa Inggris')
+		{
+			$mapel = 'b_ing';
+		}
+		if($mapel=='Bahasa Jerman Peminatan')
+		{
+			$mapel = 'b_jerman_p';
+		}
+		if($mapel=='Biologi Peminatan')
+		{
+			$mapel = 'biologi_p';
+		}
+		if($mapel=='Ekonomi Peminatan')
+		{
+			$mapel = 'ekonomi_p';
+		}
+		if($mapel=='Fikih')
+		{
+			$mapel = 'fikih';
+		}
+		if($mapel=='Fisika Peminatan')
+		{
+			$mapel = 'fisika_p';
+		}
+		if($mapel=='Geografi')
+		{
+			$mapel = 'geografi';
+		}
+		if($mapel=='Kimia Peminatan')
+		{
+			$mapel = 'kimia_p';
+		}
+		if($mapel=='Matematika')
+		{
+			$mapel = 'matematika';
+		}
+		if($mapel=='Pendidikan Jasmani')
+		{
+			$mapel = 'penjas';
+		}
+		if($mapel=='Pendidikan Kewarganegaraan')
+		{
+			$mapel = 'pkn';
+		}
+		if($mapel=='Prakarya Kewirausahaan')
+		{
+			$mapel = 'prakarya_kewirausahaan';
+		}
+		if($mapel=='Sejarah')
+		{
+			$mapel = 'sejarah';
+		}
+		if($mapel=='Sejarah Indonesia')
+		{
+			$mapel = 'sejarah_indo';
+		}
+		if($mapel=='Sejarah Kebudayaan Islam')
+		{
+			$mapel = 'ski';
+		}
+		if($mapel=='Seni Budaya')
+		{
+			$mapel = 'seni_budaya';
+		}
+		if($mapel=='Sosiologi')
+		{
+			$mapel = 'sosiologi';
+		}
+
+		$jurusan = $this->input->post('jurusan');
+		$uts = $this->input->post('uts');
+		$uas = $this->input->post('uas');
+		$this->db->where(['semester' => $semester, 'nis' => $nis]);
+		$query = $this->db->get($mapel);
+		$query = $query->num_rows();
+		if ($query==0) {
+			$data = array('jurusan' => $jurusan, 'nis' => $nis ,'semester' => $semester , 'tugas_1' => $tugas1 , 'tugas_2' => $tugas2 , 'tugas_3' => $tugas3 , 'uts' => $uts , 'uas' => $uas ,);
+			$this->db->insert($mapel, $data);
+			redirect('nilai/guru');
+		}
+		else{
+			$this->db->set('semester', $semester );
+			$this->db->set('tugas_1', $tugas1 );
+			$this->db->set('jurusan', $jurusan );
+			$this->db->set('tugas_2', $tugas2 );
+			$this->db->set('tugas_3', $tugas3 );
+			$this->db->set('uts', $uts );
+			$this->db->set('uas', $uas );
+			$this->db->where(['nis' => $nis, 'semester' => $semester]);
+			$this->db->update($mapel);
+			redirect('nilai/guru');
+		}
+	}
 	public function input()
 	{
 		$f = $this->input->post('nis');
-		$data['murid'] = $this->adminmodel->ambilspes('siswa',$data,'nis');
+		$in = $_SESSION['nip'];
+		$data['murid'] = $this->adminmodel->ambilspes('siswa',$f,'nis');
+		$data['guru1'] = $this->adminmodel->ambilspes('guru',$in,'nip');
 		$data['border']='black';
 		$data['page']='userview/nilai';
 		$data['nama'] = 'Input Nilai';

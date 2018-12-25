@@ -34,7 +34,7 @@
 					</tr>
 					<tr>
 						<td><input type="text" value="<?php echo $v->username ?>" name="username" placeholder="Username"></td>
-						<td><input type="text" name="tmpt" value="<?php echo $v->alamat ?>" placeholder="Tempat Lahir"></td>
+						<td><input type="text" name="tmpt" value="<?php echo $v->tmpt_lahir ?>" placeholder="Tempat Lahir"></td>
 					</tr>
 					<tr>	
 						<td><h4>Password</h4></td>
@@ -80,27 +80,27 @@
 					</tr>
 					<tr><td><select name="mapel" class="form-control" style="width: 400px;">
 							<option>Mata Pelajaran</option>
-							<option value="matpel">Akidah Akhlak</option>
-							<option value="matpel">Al-Qur'an Hadist</option>
-							<option value="matpel">Bahasa Arab</option>
-							<option value="matpel">Bahasa Indonesia</option>
-							<option value="matpel">Bahasa Inggris</option>
-							<option value="matpel">Bahasa Jerman Peminatan</option>
-							<option value="matpel">Biologi Peminatan</option>
-							<option value="matpel">Ekonomi Peminatan</option>
-							<option value="matpel">Fikih</option>
-							<option value="matpel">Fisika Peminatan</option>
-							<option value="matpel">Geografi</option>
-							<option value="matpel">Kimia Peminatan</option>
-							<option value="matpel">Matematikan</option>
-							<option value="matpel">Pendidikan Jasmani</option>
-							<option value="matpel">Pendidikan Kewarganegaraan</option>
-							<option value="matpel">Prakarya Kewirausahaan</option>
-							<option value="matpel">Sejarah</option>
-							<option value="matpel">Sejarah Indonesia</option>
-							<option value="matpel">Sejarah Kebudayaan Islam</option>
-							<option value="matpel">Seni Budaya</option>
-							<option value="matpel">Sosiologi</option>
+							<option value="Akidah Akhlak">Akidah Akhlak</option>
+								<option value="Al Quran Hadist">Al-Qur'an Hadist</option>
+								<option value="Bahasa Arab">Bahasa Arab</option>
+								<option value="Bahasa Indonesia">Bahasa Indonesia</option>
+								<option value="Bahasa Inggris">Bahasa Inggris</option>
+								<option value="Bahasa Jerman Peminatan">Bahasa Jerman Peminatan</option>
+								<option value="Biologi Peminatan">Biologi Peminatan</option>
+								<option value="Ekonomi Peminatan">Ekonomi Peminatan</option>
+								<option value="Fikih">Fikih</option>
+								<option value="Fisika Peminatan">Fisika Peminatan</option>
+								<option value="Geografi">Geografi</option>
+								<option value="Kimia Peminatan">Kimia Peminatan</option>
+								<option value="Matematika">Matematika</option>
+								<option value="Pendidikan Jasmani">Pendidikan Jasmani</option>
+								<option value="Pendidikan Kewarganegaraan">Pendidikan Kewarganegaraan</option>
+								<option value="Prakarya Kewirausahaan">Prakarya Kewirausahaan</option>
+								<option value="Sejarah">Sejarah</option>
+								<option value="Sejarah Indonesia">Sejarah Indonesia</option>
+								<option value="Sejarah Kebudayaan Islam">Sejarah Kebudayaan Islam</option>
+								<option value="Seni Budaya">Seni Budaya</option>
+								<option value="Sosiologi">Sosiologi</option>
 						</select></td>
 						<td rowspan="15"><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"><?php echo $v->alamat ?></textarea></td>
 					</tr>
