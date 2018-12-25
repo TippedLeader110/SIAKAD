@@ -42,7 +42,7 @@
 					</tr>
 					<tr>	
 						<td><input type="password" value="<?php echo $v->password ?>" name="password" placeholder="Password"></td>
-						<td><input type="date" value="<?php echo $v->tanggal ?>" name="date" placeholder="Tanggal Lahir"></td>
+						<td><input type="date" value="<?php echo $v->tgl_lahir ?>" name="date" placeholder="Tanggal Lahir"></td>
 					</tr>
 					<tr>	
 						<td><h4>Email</h4></td>

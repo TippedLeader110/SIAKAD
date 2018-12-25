@@ -61,6 +61,11 @@
 							break;
 							}	
 						} ?>
+						<tr>
+							<th><?php 
+	echo $this->pagination->create_links();
+	?></th>
+						</tr>
 					</table></form>
 				</div>
 			</div>

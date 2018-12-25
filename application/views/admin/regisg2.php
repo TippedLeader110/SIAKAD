@@ -18,13 +18,13 @@
 	<div class="row">
 		<div class="col-md-12" style="background: white">
 			<div class="table-responsive">
-				<form method="post" action="<?php echo base_url() ?>admin/simpang">
+				<form method="post" action="<?php echo base_url() ?>admin/simpang2">
 				<table class="table table-borderless">
 					<tr>	
 						<td><h4>NIP</h4></td>
 						<td><h4>Nama</h4></td>
 					</tr>
-					<tr>
+					<tr><input type="text" value="<?php echo $v->nip ?>" name="id" hidden>
 						<td><input type="text" value="<?php echo $v->nip ?>" name="nip" placeholder="NIP"></td>
 						<td><input type="text" name="nama" value="<?php echo $v->nama ?>" placeholder="Nama"></td>
 					</tr>
@@ -34,15 +34,15 @@
 					</tr>
 					<tr>
 						<td><input type="text" value="<?php echo $v->username ?>" name="username" placeholder="Username"></td>
-						<td><input type="text" name="temptlhr" value="<?php echo $v->alamat ?>" placeholder="Tempat Lahir"></td>
+						<td><input type="text" name="tmpt" value="<?php echo $v->alamat ?>" placeholder="Tempat Lahir"></td>
 					</tr>
 					<tr>	
 						<td><h4>Password</h4></td>
 						<td><h4>Tanggal Lahir</h4></td>
 					</tr>
 					<tr>	
-						<td><input type="password" value="<?php echo $v->password ?>"" name="password" placeholder="Password"></td>
-						<td><input type="date" value="<?php echo $v->tanggal ?>" name="date" placeholder="Tanggal Lahir"></td>
+						<td><input type="password" value="<?php echo $v->password ?>" name="password" placeholder="Password"></td>
+						<td><input type="date" value="<?php echo $v->tgl_lahir ?>" name="tanggal" ></td>
 					</tr>
 					<tr>	
 						<td><h4>Email</h4></td>
@@ -108,7 +108,7 @@
 						<td><h4>Golongan PNS</h4></td>
 					</tr>	
 					<tr>
-						<td><select name="pg" class="form-control" style="width: 400px;">
+						<td><select name="gol" class="form-control" style="width: 400px;">
 							<option>Golongan PNS</option>
 							<option value="I/A">I/A</option>
 							<option value="I/B">I/B</option>

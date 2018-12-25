@@ -169,7 +169,7 @@ class Admin extends CI_Controller {
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$id=$this->uri->segment(3);
 		$tipe=$this->uri->segment(4);
-		if (isset($id)) {
+		if (isset($tipe)) {
 			if ($tipe=='nama') {
 			$max = $id;	
 			$data['test'] = $max;
@@ -187,7 +187,16 @@ class Admin extends CI_Controller {
 		else
 		{
 		}
-		$data['muridtam'] = $this->adminmodel->ambil('siswa');
+		$this->load->library('pagination');
+		$config['base_url'] = base_url().'admin/daftar_murid';
+		$jumlah_data = $this->adminmodel->hitung('siswa');
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 10;
+		$from = $this->uri->segment(3);
+		$this->pagination->initialize($config);		
+		$tipe = 'siswa';
+		$data['muridtam'] = $this->adminmodel->data($config['per_page'],$from, $tipe);
+		// $data['muridtam'] = $this->adminmodel->ambil('siswa');
 		$data['dashboard']="";
 		$data['murid']="active";
 		$data['guru']="";
@@ -211,7 +220,15 @@ class Admin extends CI_Controller {
 	}
 	public function Daftar_guru()
 	{
-		$data['gurutam'] = $this->adminmodel->ambil('guru');
+		$this->load->library('pagination');
+		$config['base_url'] = base_url().'admin/daftar_guru';
+		$jumlah_data = $this->adminmodel->hitung('siswa');
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 10;
+		$from = $this->uri->segment(3);
+		$tipe = 'guru';
+		$this->pagination->initialize($config);		
+		$data['gurutam'] = $this->adminmodel->data($config['per_page'],$from, $tipe);
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
@@ -430,8 +447,8 @@ class Admin extends CI_Controller {
 		$no_hp = $this->input->post('no_hp');
 		$this->db->set('no_hp', $no_hp);
 		$this->db->where(['nip' => $id]);
-						$this->db->update('guru');
-                        redirect("admin/guru");
+		$this->db->update('guru');
+        redirect("admin/guru");
 	}
 	public function kelas()
 	{
@@ -675,7 +692,7 @@ class Admin extends CI_Controller {
 		$data['matapel']="";
 		$data['post']="";
 		$data['page']="admin/regisg2";
-		$data['arra'] = $this->adminmodel->ambilspes('guru', $nip, 'nip');
+		$data['arra'] = $this->adminmodel->ambilspesg('guru', $nip, 'nip');
 		$this->load->view('layout/admin', $data);
 	}
 	public function edit()

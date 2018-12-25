@@ -57,7 +57,7 @@
 							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4><a href="<?php echo base_url() ?>admin/Daftar_guru"><div class="tooltip">Lihat Semua Guru</div><span class="tooltiptext">Tooltip text</span></a></h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/Daftar_guru">Lihat Semua Guru</a></h4></td>
 						</tr>
 					</table>
 				</center>

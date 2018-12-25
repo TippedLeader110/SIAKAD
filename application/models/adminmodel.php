@@ -46,6 +46,12 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get($data);
 		return $query->result();
 	}
+	public function ambilspesg($data,$nama,$spes)
+	{
+		$this->db->where([$spes => $nama]);
+		$query = $this->db->get($data);
+		return $query->result();
+	}	
 	public function ambilspes2nd($data,$nama,$spes,$jur)
 	{
 		$this->db->like([$spes => $nama, 'jurusan' => $jur]);
@@ -89,7 +95,7 @@ class Adminmodel extends CI_Model {
 	}
 	public function kirimguru($nama,$nip,$kode_mapel,$username,$password,$tanggal,$agama,$alamat,$email,$mapel,$jk,$gol,$no_hp, $tmpt)
 	{
-		$adata = array('nama' =>$nama,'nip' =>$nip,'kode_mapel' =>$kode_mapel,'username' =>$username,'password' =>$password,'tgl_lahir' =>$tanggal,'alamat' =>$alamat,'email' =>$email,'mapel' =>$mapel,'jk' =>$jk,'gol' =>$gol,'no_hp' =>$no_hp, 'tmpt_lahir' => $tmpt);
+		$adata = array('nama' =>$nama,'nip' =>$nip,'kode_mapel' =>$kode_mapel,'username' =>$username,'password' =>$password,'tgl_lahir' =>$tanggal,'alamat' =>$alamat,'email' =>$email,'mapel' =>$mapel,'jk' =>$jk,'gol' =>$gol,'no_hp' =>$no_hp, 'tmpt_lahir' => $tmpt, 'status' => 'Aktif');
 		$this->db->insert('guru', $adata);
 	}
 	public function post($judul,$isi,$waktu,$penulis)
@@ -97,5 +103,8 @@ class Adminmodel extends CI_Model {
 
 		$adata = array('judul' =>$judul,'isi' =>$isi,'waktu' =>$waktu,'penulis' =>$penulis,);
 		$this->db->insert('terkini', $adata);
+	}
+	function data($number,$offset, $w){
+		return $query = $this->db->get($w,$number,$offset)->result();		
 	}
 }
