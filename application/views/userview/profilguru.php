@@ -8,7 +8,9 @@
 				<div class="col-md-4">
 					<div class="container" style="background-color:#2F669F; border-width: 0px;  width: 150px; margin-top: 30px;">
 						<center><a class="active" style="color:white; text-decoration: none;" href="http://localhost/SIAKAD/Profil/guru">Data Sekolah</a></center>
-					</div>
+					</div><?php foreach ($arra as $key => $v) {
+						# code...
+					} ?>
 				</div>
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px;  width: 150px; margin-left: 10px;  margin-top: 30px; margin-bottom: 15px;">
@@ -20,12 +22,13 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NIP
+				<input type="text" hidden name="id" value="<?php echo $nip ?>">
+						NIP = <?php echo "$nip"; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama
+						Nama = <?php echo $v->nama ?>
 				</div>
 			</div>
 			<div class="col-md-12">
