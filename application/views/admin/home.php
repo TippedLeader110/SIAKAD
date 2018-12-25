@@ -1,5 +1,8 @@
 
 <script type="text/javascript">
+	$( function() {
+    $( document ).tooltip();
+  	} );
 	function test()
 	{
 		document.getElementById("nav").style.width = "250px";

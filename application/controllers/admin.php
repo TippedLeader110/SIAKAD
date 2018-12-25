@@ -92,7 +92,7 @@ class Admin extends CI_Controller {
 		foreach ($data as $key => $v) {
 			$kode = $v->mapel;
 		}
-		$kode = "$kode $w";
+		$kode = "$w";
 		$this->db->where('nip', $d[$i]);
 		$this->db->set('kode_mapel', $kode);
 		$this->db->update('guru');

@@ -54,10 +54,10 @@
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center">
-							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/Daftar_guru"><img src="<?php echo base_url() ?>/img/icon/table.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4>Lihat Semua Guru</a></h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/Daftar_guru"><div class="tooltip">Lihat Semua Guru</div><span class="tooltiptext">Tooltip text</span></a></h4></td>
 						</tr>
 					</table>
 				</center>
@@ -96,10 +96,10 @@
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/gurustatus"><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4>Atur Status Guru</h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/gurustatus">Atur Status Guru</a></h4></td>
 						</tr>
 					</table>
 				</center>
