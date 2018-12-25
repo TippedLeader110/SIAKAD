@@ -134,6 +134,7 @@ class Admin extends CI_Controller {
 	}
 	public function murid()
 	{
+		$data['alum'] = $this->adminmodel->hitungda();
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$data['jumlahmurida'] = $this->adminmodel->hitungda('siswa','Laki-laki');
 		$data['jumlahmuridi'] = $this->adminmodel->hitungda('siswa','Perempuan');
