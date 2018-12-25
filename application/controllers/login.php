@@ -39,6 +39,12 @@ class Login extends CI_Controller {
 			$pass = $this->input->post('password');
 			$this->mainmodel->loginguru($user, $pass);
 	}
+	public function lupa()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/lupa';
+		$this->load->view('layout/main', $data);
+	}
 	
 	// public function logort()
 	// {
