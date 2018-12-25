@@ -62,7 +62,7 @@ class Mainmodel extends CI_Model {
 			$this->session->user = $w->nama;
 			$this->session->nip = $w->nip;
 			$this->session->img = $w->foto;
-			redirect('home/siswa');
+			redirect('home/guru');
 			}
 			else{
 				redirect('login/siswa');
