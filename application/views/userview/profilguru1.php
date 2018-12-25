@@ -8,6 +8,7 @@
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; font-weight: 500;width: 150px; margin-top: 30px;">
 						<center><a href="http://localhost/SIAKAD/Profil/guru" style="text-decoration: none;">Data Sekolah</a></center>
+						<?php foreach ($arra as $key => $v) {} ?>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -19,37 +20,37 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama
+						Nama = <?php echo $v->nama; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tempat
+						Tempat Lahir = <?php echo $v->tempat_lahir; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tanggal Lahir
+						Tanggal Lahir = <?php echo $v->tanggal_lahir; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Jenis Kelamin
+						Jenis Kelamin = <?php echo $v->jk; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nomor HP
+						Nomor HP = <?php echo $v->no_hp; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Email
+						Email = <?php echo $v->email; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Alamat
+						Alamat = <?php echo $v->alamat; ?>
 				</div>
 			</div>
 		</div>

@@ -64,6 +64,8 @@ class Profil extends CI_Controller {
 	}
 	public function guru1()
 	{
+		$nip = $_SESSION['nip'];
+		$data['arra'] = $this->adminmodel->ambilspes('guru', $nip, 'nip');
 		$data['border']='transparent';
 		$data['page']='userview/profilguru1';
 		$data['nav'] = 'layout/navbar-kiri-guru';

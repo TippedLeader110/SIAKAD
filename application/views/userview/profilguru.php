@@ -8,9 +8,7 @@
 				<div class="col-md-4">
 					<div class="container" style="background-color:#2F669F; border-width: 0px;  width: 150px; margin-top: 30px;">
 						<center><a class="active" style="color:white; text-decoration: none;" href="http://localhost/SIAKAD/Profil/guru">Data Sekolah</a></center>
-					</div><?php foreach ($arra as $key => $v) {
-						# code...
-					} ?>
+					</div><?php foreach ($arra as $key => $v) {} ?>
 				</div>
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px;  width: 150px; margin-left: 10px;  margin-top: 30px; margin-bottom: 15px;">
@@ -23,7 +21,7 @@
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<input type="text" hidden name="id" value="<?php echo $nip ?>">
-						NIP = <?php echo "$nip"; ?>
+						NIP = <?php echo $v->nip; ?>
 				</div>
 			</div>
 			<div class="col-md-12">
@@ -33,17 +31,17 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Golongan PNS
+						Golongan PNS = <?php echo $v->gol ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Mengajar di Kelas
+						Mengajar di Kelas = <?php echo $v->kode_mapel ?>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Mata Pelajaran
+						Mata Pelajaran = <?php echo $v->mapel ?>
 				</div>
 			</div>
 		</div>
