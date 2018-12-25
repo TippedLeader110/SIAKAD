@@ -55,23 +55,10 @@
 						</select></td>
 					</tr>
 					<tr>	
-						<td><h4>Mengajar di Kelas</h4></td>
+						<td><h4>Mata Pelajaran</h4></td>
 						<td><h4>Nomor HP</h4></td>
 					</tr>
 					<tr>	
-						<td><select name="kelas" class="form-control" style="width: 400px;">
-							<option>Kelas</option>
-							<option value="A">A</option>
-							<option value="B">B</option>
-							<option value="C">C</option>
-						</select></td>
-						<td><input type="number" name="no_hp" placeholder="Nomor HP"></td>
-					</tr>
-					<tr>	
-						<td><h4>Mata Pelajaran</h4></td>
-						<td colspan="15"><h4>Alamat</h4></td>
-					</tr>
-					<tr>
 						<td>
 							<select name="mapel" class="form-control" style="width: 400px;">
 								<option>Mata Pelajaran</option>
@@ -98,33 +85,37 @@
 								<option value="Sosiologi">Sosiologi</option>
 							</select>
 						</td>
-						<td rowspan="15"><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"></textarea>
-						</td>
+						<td><input type="number" name="no_hp" placeholder="Nomor HP"></td>
+					</tr>
+					<tr>	
+						<td><h4>Golongan PNS</h4></td>
+						<td colspan="15"><h4>Alamat</h4></td>
 					</tr>
 					<tr>
-						<td><h4>Golongan PNS</h4></td>
-					</tr>	
-					<tr>
-						<td><select name="gol" class="form-control" style="width: 400px;">
-							<option>Golongan PNS</option>
-							<option value="I/A">I/A</option>
-							<option value="I/B">I/B</option>
-							<option value="I/C">I/C</option>
-							<option value="I/D">I/D</option>
-							<option value="II/A">II/A</option>
-							<option value="II/B">II/B</option>
-							<option value="II/C">II/C</option>
-							<option value="II/D">II/D</option>
-							<option value="III/A">III/A</option>
-							<option value="III/B">III/B</option>
-							<option value="III/C">III/C</option>
-							<option value="III/D">III/D</option>
-							<option value="IV/A">IV/A</option>
-							<option value="IV/B">IV/B</option>
-							<option value="IV/C">IV/C</option>
-							<option value="IV/D">IV/D</option>
-							<option value="IV/E">IV/E</option>
-						</select></td>
+						<td>
+							<select name="gol" class="form-control" style="width: 400px;">
+								<option>Golongan PNS</option>
+								<option value="I/A">I/A</option>
+								<option value="I/B">I/B</option>
+								<option value="I/C">I/C</option>
+								<option value="I/D">I/D</option>
+								<option value="II/A">II/A</option>
+								<option value="II/B">II/B</option>
+								<option value="II/C">II/C</option>
+								<option value="II/D">II/D</option>
+								<option value="III/A">III/A</option>
+								<option value="III/B">III/B</option>
+								<option value="III/C">III/C</option>
+								<option value="III/D">III/D</option>
+								<option value="IV/A">IV/A</option>
+								<option value="IV/B">IV/B</option>
+								<option value="IV/C">IV/C</option>
+								<option value="IV/D">IV/D</option>
+								<option value="IV/E">IV/E</option>
+							</select>
+						</td>
+						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"></textarea>
+						</td>
 					</tr>
 					<tr>
 						<td><button class="btn btn-primary" type="submit" name="simpan">Simpan</button></td><td colspan="3"><button class="btn btn-alert" type="reset">Ulangi</button></td>
