@@ -105,7 +105,7 @@
 						<td><h4>Golongan PNS</h4></td>
 					</tr>	
 					<tr>
-						<td><select name="pg" class="form-control" style="width: 400px;">
+						<td><select name="gol" class="form-control" style="width: 400px;">
 							<option>Golongan PNS</option>
 							<option value="I/A">I/A</option>
 							<option value="I/B">I/B</option>
