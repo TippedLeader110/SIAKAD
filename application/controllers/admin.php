@@ -310,7 +310,7 @@ class Admin extends CI_Controller {
 		$tlahir = $this->input->post('tlahir');
 		$this->db->set('tempat', $tlahir);
 		$date = $this->input->post('date');
-		$this->db->set('tanggal_lahir', $date);
+		$this->db->set('tanggal_lahir', $tanggal);
                         $this->db->where(['nis' => $id]);
 						$this->db->update('siswa');
                         redirect("admin/murid");
@@ -429,6 +429,9 @@ class Admin extends CI_Controller {
 		$this->db->set('gol', $gol);
 		$no_hp = $this->input->post('no_hp');
 		$this->db->set('no_hp', $no_hp);
+		$this->db->where(['nip' => $id]);
+						$this->db->update('guru');
+                        redirect("admin/guru");
 	}
 	public function kelas()
 	{
