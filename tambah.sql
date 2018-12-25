@@ -1,1 +1,0 @@
-ALTER TABLE  akidah_akhlak DROP UNIQUE KEY kode_mapel;
