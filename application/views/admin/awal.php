@@ -10,7 +10,7 @@
 				<div class="container" style="background: #f5b041;height: 185px;">
 					<table style="margin-top: 15px;">
 						<tr>
-							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/sekolah.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Alumni :</h4></td>
+							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/sekolah.png" style="max-height: 144px;max-width: 144px"></td><td><h4>Jumlah Alumni : <?php echo $alum ?></h4></td>
 						</tr>
 						<tr>
 							<td><h4>Murid Aktif : <?php echo $jumlahmurid ?></h4></td>
