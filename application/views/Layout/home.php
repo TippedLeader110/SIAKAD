@@ -71,13 +71,5 @@
 	</div>
 </body>
 <script type="text/javascript" src="<?php echo $base_url() ?>script/main.js"></script>
-<script type="text/javascript">
-	$('.carousel').carousel({
-  interval: 2000
-})
-	$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-	$('#example').tooltip(options)
-</script>
+
 </html>

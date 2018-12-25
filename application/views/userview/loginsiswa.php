@@ -22,7 +22,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4>Masuk Siswa/i</h4>
+								<h4 style="color: white;">Masuk Siswa/i</h4>
 								<?php if ($_SESSION['flash']=='no'): ?>
 								<div class="alert alert-danger">
   									<strong>Terjadi Kesalahan!</strong>Username atau Password Salah.
@@ -59,8 +59,16 @@
 					</div>
 					<div class="row" style="margin-top: 5px;">
 						<div class="container-fluid" style="color: white; margin-left: 10px;" align="left">
-							<input type="checkbox" onclick="myFunction()">
-							<span style="margin-left: 5px;">Tampilkan Kata Sandi</span>
+							<table border="0">
+								<tr>
+									<td>
+										<input type="checkbox" onclick="myFunction()" style="width: 20px; height: 20px; margin-top: 5px;">
+									</td>
+									<td>
+										<span style="margin-left: 5px;">Tampilkan Kata Sandi</span>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 30px;">
