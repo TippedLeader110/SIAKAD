@@ -41,13 +41,13 @@
 				<div class="col-md-12">
 					<table class="table table-bordered table-striped">
 						<tr>
-							<th>CB</th><th>NIS</th><th>Nama</th><th>Kelas</th><th>Jurusan</th><th>Angkatan</th>
+							<th>CB</th><th>NIS</th><th>Nama</th><th>Kelas</th><th>Jurusan</th><th>Angkatan</th><th>Aksi</th>
 						</tr>
 						<?php 
 						$batas = 0;
 						foreach ($muridtam as $key => $v) {
 						echo "<tr>
-						<th><input style='width: 10px;' type='checkbox' name='ck[]' value='".$v->nis."' /></th><th>".$v->nis."</th><th>".$v->nama."</th><th>".$v->kelas."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th>
+						<th><input style='width: 10px;' type='checkbox' name='ck[]' value='".$v->nis."' /></th><th>".$v->nis."</th><th>".$v->nama."</th><th>".$v->kelas."</th><th>".$v->jurusan."</th><th>".$v->tahun."</th><th><form method='post' action='".base_url()."admin/info'><input type='text' hidden name='nis' value='".$v->nis."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
 							</tr>";
 						$batas++;
 						} ?>
