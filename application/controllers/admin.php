@@ -377,7 +377,6 @@ class Admin extends CI_Controller {
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$tanggal = $this->input->post('tanggal');
-		// $tanggal = $this->input->post('tanggal');
 		$tmpt = $this->input->post('tmpt');
 		$agama = $this->input->post('agama');
 		$alamat = $this->input->post('alamat');
@@ -399,6 +398,38 @@ class Admin extends CI_Controller {
 		$this->load->view('layout/admin', $data);
 	}
 
+	public function simpang2()
+	{
+		$id = $this->input->post('id');
+		$nama = $this->input->post('nama');
+		$this->db->set('nama', $nama);
+		$nip = $this->input->post('nip');
+		$this->db->set('nip', $nip);
+		$kode_mapel = $this->input->post('kode_mapel');
+		$this->db->set('kode_mapel', $kode_mapel);
+		$username = $this->input->post('username');
+		$this->db->set('username', $username);
+		$password = $this->input->post('password');
+		$this->db->set('password', $password);
+		$tanggal = $this->input->post('tanggal');
+		$this->db->set('tgl_lahir', $tanggal);
+		$tmpt = $this->input->post('tmpt');
+		$this->db->set('tmpt_lahir', $tmpt);
+		$agama = $this->input->post('agama');
+		$this->db->set('agama', $agama);
+		$alamat = $this->input->post('alamat');
+		$this->db->set('alamat', $alamat);
+		$email = $this->input->post('email');
+		$this->db->set('email', $email);
+		$mapel = $this->input->post('mapel');
+		$this->db->set('mapel', $mapel);
+		$jk = $this->input->post('jk');
+		$this->db->set('jk', $jk);
+		$gol = $this->input->post('gol');
+		$this->db->set('gol', $gol);
+		$no_hp = $this->input->post('no_hp');
+		$this->db->set('no_hp', $no_hp);
+	}
 	public function kelas()
 	{
 		$data['dashboard']="";
