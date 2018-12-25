@@ -31,7 +31,7 @@ class Adminmodel extends CI_Model {
 	public function hitunga()
 	{
 		$this->db->where(['status' => 'Alumni']);
-		$query = $this->db->get($s);
+		$query = $this->db->get('siswa');
 		$query = $query->num_rows();
 		return $query;
 	}	
