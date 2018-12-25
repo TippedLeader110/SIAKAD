@@ -23,6 +23,18 @@
 					<div class="row" style="margin-bottom: 10px;">
 						<div class="container-fluid">
 								<h4>Masuk Guru/Pegawai</h4>
+								<?php if ($_SESSION['flash']=='no'): ?>
+								<div class="alert alert-danger">
+  									<strong>Terjadi Kesalahan!</strong>Username atau Password Salah.
+								</div>
+								<?php $_SESSION['flash']='';  ?>
+								<?php endif ?>
+								<?php if ($_SESSION['flash']=='ban'): ?>
+								<div class="alert alert-warning">
+  									<strong>Tidak dapat login !</strong> Akun anda telah dinonaktifkan oleh admin.
+								</div>
+								<?php $_SESSION['flash']='';  ?>
+								<?php endif ?>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 10px;">

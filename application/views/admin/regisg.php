@@ -40,7 +40,7 @@
 					</tr>
 					<tr>	
 						<td><input type="password" name="password" placeholder="Password"></td>
-						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
+						<td><input type="date" name="date" placeholder="dd-mm-yyyy" pattern="\d{1,2}-\d{1,2}-\d{4}"></td>
 					</tr>
 					<tr>	
 						<td><h4>Email</h4></td>

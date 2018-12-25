@@ -20,6 +20,7 @@ class Mainmodel extends CI_Model {
 		$query = $this->db->get('siswa');
 		$query = $query->num_rows();
 		if ($query==0) {
+			$_SESSION['flash'] = 'no';
 			redirect('login/siswa');
 		}
 		else if ($query==1) {
@@ -28,10 +29,16 @@ class Mainmodel extends CI_Model {
 		$data = $query->result();
 			foreach ($data as $key => $w) {
 			}
+			if ($w->status=='Aktif') {
 			$this->session->user = $w->nama;
 			$this->session->nis = $w->nis;
 			$this->session->img = $w->pict;
 			redirect('home/siswa');
+			}
+			else{
+			$_SESSION['flash'] = 'ban';
+				redirect('login/siswa');
+			}
 		}
 
 	}
@@ -42,7 +49,8 @@ class Mainmodel extends CI_Model {
 		$query = $this->db->get('guru');
 		$query = $query->num_rows();
 		if ($query==0) {
-			redirect('home/login/fail');
+			redirect('login/guru');
+			$_SESSION['flash'] = 'no';
 		}
 		else if ($query!=0) {
 		$this->db->where(['username' => $user, 'password' => $pass]);
@@ -50,10 +58,16 @@ class Mainmodel extends CI_Model {
 		$data = $query->result();
 			foreach ($data as $key => $w) {
 			}
+			if ($w->status=='Aktif') {
 			$this->session->user = $w->nama;
-			$this->session->nip = $w->nis;
-			$this->session->img = $w->pict;
-			redirect('home/guru');
+			$this->session->nip = $w->nip;
+			$this->session->img = $w->foto;
+			redirect('home/siswa');
+			}
+			else{
+				redirect('login/siswa');
+			$_SESSION['flash'] = 'ban';
+			}
 		}
 	}
 	public function daftarsiswa($user, $pass)
