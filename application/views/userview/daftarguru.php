@@ -65,7 +65,7 @@
 <div class="row">
   <div class="col-md-12" style="margin-bottom: 50px;">
 
-    <div class="row">
+    
         
 
 
@@ -73,6 +73,9 @@
 <?php 
 $max = 0;
 foreach ($gurudaf as $key => $v) {
+  if ($max==0) {
+    echo "<div class='row'>";
+  }
 echo"          <div class='col-md-3'>";
 echo"          <div class='card' style='width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;'>";
 echo"          <div style='background-color:#009432; height: 200px; width: 200px;'>";
@@ -90,8 +93,11 @@ echo"    </div>";
 echo"  </div>";
 echo"</div>";
   if ($max==4) {
-    break;
+    echo "</div>";
+    echo "<div class='row'>";
+    $max=0;
   }
+  $max++;
 }
  ?>
    
