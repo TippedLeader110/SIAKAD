@@ -18,13 +18,13 @@
 	<div class="row">
 		<div class="col-md-12" style="background: white">
 			<div class="table-responsive">
-				<form method="post" action="<?php echo base_url() ?>admin/simpang">
+				<form method="post" action="<?php echo base_url() ?>admin/simpang2">
 				<table class="table table-borderless">
 					<tr>	
 						<td><h4>NIP</h4></td>
 						<td><h4>Nama</h4></td>
 					</tr>
-					<tr>
+					<tr><input type="text" name="id" value="<?php echo $v->nip ?>">
 						<td><input type="text" value="<?php echo $v->nip ?>" name="nip" placeholder="NIP"></td>
 						<td><input type="text" name="nama" value="<?php echo $v->nama ?>" placeholder="Nama"></td>
 					</tr>
