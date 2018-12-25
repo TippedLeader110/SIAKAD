@@ -1,1 +1,1 @@
-ALTER TABLE akidah_akhlak ADD kkm varchar(30);
+ALTER TABLE guru ADD agama text; 
