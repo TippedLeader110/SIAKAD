@@ -84,7 +84,7 @@
 					<tr>
 						<td><select name="agama" class="form-control" style="width: 400px;">
        						<option>Agama</option>
-      						<option value="Islam" checked>Islam</option>
+      						<option value="Islam">Islam</option>
      					</select></td>
 					</tr>
 					<tr>
