@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 25, 2018 at 09:34 AM
+-- Generation Time: Dec 25, 2018 at 09:52 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -798,21 +798,9 @@ ALTER TABLE `guru`
   ADD PRIMARY KEY (`nip`);
 
 --
--- Indexes for table `kimia_p`
---
-ALTER TABLE `kimia_p`
-  ADD PRIMARY KEY (`nis`);
-
---
 -- Indexes for table `marcing_band`
 --
 ALTER TABLE `marcing_band`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `matematika`
---
-ALTER TABLE `matematika`
   ADD PRIMARY KEY (`nis`);
 
 --
@@ -822,69 +810,15 @@ ALTER TABLE `paskibra`
   ADD PRIMARY KEY (`nis`);
 
 --
--- Indexes for table `penjas`
---
-ALTER TABLE `penjas`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `pkn`
---
-ALTER TABLE `pkn`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `prakarya_kewirausahaan`
---
-ALTER TABLE `prakarya_kewirausahaan`
-  ADD PRIMARY KEY (`nis`);
-
---
 -- Indexes for table `pramuka`
 --
 ALTER TABLE `pramuka`
   ADD PRIMARY KEY (`nis`);
 
 --
--- Indexes for table `quran_hadis`
---
-ALTER TABLE `quran_hadis`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `sejarah`
---
-ALTER TABLE `sejarah`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `sejarah_indo`
---
-ALTER TABLE `sejarah_indo`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `seni_budaya`
---
-ALTER TABLE `seni_budaya`
-  ADD PRIMARY KEY (`nis`);
-
---
 -- Indexes for table `siswa`
 --
 ALTER TABLE `siswa`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `ski`
---
-ALTER TABLE `ski`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `sosiologi`
---
-ALTER TABLE `sosiologi`
   ADD PRIMARY KEY (`nis`);
 
 --
