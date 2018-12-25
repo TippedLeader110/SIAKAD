@@ -71,9 +71,9 @@
 
 
 <?php 
-$max = 0;
+$max = 1;
 foreach ($gurudaf as $key => $v) {
-  if ($max==0) {
+  if ($max==1) {
     echo "<div class='row'>";
   }
 echo"          <div class='col-md-3'>";
@@ -95,7 +95,7 @@ echo"</div>";
   if ($max==4) {
     echo "</div>";
     echo "<div class='row'>";
-    $max=0;
+    $max=1;
   }
   $max++;
 }
