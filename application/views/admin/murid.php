@@ -14,15 +14,15 @@
 						<tr>
 							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/student-icon.png" style="max-height: 144px;max-width: 144px"></td>
 							<td style="padding-left: 20px;"><h4>Jumlah Alumni</h4></td>
-							<td style="padding-left: 10px; padding-right: 10px;"><h4>:</h4></td>
+							<td style="padding-left: 10px; padding-right: 10px;"><h4>: <?php echo $alum; ?></h4></td>
 						</tr>
 						<tr>
 							<td style="padding-left: 20px;"><h4>Murid Aktif</h4></td>
-							<td style="padding-left: 10px; padding-right: 10px;"><h4>:</h4></td>
+							<td style="padding-left: 10px; padding-right: 10px;"><h4>: <?php echo $maktif; ?></h4></td>
 						</tr>
 						<tr>
 							<td style="padding-left: 20px;"><h4>Murid Non Aktif</h4></td>
-							<td style="padding-left: 10px; padding-right: 10px;"><h4>:</h4></td>
+							<td style="padding-left: 10px; padding-right: 10px;"><h4>: <?php echo $naktif; ?></h4></td>
 						</tr>
 					</table>
 				</div>

@@ -68,10 +68,10 @@
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center" style="">
-							<td><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 104px;max-width: 104px"></td>
+							<td><a href="<?php echo base_url() ?>admin/wali"><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><h4>Atur Wali Kelas</h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/wali">Atur Wali Kelas</a></h4></td>
 						</tr>
 					</table>
 				</center>

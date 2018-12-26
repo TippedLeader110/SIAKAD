@@ -42,7 +42,7 @@ class Admin extends CI_Controller {
 		$data['post']="";
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$data['jumlahterkini'] = $this->adminmodel->hitung('terkini');
-		$data['alum'] = $this->adminmodel->hitunga();
+		$data['alum'] = $this->adminmodel->hitunga('alumni');
 		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahkelas'] = $this->adminmodel->hitung('kelas');
 		$data['muridbaru'] = $this->adminmodel->ambil('siswa');
@@ -174,7 +174,9 @@ class Admin extends CI_Controller {
 	}
 	public function murid()
 	{
-		$data['alum'] = $this->adminmodel->hitunga();
+		$data['alum'] = $this->adminmodel->hitunga('alumni');
+		$data['maktif'] = $this->adminmodel->hitunga('aktif');
+		$data['naktif'] = $this->adminmodel->hitunga('tidak aktif');
 		$data['jumlahmurid'] = $this->adminmodel->hitung('siswa');
 		$data['jumlahmurida'] = $this->adminmodel->hitungda('siswa','Laki-laki');
 		$data['jumlahmuridi'] = $this->adminmodel->hitungda('siswa','Perempuan');
