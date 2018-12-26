@@ -61,15 +61,26 @@ class Admin extends CI_Controller {
 		$pass = $this->input->post('password');
 		$this->adminmodel->login($user, $pass);
 	}
-	public function kode()
+	public function wali()
 	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['kelas'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['kelas'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		else{
+			$data['kelas'] = $this->adminmodel->ambil('guru');	
+		}
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
 		$data['matapel']="";
 		$data['post']="";
-		$data['page']="admin/kode";
-		$this->load->view('layout/admin', $data);
+		$data['page']="admin/waliatur";
+		$this->load->view('layout/admin', $data);	
 	}
 	public function aturkelas()
 	{
@@ -82,6 +93,34 @@ class Admin extends CI_Controller {
 		$this->db->update('siswa');
 		}
 		redirect('admin/kelas');
+	}
+	public function aturwali()
+	{
+		$d = $_POST['ck'];
+		$w = $_POST['kelas'];
+		$z = $_POST['jurusan'].$w;
+		for ($i=0; $i < sizeof($_POST['ck']) ; $i++) { 
+		$this->db->where('wali_kelas', $z);
+		$queru = $this->db->get('guru')->num_rows();
+		if ($queru==1) {
+			$this->db->where('wali_kelas', $z);
+			$query = $this->db->get('guru')->result();
+			foreach ($query as $key => $value) {}
+				$this->db->set('wali_kelas', '');
+				$this->db->where('nip' , $value->nip);
+				$this->db->update('guru');
+		$this->db->set('wali_kelas', $z);
+		$this->db->where('nip', $d[$i]);
+		$this->db->update('guru');
+		}
+		else{
+		$this->db->where('nip', $d[$i]);
+		$this->db->set('wali_kelas', $z);
+		$this->db->update('guru');
+			
+		}
+		}
+		redirect('admin/wali');
 	}
 
 	public function aturkelasguru()
@@ -501,7 +540,7 @@ class Admin extends CI_Controller {
 			$data['guru']="";
 			$data['matapel']="";
 			$data['post']="";
-			$data['page']="admin/smurid";
+			$data['page']="admin/smuridcari";
 			$this->load->view('layout/admin', $data);
 	}
 
@@ -812,12 +851,22 @@ class Admin extends CI_Controller {
 		}
 	public function guruIPA()
 	{
+		if ($this->input->post('tent')=='tahun') {
+			$w = $this->input->post('cari');
+			$data['kelas'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		elseif ($this->input->post('tent')=='nama') {
+			$w = $this->input->post('cari');
+			$data['kelas'] = $this->adminmodel->ambilspes('guru', $w, 'nama');
+		}
+		else{
+			$data['kelas'] = $this->adminmodel->ambil('guru');	
+		}
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
 		$data['matapel']="";
 		$data['post']="";
-		$data['kelas'] = $this->adminmodel->ambil('guru');
 		$data['page']="admin/guruIPA";
 		$this->load->view('layout/admin', $data);
 	}

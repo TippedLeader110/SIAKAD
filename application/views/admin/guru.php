@@ -82,10 +82,10 @@
 				<center>
 					<table style="margin-top: 20px">
 						<tr align="center" style="">
-							<td><a href="<?php echo base_url() ?>admin/kode"><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td></a>
+							<td><a href="<?php echo base_url() ?>admin/guruIPA"><img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 104px;max-width: 104px"></td></a>
 						</tr>
 						<tr align="center">
-							<td><h4><a href="<?php echo base_url() ?>admin/kode">Atur Kode Guru</a></h4></td>
+							<td><h4><a href="<?php echo base_url() ?>admin/guruIPA">Atur Kode Guru</a></h4></td>
 						</tr>
 					</table>
 				</center>
