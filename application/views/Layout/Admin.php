@@ -12,6 +12,7 @@
 <script type="text/javascript" src="<?php echo base_url() ?>script/js/test.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>script/css/admin.css">
 <script src="<?php echo base_url() ?>script/css/sweetalert2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.33.1/dist/sweetalert2.all.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="<?php echo base_url() ?>script/css/sweetalert2.min.css">
 	<title>Siakad</title>
 </head>

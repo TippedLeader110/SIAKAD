@@ -18,6 +18,15 @@
 								$_SESSION['flash']='';
 						} ?></h4></td></tr>
 						<tr>
+							<?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+							<?php endif ?>
 							<th><h3>Atur Kelas</h3></th>
 						</tr>
 						<tr><th colspan="2"><hr></th></tr>

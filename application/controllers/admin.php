@@ -92,6 +92,7 @@ class Admin extends CI_Controller {
 		$this->db->set('kelas', $_POST['kelas']);
 		$this->db->update('siswa');
 		}
+		$_SESSION['do'] = 1;
 		redirect('admin/kelas');
 	}
 	public function aturwali()
