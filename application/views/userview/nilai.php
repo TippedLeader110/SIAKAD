@@ -51,7 +51,6 @@
 										<option value="5">5</option>
 										<option value="6">6</option></select></h5></td>
 										<?php endif ?>
-											
 								</tr>
 							</table>
 						</div>

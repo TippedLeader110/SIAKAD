@@ -134,6 +134,7 @@ class Absen extends CI_Controller {
 	}
 	public function siswa()
 	{
+		$nis = $_SESSION['nis'];
 		$id=$this->input->post('sub');				
 		if ($id!='') {
 			$data['ab1'] = $this->adminmodel->absen($id, $nis, '1');	
