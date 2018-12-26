@@ -5,6 +5,8 @@ class Profil extends CI_Controller {
 
 	public function siswa()
 	{
+		$nis = $_SESSION['nis'];
+		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa';
 		$data['nav'] = 'layout/navbar-kiri-siswa';

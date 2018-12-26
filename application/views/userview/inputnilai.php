@@ -19,6 +19,7 @@
   'success'
 )
 								</script>
+								<?php $_SESSION['do']=''; ?>
 							<?php endif ?>
 								<select name="jurusan" class="form-control" style="width: 250px;">
 								<option value="jurusan"><h4>-Pilih Jurusan-</h4></option>

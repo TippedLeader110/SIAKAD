@@ -3,7 +3,8 @@
 		<div class="container" style="border-width: 0px; ">
 <div class="row">
 	<div class="col-md-8">
-		
+		<?php foreach ($arra as $key => $v) {} ?>
+
 		<div class="row">
 				<div class="col-md-4">
 					<div class="container" style="background-color:#2F669F; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
@@ -25,27 +26,53 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NIS
+				<input type="text" hidden name="id" value="<?php echo $nis ?>">
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">NIS</td>
+							<td style="padding-left: 10px;"><?php echo $v->nis; ?></td>
+				</tr>
+				</table>			
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						NISN
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">NISN</td>
+							<td style="padding-left: 10px;"><?php echo $v->nisn; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Nama</td>
+							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Jurusan
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Jurusan</td>
+							<td style="padding-left: 10px;"><?php echo $v->jurusan; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Tahun Angkatan
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Tahun Angkatan</td>
+							<td style="padding-left: 10px;"><?php echo $v->tahun; ?></td>
+				</tr>
+				</table>							
 				</div>
 			</div>
 		</div>

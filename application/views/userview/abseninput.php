@@ -6,41 +6,30 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-6" style="padding-top: 10px; margin-right: -200px;margin-left: 20px">
-						<form>
-							<table>
-								<tr><td><h4>Jurusan</h4></td></tr>
-								<tr>
-									<td>
-										<select name="jurusan" class="form-control" style="width: 250px;">
-											<option value="jurusan"><h4>-Pilih Jurusan-</h4></option>
-											<option value="ipa"><h4>Ilmu Pengetahuan Alam</h4></option>
-											<option value="ips"><h4>Ilmu Pengetahuan Sosial</h4></option>
-										</select> 
-									</td>
-								</tr>
-							</table>
-						</form>
-					</div>
-					<div class="col-md-6" style="padding-top: 10px;padding-bottom: 10px; margin-left: 50px;">
-						<table style="min-width: 500px;margin-left: -70px;">
-							<tr><td><h4>Kelas</h4></td></tr>
-							<tr>
-								<td>
-									<select name="kelas" class="form-control" style="width: 250px;">
-										<option value="kelas">-Pilih Tingkat-</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select> 
-								</td>
-								<td><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
+					<div class="col-md-12" style="margin-left: 14px;">
+						<table>
+							<tr><?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+								<?php $_SESSION['do']=''; ?>
+							<?php endif ?>
+								<td><form method="post" action="<?php echo base_url() ?>Absen/walikelas"><input type="text" hidden name="tent" value="nama">
+							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td><td>
+							<form method='post' action="<?php echo base_url() ?>Absen/walikelas">
+								<input hidden type="text" name="tent" value="lain">
+							<button class="btn" type="submit">Tampilkan Semua</button>
+							</form>	
+						</td>
 							</tr>
-						</table> 
+						</table>
+						
 					</div>
 				</div>
-			</div>
-		</div>
 		<div class="row">
 			<div class="container" style="border-width: 0px;">
 				<div class="row">
@@ -52,13 +41,15 @@
 							<th>Kelas</th>
 							<th>Aksi</th>
 						</tr>
+							<?php foreach ($murid as $key => $v): ?>
 						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><form method="post" action="<?php echo base_url()?>absen/presensi"><button type="submit" class="btn btn-info">Input Rekap Presensi</button></form></td>
+							<td><?php echo $v->nis ?></td>
+							<td><?php echo $v->nama ?></td>
+							<td><?php echo $v->jurusan ?></td>
+							<td><?php echo $v->kelas ?></td>
+							<td><form method="post" action="<?php echo base_url()?>absen/presensi"><input type="text" hidden name="id" value="<?php echo $v->nis ?>"><button type="submit" class="btn btn-info">Input Rekap Presensi</button></form></td>
 						</tr>
+							<?php endforeach ?>
 					</table>
 				</div>
 			</div>

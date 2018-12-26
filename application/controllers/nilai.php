@@ -25,7 +25,7 @@ class Nilai extends CI_Controller {
 		$data['nilai'] = '';
 		$data['input'] = 'aktif';
 		$data['absen'] = '';
-		$data['rapot'] = '';
+		$data['rapot'] = 'aktif';
 		$data['guru'] = '';
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
@@ -167,6 +167,7 @@ class Nilai extends CI_Controller {
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
+		$data['input'] = 'aktif';
 		$data['rapot'] = '';
 		$data['guru'] = '';
 		$data['profil'] = '';
