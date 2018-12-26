@@ -86,7 +86,7 @@
 					</tr>
 					<tr>
 						<td><h5>Tempat Lahir</h5></td>
-						<td><h5>Pekerjaan Ibu</h5></td>
+						<td><h5>Pendidikan Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
@@ -94,7 +94,7 @@
 					</tr>
 					<tr>
 						<td><h5>Tanggal Lahir</h5></td>
-						<td><h5>Pendidikan Ibu</h5></td>
+						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
