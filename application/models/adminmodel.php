@@ -141,4 +141,9 @@ class Adminmodel extends CI_Model {
 		$this->db->where(['jurusan' => $ww]);
 		return $query = $this->db->get($w,$number,$offset)->result();		
 	}
+	public function kirimadmin($user,$nama,$pass,$email)
+	{
+		$data = array('username' => $user, 'nama' => $nama,'password' => $pass, 'email' => $email);
+		$this->db->insert('admin', $data);
+	}
 }
