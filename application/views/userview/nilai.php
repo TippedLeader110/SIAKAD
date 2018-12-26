@@ -40,16 +40,16 @@
 									<td><h5>Semester</h5></td>
 									<td><h5><select name="semester">
 										<?php if ($d==0): ?>
-										<option value="1">1</option>
-										<option value="2">2</option>
+										<option value="1">Semester Gabnjil</option>
+										<option value="2">Semester Genap</option>
 										<?php endif ?>
 										<?php if ($d==1): ?>
-										<option value="3">3</option>
-										<option value="4">4</option>
+										<option value="3">Semester Gabnjil</option>
+										<option value="4">Semester Genap</option>
 										<?php endif ?>
 										<?php if ($d==2): ?>
-										<option value="5">5</option>
-										<option value="6">6</option></select></h5></td>
+										<option value="5">Semester Gabnjil</option>
+										<option value="6">Semester Genap</option></select></h5></td>
 										<?php endif ?>
 								</tr>
 							</table>
