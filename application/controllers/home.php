@@ -54,6 +54,7 @@ class Home extends CI_Controller {
 		}
 		else{
 		$data['border']='black';
+		
 		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		}
