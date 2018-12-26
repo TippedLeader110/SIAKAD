@@ -7,10 +7,13 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/lel.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/script/css/style.css">
-<script type="text/javascript" src="<?php echo base_url() ?>/script/js/test.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>script/css/lel.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>script/css/style.css">
+<script type="text/javascript" src="<?php echo base_url() ?>script/js/test.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>script/css/admin.css">
+<script src="<?php echo base_url() ?>script/css/sweetalert2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.33.1/dist/sweetalert2.all.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="<?php echo base_url() ?>script/css/sweetalert2.min.css">
 	<title>Siakad</title>
 </head>
 <body style="background: #EAEDF2">
@@ -30,7 +33,7 @@
 			<?php $this->load->view($page) ?>
 		</div>
 	</div>
-	
+
 		<?php $this->load->view("admin/home") ?>
 </body>
 <script type="text/javascript" src="<?php echo $base_url() ?>script/main.js"></script>

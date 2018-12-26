@@ -24,6 +24,16 @@ class Admin extends CI_Controller {
                 parent::__construct();
                 $this->load->helper(array('form', 'url'));
         }
+       public function TheAdmin()
+       {
+       	$data['dashboard']="active";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/regisa";
+		$this->load->view('layout/admin', $data);
+       }
     public function logout()
     {
     	session_destroy();
@@ -92,6 +102,7 @@ class Admin extends CI_Controller {
 		$this->db->set('kelas', $_POST['kelas']);
 		$this->db->update('siswa');
 		}
+		$_SESSION['do'] = 1;
 		redirect('admin/kelas');
 	}
 	public function aturwali()
@@ -288,7 +299,7 @@ class Admin extends CI_Controller {
 	}
 	public function post()
 	{
-		$data['gurutam'] = $this->adminmodel->ambil('terkini');
+		$data['art'] = $this->adminmodel->ambil('terkini');
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
@@ -518,6 +529,10 @@ class Admin extends CI_Controller {
 			$config['per_page'] = 10;
 			$from = $this->uri->segment(3);
 			$this->pagination->initialize($config);		
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$tipe = 'siswa';
 			$data['muridtam'] = $this->adminmodel->dataspes($config['per_page'],$from, $tipe, 'ipa');
 			$data['dashboard']="";
@@ -624,6 +639,10 @@ class Admin extends CI_Controller {
 			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'nama','ipa');
 		}
 		else{}
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$data['dashboard']="";
 			$data['murid']="active";
 			$data['guru']="";
@@ -729,6 +748,10 @@ class Admin extends CI_Controller {
 			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'nama','IPS');
 		}
 		else{}
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$data['dashboard']="";
 			$data['murid']="active";
 			$data['guru']="";
@@ -850,8 +873,21 @@ class Admin extends CI_Controller {
                         $this->db->set('pict', $w); 
                         $this->db->where(['nis' => $nis]);
 						$this->db->update('siswa');
-                        redirect("admin/murid");
+						$_SESSION['do']=1;
+                        redirect("admin/daftar_murid");
                 }
+        }
+        public function sadmin()
+        {
+        	$username = $this->input->post('username');
+        	$nama = $this->input->post('nama');
+        	$pass = $this->input->post('pass');
+        	$email = $this->input->post('email');
+        	$a = array('username' => $username, 'password' => $pass, 'nama' => $nama, 'email' => $nama );
+        	$this->db->insert('admin',$a);
+        	$_SESSION['do']=1;
+        	redirect('admin', location);
+
         }
         public function simpanPOST()
 	{
@@ -859,7 +895,6 @@ class Admin extends CI_Controller {
 		$judul = $this->input->post('judul');
 		$isi = $this->input->post('editor1');
 		$waktu = $this->input->post('waktu');
-		$penulis = $this->input->post('penulis');
 		$this->adminmodel->post($judul,$isi,$waktu,$penulis);
 		redirect("admin/post", location);
 		}
@@ -886,6 +921,10 @@ class Admin extends CI_Controller {
 	}
 	public function guruIPS()
 	{
+		$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
@@ -894,6 +933,27 @@ class Admin extends CI_Controller {
 		$data['kelas'] = $this->adminmodel->ambil('guru');
 		$data['page']="admin/guruIPS";
 		$this->load->view('layout/admin', $data);
+	}
+	public function radmin()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/regisa";
+		$this->load->view('layout/admin', $data);
+	}
+	public function daftarmapel()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/daftarmapel";
+		$this->load->view('layout/admin', $data);
+
 	}
 }
 

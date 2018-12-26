@@ -80,7 +80,11 @@
 					</div>
 					<div class="row" style="padding-bottom: 20px;">
 						<div class="container-fluid" style="color: #2F669F">
-								<a href="#" style="text-decoration: none;" title="Klik disini untuk mendapatkan password Anda kembali!">Lupa Kata Sandi?</a>
+								<a href="#" onclick="Swal(
+  'Lupa Kata Sandi?',
+  'Hubungi admin sekolah untuk penggantian password',
+  'question'
+)" style="text-decoration: none;" title="Klik disini untuk mendapatkan password Anda kembali!">Lupa Kata Sandi?</a>
 							
 						</div>
 					</div>		

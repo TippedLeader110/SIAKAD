@@ -1,40 +1,71 @@
-<div class="row">
-	<div class="col-md-12">
-		
+<div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 10px;">
+<div class="container" style="border-width:1px; background-color:#DCDDE1;padding-bottom: 100px">
+	<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">
+		<h5 align="center"><b>CARI SISWA</b></h5>	
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-6" style="padding-top: 10px; margin-right: -200px;margin-left: 20px">
+					<form method="post" action="<?php echo base_url() ?>Daftar/nilai">
+						<table style="min-width: 300px;">
+						<tr><td><h4>Jurusan</h4></td></tr>
+						<tr>
+							<td>
+								<select name="jurusan" class="form-control" style="width: 250px;">
+								<option value="jurusan"><h4>-Pilih Jurusan-</h4></option>
+								<option value="ipa"><h4>Ilmu Pengetahuan Alam</h4></option>
+								<option value="ips"><h4>Ilmu Pengetahuan Sosial</h4></option>
+								</select> 
+							</td>
+						</tr>
+					</table> 
+				</div>
+				<div class="col-md-6" style="padding-top: 10px;padding-bottom: 10px; margin-left: 50px;">
+					<table style="min-width: 500px;margin-left: -70px;">
+						<tr><td style="padding-left: 50px;"><h4>Kelas</h4></td></tr>
+						<tr>
+							<td>
+								<select name="kelas" class="form-control" style="width: 250px; margin-left: 50px;">
+								<option value="kelas">-Pilih Tingkat-</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								</select> 
+							</td>
+							<td style="padding-left: 50px;"><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
+						</tr>
+					</table> 
+					</form>				
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="container" style="border-width: 0px;">
+			<div class="row">
+				<table class="table table-bordered table-stripped" style="margin-left: 35px;background: white;margin-right: 30px;text-align: center; max-width: 850px;">
+					<tr>
+						<th>NIS</th>
+						<th>Nama</th>
+						<th>Jurusan</th>
+						<th>Kelas</th>
+						<th>Aksi</th>
+					</tr>
+					<?php foreach ($murid as $key => $v) {
+						echo "<tr>
+						<td>".$v->nis."</td>
+						<td>".$v->nama."</td>
+						<td>".$v->jurusan."</td>
+						<td>".$v->kelas."</td>
+						<td><form method='post' action='".base_url()."nilai/lihat'><input hidden type='text' value='".$v->nis."' name='nis'><button type='submit' class='btn btn-info'>Lihat Nilai</button></form></td>
+					</tr>";
+					} ?>
+				</table>
+			</div>
+		</div>		
 	</div>
 </div>
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="row">
-			<div style="background-color: white; border-color: black; max-width: 200px; margin-right: 50px; margin-left: 350px; margin-top: 10px; margin-bottom: 10px; border-width:2px; border-style: solid;">
-				<h4 align="center" style="padding: 5px 5px 5px 5px;">DATA NIS</h4>
-			</div>
-			<div style="background-color: white; border-color: black; max-width: 200px; margin-left: 20px;  margin-top: 10px;  margin-bottom: 10px; border-width:2px; border-style: solid;">
-				<h4 align="center" style="padding: 5px 5px 5px 5px;">DATA NAMA</h4>
-			</div>
-		</div>
-
-		<div style="display:inline-block;text-align: center;margin-left: 30;margin-top: 50px;margin-right:20  ">
-			<div class="col" style="border: 1px solid #CCC;display: table-cell; width: 200px;height: 200px;border-color: black;"></div>
-		</div>
-		<!-- <div style="text-align: center;display:table-row;margin-left: 20px; margin-right: 50px;">
-			<div style="border: 1px solid #CCC;display: table-cell; width: 150px;height: 40px;border-color: black;">Niai UAS</div>
-		</div>
-  -->
-		<div style="text-align: center;display: inline-block;margin-left: 50px; margin-right: 0px;margin-top: 50px ">
-			<div class="col" style="border: 1px solid #CCC;display: table-cell; width: 200px;height: 200px;border-color: black;"></div>
-		</div>
-		<!-- <div class="table-row strip" style="display:table-row;text-align: center;margin-left: 10px">
-			<div class="col" style="border: 1px solid #CCC;display: table-cell; width: 150px;height: 40px;border-color: black;">Niai UAS</div>
-		</div> -->
-
-		<div style="text-align: center;display: inline-block;margin-left: 50px; margin-right: 20px;margin-top: 50px ">
-			<div class="col" style="border: 1px solid #CCC;display: table-cell; width: 200px;height: 200px;border-color: black; "></div>
-		</div>
-
-		<div style="text-align: center;display: inline-block;margin-left: 20px; margin-right: 10px;margin-top: 50px ">
-			<div class="col" style="border: 1px solid #CCC;display: table-cell; width: 200px;height: 200px;border-color: black; "></div>
-		</div>
-	</div>
 </div>
+<div style="width:200px; height:30px; margin-left:350px; margin-top:-15px;"></div>
+

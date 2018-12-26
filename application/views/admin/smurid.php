@@ -1,8 +1,9 @@
 <div class="container-fluid" onclick="test3()" onmousewheel="test3()" onmouseover="test3()">
 <div class="col-md-10 offset-md-1" >
 <div class="row" style="margin-bottom: 50px;">
-		<h3>Semua Murid</h3>
-		<hr>
+		<div class="container" style="background-color: white; border-width: 1px; border-color: #b8b894; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px grey;">
+		<h3 style="color: #2F669F;"><b>Semua Murid</b></h3>
+	</div>
 </div>
 	<div class="container-fluid" style="background: white;padding-top: 20px;margin-left: -10px;" >
 		<div class="row">
@@ -10,16 +11,25 @@
 				<h4>Semua Murid</h4>
 			</div>
 		</div>
-	<div class="row">
+	<div class="row"><?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+								<?php $_SESSION['do']=''; ?>
+							<?php endif ?>
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-12">
 					<table>
 					<tr>
-						<td><form method="post" action="<?php echo base_url() ?>admin/daftar_murid_cari"><input type="text" hidden name="tent" value="nama">
+						<td><form method="post" action="<?php echo base_url() ?>admin/daftar_murid"><input type="text" hidden name="tent" value="nama">
 							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td>
 						<td>
-							<form method="post" action="<?php echo base_url() ?>admin/daftar_murid_cari">
+							<form method="post" action="<?php echo base_url() ?>admin/daftar_murid">
 							<input hidden type="text" name="tent" value="tahun">
 							<select onchange="this.form.submit()" class="form-control"  style="max-width:250px; min-width: 100px;" placeholder="Cari Tahun Angkatan" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">							
 								<option>- Tahun -</option>
@@ -31,6 +41,7 @@
 						</td>
 						<td>
 							<form action="<?php echo base_url() ?>admin/daftar_murid">
+								<input type="text"  hidden value="lain" name="tent">
 							<button class="btn" type="submit">Tampilkan Semua</button>
 							</form>	
 						</td>

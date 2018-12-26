@@ -1,9 +1,11 @@
 <div class="container-fluid" onclick="test3()" onmousewheel="test3()" onmouseover="test3()">
 <div class="col-md-10 offset-md-1" >
 <div class="row" style="margin-bottom: 50px;">
-		<h3>Kontrol Murid</h3>
-		<hr>
+	<div class="container" style="background-color: white; border-width: 1px; border-color: #b8b894; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px grey;">
+		<h3 style="color: #2F669F;"><b>Kontrol Murid</b></h3>
+	</div>
 </div>
+<div class="container" style="border-width: 1px; border-color: #b8b894; background-color: white; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px grey; margin-top: 20px;">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
@@ -16,6 +18,16 @@
 								$_SESSION['flash']='';
 						} ?></h4></td></tr>
 						<tr>
+							<?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+								<?php $_SESSION['do']='' ?>
+							<?php endif ?>
 							<th><h3>Atur Kelas</h3></th>
 						</tr>
 						<tr><th colspan="2"><hr></th></tr>
@@ -36,7 +48,7 @@
 	</div>
 </div>
 </div>
-
+</div>
 <?php 
 if (isset($_POST['jurusan'])) {
 	if ($_POST['jurusan']=='ipa') {

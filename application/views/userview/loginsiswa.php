@@ -78,7 +78,11 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid" style="color: #2F669F; padding-bottom: 20px; margin-top: 10px;">
-								<a href="#" style="text-decoration: none;">Lupa Kata Sandi?</a>
+								<a href="#" onclick="Swal(
+  'Lupa Kata Sandi?',
+  'Hubungi admin sekolah untuk penggantian password',
+  'question'
+)" style="text-decoration: none;">Lupa Kata Sandi?</a>
 							
 						</div>
 					</div>		

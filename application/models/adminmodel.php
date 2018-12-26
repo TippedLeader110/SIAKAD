@@ -101,6 +101,43 @@ class Adminmodel extends CI_Model {
 		return $query->result();
 	}
 	public function absen($id,$nis,$a){
+		if ($a=='1') {
+			$a='Januari';
+		}
+		if ($a=='2') {
+				$a='Februari';
+			}
+			if ($a=='3') {
+				$a='Maret';
+			}
+			if ($a=='4') {
+				$a='April';
+			}
+			if ($a=='5') {
+				$a='Mei';
+			}
+			if ($a=='6') {
+				$a='Juni';
+			}
+			if ($a=='7') {
+				$a='Juli';
+			}
+			if ($a=='8') {
+				$a='Agustus';
+			}
+			if ($a=='9') {
+				$a='September';
+			}
+			if ($a=='10') {
+				$a='Oktober';
+			}
+			if ($a=='1') {
+				$a='November';
+			}
+			if ($a=='12') {
+				$a='Desember';
+			}
+
 		$this->db->where(['semester' => $id, 'nis' => $nis, 'bulan' => $a]);
 			$query = $this->db->get('absen');
 			return $query->result();
@@ -139,6 +176,10 @@ class Adminmodel extends CI_Model {
 	}
 	function dataspes($number,$offset, $w, $ww){
 		$this->db->where(['jurusan' => $ww]);
+		return $query = $this->db->get($w,$number,$offset)->result();		
+	}
+	function dataspes2($number,$offset, $w, $ww, $w2){
+		$this->db->where([$w2 => $ww]);
 		return $query = $this->db->get($w,$number,$offset)->result();		
 	}
 }

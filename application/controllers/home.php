@@ -54,6 +54,7 @@ class Home extends CI_Controller {
 		}
 		else{
 		$data['border']='black';
+		
 		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		}
@@ -64,7 +65,7 @@ class Home extends CI_Controller {
 		$data['nama'] = 'Beranda';
 		$data['caro']=$this->mainmodel->caro();
 		$data['beranda'] = 'aktif';
-		$data['nav'] = 'layout/navbar-kiri-guru';
+		// $data['nav'] = 'layout/navbar-kiri-guru';
 		$data['nilai'] = '';
 		$data['absen'] = '';
 		$data['rapot'] = '';

@@ -73,7 +73,17 @@ class Daftar extends CI_Controller {
 		$data['gurudaf'] = $this->adminmodel->ambil('guru');
 		}
 		$data['border']='black';
-		$data['nav'] = 'layout/navbar-kiri-siswa';
+		if ($_SESSION['nis']!='') {
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		if ($_SESSION['nip']!='') {
+			if ($_SESSION['wali']!='') {
+				$data['nav'] = 'layout/navbar-kiri-walikelas';
+			}
+			else{
+				$data['nav'] = 'layout/navbar-kiri-guru';
+			}
+		}
 		$data['page']='userview/daftarguru';
 		$data['nama'] = 'Daftar Guru';
 		$data['beranda'] = '';
@@ -81,6 +91,7 @@ class Daftar extends CI_Controller {
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = 'aktif';
+		$data['yang'] = 'aktif';
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
@@ -99,10 +110,6 @@ class Daftar extends CI_Controller {
 		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		}
-		elseif($_SESSION['wali']=='')
-		{
-			$data['nav'] = 'layout/navbar-kiri-siswa';
-		}
 		else{
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		};
@@ -113,9 +120,38 @@ class Daftar extends CI_Controller {
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = 'aktif';
+		$data['ini'] = 'aktif';
 		$data['profil'] = '';
 
 		$this->load->view('layout/home', $data);
+	}
+
+	public function nilai()
+	{
+		$naruto = $this->input->post('kelas');
+		if ($this->input->post('jurusan')=='ips') {
+			$data['murid'] = $this->adminmodel->ambilspesx('siswa','ips','jurusan',$naruto);	
+		}
+		if ($this->input->post('jurusan')=='ipa') {
+			$data['murid'] = $this->adminmodel->ambilspesx('siswa','ipa','jurusan',$naruto);
+		}
+		$data['border']='black';	
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		};
+		$data['page']='userview/daftarnilaiguru';
+		$data['nama'] = 'Daftar nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+
 	}
 	
 

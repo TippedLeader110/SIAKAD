@@ -6,6 +6,9 @@
 	</div>
 	<div class="container" style="border-width: 1px; border-color: #b8b894; background-color: white; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px grey; margin-top: 20px;">
 		<!-- here -->
+		<div class="row"  style="color: #2F669F; padding-left: 15px; padding-bottom: 10px; padding-left: 30px;">
+			<h4>Selamat datang, <b><?php echo $_SESSION['admin']; ?></b></h4>
+		</div>
 		<div class="container-fluid" style="margin-top: 10px; margin-bottom: 10px;">
 		<div class="row">
 			<div class="col-md-6">

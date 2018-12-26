@@ -2,8 +2,9 @@
 <div class="container-fluid" onclick="test3()" onmousewheel="test3()" onmouseover="test3()">
 <div class="col-md-10 offset-md-1" >
 <div class="row" style="margin-bottom: 50px;">
-		<h3>Daftar Murid</h3>
-		<hr>
+	<div class="container" style="background-color: white; border-width: 1px; border-color: #b8b894; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px grey;">
+		<h3 style="color: #2F669F;"><b>Daftar Murid</b></h3>
+	</div>
 </div>
 	<div class="row" style="background: white;padding-top: 20px;">
 		<div class="col-md-12">
@@ -27,7 +28,7 @@
 						<td><h5>Nama Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="number" name="nis" placeholder="NIS"></td>
+						<td><input type="number" min="123710000" maxlength="123718000" name="nis" placeholder="NIS"></td>
 						<td><input type="text" placeholder="Nama Ayah" name="ayah"></td>
 					</tr>
 					<tr>
@@ -43,7 +44,7 @@
 						<td><h5>Pekerjaan Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="password" name="pass" placeholder="Password"></td>
+						<td><input type="text" name="pass" placeholder="Password"></td>
 						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah"></td>
 					</tr>
 					<tr>
@@ -77,32 +78,43 @@
 						<td><h4><center>Data Pribadi</center></h4></td>
 					</tr>
 					<tr>
-						<td><h5>Nama Murid</h5></td>
+						<td><h5>NISN</h5></td>
 						<td><h5>Nama Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="nama" placeholder="Nama Murid"></td>
+						<td><input type="number" min="123710000" maxlength="123718000" name="nisn" placeholder="NISN"></td>
 						<td><input type="text" name="ibu" placeholder="Nama Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Tempat Lahir</h5></td>
+						<td><h5>Nama Murid</h5></td>
 						<td><h5>Pendidikan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
+						<td><input type="text" name="nama" placeholder="Nama Murid"></td>
+						
 						<td><input type="text" name="penibu" placeholder="Pendidikan Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Tanggal Lahir</h5></td>
+						<td><h5>Tempat Lahir</h5></td>
 						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
+						<td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
+						
 						<td><input type="text" name="pibu" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Jenis Kelamin</h5></td>
+						<td><h5>Tanggal Lahir</h5></td>
 						<td><h5>Alamat Ibu</h5></td>
+					</tr>
+					<tr>
+						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
+						
+						<td><input type="text" name="aibu" placeholder="Alamat Ibu"></td>
+					</tr>
+					<tr>
+						<td><h5>Jenis Kelamin</h5></td>
+						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><select name="jk" class="form-control" style="width: 400px;">
@@ -110,21 +122,22 @@
 							<option>Laki-laki</option>
 							<option>Perempuan</option>
 						</select></td>
-						<td><input type="text" name="aibu" placeholder="Alamat Ibu"></td>
+						
+						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>
-						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"></textarea></td>
-						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
 					</tr>
 					<tr>
 						<td><h5>Email</h5></td>
 					</tr>
 					<tr>
+
 						<td><input type="text" name="email" placeholder="Email"></td>
+						
 					</tr>
 					<tr>
 						<td><h5>Agama</h5></td>
@@ -139,7 +152,7 @@
 						<td><h5>Anak ke Berapa</h5></td>
 					</tr>
 					<tr>
-						<td><input type="number" name="anak" placeholder="Anak ke berapa"></td>
+						<td><input type="number" min="1" name="anak" placeholder="Anak ke berapa"></td>
 					</tr>
 					<tr>
 						<th><!-- <audio controls>

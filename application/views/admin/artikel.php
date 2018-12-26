@@ -43,23 +43,18 @@
 							redirect("/admin/post", location);
 						} ?>
 					</div>
-					<div class="col-md-2" style="text-align: right;">
-						<form action="<?php echo base_url() ?>admin/rMurid">
-						<button class="btn btn-primary" type="submit">Tambah Murid</button>
-						</form>
-					</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<table class="table table-bordered table-striped">
-						<tr>
+						<tr >
 							<th>No.</th><th>Penulis</th><th>Isi</th><th>Tanggal Publish</th><th>Perintah</th>
 						</tr>
 						<?php 
 							$batas = 0;
 						foreach ($art as $key => $v) {
 						$batas++;
-						echo "<tr>
+						echo "<tr style='max-height: 40px;'>
 						<th>".$v->id."</th><th>".$v->penulis."</th><th>".$v->isi."</th><th>".$v->waktu."</th><th><form method='post' action='".base_url()."admin/edit'><input type='text' hidden name='nis' value='".$v->id."'><button type='submit' class='btn btn-warning'>Info</button></form></th>
 							</tr>";
 						} ?>
