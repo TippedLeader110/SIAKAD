@@ -20,9 +20,9 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Nama</td>
+							<td style="width: 130px;"><b>Nama</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
 						</tr>
 					</table>
@@ -30,9 +30,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Tempat Lahir</td>
+							<td style="width: 130px;"><b>Tempat Lahir</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->tmpt_lahir; ?></td>
 						</tr>
 					</table>
@@ -40,19 +40,19 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Tanggal Lahir</td>
-							<td style="padding-left: 10px;"><?php echo $v->tanggal_lahir; ?></td>
+							<td style="width: 130px;"><b>Tanggal Lahir</b></td>
+							<td style="padding-left: 10px;"><?php echo $v->tgl_lahir; ?></td>
 						</tr>
 					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Jenis Kelamin</td>
+							<td style="width: 130px;"><b>Jenis Kelamin</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->jk; ?></td>
 						</tr>
 					</table>
@@ -60,9 +60,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Nomor HP</td>
+							<td style="width: 130px;"><b>Nomor HP</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->no_hp; ?></td>
 						</tr>
 					</table>
@@ -70,9 +70,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Email</td>
+							<td style="width: 130px;"><b>Email</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->email; ?></td>
 						</tr>
 					</table>
@@ -80,9 +80,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 130px;">Alamat</td>
+							<td style="width: 130px;"><b>Alamat</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->alamat; ?></td>
 						</tr>
 					</table>
