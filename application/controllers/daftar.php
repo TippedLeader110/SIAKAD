@@ -116,14 +116,14 @@ class Daftar extends CI_Controller {
 
 	public function nilai()
 	{
-		$data['border']='black';
+		$data['border']='black';	
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		$data['page']='userview/daftarnilaiguru';
 		$data['nama'] = 'Daftar nilai';
 		$data['beranda'] = '';
-		$data['nilai'] = '';
+		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
-		$data['rapot'] = 'aktif';
+		$data['rapot'] = '';
 		$data['guru'] = '';
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
