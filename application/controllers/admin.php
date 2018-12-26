@@ -24,6 +24,16 @@ class Admin extends CI_Controller {
                 parent::__construct();
                 $this->load->helper(array('form', 'url'));
         }
+       public function TheAdmin()
+       {
+       	$data['dashboard']="active";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/regisa";
+		$this->load->view('layout/admin', $data);
+       }
     public function logout()
     {
     	session_destroy();
@@ -863,8 +873,21 @@ class Admin extends CI_Controller {
                         $this->db->set('pict', $w); 
                         $this->db->where(['nis' => $nis]);
 						$this->db->update('siswa');
-                        redirect("admin/murid");
+						$_SESSION['do']=1;
+                        redirect("admin/daftar_murid");
                 }
+        }
+        public function sadmin()
+        {
+        	$username = $this->input->post('username');
+        	$nama = $this->input->post('nama');
+        	$pass = $this->input->post('pass');
+        	$email = $this->input->post('email');
+        	$a = array('username' => $username, 'password' => $pass, 'nama' => $nama, 'email' => $nama );
+        	$this->db->insert('admin',$a);
+        	$_SESSION['do']=1;
+        	redirect('admin', location);
+
         }
         public function simpanPOST()
 	{

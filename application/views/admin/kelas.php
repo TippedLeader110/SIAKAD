@@ -26,6 +26,7 @@
   'success'
 )
 								</script>
+								<?php $_SESSION['do']='' ?>
 							<?php endif ?>
 							<th><h3>Atur Kelas</h3></th>
 						</tr>

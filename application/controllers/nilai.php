@@ -132,6 +132,7 @@ class Nilai extends CI_Controller {
 		if ($query==0) {
 			$data = array('jurusan' => $jurusan, 'nis' => $nis ,'semester' => $semester , 'tugas_1' => $tugas1 , 'tugas_2' => $tugas2 , 'tugas_3' => $tugas3 , 'uts' => $uts , 'uas' => $uas ,);
 			$this->db->insert($mapel, $data);
+			$_SESSION['do']=1;
 			redirect('nilai/guru');
 		}
 		else{
@@ -144,6 +145,7 @@ class Nilai extends CI_Controller {
 			$this->db->set('uas', $uas );
 			$this->db->where(['nis' => $nis, 'semester' => $semester]);
 			$this->db->update($mapel);
+			$_SESSION['do']=1;
 			redirect('nilai/guru');
 		}
 	}
@@ -242,15 +244,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/uas';
 		$data['nama'] = 'Daftar Nilai';
-		if ($_SESSION['wali']=='') {
-		$data['nav'] = 'layout/navbar-kiri-guru';
-		}
-		elseif ($_SESSION['nis']!='') {
 		$data['nav'] = 'layout/navbar-kiri-siswa';
-		}
-		else{
-			$data['nav'] = 'layout/navbar-kiri-walikelas';	
-		}
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -261,15 +255,11 @@ class Nilai extends CI_Controller {
 	}
 	public function uts()
 	{
+
 		$data['border']='black';
 		$data['page']='userview/uts';
 		$data['nama'] = 'Daftar Nilai';
-		if ($_SESSION['wali']=='') {
-		$data['nav'] = 'layout/navbar-kiri-guru';
-		}
-		else{
-			$data['nav'] = 'layout/navbar-kiri-walikelas';	
-		}
+		$data['nav'] = 'layout/navbar-kiri-siswa';		
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
