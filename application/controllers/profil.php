@@ -21,6 +21,8 @@ class Profil extends CI_Controller {
 	}
 	public function siswa1()
 	{
+		$nis = $_SESSION['nis'];
+		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa1';
 		$data['nav'] = 'layout/navbar-kiri-siswa';
@@ -35,6 +37,8 @@ class Profil extends CI_Controller {
 	}
 	public function siswa2()
 	{
+		$nis = $_SESSION['nis'];
+		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa2';
 		$data['nav'] = 'layout/navbar-kiri-siswa';
