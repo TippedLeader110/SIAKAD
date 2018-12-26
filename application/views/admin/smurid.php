@@ -19,6 +19,7 @@
   'success'
 )
 								</script>
+								<?php $_SESSION['do']=''; ?>
 							<?php endif ?>
 		<div class="col-md-12">
 			<div class="row">

@@ -14,6 +14,7 @@
   'success'
 )
 								</script>
+								<?php $_SESSION['do']=''; ?>
 							<?php endif ?>
 		<div class="row">
 			<div class="col-md-6">

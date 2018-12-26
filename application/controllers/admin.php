@@ -24,6 +24,16 @@ class Admin extends CI_Controller {
                 parent::__construct();
                 $this->load->helper(array('form', 'url'));
         }
+       public function TheAdmin()
+       {
+       	$data['dashboard']="active";
+		$data['murid']="";
+		$data['guru']="";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/regisa";
+		$this->load->view('layout/admin', $data);
+       }
     public function logout()
     {
     	session_destroy();
