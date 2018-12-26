@@ -945,16 +945,6 @@ class Admin extends CI_Controller {
 		$data['page']="admin/regisa";
 		$this->load->view('layout/admin', $data);
 	}
-	public function berita()
-	{
-		$data['dashboard']="";
-		$data['murid']="";
-		$data['guru']="";
-		$data['matapel']="";
-		$data['post']="active";
-		$data['page']="admin/berita";
-		$this->load->view('layout/admin', $data);
-	}
 }
 
 ?>
