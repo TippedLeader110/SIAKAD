@@ -99,10 +99,6 @@ class Daftar extends CI_Controller {
 		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		}
-		elseif($_SESSION['wali']=='')
-		{
-			$data['nav'] = 'layout/navbar-kiri-siswa';
-		}
 		else{
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		};
@@ -116,6 +112,26 @@ class Daftar extends CI_Controller {
 		$data['profil'] = '';
 
 		$this->load->view('layout/home', $data);
+	}
+
+	public function nilai()
+	{
+		$data['border']='black';		
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		};
+		$data['page']='userview/daftarsiswa';
+		$data['nama'] = 'Daftar nilai';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = 'aktif';
+		$data['guru'] = '';
+		$data['profil'] = '';
+
 	}
 	
 
