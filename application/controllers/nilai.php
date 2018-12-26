@@ -303,7 +303,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/lihatnilai';
 		$data['nama'] = 'Daftar Nilai';
-		$data['nav'] = 'layout/navbar-kiri-siswa';	
+		$data['nav'] = 'layout/navbar-kiri-guru';	
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
