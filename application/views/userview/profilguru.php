@@ -21,9 +21,9 @@
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<input type="text" hidden name="id" value="<?php echo $nip ?>">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 170px;">NIP</td>
+							<td style="width: 170px;"><b>NIP</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nip; ?></td>
 						</tr>
 					</table>
@@ -31,9 +31,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 170px;">Nama</td>
+							<td style="width: 170px;"><b>Nama</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
 						</tr>
 					</table>			
@@ -41,9 +41,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 170px;">Golongan PNS</td>
+							<td style="width: 170px;"><b>Golongan PNS</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->gol; ?></td>
 						</tr>
 					</table>						 
@@ -51,9 +51,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 170px;">Mengajar di Kelas</td>
+							<td style="width: 170px;"><b>Mengajar di Kelas</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->kode_mapel; ?></td>
 						</tr>
 					</table>						
@@ -61,9 +61,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-					<table width="300">
+					<table width="500">
 						<tr>
-							<td style="width: 170px;">Mata Pelajaran</td>
+							<td style="width: 170px;"><b>Mata Pelajaran</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->mapel; ?></td>
 						</tr>
 					</table>						

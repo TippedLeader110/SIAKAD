@@ -22,7 +22,7 @@
 	</div>
 		<div class="row">
 			<div class="col-md-6">
-				<div class="container" style="background: #f5b041;height: 185px;">
+				<div class="container" style="background: #ffa500;height: 185px; color: white;">
 					<table style="margin-top: 15px;">
 						<tr>
 							<td rowspan="3" colspan="2"><img src="<?php echo base_url() ?>/img/icon/sekolah.png" style="max-height: 144px;max-width: 144px">
@@ -63,7 +63,7 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="container" style="background: #92c9ed;height: 185px;">
+				<div class="container" style="background: #ffa500;height: 185px; color: white;">
 					<table style="margin-top: 20px;">
 						<tr>
 							<td rowspan="3"><img src="<?php echo base_url() ?>/img/icon/jam.png" style="max-height: 135px;max-width: 135px">
