@@ -298,7 +298,20 @@ class Nilai extends CI_Controller {
 		$mapel = $this->input->post('mapel');
 		$this->mainmodel->inputnilai($tugas1, $tugas2, $tugas3, $uts, $uas, $mapel);}
 	}
-
+	public function lihat()
+	{
+		$data['border']='black';
+		$data['page']='userview/lihatnilai';
+		$data['nama'] = 'Daftar Nilai';
+		$data['nav'] = 'layout/navbar-kiri-siswa';	
+		$data['beranda'] = '';
+		$data['nilai'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);	
+	}
 
 
 	// public function logort()

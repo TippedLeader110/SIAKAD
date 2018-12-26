@@ -3,6 +3,7 @@
 		<div class="container" style="border-width: 0px; ">
 <div class="row">
 	<div class="col-md-8">
+	<?php foreach ($arra as $key => $v) {} ?>
 		<div class="row">
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
@@ -24,37 +25,68 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama
+				<input type="text" hidden name="id" value="<?php echo $nis ?>">
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Nama</td>
+							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tempat Lahir
+				<table width="300">
+				<tr>
+						<td style="width: 170px;">Tempat Lahir</td>
+						<td style="padding-left: 10px;"><?php echo $v->tempat; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Jenis Kelamin
+				<tr>
+						<td style="width: 170px;">Jenis Kelamin</td>
+						<td style="padding-left: 10px;"><?php echo $v->jk; ?></td>
+				</tr>
+				</table>	
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Alamat
+				<tr>
+						<td style="width: 170px;">Alamat</td>
+						<td style="padding-left: 10px;"><?php echo $v->alamat; ?></td>
+				</tr>
+				</table>	
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Email
+				<tr>
+						<td style="width: 170px;">Email</td>
+						<td style="padding-left: 10px;"><?php echo $v->email; ?></td>
+				</tr>
+				</table>	
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Agama
+				<tr>
+						<td style="width: 170px;">Agama</td>
+						<td style="padding-left: 10px;"><?php echo $v->agama; ?></td>
+				</tr>
+				</table>	
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Anak ke Berapa
+				<tr>
+						<td style="width: 170px;">Anak ke Berapa</td>
+						<td style="padding-left: 10px;"><?php echo $v->anak_ke; ?></td>
+				</tr>
+				</table>	
 				</div>
 			</div>
 		</div>
