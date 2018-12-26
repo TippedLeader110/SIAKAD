@@ -165,7 +165,8 @@ class Nilai extends CI_Controller {
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		}
 		$data['beranda'] = '';
-		$data['nilai'] = 'aktif';
+		$data['nilai'] = '';
+		$data['input'] = 'aktif';
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = '';
