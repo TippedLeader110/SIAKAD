@@ -299,7 +299,7 @@ class Admin extends CI_Controller {
 	}
 	public function post()
 	{
-		$data['gurutam'] = $this->adminmodel->ambil('terkini');
+		$data['art'] = $this->adminmodel->ambil('terkini');
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
@@ -895,7 +895,6 @@ class Admin extends CI_Controller {
 		$judul = $this->input->post('judul');
 		$isi = $this->input->post('editor1');
 		$waktu = $this->input->post('waktu');
-		$penulis = $this->input->post('penulis');
 		$this->adminmodel->post($judul,$isi,$waktu,$penulis);
 		redirect("admin/post", location);
 		}

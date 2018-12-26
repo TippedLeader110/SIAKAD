@@ -16,6 +16,8 @@ class Berita extends CI_Controller {
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		}
 		$data['page']='userview/berita';
+		$id=$this->uri->segment(3);
+		$data['mama'] = $this->adminmodel->ambilspes('terkini', $id, 'id');
 		$data['beranda'] = 'aktif';
 		$data['nilai'] = '';
 		$data['absen'] = '';
