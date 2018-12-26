@@ -147,17 +147,17 @@ echo "<div class='row' style='padding-top: 2em'>
 <div class='row' style='margin-top: -10px;'>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Juli</h4>			
+			<h4 style='margin-left: 110px'>Juli</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Agustus</h4>			
+			<h4 style='margin-left: 90px'>Agustus</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>September</h4>			
+			<h4 style='margin-left: 75px'>September</h4>			
 		</div>
 	</div>
 </div>
@@ -268,17 +268,17 @@ echo "<div class='row' style='padding-top: 2em'>
 <div class='row' style='margin-top: -10px;'>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Oktober</h4>			
+			<h4 style='margin-left: 85px'>Oktober</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>November</h4>			
+			<h4 style='margin-left: 75px'>November</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Desember</h4>			
+			<h4 style='margin-left: 80px'>Desember</h4>			
 		</div>
 	</div>
 </div>
