@@ -42,7 +42,7 @@ class Login extends CI_Controller {
 	public function lupa()
 	{
 		$data['border']='transparent';
-		$data['page']='userview/lupa';
+		$data['page']='userview/gantipassword';
 		$this->load->view('layout/main', $data);
 	}
 	

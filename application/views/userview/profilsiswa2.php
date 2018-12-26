@@ -3,6 +3,7 @@
 		<div class="container" style="border-width: 0px; ">
 <div class="row">
 	<div class="col-md-8">
+	<?php foreach ($arra as $key => $v) {} ?>
 		<div class="row">
 				<div class="col-md-4">
 					<div class="container" style="background-color:#8DB3DA; border-width: 0px; color:white; font-weight: 500;width: 150px; margin-top: 30px;">
@@ -27,27 +28,53 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama Ayah
+				<input type="text" hidden name="id" value="<?php echo $nis ?>">
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Nama Ayah</td>
+							<td style="padding-left: 10px;"><?php echo $v->nama_ayah; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Pendidikan Ayah
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Pendidikan Ayah</td>
+							<td style="padding-left: 10px;"><?php echo $v->pendidikan_ayah; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Pekerjaan Ayah
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Pekerjaan Ayah</td>
+							<td style="padding-left: 10px;"><?php echo $v->pekerjaan_ayah; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Alamat Ayah
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Alamat Ayah</td>
+							<td style="padding-left: 10px;"><?php echo $v->alamat_ayah; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nomor HP Ayah
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Nomor HP Ayah</td>
+							<td style="padding-left: 10px;"><?php echo $v->no_hp_ayah; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>&nbsp;
 			<div class="col-md-12">
@@ -55,27 +82,52 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama Ibu
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Nama Ibu</td>
+							<td style="padding-left: 10px;"><?php echo $v->nama_ibu; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Pendidikan Ibu
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Pendidikan Ibu</td>
+							<td style="padding-left: 10px;"><?php echo $v->pendidikan_ibu; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Pekerjaan Ibu
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Pekerjaan Ibu</td>
+							<td style="padding-left: 10px;"><?php echo $v->pekerjaan_ibu; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Alamat Ibu
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Alamat Ibu</td>
+							<td style="padding-left: 10px;"><?php echo $v->alamat_ibu; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nomor HP Ibu
+				<table width="300">
+				<tr>
+							<td style="width: 170px;">Nomor HP Ibu</td>
+							<td style="padding-left: 10px;"><?php echo $v->no_hp_ibu; ?></td>
+				</tr>
+				</table>
 				</div>
 			</div>
 		</div>
