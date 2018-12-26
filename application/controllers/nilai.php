@@ -276,6 +276,9 @@ class Nilai extends CI_Controller {
 		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
 		}
+		elseif ($_SESSION['nis']!='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
 		else{
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		}
