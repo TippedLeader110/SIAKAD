@@ -11,7 +11,15 @@
 				<h4>Semua Murid</h4>
 			</div>
 		</div>
-	<div class="row">
+	<div class="row"><?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+							<?php endif ?>
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-12">

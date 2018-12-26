@@ -863,7 +863,8 @@ class Admin extends CI_Controller {
                         $this->db->set('pict', $w); 
                         $this->db->where(['nis' => $nis]);
 						$this->db->update('siswa');
-                        redirect("admin/murid");
+						$_SESSION['do']=1;
+                        redirect("admin/daftar_murid");
                 }
         }
         public function simpanPOST()
