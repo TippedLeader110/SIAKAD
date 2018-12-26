@@ -20,50 +20,82 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama = <?php echo $v->nama; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Nama</td>
+							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tempat Lahir = <?php echo $v->tempat_lahir; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Tempat Lahir</td>
+							<td style="padding-left: 10px;"><?php echo $v->tmpt_lahir; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Tanggal Lahir = <?php echo $v->tanggal_lahir; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Tanggal Lahir</td>
+							<td style="padding-left: 10px;"><?php echo $v->tanggal_lahir; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Jenis Kelamin = <?php echo $v->jk; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Jenis Kelamin</td>
+							<td style="padding-left: 10px;"><?php echo $v->jk; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nomor HP = <?php echo $v->no_hp; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Nomor HP</td>
+							<td style="padding-left: 10px;"><?php echo $v->no_hp; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Email = <?php echo $v->email; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Email</td>
+							<td style="padding-left: 10px;"><?php echo $v->email; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Alamat = <?php echo $v->alamat; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 130px;">Alamat</td>
+							<td style="padding-left: 10px;"><?php echo $v->alamat; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-4">
-		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 30px;">
+		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 77px;">
 			<div class="circle-2" style="margin: 10px; margin-top: 10px;">
 				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
 			</div>
 		</div>
-			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px; padding: 5px 5px 5px 5px; ">
-				<center>Ubah Profil Anda</center>	
-			</div>
 	</div>
 </div>
 </div>

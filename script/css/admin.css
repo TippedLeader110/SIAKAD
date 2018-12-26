@@ -114,3 +114,6 @@ input {
 input:focus {
   border-color: green
 }
+.shadow{
+  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+}

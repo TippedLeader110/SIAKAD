@@ -21,40 +21,62 @@
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<input type="text" hidden name="id" value="<?php echo $nip ?>">
-						NIP = <?php echo $v->nip; ?>
+					<table width="300">
+						<tr>
+							<td style="width: 170px;">NIP</td>
+							<td style="padding-left: 10px;"><?php echo $v->nip; ?></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Nama = <?php echo $v->nama ?>
+					<table width="300">
+						<tr>
+							<td style="width: 170px;">Nama</td>
+							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
+						</tr>
+					</table>			
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Golongan PNS = <?php echo $v->gol ?>
+					<table width="300">
+						<tr>
+							<td style="width: 170px;">Golongan PNS</td>
+							<td style="padding-left: 10px;"><?php echo $v->gol; ?></td>
+						</tr>
+					</table>						 
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
-						Mengajar di Kelas = <?php echo $v->kode_mapel ?>
+					<table width="300">
+						<tr>
+							<td style="width: 170px;">Mengajar di Kelas</td>
+							<td style="padding-left: 10px;"><?php echo $v->kode_mapel; ?></td>
+						</tr>
+					</table>						
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
-						Mata Pelajaran = <?php echo $v->mapel ?>
+					<table width="300">
+						<tr>
+							<td style="width: 170px;">Mata Pelajaran</td>
+							<td style="padding-left: 10px;"><?php echo $v->mapel; ?></td>
+						</tr>
+					</table>						
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-4">
-		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 30px;">
+		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 77px;">
 			<div class="circle-2" style="margin: 10px; margin-top: 10px;">
 				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
 			</div>
 		</div>
-			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px; padding: 5px 5px 5px 5px; ">
-				<center>Ubah Profil Anda</center>	
-			</div>
 	</div>
 </div>
 </div>

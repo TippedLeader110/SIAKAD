@@ -10,7 +10,11 @@
             <b><?php echo $_SESSION['user']; ?></b>
           </h4>
         </div>
-
+        <!-- ini tulisan menu -->
+        <div class="container" style="background-color: #2F669F; min-width: 280px; min-height: 35px; max-width: 280px; max-height: 35px; margin-bottom: -12px; border-width: 0px; padding: 5px 5px 5px 5px ;">
+            <h5 style="color: white;">MENU</h5>
+        </div>
+        <!-- ini akhir tulisan menu -->
         <div class="field-menu scrollable">
           <div class="row">
               <a href="http://localhost/SIAKAD/home/guru">

@@ -97,32 +97,38 @@
 			<div class="col-md-3">
 				<div class="container" style="background: #0073e6;height: 220px;">
 				<center>
-					<table style="margin-top: 20px">
+					<table style="margin-top: 20px; margin-top: 10px;">
 						<tr align="center" style="">
 							<td>
-								<div class="circle" style="max-height: 140px; max-width: 140px; min-height: 140px; min-width: 140px; padding-top: 30px;" title="Lihat semua Alumni">
+								<div class="circle" style="max-height: 140px; max-width: 140px; min-height: 140px; min-width: 140px; padding-top: 30px;" title="Atur kelas murid">
 									<a href="<?php echo base_url() ?>admin/kelas">
-									<img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 90px;max-width: 90px">
+									<img src="<?php echo base_url() ?>/img/icon/class.png" style="max-height: 90px;max-width: 90px;">
 								</a>
 								</div>
 							</td>
 						</tr>
 						<tr align="center">
-							<td style="padding-top: 10px;"><a href="<?php echo base_url() ?>admin/kelas"><h5>Atur Kelas Murid</a></h5></td>
+							<td style="padding-top: 10px;"><a href="<?php echo base_url() ?>admin/kelas" style="text-decoration: none; color: white;"><h5>Atur Kelas Murid</a></h5></td>
 						</tr>
 					</table>
 				</center>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="container" style="background: white;height: 220px;">
+				<div class="container" style="background: #0073e6;height: 220px;">
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center" style="">
-							<td><a href="<?php echo base_url() ?>admin/muridstatus"><img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 104px;max-width: 104px"></a></td>
+							<td>
+								<div class="circle" style="max-height: 140px; max-width: 140px; min-height: 140px; min-width: 140px; padding-top: 30px;" title="Atur semua Alumni">
+									<a href="<?php echo base_url() ?>admin/muridstatus">
+									<img src="<?php echo base_url() ?>/img/icon/active.png" style="max-height: 90px;max-width: 90px;">
+								</a>
+								</div>
+							</td>
 						</tr>
 						<tr align="center">
-							<td  style="padding-top: 10px;"><h5><a href="<?php echo base_url() ?>admin/muridstatus">Atur Status Murid</a></h5></td>
+							<td  style="padding-top: 10px;"><h5><a href="<?php echo base_url() ?>admin/muridstatus" style="text-decoration: none; color: white;">Atur Status Murid</a></h5></td>
 						</tr>
 					</table>
 				</center>

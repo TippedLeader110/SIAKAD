@@ -1,5 +1,5 @@
-
-<div class="row">
+<div class="scrollable">
+  <div class="row" >
 
 </div>
 
@@ -35,4 +35,6 @@
     }
      ?>
     
+</div>
+
 </div>
