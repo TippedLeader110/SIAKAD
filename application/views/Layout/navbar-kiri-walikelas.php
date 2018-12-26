@@ -49,7 +49,7 @@
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
-                <h5 style="color: black; text-align: left;" class=<?php echo $mana?>>Absensi Kelas</h5>
+                <h5 style="color: black; text-align: left;" class=<?php echo $absen?>>Absensi Kelas</h5>
                </div>
               </a>
               <a href="<?php echo base_url() ?>Daftar/siswa">
@@ -73,7 +73,13 @@
                 <h5 style="color: black; text-align: left;" class=<?php echo $profil?>>Profil</h5>
                </div>
               </a>
-
+              <a href="<?php echo base_url() ?>ubahsandi/guru">
+                 <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
+                <span class="kotak"></span>
+                <span class="triangle"></span>
+                <h5 style="color: black; text-align: left;" class=<?php echo $profil?>>Ubah Kata Sandi</h5>
+               </div>
+              </a>
           </div>
         </div>
       </div>

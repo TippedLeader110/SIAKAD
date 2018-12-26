@@ -29,7 +29,7 @@
 				<input type="text" hidden name="id" value="<?php echo $nis ?>">
 				<table width="300">
 				<tr>
-							<td style="width: 170px;">NIS</td>
+							<td style="width: 170px;"><b>NIS</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nis; ?></td>
 				</tr>
 				</table>			
@@ -39,7 +39,7 @@
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<table width="300">
 				<tr>
-							<td style="width: 170px;">NISN</td>
+							<td style="width: 170px;"><b>NISN</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nisn; ?></td>
 				</tr>
 				</table>
@@ -49,7 +49,7 @@
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<table width="300">
 				<tr>
-							<td style="width: 170px;">Nama</td>
+							<td style="width: 170px;"><b>Nama</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
 				</tr>
 				</table>
@@ -59,7 +59,7 @@
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<table width="300">
 				<tr>
-							<td style="width: 170px;">Jurusan</td>
+							<td style="width: 170px;"><b>Jurusan</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->jurusan; ?></td>
 				</tr>
 				</table>
@@ -69,7 +69,7 @@
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
 				<table width="300">
 				<tr>
-							<td style="width: 170px;">Tahun Angkatan</td>
+							<td style="width: 170px;"><b>Tahun Angkatan</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->tahun; ?></td>
 				</tr>
 				</table>							
@@ -79,14 +79,12 @@
 	</div>
 
 	<div class="col-md-4">
-		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 30px;">
+		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 77px;">
 			<div class="circle-2" style="margin: 10px; margin-top: 10px;">
 				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
+			
 			</div>
 		</div>
-			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px; padding: 5px 5px 5px 5px; ">
-				<center>Ubah Profil Anda</center>	
-			</div>
 	</div>
 </div>
 	</div>

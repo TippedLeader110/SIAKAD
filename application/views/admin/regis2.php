@@ -185,7 +185,7 @@
 						<td><select name="agama" class="form-control" style="width: 400px;">
 							<option value="Islam">Islam</option>
 						</select></td>
-					</tr>
+					</tr>	
 					<tr>
 						<td><h5>Anak ke Berapa</h5></td>
 					</tr>
