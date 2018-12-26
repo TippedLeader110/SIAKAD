@@ -89,12 +89,12 @@
 						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="tlahir" placeholder="Tempat Lahir Anda"></td>
+						<td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
 						<td><input type="text" name="penibu" placeholder="Pendidikan Ibu"></td>
 					</tr>
 					<tr>
 						<td><h5>Tanggal Lahir</h5></td>
-						<td><h5>Pekerjaan Ibu</h5></td>
+						<td><h5>Pendidikan Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
@@ -117,7 +117,7 @@
 						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="alamat" placeholder="Alamat Murid"></td>
+						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"></textarea></td>
 						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
 					</tr>
 					<tr>
