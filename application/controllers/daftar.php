@@ -123,7 +123,7 @@ class Daftar extends CI_Controller {
 		else{
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		};
-		$data['page']='userview/daftarsiswa';
+		$data['page']='userview/daftarnilaiguru';
 		$data['nama'] = 'Daftar nilai';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
