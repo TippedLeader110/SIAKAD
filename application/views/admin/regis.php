@@ -43,7 +43,7 @@
 						<td><h5>Pekerjaan Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="password" name="pass" placeholder="Password"></td>
+						<td><input type="text" name="pass" placeholder="Password"></td>
 						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah"></td>
 					</tr>
 					<tr>
