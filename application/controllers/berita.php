@@ -15,7 +15,7 @@ class Berita extends CI_Controller {
 		else{
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		}
-		$data['page']='userview/nilai';
+		$data['page']='userview/berita';
 		$data['beranda'] = 'aktif';
 		$data['nilai'] = '';
 		$data['absen'] = '';
