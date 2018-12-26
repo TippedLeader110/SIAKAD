@@ -378,6 +378,10 @@ class Admin extends CI_Controller {
 		$this->db->set('pekerjaan_ayah', $payah);
 		$pibu = $this->input->post('pibu');
 		$this->db->set('pekerjaan_ibu', $pibu);
+		$penayah = $this->input->post('penayah');
+		$this->db->set('pendidikan_ayah', $penayah);
+		$penibu = $this->input->post('penibu');
+		$this->db->set('pendidikan_ibu', $penibu);
 		$aayah = $this->input->post('aayah');
 		$this->db->set('alamat_ayah', $aayah);
 		$aibu = $this->input->post('aibu');
