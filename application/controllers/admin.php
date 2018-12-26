@@ -518,6 +518,10 @@ class Admin extends CI_Controller {
 			$config['per_page'] = 10;
 			$from = $this->uri->segment(3);
 			$this->pagination->initialize($config);		
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$tipe = 'siswa';
 			$data['muridtam'] = $this->adminmodel->dataspes($config['per_page'],$from, $tipe, 'ipa');
 			$data['dashboard']="";
@@ -624,6 +628,10 @@ class Admin extends CI_Controller {
 			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'nama','ipa');
 		}
 		else{}
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$data['dashboard']="";
 			$data['murid']="active";
 			$data['guru']="";
@@ -729,6 +737,10 @@ class Admin extends CI_Controller {
 			$data['muridtam'] = $this->adminmodel->ambilspes2nd('siswa', $w, 'nama','IPS');
 		}
 		else{}
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$data['dashboard']="";
 			$data['murid']="active";
 			$data['guru']="";
@@ -886,6 +898,10 @@ class Admin extends CI_Controller {
 	}
 	public function guruIPS()
 	{
+		$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 		$data['dashboard']="";
 		$data['murid']="";
 		$data['guru']="active";
