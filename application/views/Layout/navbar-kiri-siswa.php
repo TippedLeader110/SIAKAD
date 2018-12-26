@@ -18,7 +18,7 @@
 
         <div class="field-menu scrollable link-menu">
           <div class="row">
-              <a href="http://localhost/SIAKAD/home/siswa">
+              <a href="<?php echo base_url() ?>home/siswa">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
@@ -26,35 +26,35 @@
                </div>
               </a>
              
-              <a href="http://localhost/SIAKAD/Nilai/siswa">
+              <a href="<?php echo base_url() ?>Nilai/siswa">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
                 <h5 style="color: black; text-align: left;" class=<?php echo $nilai?>>Daftar Nilai</h5>
                </div>
               </a>
-              <a href="http://localhost/SIAKAD/Nilai/raport">
+              <a href="<?php echo base_url() ?>Nilai/raport">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
                 <h5 style="color: black; text-align: left;" class=<?php echo $rapot?>>Rapot</h5>
                </div>
               </a>
-              <a href="http://localhost/SIAKAD/Absen/siswa">
+              <a href="<?php echo base_url() ?>Absen/siswa">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
                 <h5 style="color: black; text-align: left;" class=<?php echo $absen?>>Rekap Absensi</h5>
                </div>
               </a>
-              <a href="http://localhost/SIAKAD/Daftar/guru">
+              <a href="<?php echo base_url() ?>Daftar/guru">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>
                 <h5 style="color: black; text-align: left;" class=<?php echo $guru?>>Daftar Guru</h5>
                </div>
               </a>
-              <a href="http://localhost/SIAKAD/Profil/siswa">
+              <a href="<?php echo base_url() ?>Profil/siswa">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
                 <span class="triangle"></span>

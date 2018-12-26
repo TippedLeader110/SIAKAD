@@ -128,7 +128,7 @@ class Absen extends CI_Controller {
 		$data['nilai'] = '';
 		$data['absen'] = 'aktif';
 		$data['rapot'] = '';
-		$data['guru'] = '';
+		$data['mana'] = 'aktif';
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
