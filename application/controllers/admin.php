@@ -945,6 +945,17 @@ class Admin extends CI_Controller {
 		$data['page']="admin/regisa";
 		$this->load->view('layout/admin', $data);
 	}
+	public function daftar_mapel()
+	{
+		$data['dashboard']="";
+		$data['murid']="";
+		$data['guru']="active";
+		$data['matapel']="";
+		$data['post']="";
+		$data['page']="admin/daftarmapel.php";
+		$this->load->view('layout/admin', $data);
+
+	}
 }
 
 ?>
