@@ -28,7 +28,7 @@
 				<input type="text" hidden name="id" value="<?php echo $nis ?>">
 				<table width="300">
 				<tr>
-							<td style="width: 170px;">Nama</td>
+							<td style="width: 170px;"><b>Nama</b></td>
 							<td style="padding-left: 10px;"><?php echo $v->nama; ?></td>
 				</tr>
 				</table>
@@ -38,7 +38,7 @@
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
 				<table width="300">
 				<tr>
-						<td style="width: 170px;">Tempat Lahir</td>
+						<td style="width: 170px;"><b>Tempat Lahir</b></td>
 						<td style="padding-left: 10px;"><?php echo $v->tempat; ?></td>
 				</tr>
 				</table>
@@ -46,8 +46,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+				<table width="300">
 				<tr>
-						<td style="width: 170px;">Jenis Kelamin</td>
+						<td style="width: 170px;"><b>Jenis Kelamin</b></td>
 						<td style="padding-left: 10px;"><?php echo $v->jk; ?></td>
 				</tr>
 				</table>	
@@ -55,8 +56,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+				<table width="300">
 				<tr>
-						<td style="width: 170px;">Alamat</td>
+						<td style="width: 170px;"><b>Alamat</b></td>
 						<td style="padding-left: 10px;"><?php echo $v->alamat; ?></td>
 				</tr>
 				</table>	
@@ -64,8 +66,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+				<table width="350">
 				<tr>
-						<td style="width: 170px;">Email</td>
+						<td style="width: 170px;"><b>Email</b></td>
 						<td style="padding-left: 10px;"><?php echo $v->email; ?></td>
 				</tr>
 				</table>	
@@ -73,8 +76,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500;">
+				<table width="300">
 				<tr>
-						<td style="width: 170px;">Agama</td>
+						<td style="width: 170px;"><b>Agama</b></td>
 						<td style="padding-left: 10px;"><?php echo $v->agama; ?></td>
 				</tr>
 				</table>	
@@ -82,8 +86,9 @@
 			</div>
 			<div class="col-md-12">
 				<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; margin-bottom: 200px;">
+				<table width="300">
 				<tr>
-						<td style="width: 170px;">Anak ke Berapa</td>
+						<td style="width: 170px;"><b>Anak ke Berapa</b></td>
 						<td style="padding-left: 10px;"><?php echo $v->anak_ke; ?></td>
 				</tr>
 				</table>	
@@ -93,14 +98,11 @@
 	</div>
 
 	<div class="col-md-4">
-		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 30px;">
+		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 77px;">
 			<div class="circle-2" style="margin: 10px; margin-top: 10px;">
 				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
 			</div>
 		</div>
-			<div class="container" style="width: 200px; background-color:#2F669F; border-width: 0px; color:white; padding: 3px 3px 3px 3px; padding: 5px 5px 5px 5px; ">
-				<center>Ubah Profil Anda</center>	
-			</div>
 	</div>
 </div>
 	</div>
