@@ -300,10 +300,117 @@ class Nilai extends CI_Controller {
 	}
 	public function lihat()
 	{
+		$this->db->where('nip' , $_SESSION['nip']);
+		$raw = $this->db->get('guru')->result();
+		foreach ($raw as $key => $value) {
+			$data['mapel'] =  $value->mapel;
+			$mapel =  $value->mapel;
+		}
+		if($mapel=='Akidah Akhlak')
+		{
+			$mapel = 'akidah_akhlak';
+		}
+		if($mapel=='Al Quran Hadist')
+		{
+			$mapel = 'quran_hadis';
+		}
+		if($mapel=='Bahasa Arab')
+		{
+			$mapel = 'b_arab' ;
+		}
+		if($mapel=='Bahasa Indonesia')
+		{
+			$mapel = 'b_indo' ;
+		}
+		if($mapel=='Bahasa Inggris')
+		{
+			$mapel = 'b_ing';
+		}
+		if($mapel=='Bahasa Jerman Peminatan')
+		{
+			$mapel = 'b_jerman_p';
+		}
+		if($mapel=='Biologi Peminatan')
+		{
+			$mapel = 'biologi_p';
+		}
+		if($mapel=='Ekonomi Peminatan')
+		{
+			$mapel = 'ekonomi_p';
+		}
+		if($mapel=='Fikih')
+		{
+			$mapel = 'fikih';
+		}
+		if($mapel=='Fisika Peminatan')
+		{
+			$mapel = 'fisika_p';
+		}
+		if($mapel=='Geografi')
+		{
+			$mapel = 'geografi';
+		}
+		if($mapel=='Kimia Peminatan')
+		{
+			$mapel = 'kimia_p';
+		}
+		if($mapel=='Matematika')
+		{
+			$mapel = 'matematika';
+		}
+		if($mapel=='Pendidikan Jasmani')
+		{
+			$mapel = 'penjas';
+		}
+		if($mapel=='Pendidikan Kewarganegaraan')
+		{
+			$mapel = 'pkn';
+		}
+		if($mapel=='Prakarya Kewirausahaan')
+		{
+			$mapel = 'prakarya_kewirausahaan';
+		}
+		if($mapel=='Sejarah')
+		{
+			$mapel = 'sejarah';
+		}
+		if($mapel=='Sejarah Indonesia')
+		{
+			$mapel = 'sejarah_indo';
+		}
+		if($mapel=='Sejarah Kebudayaan Islam')
+		{
+			$mapel = 'ski';
+		}
+		if($mapel=='Seni Budaya')
+		{
+			$mapel = 'seni_budaya';
+		}
+		if($mapel=='Sosiologi')
+		{
+			$mapel = 'sosiologi';
+		}
+		$nis = $this->input->post('nis');
+		$sem = $this->input->post('semester');
+		if ($this->input->post('semester')!='') {
+			$this->db->where('nis' , $nis);
+			$this->db->where('semester' , $sem);
+			$data['nilaidata']  = $this->db->get($mapel)->result();	
+		}
+		$a = $this->input->post('nis');
 		$data['border']='black';
 		$data['page']='userview/lihatnilai';
 		$data['nama'] = 'Daftar Nilai';
-		$data['nav'] = 'layout/navbar-kiri-guru';	
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		elseif ($_SESSION['nis']!='') {
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
+		$data['murid'] = $this->adminmodel->ambilspes('siswa' ,$a , 'nis');
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';

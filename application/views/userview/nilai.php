@@ -17,21 +17,21 @@
 									<td><h5><?php echo $v->nama ?></h5></td>
 								</tr>
 								<tr><input type="text" name="nis" value="<?php echo $v->nis ?>" hidden>
-									<td><h5>NIS</h5></td>
+									<td><h5>Nis</h5></td>
 									<td><h5><?php echo $v->nis ?></h5></td>
 								</tr><?php $d = date('Y')-$v->tahun;  ?>
 								<tr><input type="text" value="<?php echo $v->jurusan ?>" hidden name="jurusan">
 									<td><h5>Jurusan</h5></td>
 									<td><h5><?php echo $v->jurusan ?></h5></td>
 								</tr>
-							</table>
-						</div>
-						<div class="col-md-6" style="padding-top: 2em; margin-left: 150px;">
-							<table   width="380">
 								<tr>
 									<td><h5>Kelas</h5></td>
 									<td><h5><?php echo $v->kelas ?></h5></td>
 								</tr>
+							</table>
+						</div>
+						<div class="col-md-6" style="padding-top: 2em; margin-left: 150px;">
+							<table   width="380">
 								<tr><input type="text" value="<?php echo $v1->mapel ?>" name="mapel" hidden>
 									<td><h5>Mata Pelajaran</h5></td>
 									<td><h5><?php echo $v1->mapel ?></h5></td>
