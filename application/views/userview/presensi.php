@@ -10,21 +10,11 @@
 					<table style="min-width: 500px;">
 						<tr>
 							<td>Nama Siswa</td>
-							<td><input type="text" class="form-control" placeholder="Nama Siswa"style="width: 250px;" ></td>
+							<td>$nama_siswa</td>
 						</tr>
 						<tr>
 							<td>NIS</td>
-							<td><input type="text" class="form-control" placeholder="NIS"style="width: 250px;" ></td>
-						</tr>
-						<tr>
-							<td>Jurusan</td>
-							<td>
-								<select class="form-control" style="width: 250px;">
-								<option value="jurusan">-Pilih Jurusan-</option>
-								<option value="jurusan">Ilmu Pengetahuan Alam</option>
-								<option value="jurusan">Ilmu Pengetahuan Sosial</option>
-								</select> 
-							</td>
+							<td>$nis</td>
 						</tr>
 					</table>
 				</div>
@@ -33,27 +23,7 @@
 						<tr>
 							<td>Kelas</td>
 							<td>
-								<select class="form-control" style="width: 250px;">
-								<option value="kelas">-Pilih Kelas-</option>
-								<option value="kelas">X IPA 1</option>
-								<option value="kelas">X IPA 2</option>
-								<option value="kelas">X IPA 3</option>
-								<option value="kelas">X IPS 1</option>
-								<option value="kelas">X IPS 2</option>
-								<option value="kelas">X IPS 3</option>
-								<option value="kelas">XI IPA 1</option>
-								<option value="kelas">XI IPA 2</option>
-								<option value="kelas">XI IPA 3</option>
-								<option value="kelas">XI IPS 1</option>
-								<option value="kelas">XI IPS 2</option>
-								<option value="kelas">XI IPS 3</option>
-								<option value="kelas">XII IPA 1</option>
-								<option value="kelas">XII IPA 2</option>
-								<option value="kelas">XII IPA 3</option>
-								<option value="kelas">XII IPS 1</option>
-								<option value="kelas">XII IPS 2</option>
-								<option value="kelas">XII IPS 3</option>
-								</select>
+								$kelas
 							</td>
 						</tr>
 						<tr>
@@ -65,10 +35,6 @@
 									<option value="semester">Semester Genap</option>
 								</select>
 							</td>
-						</tr>
-						<tr>
-							<td>Tahun Pelajaran</td>
-							<td><input type="text" class="form-control" placeholder="Tahun Pelajaran"style="width: 250px;" ></td>
 						</tr>
 					</table> 
 				</div>
