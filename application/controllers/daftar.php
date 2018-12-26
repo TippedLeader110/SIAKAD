@@ -96,7 +96,16 @@ class Daftar extends CI_Controller {
 		}
 
 		$data['border']='black';
-		$data['nav'] = 'layout/navbar-kiri-siswa';
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		elseif($_SESSION['wali']=='')
+		{
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		};
 		$data['page']='userview/daftarsiswa';
 		$data['nama'] = 'Daftar Siswa';
 		$data['beranda'] = '';
