@@ -44,7 +44,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="text" name="username" placeholder="Nama Pengguna.." checked>
+								<input style="width: 92%" type="text" name="username" placeholder="Nama Pengguna" checked>
 						</div>
 					</div>
 					<div class="row" style="margin-top: 20px;">
@@ -54,7 +54,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<input style="width: 92%" type="password" name="password" placeholder="Kata Sandi.." id="myInput">
+								<input style="width: 92%" type="password" name="password" placeholder="Kata Sandi" id="myInput">
 						</div>
 					</div>
 					<div class="row" style="margin-top: 5px; padding-left: 10px;" align="left" >
