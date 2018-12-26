@@ -24,32 +24,40 @@
 				<form method="post" action="<?php echo base_url() ?>admin/simpanm">
 				<table class="table table-borderless">
 					<tr>
-						<td><h5>NIS</h5></td>
+						<td><h5>NISN</h5></td>
 						<td><h5>Nama Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="number" min="123710000" maxlength="123718000" name="nis" placeholder="NIS"></td>
+						<td><input type="number" min="123710000" maxlength="123718000" name="nisn" placeholder="NISN"></td>
 						<td><input type="text" placeholder="Nama Ayah" name="ayah"></td>
 					</tr>
 					<tr>
-						<td><h5>Username</h5></td>
+						<td><h5>NIS</h5></td>
 						<td><h5>Pendidikan Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="username" placeholder="Username"></td>
+						<td><input type="number" min="123710000" maxlength="123718000" name="nis" placeholder="NIS"></td>
 						<td><input type="text" placeholder="Pendidikan Ayah" name="penayah"></td>
 					</tr>
 					<tr>
-						<td><h5>Password</h5></td>
+						<td><h5>Username</h5></td>
 						<td><h5>Pekerjaan Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="pass" placeholder="Password"></td>
+						<td><input type="text" name="username" placeholder="Username"></td>
 						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah"></td>
 					</tr>
 					<tr>
-						<td><h5>Jurusan</h5></td>
+						<td><h5>Password</h5></td>
 						<td><h5>Alamat Ayah</h5></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="pass" placeholder="Password"></td>
+						<td><input type="text" name="aayah" placeholder="Alamat Ayah"></td>
+					</tr>
+					<tr>
+						<td><h5>Jurusan</h5></td>
+						<td><h5>Nomor HP Ayah</h5></td>
 					</tr>
 					<tr>
 						<td><select name="jurusan" class="form-control" style="width: 400px;">
@@ -57,16 +65,16 @@
 							<option value="IPA">IPA</option>
 							<option value="IPS">IPS</option>
 						</select></td>
-						<td><input type="text" name="aayah" placeholder="Alamat Ayah"></td>
+						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah"></td>
+
 					</tr>
 					<tr>
 						<td><h5>Tahun Angkatan</h5></td>
-						<td><h5>Nomor HP Ayah</h5></td>
+						
 					</tr>
 					<tr>
 						<td><input type="text" name="tahun" placeholder="Tahun Angkatan"></td>
-						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah"></td>
-					</tr>
+											</tr>
 					<tr>
 						<td><h5>Asal Sekolah</h5></td>
 						<td><h5></h5></td>
@@ -78,43 +86,32 @@
 						<td><h4><center>Data Pribadi</center></h4></td>
 					</tr>
 					<tr>
-						<td><h5>NISN</h5></td>
+						<td><h5>Nama Murid</h5></td>
 						<td><h5>Nama Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="number" min="123710000" maxlength="123718000" name="nisn" placeholder="NISN"></td>
+						<td><input type="text" name="nama" placeholder="Nama Murid"></td>
 						<td><input type="text" name="ibu" placeholder="Nama Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Nama Murid</h5></td>
-						<td><h5>Pendidikan Ibu</h5></td>
-					</tr>
-					<tr>
-						<td><input type="text" name="nama" placeholder="Nama Murid"></td>
-						
-						<td><input type="text" name="penibu" placeholder="Pendidikan Ibu"></td>
-					</tr>
-					<tr>
 						<td><h5>Tempat Lahir</h5></td>
-						<td><h5>Pekerjaan Ibu</h5></td>
+						<td><h5>Pendidikan Ibu</h5></td>					
 					</tr>
 					<tr>
 						<td><input type="text" name="tlahir" placeholder="Tempat Lahir"></td>
-						
-						<td><input type="text" name="pibu" placeholder="Pekerjaan Ibu"></td>
+						<td><input type="text" name="penibu" placeholder="Pendidikan Ibu"></td>
 					</tr>
 					<tr>
 						<td><h5>Tanggal Lahir</h5></td>
-						<td><h5>Alamat Ibu</h5></td>
+						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><input type="date" name="date" placeholder="Tanggal Lahir"></td>
-						
-						<td><input type="text" name="aibu" placeholder="Alamat Ibu"></td>
+						<td><input type="text" name="pibu" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
 						<td><h5>Jenis Kelamin</h5></td>
-						<td><h5>Nomor HP Ibu</h5></td>
+						<td><h5>Alamat Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><select name="jk" class="form-control" style="width: 400px;">
@@ -122,14 +119,21 @@
 							<option>Laki-laki</option>
 							<option>Perempuan</option>
 						</select></td>
-						
-						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
+						<td><input type="text" name="aibu" placeholder="Alamat Ibu"></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>
+						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;"></textarea></td>
+						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu"></td>
+					</tr>
+					<tr>
+						
+					</tr>
+					<tr>
+						
 					</tr>
 					<tr>
 						<td><h5>Email</h5></td>

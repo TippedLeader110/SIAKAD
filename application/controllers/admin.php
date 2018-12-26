@@ -378,6 +378,10 @@ class Admin extends CI_Controller {
 		$this->db->set('pekerjaan_ayah', $payah);
 		$pibu = $this->input->post('pibu');
 		$this->db->set('pekerjaan_ibu', $pibu);
+		$penayah = $this->input->post('penayah');
+		$this->db->set('pendidikan_ayah', $penayah);
+		$penibu = $this->input->post('penibu');
+		$this->db->set('pendidikan_ibu', $penibu);
 		$aayah = $this->input->post('aayah');
 		$this->db->set('alamat_ayah', $aayah);
 		$aibu = $this->input->post('aibu');
@@ -391,6 +395,16 @@ class Admin extends CI_Controller {
                         $this->db->where(['nis' => $id]);
 						$this->db->update('siswa');
                         redirect("admin/murid");
+	}
+	public function mapel()
+	{
+		$data['dashboard']="active";
+			$data['murid']="";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/daftarmapel";
+			$this->load->view('layout/admin', $data);
 	}
 	public function simpanm()
 	{

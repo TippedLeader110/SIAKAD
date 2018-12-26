@@ -202,6 +202,7 @@ class Absen extends CI_Controller {
 		$data['nav'] = 'layout/navbar-kiri-walikelas';
 		$data['page']='userview/presensi';
 		$data['nama'] = 'Absen';
+		$data['mana'] = 'aktif';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
 		$data['absen'] = 'aktif';

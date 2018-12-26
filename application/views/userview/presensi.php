@@ -119,7 +119,7 @@
 	</div>
 	<div class="col-md-2">
 		<div class="container" style="border-width:0px; font-weight:500; color:white; margin-left: 290px; margin-top: 30px;">
-			<center><b><a href="#" class="btn btn-danger">Batal</a></b></center>
+			<center><b><a href="<?php echo base_url() ?>absen/presensi" class="btn btn-danger">Batal</a></b></center>
 		</div>
 	</div>
 </div></form>
