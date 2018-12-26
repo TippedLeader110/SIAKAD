@@ -66,11 +66,11 @@
 										</tr>
 										<tr>
 											<td style="padding-top: 10px"><h5>Tugas 2</h5></td>
-											<td style="padding-top: 10px"><input type="number" name="tugas2" maxlength="3" size="3"></td>
+											<td style="padding-top: 10px"><input type="number" name="tugas2" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 										<tr>
 											<td style="padding-top: 10px"><h5>Tugas 3</h5></td>
-											<td style="padding-top: 10px"><input type="number"name="tugas3" maxlength="3" size="3"></td>
+											<td style="padding-top: 10px"><input type="number"name="tugas3" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 									</table>
 								</div>
@@ -78,11 +78,11 @@
 									<table width="380">
 										<tr>
 											<td><h5>Nilai UTS</h5></td>
-											<td><input type="number" name="uts" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
+											<td><input type="number" name="uts" maxlength="3" size="3" placeholder="Masukkan Nilai" placeholder="Masukkan Nilai"></td>
 										</tr>
 										<tr>
 											<td style="padding-top: 10px"><h5>Nilai UAS</h5></td>
-											<td style="padding-top: 10px"><input type="number" name="uas" maxlength="3" size="3"></td>
+											<td style="padding-top: 10px"><input type="number" name="uas" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 									</table>
 								</div>
@@ -92,14 +92,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="container" style="border-width: 0px;margin-left:350px;padding-top: 20px">
-					<table>
-						<tr>
-							<td><button type="submit" class="btn btn-success">Kirim</button></td>
-				</form>
-							<td><form action="<?php echo base_url()?>nilai/guru"><button type="submit" class="btn btn-primary">Kembali</button></form></td>
-						</tr>
-					</table>
+				<div class="col-md-2">
+					<div class="container" style="border-width:0px; color:white; font-weight:500; margin-left: 365px; margin-top: 30px;">
+							<center><button type="submit" class="btn primary">Simpan</button></center>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="container" style="border-width:0px; font-weight:500; color:white; margin-left: 290px; margin-top: 30px;">
+						<center><b><a href="<?php echo base_url() ?>nilai/input" class="btn btn-danger">Batal</a></b></center>
+					</div>
 				</div>
 			</div>
 		</div>
