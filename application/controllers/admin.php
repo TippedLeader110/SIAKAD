@@ -396,6 +396,16 @@ class Admin extends CI_Controller {
 						$this->db->update('siswa');
                         redirect("admin/murid");
 	}
+	public function mapel()
+	{
+		$data['dashboard']="active";
+			$data['murid']="";
+			$data['guru']="";
+			$data['matapel']="";
+			$data['post']="";
+			$data['page']="admin/daftarmapel";
+			$this->load->view('layout/admin', $data);
+	}
 	public function simpanm()
 	{
 		$nis = $this->input->post('nis');
