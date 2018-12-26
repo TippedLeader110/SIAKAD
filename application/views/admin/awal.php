@@ -79,10 +79,10 @@ $(function(){
 				<center>
 					<table style="margin-top: 10px">
 						<tr align="center" style="">
-							<td><a href="<?php echo base_url() ?>admin/TheAdmin"><img src="<?php echo base_url() ?>/img/icon/admin.png" style="max-height: 104px;max-width: 104px"></a></td>
+							<td><a href="<?php echo base_url() ?>admin/simpanadmin"><img src="<?php echo base_url() ?>/img/icon/admin.png" style="max-height: 104px;max-width: 104px"></a></td>
 						</tr>
 						<tr align="center">
-							<td><a href="<?php echo base_url() ?>admin/TheAdmin"><h4>Daftar Admin</a></h4></td>
+							<td><a href="<?php echo base_url() ?>admin/simpanadmin"><h4>Daftar Admin</a></h4></td>
 						</tr>
 					</table>
 				</center>
