@@ -11,15 +11,7 @@
 						<table style="min-width: 300px;">
 						<tr><td><h4>Jurusan</h4></td></tr>
 						<tr>
-							<td><?php if ($_SESSION['do']!=''): ?>
-								<script type="text/javascript">
-									Swal(
-  'Sukses!',
-  'Data berhasil di simpan!',
-  'success'
-)
-								</script>
-							<?php endif ?>
+							<td>
 								<select name="jurusan" class="form-control" style="width: 250px;">
 								<option value="jurusan"><h4>-Pilih Jurusan-</h4></option>
 								<option value="ipa"><h4>Ilmu Pengetahuan Alam</h4></option>
