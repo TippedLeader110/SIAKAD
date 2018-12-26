@@ -11,6 +11,7 @@
 			<div class="col-md-12">
 					<div class="row"  style="color: #2F669F; padding-left: 15px; padding-bottom: 10px;">
 						<h4>Selamat datang, <b><?php echo $_SESSION['admin']; ?></b></h4>
+						<a href="<?php echo base_url() ?>admin/daftarmapel"><button class="btn btn-primary">Daftar Mata Pelajaran</button></a>
 					</div>
 				<div class="container" style="background: #ffa500;height: 185px; margin-bottom: 20px;">
 					<table style="margin-top: 15px;">
