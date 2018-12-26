@@ -86,7 +86,7 @@ echo"      <div class='card-body' style='height: 150px;'>";
 echo"          <h6 class='card-title' align='center'>".$v->nama."</h6>";
 echo"          <p class='card-text' align='center' style='font-size: 15px;'>".$v->mapel."</p>";
 echo"          <center>";
-echo"            <a href='#' class='btn btn-primary'><h6>Lihat Profil</h6></a>";
+echo"            <form action='".base_url()."profil/tampil' method='post'><input type='text' value='".$v->nip."' name='nip' hidden><button class='btn btn-primary' type='submit'><h6>Lihat Profil</h6></button></form>";
 echo"          </center>";
 echo"      </div>";
 echo"    </div>";
