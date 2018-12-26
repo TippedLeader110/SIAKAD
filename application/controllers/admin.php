@@ -867,6 +867,18 @@ class Admin extends CI_Controller {
                         redirect("admin/daftar_murid");
                 }
         }
+        public function sadmin()
+        {
+        	$username = $this->input->post('username');
+        	$nama = $this->input->post('nama');
+        	$pass = $this->input->post('pass');
+        	$email = $this->input->post('email');
+        	$a = array('username' => $username, 'password' => $pass, 'nama' => $nama, 'email' => $nama );
+        	$this->db->insert('admin',$a);
+        	$_SESSION['do']=1;
+        	redirect('admin', location);
+
+        }
         public function simpanPOST()
 	{
 		$penulis = $_SESSION['admin'];

@@ -132,6 +132,7 @@ class Nilai extends CI_Controller {
 		if ($query==0) {
 			$data = array('jurusan' => $jurusan, 'nis' => $nis ,'semester' => $semester , 'tugas_1' => $tugas1 , 'tugas_2' => $tugas2 , 'tugas_3' => $tugas3 , 'uts' => $uts , 'uas' => $uas ,);
 			$this->db->insert($mapel, $data);
+			$_SESSION['do']=1;
 			redirect('nilai/guru');
 		}
 		else{
@@ -144,6 +145,7 @@ class Nilai extends CI_Controller {
 			$this->db->set('uas', $uas );
 			$this->db->where(['nis' => $nis, 'semester' => $semester]);
 			$this->db->update($mapel);
+			$_SESSION['do']=1;
 			redirect('nilai/guru');
 		}
 	}

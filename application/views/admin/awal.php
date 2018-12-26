@@ -6,7 +6,15 @@
 	</div>
 </div>
 <div class="container" style="border-width: 1px; border-color: #b8b894; background-color: white; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px grey; margin-top: 20px;">
-	<div class="container-fluid">
+	<div class="container-fluid"><?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+							<?php endif ?>
 		<div class="row">
 			<div class="col-md-6">
 				<div class="container" style="background: #f5b041;height: 185px;">
