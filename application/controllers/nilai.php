@@ -273,12 +273,7 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/tugas';
 		$data['nama'] = 'Daftar Nilai';
-		if ($_SESSION['wali']=='') {
-		$data['nav'] = 'layout/navbar-kiri-guru';
-		}
-		else{
-			$data['nav'] = 'layout/navbar-kiri-walikelas';	
-		}
+		$data['nav'] = 'layout/navbar-kiri-siswa';	
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
