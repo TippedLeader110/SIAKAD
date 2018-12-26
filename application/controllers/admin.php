@@ -245,6 +245,10 @@ class Admin extends CI_Controller {
 		$data['dashboard']="";
 		$data['murid']="active";
 		$data['guru']="";
+		$this->db->distinct();
+		$this->db->select('tahun');
+		$query = $this->db->get('siswa')->result();
+		$data['tahun'] = $query;
 		$data['matapel']="";
 		$data['post']="";
 		$data['page']="admin/smurid";
@@ -539,6 +543,10 @@ class Admin extends CI_Controller {
 		else{}
 			$data['dashboard']="";
 			$data['murid']="active";
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$data['guru']="";
 			$data['matapel']="";
 			$data['post']="";
@@ -665,6 +673,10 @@ class Admin extends CI_Controller {
 			$data['murid']="active";
 			$data['guru']="";
 			$data['matapel']="";
+			$this->db->distinct();
+			$this->db->select('tahun');
+			$query = $this->db->get('siswa')->result();
+			$data['tahun'] = $query;
 			$data['post']="";
 			$data['page']="admin/statusmurid";
 			$this->load->view('layout/admin', $data);
