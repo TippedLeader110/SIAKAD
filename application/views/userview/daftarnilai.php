@@ -1,9 +1,9 @@
 <div class="row" style="margin-top: 20px;">
 	<div class="container" style="width: 250px; height: 40px; border-width: 2px; border-color: #d6d6c2;  padding: 5px 5px 5px 5px;">
-		<h5 align="center"><?php echo $_SESSION['user'] ?></h5>
+		<h5 align="center">DATA NAMA</h5>
 	</div>
 	<div class="container" style="width: 250px; height: 40px; margin-left: -100px;  border-width: 2px; border-color: #d6d6c2; padding: 5px 5px 5px 5px;">
-		<h5 align="center"><?php echo $_SESSION['nis'] ?></h5>
+		<h5 align="center">DATA NIS</h5>
 	</div>
 </div>
 <div class="row" style="margin-top: 50px; margin-left: 60px;" >

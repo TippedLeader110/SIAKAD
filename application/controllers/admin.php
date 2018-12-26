@@ -922,26 +922,6 @@ class Admin extends CI_Controller {
 		$data['page']="admin/regisa";
 		$this->load->view('layout/admin', $data);
 	}
-	public function simpanadmin()
-	{
-		$user = $this->input->post('username');
-		$nama = $this->input->post('nama');
-		$pass = $this->input->post('pass');
-		$email = $this->input->post('email');
-		$this->adminmodel->kirimadmin($user,$nama,$pass,$email);
-		redirect("admin/index", location);
-	}
-
-	public function post()
-	{
-		$data['dashboard']="";
-		$data['murid']="";
-		$data['guru']="";
-		$data['matapel']="";
-		$data['post']="active";
-		$data['page']="admin/berita";
-		$this->load->view('layout/admin', $data);
-	}
 }
 
 ?>

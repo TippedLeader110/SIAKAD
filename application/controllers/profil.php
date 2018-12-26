@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Profil extends CI_Controller {
 
-	public function murid()
+	public function siswa()
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa';
@@ -17,7 +17,7 @@ class Profil extends CI_Controller {
 		$data['profil'] = 'aktif';
 		$this->load->view('layout/home', $data);
 	}
-	public function murid1()
+	public function siswa1()
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa1';
@@ -31,7 +31,7 @@ class Profil extends CI_Controller {
 		$data['profil'] = 'aktif';
 		$this->load->view('layout/home', $data);
 	}
-	public function murid2()
+	public function siswa2()
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa2';
