@@ -110,32 +110,44 @@
 						<td><h4><center>Data Pribadi</center></h4></td>
 					</tr>
 					<tr>
-						<td><h5>Nama Murid</h5></td>
+						<td><h5>NISN</h5></td>
+						
 						<td><h5>Nama Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="nama" placeholder="Nama Murid" value="<?php echo $nama ?>"></td>
+						<td><input type="text" name="nisn" placeholder="NISN" value="<?php echo $nisn ?>"></td>
+						
 						<td><input type="text" name="ibu" placeholder="Nama Ibu" value="<?php echo $nama_ibu ?>"></td>
 					</tr>
 					<tr>
-						<td><h5>Tempat Lahir</h5></td>
+						<td><h5>Nama Murid</h5></td>
+						
 						<td><h5>Pendidikan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $tempat ?>"></td>
+						<td><input type="text" name="nama" placeholder="Nama Murid" value="<?php echo $nama ?>"></td>
 						<td><input type="text" value="<?php echo $pendidikan_ibu ?>" name="penibu" placeholder="Pendidikan Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Tanggal lahir</h5></td>
+						<td><h5>Tempat Lahir</h5></td>
 						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir Anda"></td>
+						<td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $tempat ?>"></td>
 						<td><input type="text" name="pibu" value="<?php echo $pekerjaan_ibu ?>" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Jenis Kelamin</h5></td>
+						<td><h5>Tanggal lahir</h5></td>
 						<td><h5>Alamat Ibu</h5></td>
+					</tr>
+					<tr>
+						<td><input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td>
+						
+						<td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>
+					</tr>
+					<tr>
+						<td><h5>Jenis Kelamin</h5></td>
+						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
 						<td>
@@ -150,21 +162,19 @@
 								<?php endif ?>
 							</select>
 						</td>
-						<td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>
+						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>
-						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
 						<td><input type="text" value="<?php echo $alamat ?>" name="alamat" placeholder="Alamat Murid"></td>
-						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
-					</tr>
 					<tr>
 						<td><h5>Email</h5></td>
 					</tr>
 					<tr>
 						<td><input type="email" name="email" value="<?php echo $email ?>" placeholder="Email"></td>
+					</tr>
 					</tr>
 					<tr>
 						<td><h5>Agama</h5></td>
