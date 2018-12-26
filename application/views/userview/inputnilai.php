@@ -31,17 +31,17 @@
 				</div>
 				<div class="col-md-6" style="padding-top: 10px;padding-bottom: 10px; margin-left: 50px;">
 					<table style="min-width: 500px;margin-left: -70px;">
-						<tr><td><h4>Kelas</h4></td></tr>
+						<tr><td style="padding-left: 50px;"><h4>Kelas</h4></td></tr>
 						<tr>
 							<td>
-								<select name="kelas" class="form-control" style="width: 250px;">
+								<select name="kelas" class="form-control" style="width: 250px; margin-left: 50px;">
 								<option value="kelas">-Pilih Tingkat-</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
 								</select> 
 							</td>
-							<td><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
+							<td style="padding-left: 50px;"><button type="submit" class="btn btn-primary" style="min-width: 100px;margin-left: 0px;margin-right: 100px">Cari</button></td>
 						</tr>
 					</table> 
 					</form>				
@@ -52,7 +52,7 @@
 	<div class="row">
 		<div class="container" style="border-width: 0px;">
 			<div class="row">
-				<table class="table table-bordered table-stripped" style="margin-left: 30px;background: white;margin-right: 30px;text-align: center;">
+				<table class="table table-bordered table-stripped" style="margin-left: 35px;background: white;margin-right: 30px;text-align: center; max-width: 850px;">
 					<tr>
 						<th>NIS</th>
 						<th>Nama</th>
