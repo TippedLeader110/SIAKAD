@@ -8,6 +8,47 @@ class Daftar extends CI_Controller {
  
 	}
 
+	public function guru1()
+	{
+		$id=$this->uri->segment(3);
+		$tipe=$this->uri->segment(4);
+		if (isset($id)) {
+			if ($tipe=='nama') {
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurudaf'] = $this->adminmodel->ambilspes('guru', $nama, 'nama');	
+			}
+			else
+			{
+			$max = $id;	
+			$data['test'] = $max;
+			$nama=$max;
+			$data['gurudaf'] = $this->adminmodel->ambilspes('guru', $nama, 'tahun');		
+			}
+		}
+		else
+		{
+		$data['gurudaf'] = $this->adminmodel->ambil('guru');
+		}
+		$data['border']='black';
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
+		$data['page']='userview/daftarguru';
+		$data['nama'] = 'Daftar Guru';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = 'aktif';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
+
 	public function guru()
 	{
 		$id=$this->uri->segment(3);
@@ -55,7 +96,16 @@ class Daftar extends CI_Controller {
 		}
 
 		$data['border']='black';
-		$data['nav'] = 'layout/navbar-kiri-siswa';
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		elseif($_SESSION['wali']=='')
+		{
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		};
 		$data['page']='userview/daftarsiswa';
 		$data['nama'] = 'Daftar Siswa';
 		$data['beranda'] = '';

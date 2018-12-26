@@ -62,6 +62,7 @@ class Mainmodel extends CI_Model {
 			$this->session->user = $w->nama;
 			$this->session->nip = $w->nip;
 			$this->session->img = $w->foto;
+			$this->session->wali = $w->wali_kelas;
 			redirect('home/guru');
 			}
 			else{

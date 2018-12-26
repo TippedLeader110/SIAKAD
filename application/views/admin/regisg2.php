@@ -41,7 +41,7 @@
 						<td><h4>Tanggal Lahir</h4></td>
 					</tr>
 					<tr>	
-						<td><input type="password" value="<?php echo $v->password ?>" name="password" placeholder="Password"></td>
+						<td><input type="text" value="<?php echo $v->password ?>" name="password" placeholder="Password"></td>
 						<td><input type="date" value="<?php echo $v->tgl_lahir ?>" name="tanggal" ></td>
 					</tr>
 					<tr>	

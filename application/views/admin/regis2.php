@@ -68,7 +68,7 @@
 						<td><h5>Pekerjaan Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="password" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
+						<td><input type="text" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
 						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah" value="<?php echo $pekerjaan_ayah ?>"></td>
 					</tr>
 					<tr>

@@ -7,7 +7,7 @@
 	<div class="container-fluid" style="background: white;padding-top: 20px;margin-left: -10px;" >
 		<div class="row">
 			<div class="col-md-12">
-				<h4>Atur Kelas Mengajar Guru</h4>
+				<h4>Atur Wali Kelas</h4>
 			</div>
 		</div>
 	<div class="row">
@@ -16,16 +16,16 @@
 				<div class="col-md-12">
 					<table>
 					<tr>
-						<td><form method="post" action="<?php echo base_url() ?>admin/guruIPA"><input type="text" hidden name="tent" value="nama">
+						<td><form method="post" action="<?php echo base_url() ?>admin/wali"><input type="text" hidden name="tent" value="nama">
 							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td>
 						<td>
-							<form method="post" action="<?php echo base_url() ?>admin/guruIPA">
+							<form method="post" action="<?php echo base_url() ?>admin/wali">
 							<input hidden type="text" name="tent" value="tahun">
-							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Kode Mapel Angkatan" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form>	
+							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Kode Mapel" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form>	
 						</td>
 						<td>
-							<form method="post" action="<?php echo base_url() ?>admin/guruIPA">
-								<input hidden type="text" name="tent" value="tahun">
+							<form method='post' action="<?php echo base_url() ?>admin/wali">
+								<input hidden type="text" name="tent" value="lain">
 							<button class="btn" type="submit">Tampilkan Semua</button>
 							</form>	
 						</td>
@@ -34,13 +34,22 @@
 				</div>
 			</div>
 			<div class="row" style="margin-bottom: 10px;margin-top: 10px;">
-					<div class="col-md-12"><table><form method="post" action="<?php echo base_url() ?>admin/aturkelasguru">
+					<div class="col-md-12"><table><form method="post" action="<?php echo base_url() ?>admin/aturwali">
 						<tr>
-							<td><button class="btn btn-primary" name="tampil">Atur Kelas</button></td>
-								<td><select name="kelas" class="form-control">
-									<option value="A">A</option>
-									<option value="B">B</option>
-									<option value="C">C</option>
+							<td><button class="btn btn-primary" name="tampil">Atur Wali Kelas</button></td>
+								<td><select name="jurusan" class="form-control">
+									<option value="IPA">IPA</option>
+									<option value="IPS">IPS</option>
+									</select></td><td><select name="kelas" class="form-control">
+									<option value="1A">1A</option>
+									<option value="1B">1B</option>
+									<option value="1C">1C</option>
+									<option value="2A">2A</option>
+									<option value="2B">2B</option>
+									<option value="2C">2C</option>
+									<option value="3A">3A</option>
+									<option value="3B">3B</option>
+									<option value="3C">3C</option>
 									</select></td>
 						</tr>
 					</table> 
@@ -57,11 +66,11 @@
 						foreach ($kelas as $key => $v) {
 						$batas++;
 						$x=$v->wali_kelas;
-						if ($x=='1') {
-							$x='Ya';
+						if ($x=='') {
+							$x='Tidak';
 						}
 						else{
-							$x='Tidak';
+							$x=$v->wali_kelas;
 						}
 						echo "<tr>
 						<th><input style='width: 10px;' type='checkbox' name='ck[]' value='".$v->nip."' /></th><th>".$v->nip."</th><th>".$v->nama."</th><th>".$v->mapel."</th><th>".$x."</th><th>".$v->kode_mapel."</th>

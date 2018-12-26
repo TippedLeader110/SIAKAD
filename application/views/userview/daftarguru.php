@@ -82,7 +82,7 @@ echo"          <div style='background-color:#009432; height: 200px; width: 200px
 echo"          <div class='circle' style='margin: 10px 10px 50px 50px; margin-top: 30px;'>";
 echo"             <img src='".base_url()."gambar/".$v->foto.".png' style='max-width: 100px; max-height: 100px;'>";
 echo"          </div>";
-echo"      <div class='card-body' style='max-height='100px;'>";
+echo"      <div class='card-body' style='height: 150px;'>";
 echo"          <h6 class='card-title' align='center'>".$v->nama."</h6>";
 echo"          <p class='card-text' align='center' style='font-size: 15px;'>".$v->mapel."</p>";
 echo"          <center>";

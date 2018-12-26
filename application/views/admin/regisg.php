@@ -39,7 +39,7 @@
 						<td><h4>Tanggal Lahir</h4></td>
 					</tr>
 					<tr>	
-						<td><input type="password" name="password" placeholder="Password"></td>
+						<td><input type="text" name="password" placeholder="Password"></td>
 						<td><input type="date" name="tanggal" placeholder="dd-mm-yyyy" pattern="\d{1,2}-\d{1,2}-\d{4}"></td>
 					</tr>
 					<tr>	

@@ -52,7 +52,12 @@ class Profil extends CI_Controller {
 		$data['arra'] = $this->adminmodel->ambilspes('guru', $nip, 'nip');
 		$data['border']='transparent';
 		$data['page']='userview/profilguru';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -68,7 +73,12 @@ class Profil extends CI_Controller {
 		$data['arra'] = $this->adminmodel->ambilspes('guru', $nip, 'nip');
 		$data['border']='transparent';
 		$data['page']='userview/profilguru1';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -82,7 +92,12 @@ class Profil extends CI_Controller {
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilwalikelas';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
@@ -96,7 +111,12 @@ class Profil extends CI_Controller {
 	{
 		$data['border']='transparent';
 		$data['page']='userview/profilwalikelas1';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';
 		$data['nilai'] = '';

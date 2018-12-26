@@ -41,6 +41,8 @@
     }
     .scrollable{
       overflow-y: auto;
+      max-height: 580px;
+      
     }
     .circle {
       width: 100px;
@@ -118,4 +120,8 @@
     .footer{
       min-height: 50px;
       background-color: #0f0f0a;
+    }
+    .link-menu a{
+      color: #FFFFFF;
+      text-decoration: none;
     }

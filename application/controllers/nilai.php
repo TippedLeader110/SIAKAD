@@ -15,7 +15,12 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/inputnilai';
 		$data['nama'] = 'Input Nilai';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['beranda'] = '';
 		$data['nilai'] = '';
 		$data['input'] = 'aktif';
@@ -151,7 +156,12 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/nilai';
 		$data['nama'] = 'Input Nilai';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -214,7 +224,12 @@ class Nilai extends CI_Controller {
 		$data['nama'] = 'Wali kelas';
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = '';
@@ -227,7 +242,12 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/uas';
 		$data['nama'] = 'Daftar Nilai';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -241,7 +261,12 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/uts';
 		$data['nama'] = 'Daftar Nilai';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
@@ -255,7 +280,12 @@ class Nilai extends CI_Controller {
 		$data['border']='black';
 		$data['page']='userview/tugas';
 		$data['nama'] = 'Daftar Nilai';
+		if ($_SESSION['wali']=='') {
 		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
 		$data['beranda'] = '';
 		$data['nilai'] = 'aktif';
 		$data['absen'] = '';
