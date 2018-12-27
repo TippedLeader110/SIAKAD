@@ -7,7 +7,7 @@
   <div class="col-md-12">
       <h5 style="color: #2F669F; padding-top: 10px;"><b>Ubah Kata Sandi Anda</b></h5>
       <div class="container" style="border-width: 1px; border-color: #d6d6c2;"> 
-        <form method="" action="">
+        <form method="post" action="<?php echo base_url() ?> ubahsandi/sandisiswa">
         <table border="0" style="margin-top: 30px;" align="center">  
           <tr>            
               <!-- ini untuk WHERE-->
@@ -16,7 +16,7 @@
               <h5>Kata Sandi Lama</h5>
             </td>
             <td style="padding: 5px 5px 5px 5px;">
-              <input class="form-control" style="min-width: 250px;" type="password" name="sandilama" placeholder="Masukkan Kata Sandi Lama">
+              <input class="form-control" style="min-width: 250px;" type="password" name="lama" placeholder="Masukkan Kata Sandi Lama">
             </td>
             </tr>
             <tr>
@@ -24,7 +24,7 @@
                 <h5>Kata Sandi Baru</h5>
               </td>
               <td style="padding: 5px 5px 5px 5px;">
-                <input class="form-control" style="min-width: 250px;" type="text" name="sandibaru1" placeholder="Masukkan Kata Sandi Baru">
+                <input class="form-control" style="min-width: 250px;" type="text" name="baru1" placeholder="Masukkan Kata Sandi Baru">
               </td>
             </tr>
             <tr>
@@ -32,7 +32,7 @@
                 <h5>Konfirmasi Kata Sandi Baru</h5>
               </td>
               <td style="padding: 5px 5px 5px 5px;">
-                <input class="form-control" style="min-width: 250px;" type="text" name="sandibaru2" placeholder="Konfirmasi Kata Sandi Baru">
+                <input class="form-control" style="min-width: 250px;" type="text" name="baru2" placeholder="Konfirmasi Kata Sandi Baru">
               </td>
             </tr>
 
