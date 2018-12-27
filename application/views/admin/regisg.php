@@ -84,6 +84,7 @@
 								<option value="Sejarah Kebudayaan Islam">Sejarah Kebudayaan Islam</option>
 								<option value="Seni Budaya">Seni Budaya</option>
 								<option value="Sosiologi">Sosiologi</option>
+								<option value="Matematika_p">Matematika Peminatan</option>
 							</select>
 						</td>
 						<td><input type="number" name="no_hp" placeholder="Nomor HP"></td>
