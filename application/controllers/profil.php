@@ -19,12 +19,91 @@ class Profil extends CI_Controller {
 		$data['profil'] = 'aktif';
 		$this->load->view('layout/home', $data);
 	}
+	public function tampilmurid()
+	{
+		$nis = $this->input->post('nis');
+		$_SESSION['nisflash'] = $nis;
+		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
+		$data['border']='transparent';
+		$data['page']='userview/profilsiswa10';
+		if ($_SESSION['nis']!='') {
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		else if ($_SESSION['nip']!='') {
+			if ($_SESSION['wali']!='') {
+				$data['nav'] = 'layout/navbar-kiri-walikelas';
+			}
+			else{
+				$data['nav'] = 'layout/navbar-kiri-guru';
+			}
+		}
+		$data['nama'] = 'Profil';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = 'aktif';
+		$this->load->view('layout/home', $data);
+	}
 	public function siswa1()
 	{
 		$nis = $_SESSION['nis'];
 		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
 		$data['border']='transparent';
 		$data['page']='userview/profilsiswa1';
+		if ($_SESSION['nis']!='') {
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		else if ($_SESSION['nip']!='') {
+			if ($_SESSION['wali']!='') {
+				$data['nav'] = 'layout/navbar-kiri-walikelas';
+			}
+			else{
+				$data['nav'] = 'layout/navbar-kiri-guru';
+			}
+		}
+		$data['nama'] = 'Profil';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = 'aktif';
+		$this->load->view('layout/home', $data);
+	}
+	public function tampilmurid1()
+	{
+		$nis = $_SESSION['nisflash'];
+		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
+		$data['border']='transparent';
+		$data['page']='userview/profilsiswa11';
+		if ($_SESSION['nis']!='') {
+			$data['nav'] = 'layout/navbar-kiri-siswa';
+		}
+		else if ($_SESSION['nip']!='') {
+			if ($_SESSION['wali']!='') {
+				$data['nav'] = 'layout/navbar-kiri-walikelas';
+			}
+			else{
+				$data['nav'] = 'layout/navbar-kiri-guru';
+			}
+		}
+		$data['nama'] = 'Profil';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = 'aktif';
+		$this->load->view('layout/home', $data);
+	}
+	public function tampilmurid2()
+	{
+		$nis = $_SESSION['nisflash'];
+		$data['arra'] = $this->adminmodel->ambilspes('siswa', $nis, 'nis');
+		$data['border']='transparent';
+		$data['page']='userview/profilsiswa20';
 		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['nama'] = 'Profil';
 		$data['beranda'] = '';

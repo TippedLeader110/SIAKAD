@@ -63,7 +63,7 @@ h2 {
 </div>
 </center>
 <table class="table table-bordered table-striped" style="text-align: center;">
-            <tr>
+            <tr></form>
               <th>No</th>
       <th>Nis</th>
       <th>Nama</th>
@@ -82,10 +82,9 @@ h2 {
       <td>".$v->tahun."</td>
       <td>".$v->jurusan."</td>
       <td>".$v->kelas."</td>
-      <td><form action=''><button class='btn btn-primary' type='submit'>Lihat Profil</button></form></td>
+      <td><form action='".base_url()."profil/tampilMurid' method='post'><button class='btn btn-primary' type='submit'>Lihat Profil<input type='text' name='nis' hidden value='".$v->nis."' ></form></button></td>
     </tr>";
             } ?>
           </table>
-</form>
 </body>
 </html>
