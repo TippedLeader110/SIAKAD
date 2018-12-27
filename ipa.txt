@@ -1,255 +1,84 @@
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('quran_hadis')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$quran_hadis = $this->db->get('quran_hadis')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('akidah_akhlak')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$akidah_akhlak = $this->db->get('akidah_akhlak')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('fikih')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$fikih = $this->db->get('fikih')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('ski')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$ski = $this->db->get('ski')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('pkn')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$pkn = $this->db->get('pkn')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('b_indo')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$b_indo = $this->db->get('b_indo')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('b_arab')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$b_arab = $this->db->get('b_arab')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('matematika')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$matematika = $this->db->get('matematika')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('sejarah_indo')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$sejarah_indo = $this->db->get('sejarah_indo')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('b_ing')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$b_ing = $this->db->get('b_ing')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('seni_budaya')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$seni_budaya = $this->db->get('seni_budaya')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('penjas')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$penjas = $this->db->get('penjas')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('prakarya_kewirausahaan')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$prakarya_kewirausahaan = $this->db->get('prakarya_kewirausahaan')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('matematika_p')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$matematika_p = $this->db->get('matematika_p')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('biologi_p')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$biologi_p = $this->db->get('biologi_p')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('fisika_p')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$fisika_p = $this->db->get('fisika_p')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('kimia_p')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$kimia_p = $this->db->get('kimia_p')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('ekonomi_p')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$ekonomi_p = $this->db->get('ekonomi_p')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('sosiologi')->num_rows();
-
-if(namapale!=0 || semua mapel)
-{
- 
-}
-else{
- 
-}
-
+$sosiologi = $this->db->get('sosiologi')->num_rows();
 
 pen$this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
-$namapale = $this->db->get('b_jerman_p')->num_rows();
+$b_jerman_p = $this->db->get('b_jerman_p')->num_rows();
 
-if(namapale!=0 || semua mapel)
+if($prakarya_kewirausahaan!=0 || $penjas!=0 || $seni_budaya!=0 || $b_ing!=0 || $sejarah_indo!=0 || $matematika!=0 || $b_arab!=0 || $b_indo!=0 || $pkn!=0 || $ski!=0 || $fikih!=0 || $akidah_akhlak!=0 || $quran_hadis!=0 || $b_jerman_p!=0 || $sosiologi!=0 || $ekonomi_p!=0 || $kimia_p!=0 || $fisika_p!=0 || $biologi_p!=0 || $matematika_p!=0)
 {
  
 }
