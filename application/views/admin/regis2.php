@@ -163,7 +163,7 @@
 						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;" value="<?php echo $alamat ?>"></textarea></td>
+						<td><input type="text" name="alamat" value="<?php echo $alamat ?>"></td>
 						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
 					</tr>
 					<tr>
