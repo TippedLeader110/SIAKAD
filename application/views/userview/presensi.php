@@ -7,34 +7,32 @@
 		
 	<?php endforeach ?>
 		<div class="col-md-12"><form method="post" action="<?php echo base_url() ?>Absen/pressave">
-			<div class="row" align="center" style="padding-top: 2em;">
+			<div class="row" align="center" style="padding-top: 2em">
 				<div class="col-md-6">
-					<table width="380">
-						<br>
+					<table width="380" border="1">
 						<tr>
-							<td><h5><b>Nama Murid</b></h5></td>
+							<td><h5>Nama Siswa</h5></td>
 							<td><?php echo $v->nama ?></td>
 						</tr>
 						<tr>
-							<td><h5><b>NIS</b></h5></td>
+							<td><h5>NIS</h5></td>
 							<td><?php echo $v->nis ?></td>
 						</tr>
 						<tr>
-							<td><h5><b>Jurusan</b></h5></td>
+							<td><h5>Jurusan</h5></td>
 							<td><?php echo $v->jurusan ?></td>
 						</tr>
 					</table>
 				</div>
 				<div class="col-md-6">
-					<table width="380">
-						<br>
+					<table width="380" border="1">
 						<tr>
-							<td><h5><b>Kelas</b></h5></td>
+							<td><h5>Kelas</h5></td>
 							<input type="text" value="<?php echo $v->kelas ?>" name="kelas" hidden>
 							<td><?php echo $v->kelas ?></td>
 						</tr>
 						<tr>
-							<td><h5><b>Tahun Ajaran</b></h5></td>
+							<td><h5>Tahun Ajaran</h5></td>
 							<input type="text" value="<?php echo $v->tahun ?>" name="tahun" hidden>
 							<td><?php echo date("Y"); ?>/<?php $date = date("Y"); $date=$date+1; echo $date; ?></td>
 						</tr>
@@ -43,12 +41,12 @@
 			</div>
 			<div class="row" style="padding-top: 2em;padding-bottom: 2em" align="center">
 				<div class="col-md-6">
-					<table width="380">
+					<table width="380" border="1">
 						<tr>
 							<td><br></td>
 						</tr>
 						<tr>
-							<td><h5><b>Jumlah Kehadiran</b></h5></td>
+							<td><h5>Jumlah Kehadiran</h5></td>
 							<td><input type="number" name="hadir" class="form-control" placeholder="Nilai"style="width: 100px;"></td>
 							<td>Hari</td>
 						</tr>
@@ -56,32 +54,32 @@
 							<td><br><br></td>
 						</tr>
 						<tr>
-							<td><h4><b>Ketidakhadiran</b></b></h4></td>
+							<td><h5><b>Ketidakhadiran</b></h5></td>
 						</tr>
 						<tr>
-							<td><h5><b>Izin</b></h5></td>
+							<td><h5>Izin</h5></td>
 							<td><input type="number" name="izin" class="form-control" placeholder="Nilai"style="width: 100px;"></td>
 							<td>Hari</td>
 						</tr>
 						<tr>
-							<td><h5><b>Sakit</b></h5></td>
+							<td><h5>Sakit</h5></td>
 							<td><input type="number" name="sakit" class="form-control" placeholder="Nilai"style="width: 100px;"></td>
 							<td>Hari</td>
 						</tr>
 						<tr>
-							<td><h5><b>Alpa</b></h5></td>
+							<td><h5>Alpa</h5></td>
 							<td><input type="number" name="alpha" class="form-control" placeholder="Nilai"style="width: 100px;"></td>
 							<td>Hari</td>
 						</tr>
 					</table>
 				</div>
 				<div class="col-md-6">
-					<table width="380">
+					<table width="380" border="1">
 						<tr>
 							<td><br></td>
 						</tr>
 						<tr><?php $d = date('Y')-$v->tahun;  ?>
-							<td><h5><b>Semester</b></h5></td>
+							<td><h5>Semester</h5></td>
 									<td><h5><select name="semester" class="form-control">
 										<?php if ($d==0): ?>
 										<option value="1">Semester Ganjil</option>
@@ -97,7 +95,7 @@
 										<?php endif ?>
 						</tr>
 						<tr>
-							<td><h5><b>Bulan</b></h5></td>
+							<td><h5>Bulan</h5></td>
 							<td>
 								<select class="form-control" name="bulan" style="width: 250px;">
 									<option value="bulan">-Pilih Bulan-</option>

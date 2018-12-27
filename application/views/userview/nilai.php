@@ -13,19 +13,19 @@
 							<table  width="380">
 								<tr><?php foreach ($murid as $key => $v) {
 								} ?>
-									<td><h5><b>Nama Murid</b></h5></td>
+									<td><h5>Nama Murid</h5></td>
 									<td><h5><?php echo $v->nama ?></h5></td>
 								</tr>
 								<tr><input type="text" name="nis" value="<?php echo $v->nis ?>" hidden>
-									<td><h5><b>NIS</b></h5></td>
+									<td><h5>NIS</h5></td>
 									<td><h5><?php echo $v->nis ?></h5></td>
 								</tr><?php $d = date('Y')-$v->tahun;  ?>
 								<tr><input type="text" value="<?php echo $v->jurusan ?>" hidden name="jurusan">
-									<td><h5><b>Jurusan</b></h5></td>
+									<td><h5>Jurusan</h5></td>
 									<td><h5><?php echo $v->jurusan ?></h5></td>
 								</tr>
 								<tr>
-									<td><h5><b>Kelas</b></h5></td>
+									<td><h5>Kelas</h5></td>
 									<td><h5><?php echo $v->kelas ?></h5></td>
 								</tr>
 							</table>
@@ -33,11 +33,11 @@
 						<div class="col-md-6" style="padding-top: 2em; margin-left: 150px;">
 							<table   width="380">
 								<tr><input type="text" value="<?php echo $v1->mapel ?>" name="mapel" hidden>
-									<td><h5><b>Mata Pelajaran</b></h5></td>
+									<td><h5>Mata Pelajaran</h5></td>
 									<td><h5><?php echo $v1->mapel ?></h5></td>
 								</tr>
 								<tr>
-									<td><h5><b>Semester</b></h5></td>
+									<td><h5>Semester</h5></td>
 									<td><h5><select name="semester">
 										<?php if ($d==0): ?>
 										<option value="1">Semester Ganjil</option>
@@ -61,15 +61,15 @@
 								<div class="col-md-6" style="padding-top: 2em;margin-left: 20px;margin-right: -200px; ">
 									<table width="380">
 										<tr>
-											<td><h5><b>Tugas 1</b></h5></td>
+											<td><h5>Tugas 1</h5></td>
 											<td><input type="number" name="tugas1" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 										<tr>
-											<td style="padding-top: 10px"><h5><b>Tugas 2</b></h5></td>
+											<td style="padding-top: 10px"><h5>Tugas 2</h5></td>
 											<td style="padding-top: 10px"><input type="number" name="tugas2" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 										<tr>
-											<td style="padding-top: 10px"><h5><b>Tugas 3</b></h5></td>
+											<td style="padding-top: 10px"><h5>Tugas 3</h5></td>
 											<td style="padding-top: 10px"><input type="number"name="tugas3" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 									</table>
@@ -77,11 +77,11 @@
 								<div class="col-md-6" style="padding-top: 2em; margin-left: 150px;">
 									<table width="380">
 										<tr>
-											<td><h5><b>Nilai UTS</b></h5></td>
+											<td><h5>Nilai UTS</h5></td>
 											<td><input type="number" name="uts" maxlength="3" size="3" placeholder="Masukkan Nilai" placeholder="Masukkan Nilai"></td>
 										</tr>
 										<tr>
-											<td style="padding-top: 10px"><h5><b>Nilai UAS</b></h5></td>
+											<td style="padding-top: 10px"><h5>Nilai UAS</h5></td>
 											<td style="padding-top: 10px"><input type="number" name="uas" maxlength="3" size="3" placeholder="Masukkan Nilai"></td>
 										</tr>
 									</table>
