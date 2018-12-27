@@ -241,7 +241,92 @@ class Nilai extends CI_Controller {
 	}
 	public function uas()
 	{
-		
+		if ($this->input->post('semester')!='') {
+			$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['quran_hadis'] = $this->db->get('quran_hadis')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['akidah_akhlak'] = $this->db->get('akidah_akhlak')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['fikih'] = $this->db->get('fikih')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['ski'] = $this->db->get('ski')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['pkn'] = $this->db->get('pkn')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['b_indo'] = $this->db->get('b_indo')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['b_arab'] = $this->db->get('b_arab')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['matematika'] = $this->db->get('matematika')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['sejarah_indo'] = $this->db->get('sejarah_indo')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['b_ing'] = $this->db->get('b_ing')->result();
+
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['seni_budaya'] = $this->db->get('seni_budaya')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['penjas'] = $this->db->get('penjas')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['prakarya_kewirausahaan'] = $this->db->get('prakarya_kewirausahaan')->result();
+
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['matematika'] = $this->db->get('matematika')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['biologi_p'] = $this->db->get('biologi_p')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['fisika_p'] = $this->db->get('fisika_p')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['kimia_p'] = $this->db->get('kimia_p')->result();
+
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['ekonomi_p'] = $this->db->get('ekonomi_p')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['sosiologi'] = $this->db->get('sosiologi')->result();
+
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $this->input->post('nis'));
+$data['b_jerman_p'] = $this->db->get('b_jerman_p')->result();
+$data['page2'] = 'userview/uastampil';
+		}
+		else{$data['page2'] = 'userview/blank';}
 		$data['border']='black';
 		$data['page']='userview/uas';
 		$data['nama'] = 'Daftar Nilai';
