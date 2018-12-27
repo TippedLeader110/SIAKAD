@@ -510,7 +510,7 @@
 			</tr>
 		</table>
 		
-		<h5 style="color: #2F669F; margin-top: 20px;"><b>KEHADIR</b></h5>
+		<h5 style="color: #2F669F; margin-top: 20px;"><b>KEHADIRAN</b></h5>
 		<table border="2" style="width:700px; text-align: center; margin-bottom: 20px;">
 			<tr>
 				<td colspan="2"><b>Hadir</b></td>
