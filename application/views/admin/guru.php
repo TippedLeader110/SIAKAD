@@ -26,7 +26,7 @@
 								<h4 style="padding-left: 10px;  color: white;"> <?php echo "$jumlahguru"; ?></h4>
 							</td>
 							<td style="min-width: 500px;" align="right">
-								<a href="<?php echo base_url() ?>admin/wali"><button class="btn btn-primary">Atur Walikelas</button></a>
+								<a href="<?php echo base_url() ?>admin/wali"><button class="btn btn-primary">Kontrol Walikelas</button></a>
 							</td>
 						</tr>
 						<tr>
