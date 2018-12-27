@@ -364,12 +364,10 @@ class Admin extends CI_Controller {
 		$this->db->set('alamat', $alamat);
 		$email = $this->input->post('email');
 		$this->db->set('email', $email);
-		$jkel = $this->input->post('jkel');
+		$jkel = $this->input->post('jk');
 		$this->db->set('jk', $jkel);
 		$jurusan = $this->input->post('jurusan');
 		$this->db->set('jurusan', $jurusan);
-		$kelas = $this->input->post('kelas');
-		$this->db->set('kelas', $kelas);
 		$ayah = $this->input->post('ayah');
 		$this->db->set('nama_ayah', $ayah);
 		$ibu = $this->input->post('ibu');
@@ -390,8 +388,8 @@ class Admin extends CI_Controller {
 		$this->db->set('tahun', $tahun);
 		$tlahir = $this->input->post('tlahir');
 		$this->db->set('tempat', $tlahir);
-		$date = $this->input->post('date');
-		$this->db->set('tanggal_lahir', $tanggal);
+		$date = $this->input->post('tgl_lahir');
+		$this->db->set('tanggal_lahir', $date);
                         $this->db->where(['nis' => $id]);
 						$this->db->update('siswa');
 						$_SESSION['do'] = 1;

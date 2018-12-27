@@ -78,7 +78,7 @@
 					</tr>
 					<tr>
 						<td><input type="text" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
-						<td><textarea class="form-control" name="aayah" style="width: 400px; height: 100px;" value="<?php echo $alamat_ayah ?>"></textarea></td>
+						<td><textarea class="form-control" name="aayah" style="width: 400px; height: 100px;" ><?php echo $alamat_ayah ?></textarea></td>
 					</tr>
 					<tr>
 						<td><h5>Jurusan</h5></td>
@@ -89,7 +89,7 @@
 							<select name="jurusan" class="form-control" style="width: 400px;">
 							<?php if ($v->jurusan=='IPA'): ?>
 							<option value="IPA">IPA</option>
-							<option value="IPA">IPS</option>
+							<option value="IPS">IPS</option>
 							<?php endif ?>
 							<?php if ($v->jurusan=='IPS'): ?>
 							<option value="IPS">IPS</option>
@@ -136,7 +136,7 @@
 						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td>
+						<td><input type="date" name="tgl_lahir" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td>
 						<td><input type="text" name="pibu" value="<?php echo $pekerjaan_ibu ?>" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
@@ -156,14 +156,14 @@
 								<?php endif ?>
 							</select>
 						</td>
-						<td><textarea class="form-control" name="aibu" style="width: 400px; height: 100px;" value="<?php echo $alamat_ibu ?>"></textarea></td>
+						<td><textarea class="form-control" name="aibu" style="width: 400px; height: 100px;" value="<?php echo $alamat_ibu ?>"><?php echo $alamat_ibu ?></textarea></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>
 						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;" value="<?php echo $alamat?>"></textarea></td>
+						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;" value="<?php echo $alamat?>"><?php echo $alamat ?></textarea></td>
 						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
 					</tr>
 					<tr>

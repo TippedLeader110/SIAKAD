@@ -79,21 +79,37 @@ $this->db->where('nis', $nis);
 $this->db->where('semester', $semester);
 $b_jerman_p = $this->db->get('b_jerman_p')->num_rows();
 
-if($ekonomi_p!=0 || $sosiologi!=0 || $sejarah!=0 || $geografi!=0 || $prakarya_kewirausahaan!=0 || $penjas!=0 || $seni_budaya!=0 || $b_ing!=0 || $sejarah_indo!=0 || $matematika!=0 || $b_arab!=0 || $b_indo!=0 || $pkn!=0 || $ski!=0 || $fikih!=0 || $akidah_akhlak!=0 || $quran_hadis!=0)
+if($ekonomi_p!=0 || $sosiologi!=0 || $sejarah!=0 || $geografi!=0 || $prakarya_kewirausahaan!=0 || $penjas!=0 ||  $b_indo!=0 || $pkn!=0 || $ski!=0 || $fikih!=0 || $akidah_akhlak!=0 || $quran_hadis!=0)
 {
- 		$data['page2']='userview/ipsraport';
-		$data['page']='userview/raportipa';
-		$data['nav'] = 'layout/navbar-kiri-siswa';
-		$data['nama'] = 'Rapot';
-		$data['beranda'] = '';
-		$data['nilai'] = '';
-		$data['absen'] = '';
-		$data['rapot'] = 'aktif';
-		$data['guru'] = '';
-		$data['profil'] = '';
-		$this->load->view('layout/home', $data);
+ 		
+		$data['page2']='userview/ipsraport';
+			$data['page']='userview/raportipa';
+				$data['nav'] = 'layout/navbar-kiri-siswa';
+				$data['nama'] = 'Rapot';
+				$data['beranda'] = '';
+				$data['nilai'] = '';
+				$data['absen'] = '';
+				$data['rapot'] = 'aktif';
+				$data['guru'] = '';
+				$data['profil'] = '';
+				$semester='';
+				$this->load->view('layout/home', $data); 
 }
 else{
- 
+	$semester='';
+				$_SESSION['do'] = 1;
+ 				$data['page2']='userview/blank';
+				$data['page']='userview/raportipa';
+				$data['nav'] = 'layout/navbar-kiri-siswa';
+				$data['nama'] = 'Rapot';
+				$data['beranda'] = '';
+				$data['nilai'] = '';
+				$data['absen'] = '';
+				$data['rapot'] = 'aktif';
+				$data['guru'] = '';
+				$data['profil'] = '';
+				$semester='';
+				$this->load->view('layout/home', $data); 
+
 }
  ?>

@@ -26,10 +26,10 @@
 				<div class="col-md-12">
 					<table>
 					<tr>
-						<td><form method="post" action="<?php echo base_url() ?>admin/daftar_murid"><input type="text" hidden name="tent" value="nama">
+						<td><form method="post" action="<?php echo base_url() ?>admin/daftar_murid_cari"><input type="text" hidden name="tent" value="nama">
 							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td>
 						<td>
-							<form method="post" action="<?php echo base_url() ?>admin/daftar_murid">
+							<form method="post" action="<?php echo base_url() ?>admin/daftar_murid_cari">
 							<input hidden type="text" name="tent" value="tahun">
 							<select onchange="this.form.submit()" class="form-control"  style="max-width:250px; min-width: 100px;" placeholder="Cari Tahun Angkatan" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari">							
 								<option>- Tahun -</option>
