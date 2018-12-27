@@ -1,4 +1,5 @@
 
+
 <div class="row">
 
 </div>
@@ -24,7 +25,7 @@
                 <h5>Kata Sandi Baru</h5>
               </td>
               <td style="padding: 5px 5px 5px 5px;">
-                <input class="form-control" style="min-width: 250px;" type="text" name="sandibaru1" placeholder="Masukkan Kata Sandi Baru">
+                <input class="form-control" style="min-width: 250px;" id="password" onkeyup="check()" type="text" name="baru1" placeholder="Masukkan Kata Sandi Baru">
               </td>
             </tr>
             <tr>
@@ -32,15 +33,18 @@
                 <h5>Konfirmasi Kata Sandi Baru</h5>
               </td>
               <td style="padding: 5px 5px 5px 5px;">
-                <input class="form-control" style="min-width: 250px;" type="text" name="sandibaru2" placeholder="Konfirmasi Kata Sandi Baru">
+                <input class="form-control" style="min-width: 250px;" id="confirm_password" onkeyup="check()" type="text" name="baru2" placeholder="Konfirmasi Kata Sandi Baru">
               </td>
+            </tr>
+            <tr>
+              <td></td><td><span id='message'></span></td>
             </tr>
 
         </table>
         <div class="container-fluid">
           <div class="row"> 
             <div  align="center">
-              <button type="submit" class="btn btn-primary" style="min-width: 100px; margin-right: 20px; margin-left: 380px; margin-top: 20px;">Simpan</button>
+              <button id="simpan" type="submit" class="btn btn-primary" style="min-width: 100px; margin-right: 20px; margin-left: 380px; margin-top: 20px;">Simpan</button>
             </div>
             <div>
               <button type="reset" class="btn btn-warning" style="min-width: 100px; margin-top: 20px;">Reset Form</button>
@@ -59,12 +63,16 @@
   </div>
 
 <script type="text/javascript">
-  function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
+  var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Sama';
+    document.getElementById('simpan').style.visibility = 'visible';
   } else {
-    x.type = "password";
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Tidak Sama';
+    document.getElementById('simpan').style.visibility = 'hidden';
   }
 }
 </script>

@@ -50,4 +50,20 @@ class Ubahsandi extends CI_Controller {
 		$data['page']='userview/ubahsandi';
 		$this->load->view('layout/home', $data);
 	}
+	public function sandisiswa()
+	{
+	$lama = $this->input-post('lama');
+	$baru1 = $this->input-post('baru1');
+	$baru2 = $this->input-post('baru2');
+	$this->db->where('nis', $_SESSION['nis']);
+	$this->db->where('password', $lama);
+	$l = $this->db->get('siswa')->num_rows();
+	if ($baru1!=$baru2) {
+		$_SESSION['do2'] = 1;
+	}
+	if ($l==0) {
+		$_SESSION['do'] = 1;
+	}
+	}
+
 }
