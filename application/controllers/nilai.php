@@ -217,6 +217,9 @@ $data['matematika'] = $this->db->get('matematika')->result();
 
 $this->db->where('semester', $this->input->post('semester'));
 			$this->db->where('nis', $bis);
+$data['matematika_p'] = $this->db->get('matematika_p')->result();
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $bis);
 $data['sejarah_indo'] = $this->db->get('sejarah_indo')->result();
 
 $this->db->where('semester', $this->input->post('semester'));

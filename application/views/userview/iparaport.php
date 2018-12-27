@@ -23,6 +23,9 @@
 <?php foreach ($matematika as $key => $vmatematika) {
 	# code...
 } ?>
+<?php foreach ($matematika_p as $key => $vmatematika_p) {
+	# code...
+} ?>
 <?php foreach ($sejarah_indo as $key => $vsejarah_indo) {
 	# code...
 } ?>
@@ -144,7 +147,7 @@
 				<td align="left">a. Al-Qur'an Hadits</td>
 				<td>80</td>
 				<td><?php $w = $vquran_hadis->tugas_1	+$vquran_hadis->tugas_2+$vquran_hadis->tugas_3+$vquran_hadis->uas+$vquran_hadis->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -152,7 +155,7 @@
 				<td align="left">b. Akidah Akhlak</td>
 				<td>80</td>
 				<td><?php $w = $vakidah_akhlak->tugas_1	+$vakidah_akhlak->tugas_2+$vakidah_akhlak->tugas_3+$vakidah_akhlak->uas+$vakidah_akhlak->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -160,7 +163,7 @@
 				<td align="left">c. Fiqih</td>
 				<td>80</td>
 				<td><?php $w = $vfikih->tugas_1	+$vfikih->tugas_2+$vfikih->tugas_3+$vfikih->uas+$vfikih->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -168,7 +171,7 @@
 				<td  align="left">d. Sejarah Kebudayaan Islam</td>
 				<td>80</td>
 				<td><?php $w = $vski->tugas_1+$vski->tugas_2+$vski->tugas_3+$vski->uas+$vski->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -177,7 +180,7 @@
 				<td align="left">Pendidikan Pancasila dan Kewarganegaraan</td>
 				<td>75</td>
 				<td><?php $w = $vpkn->tugas_1+$vpkn->tugas_2+$vpkn->tugas_3+$vpkn->uas+$vpkn->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -185,8 +188,8 @@
 				<td>3.</td>
 				<td align="left">Bahasa Indonesia</td>
 				<td>80</td>
-				<td><?php $w = $vb_indo->tugas_1+$vb_indo->tugas_2+$vb_indo->tugas_3+$vb_indo->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vb_indo->tugas_1+$vb_indo->tugas_2+$vb_indo->tugas_3+$vb_indo->uas+$vb_indo->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -195,7 +198,7 @@
 				<td align="left">Bahasa Arab</td>
 				<td>80</td>
 				<td><?php $w = $vb_arab->tugas_1+$vb_arab->tugas_2+$vb_arab->tugas_3+$vb_arab->uas+$vb_arab->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -204,7 +207,7 @@
 				<td align="left">Matematika</td>
 				<td>75</td>
 				<td><?php $w = $vmatematika->tugas_1+$vmatematika->tugas_2+$vmatematika->tugas_3+$vmatematika->uas+$vmatematika->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -212,8 +215,8 @@
 				<td>6.</td>
 				<td align="left">Sejarah Indonesia</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vsejarah_indo->tugas_1	+$vsejarah_indo->tugas_2+$vsejarah_indo->tugas_3+$vsejarah_indo->uas+$vsejarah_indo->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -221,8 +224,8 @@
 				<td>7.</td>
 				<td align="left">Bahasa Inggris</td>
 				<td>80</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vb_ing->tugas_1	+$vb_ing->tugas_2+$vb_ing->tugas_3+$vb_ing->uas+$vb_ing->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -233,8 +236,8 @@
 				<td>1.</td>
 				<td align="left">Seni Budaya</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vseni_budaya->tugas_1	+$vseni_budaya->tugas_2+$vseni_budaya->tugas_3+$vseni_budaya->uas+$vseni_budaya->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -242,8 +245,8 @@
 				<td>2.</td>
 				<td align="left">Pendidikan Jasmani, Olahraga, dan Kesehatan</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vpenjas->tugas_1	+$vpenjas->tugas_2+$vpenjas->tugas_3+$vpenjas->uas+$vpenjas->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -251,8 +254,8 @@
 				<td>3.</td>
 				<td align="left">Prakarya dan Kewirausahaan</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vprakarya_kewirausahaan->tugas_1	+$vprakarya_kewirausahaan->tugas_2+$vprakarya_kewirausahaan->tugas_3+$vprakarya_kewirausahaan->uas+$vprakarya_kewirausahaan->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -263,8 +266,8 @@
 				<td>1.</td>
 				<td align="left">Matematika</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vmatematika_p->tugas_1	+$vmatematika_p->tugas_2+$vmatematika_p->tugas_3+$vmatematika_p->uas+$vmatematika_p->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -272,8 +275,8 @@
 				<td>2.</td>
 				<td align="left">Biologi</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vbiologi_p->tugas_1	+$vbiologi_p->tugas_2+$vbiologi_p->tugas_3+$vbiologi_p->uas+$vbiologi_p->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -281,8 +284,8 @@
 				<td>3.</td>
 				<td align="left">Fisika</td>
 				<td>75</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vfisika_p->tugas_1	+$vfisika_p->tugas_2+$vfisika_p->tugas_3+$vfisika_p->uas+$vfisika_p->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -290,8 +293,8 @@
 				<td>4.</td>
 				<td align="left">Kimia</td>
 				<td>80</td>
-				<td><?php $w = $v->tugas_1	+$v->tugas_2+$v->tugas_3+$v->uas+$v->uts; echo $w = $w/5; ?></td>
-				<td></td>
+				<td><?php $w = $vkimia_p->tugas_1	+$vkimia_p->tugas_2+$vkimia_p->tugas_3+$vkimia_p->uas+$vkimia_p->uts; echo $w = $w/5; ?></td>
+				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 				<td></td>
 				<td></td>
 			</tr>
