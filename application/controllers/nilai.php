@@ -2,7 +2,48 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Nilai extends CI_Controller {
-
+	public function proto2()
+	{
+		$data['border']='black';
+		$data['page']='userview/raportipa';
+		$data['page2']='userview/ipsraport';
+		$data['nama'] = 'Input Nilai';
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['input'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = 'aktif';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
+	public function proto()
+	{
+		$data['border']='black';
+		$data['page']='userview/raportipa';
+		$data['page2']='userview/iparaport';
+		$data['nama'] = 'Input Nilai';
+		if ($_SESSION['wali']=='') {
+		$data['nav'] = 'layout/navbar-kiri-guru';
+		}
+		else{
+			$data['nav'] = 'layout/navbar-kiri-walikelas';	
+		}
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['input'] = 'aktif';
+		$data['absen'] = '';
+		$data['rapot'] = 'aktif';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function guru()
 	{
 		$naruto = $this->input->post('kelas');
