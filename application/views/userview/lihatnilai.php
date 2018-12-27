@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 10px;padding-right: 30px;padding-left: 30px">
-		<div class="container" style="border-width:1px; background-color:#DCDDE1;padding-bottom: 100px">
+		<div class="container" style="border-width:1px; background-color:#DCDDE1;padding-bottom: 60px">
 			<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">
 				<h5 align="center"><b>NILAI MURID</b></h5>	
 			</div>
@@ -89,29 +89,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="container" style="border-width: 0px;margin-left:350px;padding-top: 20px">
-					<table>
-							<td><form action="<?php echo base_url()?>Daftar/nilai"><button type="submit" class="btn btn-primary">Kembali</button></form></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>							</tr>
-										<tr><input type="text" value="<?php echo $v1->uas ?>" name="tugas3" hidden>
-											<td style="padding-top: 10px"><h5>Nilai UAS</h5></td>
-											<td style="padding-top: 10px"><?php echo $v1->uas ?></td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
+			<br><br>
 			<div class="row">
 				<div class="container" style="border-width: 0px;">
 					<center><form action="<?php echo base_url()?>Daftar/nilai"><button type="submit" class="btn btn-primary">Kembali</button></form></center>
@@ -119,4 +97,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div>	
