@@ -1,14 +1,4 @@
 
-<?php foreach ($geografi as $key => $vgeografi) {
-	# code...
-} ?>
-<?php foreach ($sejarah as $key => $vsejarah) {
-	# code...
-} ?>
-<?php foreach ($quran_hadis as $key => $vquran_hadis) {
-	# code...
-} ?>
-
 <?php foreach ($quran_hadis as $key => $vquran_hadis) {
 	# code...
 } ?>
@@ -147,52 +137,52 @@
 			<tr>
 				<td>1.</td>
 				<td>Al-Quran Hadits</td>
-				<td><?php echo "$vquran_hadis->uas"; ?></td>
+				<td><?php echo "$vquran_hadis->uts"; ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Akidah Akhlak</td>				
-				<td><?php echo $vakidah_akhlak->uas ?></td>
+				<td><?php echo $vakidah_akhlak->uts ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Fiqih</td>
-				<td><?php echo $vfikih->uas ?></td>
+				<td><?php echo $vfikih->uts ?></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Sejarah Kebudayaan Islam</td>				
-				<td><?php echo $vski->uas ?></td>
+				<td><?php echo $vski->uts ?></td>
 			</tr>
 			<tr>
 				<td>5.</td>
 				<td>Pendidikan Pancasila dan Kewarganegaraan</td>		
-				<td><?php echo $vpkn->uas; ?></td>
+				<td><?php echo $vpkn->uts; ?></td>
 			</tr>
 			<tr>
 				<td>6.</td>
 				<td>Bahasa Indonesia</td>				
-				<td><?php echo $vb_indo->uas ?></td>
+				<td><?php echo $vb_indo->uts ?></td>
 			</tr>
 			<tr>
 				<td>7.</td>
 				<td>Bahasa Arab</td>				
-				<td><?php echo $vb_arab->uas ?></td>
+				<td><?php echo $vb_arab->uts ?></td>
 			</tr>
 			<tr>
 				<td>8.</td>
 				<td>Matematika</td>				
-				<td><?php echo "$vmatematika->uas"; ?></td>
+				<td><?php echo "$vmatematika->uts"; ?></td>
 			</tr>
 			<tr>
 				<td>9.</td>
 				<td>Sejarah Indonesia</td>				
-				<td><?php echo $vsejarah_indo->uas ?></td>
+				<td><?php echo $vsejarah_indo->uts ?></td>
 			</tr>
 			<tr>
 				<td>10.</td>
 				<td>Bahasa Inggris</td>				
-				<td><?php echo $vb_ing->uas ?></td>
+				<td><?php echo $vb_ing->uts ?></td>
 			</tr>
 		</table>
 	</div>
@@ -213,17 +203,17 @@
 			<tr>
 				<td>1.</td>
 				<td>Seni Budaya</td>		
-				<td><?php echo $vseni_budaya->uas ?></td>
+				<td><?php echo $vseni_budaya->uts ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Pendidikan Jasmani, Olahraga, dan Kesehatan</td>				
-				<td><?php echo $vpenjas->uas ?></td>
+				<td><?php echo $vpenjas->uts ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Prakarya dan Kewirausahaan</td>				
-				<td><?php echo $vprakarya_kewirausahaan->uas ?></td>
+				<td><?php echo $vprakarya_kewirausahaan->uts ?></td>
 			</tr>
 		</table>
 	</div>
@@ -243,22 +233,22 @@
 			<tr>
 				<td>1.</td>
 				<td>Matematika</td>				
-				<td><?php echo $vmatematika->uas ?></td>
+				<td><?php echo $vmatematika->uts ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Biologi</td>				
-				<td><?php echo $vbiologi_p->uas ?></td>
+				<td><?php echo $vbiologi_p->uts ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Fisika</td>				
-				<td><?php echo $vfisika_p->uas ?></td>
+				<td><?php echo $vfisika_p->uts ?></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Kimia</td>				
-				<td><?php echo $vkimia_p->uas ?></td>
+				<td><?php echo $vkimia_p->uts ?></td>
 			</tr>
 		</table>
 	</div>
@@ -268,7 +258,7 @@
 		<table border="2" style="width:800px; text-align: center;">
 			<tr>
 				<td colspan="3" style="width: 660px; text-align: right; padding-right: 20px;"><b>TOTAL</b></td>
-				<td><?php echo $vmatematika->uas+$vbiologi_p->uas+$vfisika_p->uas+$vkimia_p->uas+$vb_arab->uas+$vmatematika->uas+$vsejarah_indo->uas+$vb_ing->uas+$vseni_budaya->uas+$vpenjas->uas+$vprakarya_kewirausahaan->uas+$vpkn->uas+$vb_indo->uas+$vquran_hadis->uas+$vakidah_akhlak->uas+$vfikih->uas+$vski->uas ?></td>
+				<td><?php echo $vmatematika->uts+$vbiologi_p->uts+$vfisika_p->uts+$vkimia_p->uts+$vb_arab->uts+$vmatematika->uts+$vsejarah_indo->uts+$vb_ing->uts+$vseni_budaya->uts+$vpenjas->uts+$vprakarya_kewirausahaan->uts+$vpkn->uts+$vb_indo->uts+$vquran_hadis->uts+$vakidah_akhlak->uts+$vfikih->uts+$vski->uts ?></td>
 			</tr>
 		</table>
 	</div>

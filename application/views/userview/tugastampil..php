@@ -73,7 +73,7 @@
 
 <div class="row" style="margin-top: 30px;">
 	<div style="margin-left: 18px; padding-top: 10px;">
-		<h5 style="color: #2F669F;">Berikut adalah hasil nilai Ujian Semester Anda:</h5>
+		<h5 style="color: #2F669F;">Berikut adalah hasil nilai Tugas Anda:</h5>
 	</div>
 	<div style="margin-left: 20px;">
 		<div class="row">
@@ -89,42 +89,36 @@
 						<tr>
 							<td><b>Nama Siswa</b></td>
 							<td>:</td>
-							<td> <?php echo $_SESSION['user']; ?></td>
+							<td> NAMA SISWA</td>
 						</tr>
 						<tr>
 							<td><b>NIS</b></td>
 							<td>:</td>
-							<td> <?php echo $_SESSION['nis']; ?></td>
+							<td> NIS SISWA</td>
 						</tr>
 					</table>
 				</div>
-				<?php 
-				$this->db->where('nis', $_SESSION['nis']);
-				$lol = $this->db->get('siswa')->result(); 
-				foreach ($lol as $key => $value) {
-					# code...
-				}?>
 				<div style="margin-left: 150px;  padding: 10px 10px 10px 10px;">
 					<table style="width: 300px;">
 						<tr>
 							<td><b>Kelas</b></td>
 							<td>:</td>
-							<td><?php echo $value->kelas ?></td>
+							<td> KELAS</td>
 						</tr>
 						<tr>
 							<td><b>Jurusan</b></td>
 							<td>:</td>
-							<td> <?php echo $value->jurusan ?></td>
+							<td> JURUSAN</td>
 						</tr>
-						<!-- <tr>
+						<tr>
 							<td><b>Semester</b></td>
 							<td>:</td>
-							<td></td>
-						</tr> -->
+							<td> SEMESTER</td>
+						</tr>
 						<tr>
 							<td><b>Tahun Pelajaran</b></td>
 							<td>:</td>
-							<td> <?php echo  date("Y"); echo"/"; echo date('Y')+1; ?></td>
+							<td> TAHUN PELAJARAN</td>
 						</tr>
 					</table>
 				</div>
@@ -137,62 +131,84 @@
 	<div>
 		<table border="2" style="width:800px; text-align: center;">
 			<tr>
-				<th >No.</th>
+				<th style="width: 60px;">No.</th>
 				<th style="width: 660px;">Mata Pelajaran</th>
-				<th>Nilai</th>
+				<th>Nilai 1</th>
+				<th>Nilai 2</th>
+				<th>Nilai 3</th>
 			</tr>
 			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok A (Umum)</b></td>
+				<td colspan="5" align="left" style="padding-left: 10px;"><b>Kelompok A (Umum)</b></td>
 			</tr>
 			<tr>
 				<td>1.</td>
 				<td>Al-Quran Hadits</td>
-				<td><?php echo "$vquran_hadis->uas"; ?></td>
+				<td><?php echo $vquran_hadis->tugas_1 ?></td>
+				<td><?php echo $vquran_hadis->tugas_2 ?></td>
+				<td><?php echo $vquran_hadis->tugas_3 ?></td>	
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Akidah Akhlak</td>				
-				<td><?php echo $vakidah_akhlak->uas ?></td>
+				<td><?php echo $vakidah_akhlak->tugas_1 ?></td>
+				<td><?php echo $vakidah_akhlak->tugas_2 ?></td>
+				<td><?php echo $vakidah_akhlak->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Fiqih</td>
-				<td><?php echo $vfikih->uas ?></td>
+				<td><?php echo $vfikih->tugas_1 ?></td>
+				<td><?php echo $vfikih->tugas_2 ?></td>
+				<td><?php echo $vfikih->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Sejarah Kebudayaan Islam</td>				
-				<td><?php echo $vski->uas ?></td>
+				<td><?php echo $vski->tugas_1 ?></td>
+				<td><?php echo $vski->tugas_2 ?></td>
+				<td><?php echo $vski->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>5.</td>
 				<td>Pendidikan Pancasila dan Kewarganegaraan</td>		
-				<td><?php echo $vpkn->uas; ?></td>
+				<td><?php echo $vpkn->tugas_1 ?></td>
+				<td><?php echo $vpkn->tugas_2 ?></td>
+				<td><?php echo $vpkn->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>6.</td>
 				<td>Bahasa Indonesia</td>				
-				<td><?php echo $vb_indo->uas ?></td>
+				<td><?php echo $vb_indo->tugas_1 ?></td>
+				<td><?php echo $vb_indo->tugas_2 ?></td>
+				<td><?php echo $vb_indo->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>7.</td>
 				<td>Bahasa Arab</td>				
-				<td><?php echo $vb_arab->uas ?></td>
+				<td><?php echo $vb_arab->tugas_1 ?></td>
+				<td><?php echo $vb_arab->tugas_2 ?></td>
+				<td><?php echo $vb_arab->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>8.</td>
 				<td>Matematika</td>				
-				<td><?php echo "$vmatematika->uas"; ?></td>
+				<td><?php echo $vmatematika->tugas_1 ?></td>
+				<td><?php echo $vmatematika->tugas_2 ?></td>
+				<td><?php echo $vmatematika->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>9.</td>
 				<td>Sejarah Indonesia</td>				
-				<td><?php echo $vsejarah_indo->uas ?></td>
+				<td><?php echo $vsejarah_indo->tugas_1 ?></td>
+				<td><?php echo $vsejarah_indo->tugas_2 ?></td>
+				<td><?php echo $vsejarah_indo->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>10.</td>
 				<td>Bahasa Inggris</td>				
-				<td><?php echo $vb_ing->uas ?></td>
+				<td><?php echo $vb_ing->tugas_1 ?></td>
+				<td><?php echo $vb_ing->tugas_2 ?></td>
+				<td><?php echo $vb_ing->tugas_3 ?></td>
 			</tr>
 		</table>
 	</div>
@@ -203,27 +219,35 @@
 	<div>
 		<table border="2" style="width:800px; text-align: center;">
 			<tr>
-				<th>No.</th>
-				<th>Mata Pelajaran</th>
-				<th>Nilai</th>
+				<th style="width: 60px;">No.</th>
+				<th style="width: 660px;">Mata Pelajaran</th>
+				<th>Nilai 1</th>
+				<th>Nilai 2</th>
+				<th>Nilai 3</th>
 			</tr>
 			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok B (Wajib)</b></td>
+				<td colspan="5" align="left" style="padding-left: 10px;"><b>Kelompok B (Wajib)</b></td>
 			</tr>
 			<tr>
 				<td>1.</td>
 				<td>Seni Budaya</td>		
-				<td><?php echo $vseni_budaya->uas ?></td>
+				<td><?php echo $vseni_budaya->tugas_1 ?></td>
+				<td><?php echo $vseni_budaya->tugas_2 ?></td>
+				<td><?php echo $vseni_budaya->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Pendidikan Jasmani, Olahraga, dan Kesehatan</td>				
-				<td><?php echo $vpenjas->uas ?></td>
+				<td><?php echo $vpenjas->tugas_1 ?></td>
+				<td><?php echo $vpenjas->tugas_2 ?></td>
+				<td><?php echo $vpenjas->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Prakarya dan Kewirausahaan</td>				
-				<td><?php echo $vprakarya_kewirausahaan->uas ?></td>
+				<td><?php echo $vprakarya_kewirausahaan->tugas_1 ?></td>
+				<td><?php echo $vprakarya_kewirausahaan->tugas_2 ?></td>
+				<td><?php echo $vprakarya_kewirausahaan->tugas_3 ?></td>
 			</tr>
 		</table>
 	</div>
@@ -235,83 +259,41 @@
 			<tr>
 				<th style="width: 60px;">No.</th>
 				<th style="width: 660px;">Mata Pelajaran</th>				
-				<th>Nilai</th>
+				<th>Nilai 1</th>
+				<th>Nilai 2</th>
+				<th>Nilai 3</th>
 			</tr>
 			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok C (Peminatan)</b></td>
+				<td colspan="5" align="left" style="padding-left: 10px;"><b>Kelompok C (Peminatan)</b></td>
 			</tr>
 			<tr>
 				<td>1.</td>
 				<td>Matematika</td>				
-				<td><?php echo $vmatematika->uas ?></td>
+				<td><?php echo $vmatematika->tugas_1 ?></td>
+				<td><?php echo $vmatematika->tugas_2 ?></td>
+				<td><?php echo $vmatematika->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Biologi</td>				
-				<td><?php echo $vbiologi_p->uas ?></td>
+				<td><?php echo $vbiologi_p->tugas_1 ?></td>
+				<td><?php echo $vbiologi_p->tugas_2 ?></td>
+				<td><?php echo $vbiologi_p->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Fisika</td>				
-				<td><?php echo $vfisika_p->uas ?></td>
+				<td><?php echo $vfisika_p->tugas_1 ?></td>
+				<td><?php echo $vfisika_p->tugas_2 ?></td>
+				<td><?php echo $vfisika_p->tugas_3 ?></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Kimia</td>				
-				<td><?php echo $vkimia_p->uas ?></td>
+				<td><?php echo $vkimia_p->tugas_1 ?></td>
+				<td><?php echo $vkimia_p->tugas_2 ?></td>
+				<td><?php echo $vkimia_p->tugas_3 ?></td>
 			</tr>
 		</table>
 	</div>
 </div>
-<div class="row" style="margin-left: 10px; margin-top: 10px; margin-bottom: 20px;">
-	<div>
-		<table border="2" style="width:800px; text-align: center;">
-			<tr>
-				<td colspan="3" style="width: 660px; text-align: right; padding-right: 20px;"><b>TOTAL</b></td>
-				<td><?php echo $vmatematika->uas+$vbiologi_p->uas+$vfisika_p->uas+$vkimia_p->uas+$vb_arab->uas+$vmatematika->uas+$vsejarah_indo->uas+$vb_ing->uas+$vseni_budaya->uas+$vpenjas->uas+$vprakarya_kewirausahaan->uas+$vpkn->uas+$vb_indo->uas+$vquran_hadis->uas+$vakidah_akhlak->uas+$vfikih->uas+$vski->uas ?></td>
-			</tr>
-		</table>
-	</div>
-</div>
-
-<!-- ini untuk IPS
-<div class="row" style="margin-left: 10px; margin-top: 10px;">
-	<div>
-		<table border="2" style="width:800px; text-align: center;">
-			<tr>
-				<th>No.</th>
-				<th>Mata Pelajaran</th>
-				<th>KKM</th>
-				<th>Nilai</th>
-			</tr>
-			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok C (Peminatan)</b></td>
-			</tr>
-			<tr>
-				<td>1.</td>
-				<td>Geografi</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>2.</td>
-				<td>Sejarah</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>3.</td>
-				<td>Sosiologi</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>4.</td>
-				<td>Ekonomi</td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
-</div>
--->

@@ -70,7 +70,6 @@
 	# code...
 } ?>
 
-
 <div class="row" style="margin-top: 30px;">
 	<div style="margin-left: 18px; padding-top: 10px;">
 		<h5 style="color: #2F669F;">Berikut adalah hasil nilai Ujian Semester Anda:</h5>
@@ -233,55 +232,8 @@
 	<div>
 		<table border="2" style="width:800px; text-align: center;">
 			<tr>
-				<th style="width: 60px;">No.</th>
-				<th style="width: 660px;">Mata Pelajaran</th>				
-				<th>Nilai</th>
-			</tr>
-			<tr>
-				<td colspan="4" align="left" style="padding-left: 10px;"><b>Kelompok C (Peminatan)</b></td>
-			</tr>
-			<tr>
-				<td>1.</td>
-				<td>Matematika</td>				
-				<td><?php echo $vmatematika->uas ?></td>
-			</tr>
-			<tr>
-				<td>2.</td>
-				<td>Biologi</td>				
-				<td><?php echo $vbiologi_p->uas ?></td>
-			</tr>
-			<tr>
-				<td>3.</td>
-				<td>Fisika</td>				
-				<td><?php echo $vfisika_p->uas ?></td>
-			</tr>
-			<tr>
-				<td>4.</td>
-				<td>Kimia</td>				
-				<td><?php echo $vkimia_p->uas ?></td>
-			</tr>
-		</table>
-	</div>
-</div>
-<div class="row" style="margin-left: 10px; margin-top: 10px; margin-bottom: 20px;">
-	<div>
-		<table border="2" style="width:800px; text-align: center;">
-			<tr>
-				<td colspan="3" style="width: 660px; text-align: right; padding-right: 20px;"><b>TOTAL</b></td>
-				<td><?php echo $vmatematika->uas+$vbiologi_p->uas+$vfisika_p->uas+$vkimia_p->uas+$vb_arab->uas+$vmatematika->uas+$vsejarah_indo->uas+$vb_ing->uas+$vseni_budaya->uas+$vpenjas->uas+$vprakarya_kewirausahaan->uas+$vpkn->uas+$vb_indo->uas+$vquran_hadis->uas+$vakidah_akhlak->uas+$vfikih->uas+$vski->uas ?></td>
-			</tr>
-		</table>
-	</div>
-</div>
-
-<!-- ini untuk IPS
-<div class="row" style="margin-left: 10px; margin-top: 10px;">
-	<div>
-		<table border="2" style="width:800px; text-align: center;">
-			<tr>
 				<th>No.</th>
 				<th>Mata Pelajaran</th>
-				<th>KKM</th>
 				<th>Nilai</th>
 			</tr>
 			<tr>
@@ -290,28 +242,35 @@
 			<tr>
 				<td>1.</td>
 				<td>Geografi</td>
-				<td></td>
-				<td></td>
+				<td><?php echo $vgeografi->uas ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td>Sejarah</td>
-				<td></td>
-				<td></td>
+				<td><?php echo $vsejarah->uas ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td>Sosiologi</td>
-				<td></td>
-				<td></td>
+				<td><?php echo $vsosiologi ?></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td>Ekonomi</td>
-				<td></td>
-				<td></td>
+				<td><?php echo $vekonomi_p ?></td>
 			</tr>
 		</table>
 	</div>
 </div>
--->
+
+<div class="row" style="margin-left: 10px; margin-top: 10px; margin-bottom: 20px;">
+	<div>
+		<table border="2" style="width:800px; text-align: center;">
+			<tr>
+				<td colspan="3" style="width: 660px; text-align: right; padding-right: 20px;"><b>TOTAL</b></td>
+				<td><?php echo $vsosiologi+$vekonomi_p+$vsejarah+$vgeografi+$vb_arab->uas+$vmatematika->uas+$vsejarah_indo->uas+$vb_ing->uas+$vseni_budaya->uas+$vpenjas->uas+$vprakarya_kewirausahaan->uas+$vpkn->uas+$vb_indo->uas+$vquran_hadis->uas+$vakidah_akhlak->uas+$vfikih->uas+$vski->uas ?></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
