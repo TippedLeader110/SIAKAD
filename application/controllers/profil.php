@@ -65,12 +65,13 @@ class Profil extends CI_Controller {
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		}
 		$data['nama'] = 'Profil';
+		$data['profil'] = 'aktif';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
 		$data['absen'] = '';
 		$data['rapot'] = '';
 		$data['guru'] = '';
-		$data['profil'] = 'aktif';
+		$data['sandi'] = '';
 		$this->load->view('layout/home', $data);
 	}
 	public function tampil()

@@ -38,20 +38,6 @@
 						</tr>
 					</table>
 				</div>
-				<!-- <div class="col-md-6" style="margin-left: -1px;">
-					<table width="380" border="1">
-						<tr>
-							<td><h5>Kelas</h5></td>
-							<td><?php echo $v->kelas ?></td>
-							<input type="text" value="<?php echo $v->kelas ?>" name="kelas" hidden>
-						</tr>
-						<tr>
-							<td><h5>Tahun Ajaran</h5></td> 
-							<input type="text" hidden name="tahun" value="<?php echo $v->tahun ?>">
-							<td><?php echo date("Y"); ?>/<?php $date = date("Y"); $date=$date+1; echo $date; ?></td>
-						</tr>
-					</table> 
-				</div> -->
 			</div>
 			<div class="row" style="padding-top: 2em;padding-bottom: 2em" align="center">
 				<div class="col-md-6">
