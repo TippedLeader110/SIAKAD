@@ -1,12 +1,11 @@
-<div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 10px;">
-	<div class="container" style="border-width:1px; background-color:#DCDDE1;padding-bottom: 100px">
-		<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">
+<div class="container" style="border-width:1px;padding-bottom: 100px">
+		<div style="width:200px;background-color:white ; height:30px; margin-left:350px; margin-top:-15px;">
 			<h5 align="center"><b>Rekapitulasi Presensi Siswa</b></h5>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6" style="padding-top: 2em">
 						<table>
 							<tr>
 								<td>Nis</td>
@@ -20,19 +19,19 @@
 								<td>Jurusan</td>
 								<td>$jurusan</td>
 							</tr>
+						</table>
+					</div>
+					<div class="col-md-6" style="padding-top: 2em;">
+						<table>
 							<tr>
 								<td>Kelas</td>
 								<td>$Kelas</td>
 							</tr>
 							<tr>
-								<td>Tahun ajaran</td> 
+								<td>Tahun Pelajaran</td> 
 								<input type="text" hidden name="tahun" value="<?php echo $v->tahun ?>">
-								<td><?php echo date("Y"); ?>/<?php $date = date("Y"); $date=$date+1; echo $date; ?></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo date("Y"); ?>/<?php $date = date("Y"); $date=$date+1; echo $date; ?></td>
 							</tr>
-						</table>
-					</div>
-					<div class="col-md-6">
-						<table>
 							<tr>
 								<td>Semesster</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 								<td><h5><select name="semester" class="form-control">
