@@ -13,7 +13,7 @@
 							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td><td>
 							<form method='post' action="<?php echo base_url() ?>Absen/lihat">
 								<input hidden type="text" name="tent" value="lain">
-							<button class="btn" type="submit">Tampilkan Semua</button>
+							<button class="btn btn-primary" type="submit">Tampilkan Semua</button>
 							</form>	
 						</td>
 							</tr>

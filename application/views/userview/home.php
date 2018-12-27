@@ -10,9 +10,9 @@
 			<div class="col-md-8">
 				<div class="container" style="background: white;border-width: 1px;border-color: #d6d6c2;padding-bottom: 50px;">
 					<h3  style="color: #2F669F; padding-top:10px; padding-left: 10px;">Tentang</h3>
-					<p style="padding: 10px 10px 10px 10px;">Sistem Informasi Akademin (SIAKAD) adalah sebuah aplikasi yang dibuat untuk Siswa/i yang dapat diakases oleh orangtua siswa/i dan guru/wali kelas agar dapat mengakses informasi seputar lingkungan akademik secara online dimana dan kapan saja.</p>
+					<p style="padding: 10px 10px 10px 10px;">Sistem Informasi Akademin (SIAKAD) adalah sebuah aplikasi yang dibuat untuk Murid yang dapat diakses oleh orangtua Murid dan guru/wali kelas agar dapat mengakses informasi seputar lingkungan akademik secara online dimana dan kapan saja.</p>
 					<p style="padding-top: -15px; padding-left: 10px;">
-						Siswa dapat mengakses informasi data diri yang sudah terdaftar di sekolah dan juga informasi mengenai pengembangan prestasi akademkinya di sekolah dan orang tua siswa dapat memantau perkembangan anaknya di sekolah.
+						Murid dapat mengakses informasi data diri yang sudah terdaftar di sekolah dan juga informasi mengenai pengembangan prestasi akademkinya di sekolah dan orang tua Murid dapat memantau perkembangan anaknya di sekolah.
 					</p>
 				</div>
 			</div>	
@@ -77,13 +77,13 @@
 							</a>
 						</div>
 					</div>
-				</div>		
+				</div>			
 			</div>
 		</div>
 		</div>
 		<div class="row">
 			<div class="container-fluid">
-				<div style="background-color: #2F669F; color: #ebebe0; padding: 15px 25px 10px 20px; margin-top: 49px;">
+				<div style="background-color: #2F669F; color: #ebebe0; padding: 15px 25px 10px 20px; margin-top: 69px;">
 					<h6>Copyright &reg; Kelompok 1 - Interaksi Manusia dan Komputer 2017 - Teknologi Informasi - Universitas Sumatera Utara - 2018/2019</h6>
 				</div>
 				 

@@ -92,7 +92,7 @@
 			<br><br>
 			<div class="row">
 				<div class="container" style="border-width: 0px;">
-					<center><form action="<?php echo base_url()?>Daftar/nilai"><button type="submit" class="btn btn-primary">Kembali</button></form></center>
+					<center><a class="btn btn-primary" href="<?php echo base_url()?> daftar/nilai">Kembali</a></center>
 				</div>
 			</div>
 		</div>
