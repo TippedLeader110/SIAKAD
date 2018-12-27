@@ -106,20 +106,21 @@
 				</div>
 			</div>
 		</div>	
+		<div class="row">
+			<div class="col-md-2">
+				<div class="container" style="border-width:0px; color:white; font-weight:500; margin-left: 365px; margin-top: 30px;">
+					<center><button type="submit" class="btn primary">Simpan</button></center>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="container" style="border-width:0px; font-weight:500; color:white; margin-left: 290px; margin-top: 30px;">
+					<center><b><a href="<?php echo base_url() ?>absen/presensi" class="btn btn-danger">Batal</a></b></center>
+				</div>
+			</div>
+		</div>
 		<div style="background-color:#DCDDE1; width:200px; height:10px; margin-left:350px; margin-top:-15px; margin-bottom: 20px;"></div>
 	</div>
 </div>
 </div>
 <div style="width:200px; height:30px; margin-left:350px; margin-top:-15px;"></div>
-<div class="row">
-	<div class="col-md-2">
-		<div class="container" style="border-width:0px; color:white; font-weight:500; margin-left: 365px; margin-top: 30px;">
-			<center><button type="submit" class="btn primary">Simpan</button></center>
-		</div>
-	</div>
-	<div class="col-md-2">
-		<div class="container" style="border-width:0px; font-weight:500; color:white; margin-left: 290px; margin-top: 30px;">
-			<center><b><a href="#" class="btn btn-danger">Batal</a></b></center>
-		</div>
-	</div>
-</div></form>
+</form>

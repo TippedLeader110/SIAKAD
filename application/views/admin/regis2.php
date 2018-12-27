@@ -49,32 +49,40 @@
 				<form method="post" action="<?php echo base_url() ?>admin/simpanm2">
 				<table class="table table-borderless">
 					<tr>
-						<td><h5>NIS</h5></td>
+						<td><h5>NISN</h5></td>
 						<td><h5>Nama Ayah</h5></td>
 					</tr>
-					<tr><input type="text" name="id" hidden value="<?php echo $v->nis ?>">
-						<td><input type="number" name="nis" placeholder="NIS" value="<?php echo $nis ?>"></td>
+					<tr>
+						<td><input type="number" min="123710000" maxlength="123718000" name="nisn" placeholder="NISN" value="<?php echo $nisn ?>"></td>
 						<td><input type="text" name="ayah" placeholder="Nama Ayah" value="<?php echo $nama_ayah ?>"></td>
 					</tr>
 					<tr>
-						<td><h5>Username</h5></td>
+						<td><h5>NIS</h5></td>
 						<td><h5>Pendidikan Ayah</h5></td>
 					</tr>
-					<tr>
-						<td><input type="text" value="<?php echo $username ?>" name="username" placeholder="Username"></td>
+					<tr><input type="text" name="id" hidden value="<?php echo $v->nis ?>">
+						<td><input type="number" name="nis" placeholder="NIS" value="<?php echo $nis ?>"></td>
 						<td><input type="text" value="<?php echo $pendidikan_ayah ?>" name="penayah" placeholder="Pendidikan Ayah"></td>
 					</tr>
 					<tr>
-						<td><h5>Pasword</h5></td>
+						<td><h5>Username</h5></td>
 						<td><h5>Pekerjaan Ayah</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
+						<td><input type="text" value="<?php echo $username ?>" name="username" placeholder="Username"></td>
 						<td><input type="text" name="payah" placeholder="Pekerjaan Ayah" value="<?php echo $pekerjaan_ayah ?>"></td>
 					</tr>
 					<tr>
-						<td><h5>Jurusan</h5></td>
+						<td><h5>Password</h5></td>
 						<td><h5>Alamat Ayah</h5></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
+						<td><input type="text" name="aayah" placeholder="Alamat Ayah" value="<?php echo $alamat_ayah ?>"></td>
+					</tr>
+					<tr>
+						<td><h5>Jurusan</h5></td>
+						<td><h5>Nomor HP Ayah</h5></td>
 					</tr>
 					<tr>
 						<td>
@@ -89,15 +97,13 @@
 							<?php endif ?>
 							</select>
 						</td>
-						<td><input type="text" name="aayah" placeholder="Alamat Ayah" value="<?php echo $alamat_ayah ?>"></td>
+						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah" value="<?php echo $no_hp_ayah ?>"></td>
 					</tr>
 					<tr>
 						<td><h5>Tahun Angkatan</h5></td>
-						<td><h5>Nomor HP Ayah</h5></td>
 					</tr>
 					<tr>
 						<td><input type="text" name="tahun" placeholder="Tahun Angkatan" value="<?php echo $tahun ?>"></td>
-						<td><input type="text" name="nohpa" placeholder="Nomor HP Ayah" value="<?php echo $no_hp_ayah ?>"></td>
 					</tr>
 					<tr>
 						<td><h5>Asal Sekolah</h5></td>
@@ -110,44 +116,32 @@
 						<td><h4><center>Data Pribadi</center></h4></td>
 					</tr>
 					<tr>
-						<td><h5>NISN</h5></td>
-						
+						<td><h5>Nama Murid</h5></td>
 						<td><h5>Nama Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="nisn" placeholder="NISN" value="<?php echo $nisn ?>"></td>
-						
+						<td><input type="text" name="nama" placeholder="Nama Murid" value="<?php echo $nama ?>"></td>
 						<td><input type="text" name="ibu" placeholder="Nama Ibu" value="<?php echo $nama_ibu ?>"></td>
 					</tr>
 					<tr>
-						<td><h5>Nama Murid</h5></td>
-						
+						<td><h5>Tempat Lahir</h5></td>
 						<td><h5>Pendidikan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="nama" placeholder="Nama Murid" value="<?php echo $nama ?>"></td>
+						<td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $tempat ?>"></td>
 						<td><input type="text" value="<?php echo $pendidikan_ibu ?>" name="penibu" placeholder="Pendidikan Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Tempat Lahir</h5></td>
+						<td><h5>Tanggal lahir</h5></td>
 						<td><h5>Pekerjaan Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="tlahir" placeholder="Tempat Lahir" value="<?php echo $tempat ?>"></td>
+						<td><input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td>
 						<td><input type="text" name="pibu" value="<?php echo $pekerjaan_ibu ?>" placeholder="Pekerjaan Ibu"></td>
 					</tr>
 					<tr>
-						<td><h5>Tanggal lahir</h5></td>
-						<td><h5>Alamat Ibu</h5></td>
-					</tr>
-					<tr>
-						<td><input type="date" name="date" value="<?php echo $tanggal_lahir ?>" placeholder="Tanggal Lahir"></td>
-						
-						<td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>
-					</tr>
-					<tr>
 						<td><h5>Jenis Kelamin</h5></td>
-						<td><h5>Nomor HP Ibu</h5></td>
+						<td><h5>Alamat Ibu</h5></td>
 					</tr>
 					<tr>
 						<td>
@@ -162,13 +156,21 @@
 								<?php endif ?>
 							</select>
 						</td>
-						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
+						<td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>
+						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><input type="text" value="<?php echo $alamat ?>" name="alamat" placeholder="Alamat Murid"></td>
+						<td><input type="text" name="alamat" value="<?php echo $alamat ?>"></td>
+						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
+					</tr>
+					<tr>
+						
+					</tr>
+					<tr>
+						
 					<tr>
 						<td><h5>Email</h5></td>
 					</tr>
@@ -183,7 +185,7 @@
 						<td><select name="agama" class="form-control" style="width: 400px;">
 							<option value="Islam">Islam</option>
 						</select></td>
-					</tr>
+					</tr>	
 					<tr>
 						<td><h5>Anak ke Berapa</h5></td>
 					</tr>
