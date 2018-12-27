@@ -166,6 +166,39 @@ class Absen extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
+	public function lihat()
+	{
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/lihatabsen';
+		$data['nama'] = 'Absensi';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['ab'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
+	public function Tampil()
+	{
+		$nis = $this->input->post('nis');
+		$this->db->where('nis', $nis);
+		$this->db->where('bulan', $bulan);
+		$this->db->where('semester', $semester);
+		$data['absend'] = $this->db->get('absen');
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/tampilabsen';
+		$data['nama'] = 'Absensi';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['ab'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function inputabsen()
 	{
 		if ($status=='fail') {
