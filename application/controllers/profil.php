@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Profil extends CI_Controller {
 
+	public function UbahSandiMurid()
+	{
+		$data['border']='transparent';
+		$data['page']='userview/ubahsandi';
+		$this->load->view('layout/main', $data);
+	}
 	public function siswa()
 	{
 		$nis = $_SESSION['nis'];

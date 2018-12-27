@@ -10,11 +10,10 @@
 		<div class="row">
 			<div class="col-md-12">
 					<div class="row"  style="color: #2F669F; padding-left: 15px; padding-bottom: 10px;">
-						<h4>Selamat datang, <b><?php echo $_SESSION['admin']; ?></b></h4>
-						<a href="<?php echo base_url() ?>admin/daftarmapel"><button class="btn btn-primary">Daftar Mata Pelajaran</button></a>
+						<h4>Selamat datang, <b><?php echo $_SESSION['admin']; ?></b></h4>						
 					</div>
 				<div class="container" style="background: #ffa500;height: 185px; margin-bottom: 20px;">
-					<table style="margin-top: 15px;">
+					<table style="margin-top: 15px;" border="0">
 						<tr>
 							<td rowspan="3" colspan="2" style="padding-left: 10px;"><img src="<?php echo base_url() ?>/img/icon/icon-profil-guru.png" style="max-height: 144px;max-width: 144px"></td>
 							<td style="padding-left: 10px; color: white;">
@@ -26,6 +25,9 @@
 							<td>
 								<h4 style="padding-left: 10px;  color: white;"> <?php echo "$jumlahguru"; ?></h4>
 							</td>
+							<td style="min-width: 500px;" align="right">
+								<a href="<?php echo base_url() ?>admin/wali"><button class="btn btn-primary">Kontrol Walikelas</button></a>
+							</td>
 						</tr>
 						<tr>
 							<td style="padding-left: 10px;  color: white;">
@@ -34,10 +36,10 @@
 							<td style="padding-left: 10px;  color: white;">
 								<h4>:</h4>
 							</td>
-							<td  style="padding-left: 10px;  color: white;">
-								<h4>
-									
-								</h4>
+							<td>
+								<td style="min-width: 500px;" align="right">
+								<a href="<?php echo base_url() ?>admin/daftarmapel"><button class="btn btn-primary" style="margin-left: 300px;">Daftar Mata Pelajaran</button></a>
+							</td>
 							</td>
 						</tr>
 						<tr>

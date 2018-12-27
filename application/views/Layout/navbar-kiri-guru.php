@@ -39,6 +39,13 @@
                 <h5 style="color: black; text-align: left;" class=<?php echo $input?>>Input Nilai</h5>
                </div>
               </a>
+              <a href="<?php echo base_url() ?>Daftar/siswa">
+                 <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
+                <span class="kotak"></span>
+                <span class="triangle"></span>
+                <h5 style="color: black; text-align: left;" class=<?php echo $ini?>>Daftar Siswa</h5>
+               </div>
+              </a>
               <a href="<?php echo base_url() ?>Daftar/guru1">
                  <div style="width: 200px; height: 33px; background: #ebebe0; margin-left: 50px; margin-top: 10px; margin-bottom: 5px; padding: 5px 5px 5px 20px;" class="row">
                 <span class="kotak"></span>
