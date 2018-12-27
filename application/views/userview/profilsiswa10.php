@@ -81,7 +81,7 @@
 	<div class="col-md-4">
 		<div class="container" style="background-color:#DCDDE1; border-width: 0px; font-weight: 500; max-width: 200px; padding-top: 5px; padding-bottom: 5px; margin-top: 77px;">
 			<div class="circle-2" style="margin: 10px; margin-top: 10px;">
-				<img src="https://static.thenounproject.com/png/630729-200.png" style="max-width: 150px; max-height: 150px;">
+				<img src="<?php echo base_url() ?>gambar/<?php echo $v->pict ?>.png" style="max-width: 150px; max-height: 150px;">
 			
 			</div>
 		</div>
