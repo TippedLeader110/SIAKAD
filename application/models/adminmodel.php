@@ -9,7 +9,7 @@ class Adminmodel extends CI_Model {
 		$query = $this->db->get('admin');
 		$query = $query->num_rows();
 		if ($query==0) {
-			redirect('home/login');
+			redirect('admin/login');
 		}
 		else if ($query==1) {
 		$this->db->where(['username' => $user, 'password' => $pass]);
