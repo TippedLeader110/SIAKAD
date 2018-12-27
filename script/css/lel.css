@@ -1,0 +1,127 @@
+    .container
+    {
+      border-style: solid;
+      border-color: black;
+      margin-top: 10px;
+    }
+    .profile{
+          min-width: 10px;
+          
+          background-color: #8DB3DA;
+          padding-top: 20px;
+          margin-top: 0px;
+
+
+    }
+    .field-wel{
+      min-width: 20px;
+      max-width: 250px;
+      min-height: 20px;
+      background-color: white;
+      border-radius: 7px;
+      margin-top: 20px;
+      padding-top:1px;
+      padding-bottom: 1px;
+      font-family: "Calibri", Times, sans-serif;
+      box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+    }
+    .field-menu{
+      background: white;
+      min-width: 30px;
+      max-width: 280px;
+
+      border-radius: 0px;
+      margin-top: 15px;
+      border-color: grey;
+      font-family: "Calibri", Times, sans-serif;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin-bottom: 30px;
+      
+    }
+    .scrollable{
+      overflow-y: auto;
+      max-height: 580px;
+      
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      background: white;
+      border-radius: 50%
+    }
+    .test{
+      background: black
+    }
+    .img{
+      max-height: 700px;
+      max-width:  1000px;
+    }
+    .car1{
+      max-width: 700px;
+      max-height: 300px;
+    }
+    
+    ::-webkit-scrollbar { 
+    display: none; 
+    }
+
+    .triangle{
+    width: 0;
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-left: 14px solid #2F669F;
+    border-bottom: 7px solid transparent;
+    margin-top: 6px;
+    margin-right: 7px;
+    }
+    .kotak{
+      width: 5px;
+      height: 14px;
+      background-color: #2F669F;
+      margin-top: 6px;
+      margin-right: 2px;
+    }
+    a{
+      text-decoration: none;
+    }
+  /*a:hover{
+      color: #2F669F;
+      text-decoration: none;
+    }
+  */
+    .circle-2{
+      width: 150px;
+      height: 150px;
+      background: white;
+      border-radius: 50%
+    }
+
+    .btn-circle {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50% !important;
+    }
+    .btn-circle a{
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .btn-circle img{
+      width: 100%;
+      height: 100%;
+    }
+    .footer{
+      min-height: 50px;
+      background-color: #0f0f0a;
+    }
+    .link-menu a{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
