@@ -21,7 +21,7 @@
 							</tr>
 						</table>
 					</div>
-					<div class="col-md-6" style="padding-top: 2em;">
+					<div class="col-md-6" style="padding-top: 2em;margin-right: 100px">
 						<table>
 							<tr>
 								<td>Kelas</td>
