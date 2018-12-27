@@ -1,9 +1,31 @@
 <div class="row" style="margin-top: 20px;">
-	<div class="container" style="width: 250px; height: 40px; border-width: 2px; border-color: #d6d6c2;  padding: 5px 5px 5px 5px;">
-		<h5 align="center"><?php echo $_SESSION['user'] ?></h5>
-	</div>
-	<div class="container" style="width: 250px; height: 40px; margin-left: -100px;  border-width: 2px; border-color: #d6d6c2; padding: 5px 5px 5px 5px;">
-		<h5 align="center"><?php echo $_SESSION['nis'] ?></h5>
+	<div class="container" style="border-width: 0px; margin-left: 210px; max-width: 600px;">
+		<div class="row">
+			<div>
+			<table width="200" border="1" style="padding: 5px 5px 5px 5px; margin-right: 20px;">
+			<tr>
+				<td style="padding: 5px 5px 5px 5px;">
+					<h5>Nama</h5>
+				</td>
+				<td style="padding: 5px 5px 5px 5px;  min-width: 300px;">
+					<h5 align="center"><?php echo $_SESSION['user'] ?></h5>
+				</td>				
+			</tr>
+			</table>
+		</div>
+		<div>
+			<table width="200" border="1" style="padding: 5px 5px 5px 5px;">
+			<tr>	
+				<td style="padding: 5px 5px 5px 5px; min-width: 50px;">  
+					<h5>NIS</h5>
+				</td>
+				<td style="padding-left: 20px;">
+					<h5 align="center"><?php echo $_SESSION['nis'] ?></h5>		
+				</td>
+			</tr>
+			</table>	
+		</div>
+		</div>
 	</div>
 </div>
 <div class="row" style="margin-top: 50px; margin-left: 60px;" >
@@ -12,8 +34,8 @@
 		<div style="background-color: #b3ffb3; width: 160px; height: 160px;">
 			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uas.jpg">
 		</div>
-		<div style="background:#d6f5d6; height: 60px; padding: 5px 5px 5px 5px; width: 162px;">
-			<h5 align="center">Nilai Ujian <br>Semester</h5>
+		<div style="background:#d6f5d6; height: 60px;  padding-top: 10px; width: 162px;">
+			<h6 align="center">Nilai Ujian <br>Semester</h6>
 		</div>
 	</div>
 	</a>
@@ -22,8 +44,8 @@
 		<div style="background-color: #8080ff; width: 160px; height: 160px;">
 				<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\uts.jpg">
 		</div>
-		<div style="background:#8080ff; height: 60px;padding: 17px 10px 10px 10px; width: 167px;">
-			<h5 align="center">Nilai UTS</h5>
+		<div style="background:#adc2eb; height: 60px; padding-top: 20px; width: 167px;">
+			<h6 align="center">Nilai UTS</h6>
 		</div>
 	</div>
 	</a>
@@ -32,8 +54,8 @@
 		<div style="background-color: #ffcc80; width: 160px; height: 160px;">
 			<img src="<?php echo base_url()?>img\icon\daftatrnilai-icons\tugas.jpg">
 		</div>
-		<div style="background:#ffe0b3; height: 60px; padding: 17px 10px 10px 10px;  width: 167px;">
-			<h5 align="center">Nilai Tugas</h5>
+		<div style="background:#ffe0b3; height: 60px; padding-top: 20px;  width: 167px;">
+			<h6 align="center">Nilai Tugas</h6>
 		</div>
 	</div>
 	</a>
