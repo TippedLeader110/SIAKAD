@@ -1,5 +1,14 @@
 
-
+<?php if ($_SESSION['do']==1): ?>
+                <script type="text/javascript">
+                  Swal(
+  'Kesalahan !',
+  'Password lama salah!',
+  'warning'
+)
+                </script>
+                <?php $_SESSION['do']=''; ?>
+              <?php endif ?>
 <div class="row">
 
 </div>
@@ -8,7 +17,12 @@
   <div class="col-md-12">
       <h5 style="color: #2F669F; padding-top: 10px;"><b>Ubah Kata Sandi Anda</b></h5>
       <div class="container" style="border-width: 1px; border-color: #d6d6c2;"> 
-        <form method="" action="">
+        <?php if ($_SESSION['nis']!=''): ?>
+        <form method="post" action="<?php echo base_url() ?>ubahsandi/sandisiswa">
+        <?php endif ?>
+        <?php if ($_SESSION['nip']!=''): ?>
+        <form method="post" action="<?php echo base_url() ?>ubahsandi/sandiguru">  
+        <?php endif ?>
         <table border="0" style="margin-top: 30px;" align="center">  
           <tr>            
               <!-- ini untuk WHERE-->
@@ -17,7 +31,7 @@
               <h5>Kata Sandi Lama</h5>
             </td>
             <td style="padding: 5px 5px 5px 5px;">
-              <input class="form-control" style="min-width: 250px;" type="password" name="sandilama" placeholder="Masukkan Kata Sandi Lama">
+              <input class="form-control" style="min-width: 250px;" type="password" name="lama" placeholder="Masukkan Kata Sandi Lama">
             </td>
             </tr>
             <tr>

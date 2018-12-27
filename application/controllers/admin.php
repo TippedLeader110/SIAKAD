@@ -394,6 +394,7 @@ class Admin extends CI_Controller {
 		$this->db->set('tanggal_lahir', $tanggal);
                         $this->db->where(['nis' => $id]);
 						$this->db->update('siswa');
+						$_SESSION['do'] = 1;
                         redirect("admin/murid");
 	}
 	public function mapel()
@@ -859,6 +860,7 @@ class Admin extends CI_Controller {
                         $this->db->set('foto', $w); 
                         $this->db->where(['nip' => $nip]);
 						$this->db->update('guru');
+						$_SESSION['do']=1;
                         redirect("admin/daftar_guru");
                 }
         }

@@ -1,3 +1,13 @@
+<?php if ($_SESSION['do']!=''): ?>
+								<script type="text/javascript">
+									Swal(
+  'Sukses!',
+  'Data berhasil di simpan!',
+  'success'
+)
+								</script>
+								<?php $_SESSION['do']=''; ?>
+							<?php endif ?>
 <div class="container-fluid" onclick="test3()" onmousewheel="test3()" onmouseover="test3()">
 <div class="col-md-10 offset-md-1" >
 <div class="row" style="margin-bottom: 50px;">

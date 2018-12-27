@@ -27,7 +27,7 @@ class Ubahsandi extends CI_Controller {
 				$data['nav'] = 'layout/navbar-kiri-guru';
 			}
 		}
-		$data['page']='userview/gantipasswordguru';
+		$data['page']='userview/ubahsandi';
 		$this->load->view('layout/home', $data);
 	}
 
@@ -52,18 +52,45 @@ class Ubahsandi extends CI_Controller {
 	}
 	public function sandisiswa()
 	{
-	$lama = $this->input-post('lama');
-	$baru1 = $this->input-post('baru1');
-	$baru2 = $this->input-post('baru2');
+	$lama = $this->input->post('lama');
+	$baru1 = $this->input->post('baru1');
+	$baru2 = $this->input->post('baru2');
 	$this->db->where('nis', $_SESSION['nis']);
 	$this->db->where('password', $lama);
 	$l = $this->db->get('siswa')->num_rows();
-	if ($baru1!=$baru2) {
-		$_SESSION['do2'] = 1;
-	}
 	if ($l==0) {
 		$_SESSION['do'] = 1;
+		redirect('ubahsandi/siswa', location);
 	}
+	else{
+		$this->db->set('password', $baru1);
+		$this->db->where('nis' ,$_SESSION['nis']);
+		$this->db->update('siswa');
+		session_destroy();
+		$_SESSION['do'] = 1;
+		redirect('home', location);
 	}
 
+}
+	public function sandiguru()
+	{
+	$lama = $this->input->post('lama');
+	$baru1 = $this->input->post('baru1');
+	$baru2 = $this->input->post('baru2');
+	$this->db->where('nip', $_SESSION['nip']);
+	$this->db->where('password', $lama);
+	$l = $this->db->get('guru')->num_rows();
+	if ($l==0) {
+		$_SESSION['do'] = 1;
+		redirect('ubahsandi/siswa', location);
+	}
+	else{
+		$this->db->set('password', $baru1);
+		$this->db->where('nip' ,$_SESSION['nip']);
+		$this->db->update('nip');
+		session_destroy();
+		$_SESSION['do'] = 1;
+		redirect('home', location);
+	}
+	}
 }

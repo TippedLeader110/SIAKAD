@@ -61,6 +61,8 @@ class Home extends CI_Controller {
 		else{
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		}
+		foreach ($d as $key => $v) {
+		}
 		$data['page']='userview/awalguru';
 		$data['nama'] = 'Beranda';
 		$data['caro']=$this->mainmodel->caro();
