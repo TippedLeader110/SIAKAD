@@ -87,18 +87,18 @@
 		<table border="2" style="width:700px; text-align: center;">
 			<tr>
 				<th rowspan="2">No.</td>
-				<td rowspan="2">Mata Pelajaran</td>
-				<td rowspan="2">KKM</td>
-				<td colspan="2">Pengetahuan</td>
-				<td colspan="2">Keterampilan</td>
+				<td rowspan="2"><b>Mata Pelajaran</b></td>
+				<td rowspan="2"><b>KKM</b></td>
+				<td colspan="2"><b>Pengetahuan</b></td>
+				<td colspan="2"><b>Keterampilan</b></td>
 				
 				
 			</tr>
 			<tr>
-				<td>Nilai</td>
-				<td>Predikat</td>
-				<td>Nilai</td>
-				<td>Predikat</td>
+				<td><b>Nilai</b></td>
+				<td><b>Predikat</b></td>
+				<td><b>Nilai</b></td>
+				<td><b>Predikat</b></td>
 			</tr>
 			<tr>
 				<td colspan="7" align="left" style="padding-left: 10px;"><b>Kelompok A (Umum)</b></td>
@@ -290,63 +290,6 @@
 			</tr>
 			<tr>
 				<td  style="padding-left: 10px; text-align: left;">b. </td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td colspan="7" align="left" style="padding-left: 10px;"><b>Kelompok E (Sikap)</b></td>
-			</tr>
-			<tr>
-				<td>1.</td>
-				<td align="left">Kedisplinan</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>2.</td>
-				<td align="left">Kebersihan</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>3.</td>
-				<td align="left">Tanggungjawab</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>4.</td>
-				<td align="left">Sopan Santun</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>5.</td>
-				<td align="left">Percaya Diri</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>6.</td>
-				<td align="left">Kejujuran</td>
 				<td></td>
 				<td></td>
 				<td></td>
@@ -574,14 +517,43 @@
 		</table>
 
 		-->	
+		
+		<h5 style="color: #2F669F; margin-top: 20px;"><b>Tabel Hadir</b></h5>
+
+		<table border="2" style="width:700px; text-align: center; margin-bottom: 20px;">
+			<tr>
+				<td colspan="2"><b>HADIR</b></td>
+				<td width="300"><b>HARI</b></td>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td align="left">Jumlah Kehadiran</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td align="left">Izin</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td align="left">Sakit</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td align="left">Tanpa Keterangan</td>
+				<td></td>
+			</tr>
+		</table>
 
 		<h5 style="color: #2F669F; margin-top: 20px;"><b>Tabel 
 		interval predikat berdasarkan KKM</b></h5>
 
 		<table border="2" style="width:700px; text-align: center; margin-bottom: 20px;">
 			<tr>
-				<td rowspan="2">KKM</td>
-				<td colspan="4">Predikat</td>
+				<td rowspan="2"><b>KKM</b></td>
+				<td colspan="4"><b>Predikat</b></td>
 			</tr>
 			<tr>
 				<td>D = Kurang</td>
