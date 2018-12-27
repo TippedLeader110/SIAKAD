@@ -12,7 +12,7 @@
 					<table width="380">
 						<br>
 						<tr>
-							<td><h5><b>Nama Siswa</b></h5></td>
+							<td><h5><b>Nama Murid</b></h5></td>
 							<td><?php echo $v->nama ?></td>
 						</tr>
 						<tr>
