@@ -177,24 +177,35 @@ class Nilai extends CI_Controller {
 	{
 		$nama = $_SESSION['nis'];
 		$data['border']='black';
-		$data['akidah']= $this->adminmodel->ambilspes('akidah_akhlak',$nama,'nis');
-		$data['bio']= $this->adminmodel->ambilspes('biologi_p',$nama,'nis');
-		$data['arab']= $this->adminmodel->ambilspes('b_arab',$nama,'nis');
-		$data['indo']= $this->adminmodel->ambilspes('b_indo',$nama,'nis');
-		$data['ing']= $this->adminmodel->ambilspes('b_ing',$nama,'nis');
-		$data['jerman']= $this->adminmodel->ambilspes('b_jerman_p',$nama,'nis');
-		$data['eko']= $this->adminmodel->ambilspes('ekonomi_p',$nama,'nis');
-		$data['fikih']= $this->adminmodel->ambilspes('fikih',$nama,'nis');
-		$data['fisika_p']= $this->adminmodel->ambilspes('fisika_p',$nama,'nis');
-		$data['geo']= $this->adminmodel->ambilspes('geografi',$nama,'nis');
-		$data['kimia']= $this->adminmodel->ambilspes('kimia_p',$nama,'nis');
-		$data['mm']= $this->adminmodel->ambilspes('matematika',$nama,'nis');
-		$data['penjas']= $this->adminmodel->ambilspes('penjas',$nama,'nis');
-		$data['pkn']= $this->adminmodel->ambilspes('pkn',$nama,'nis');
-		$data['sejarah']= $this->adminmodel->ambilspes('sejarah',$nama,'nis');
-		$data['sejarah_indo']= $this->adminmodel->ambilspes('sejarah_indo',$nama,'nis');
-		$data['seni_budaya']= $this->adminmodel->ambilspes('seni_budaya',$nama,'nis');
-		$data['sosiologi']= $this->adminmodel->ambilspes('sosiologi',$nama,'nis');
+		$this->db->where('nis', $nama);
+		$d = $this->db->get('siswa')->result();
+		foreach ($d as $key => $v) {	}
+			$jur = $v->jurusan;
+		if ($jur=='IPA') {
+							
+
+		}
+
+
+
+		// $data['akidah']= $this->adminmodel->ambilspes('akidah_akhlak',$nama,'nis');
+		// $data['bio']= $this->adminmodel->ambilspes('biologi_p',$nama,'nis');
+		// $data['arab']= $this->adminmodel->ambilspes('b_arab',$nama,'nis');
+		// $data['indo']= $this->adminmodel->ambilspes('b_indo',$nama,'nis');
+		// $data['ing']= $this->adminmodel->ambilspes('b_ing',$nama,'nis');
+		// $data['jerman']= $this->adminmodel->ambilspes('b_jerman_p',$nama,'nis');
+		// $data['eko']= $this->adminmodel->ambilspes('ekonomi_p',$nama,'nis');
+		// $data['fikih']= $this->adminmodel->ambilspes('fikih',$nama,'nis');
+		// $data['fisika_p']= $this->adminmodel->ambilspes('fisika_p',$nama,'nis');
+		// $data['geo']= $this->adminmodel->ambilspes('geografi',$nama,'nis');
+		// $data['kimia']= $this->adminmodel->ambilspes('kimia_p',$nama,'nis');
+		// $data['mm']= $this->adminmodel->ambilspes('matematika',$nama,'nis');
+		// $data['penjas']= $this->adminmodel->ambilspes('penjas',$nama,'nis');
+		// $data['pkn']= $this->adminmodel->ambilspes('pkn',$nama,'nis');
+		// $data['sejarah']= $this->adminmodel->ambilspes('sejarah',$nama,'nis');
+		// $data['sejarah_indo']= $this->adminmodel->ambilspes('sejarah_indo',$nama,'nis');
+		// $data['seni_budaya']= $this->adminmodel->ambilspes('seni_budaya',$nama,'nis');
+		// $data['sosiologi']= $this->adminmodel->ambilspes('sosiologi',$nama,'nis');
 		$data['page']='userview/raport';
 		$data['nav'] = 'layout/navbar-kiri-siswa';
 		$data['nama'] = 'Rapot';
