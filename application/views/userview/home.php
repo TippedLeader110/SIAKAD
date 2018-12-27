@@ -52,7 +52,7 @@
 						<!--ini kotak kedua -->
 						<div class="col-5" style="background-color: #2F669F; margin-left: 10px; min-height: 130px; max-height: 110px; padding-left: 25px; padding-top: 13px;">
 							<div class="circle">
-								<a href="<?php echo base_url()?>login/Murid">
+								<a href="<?php echo base_url()?>login/siswa">
 									<img src="<?php echo base_url()?>img/icon/student-icon.png" style="max-width: 100px; max-height: 100px;height: 100px;width: 100px">
 								</a>
 							</div>
@@ -72,7 +72,7 @@
 						
 						<!--ini kotak kedua -->		
 						<div class="col-5" style="background-color: #2F669F; margin-left: 10px; min-height: 30px;padding: 2px 2px 2px 2px; min-width: 150px;">
-							<a href="<?php echo base_url()?>login/Murid">
+							<a href="<?php echo base_url()?>login/siswa">
 								<center><h5 style="color: white;">Murid</h5></center>
 							</a>
 						</div>
