@@ -20,7 +20,7 @@
 								<td>Nama</td>
 								<td>Jurusan</td>
 								<td>Kelas</td>
-								<td><form method="post" action="<?php echo base_url()?>absen/tampil"><button type="submit" class="btn btn-info">Lihat Rekap Presensi</button></form></td>
+								<td><form method="post" action="<?php echo base_url()?>absen/Tampil"><button type="submit" class="btn btn-info">Lihat Rekap Presensi</button></form></td>
 							</tr>
 						</table>
 					</div>
