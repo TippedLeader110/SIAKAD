@@ -1,8 +1,9 @@
 <div class="container-fluid" onclick="test3()" onmousewheel="test3()" onmouseover="test3()">
 <div class="col-md-10 offset-md-1" >
 <div class="row">
-		<h3>Dashboard</h3>
-		<hr>
+		<div class="container" style="background-color: white; border-width: 1px; border-color: #b8b894; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px white;">
+			<h3 style="color: #2F669F;"><b>Dashboard</b></h3>
+		</div>
 </div>
 <div class="row" style="padding-left: 10px">
 	<div class="col-md-4 offset-md-1" style="background: #4cddc0;height: 120px;margin-right: 10px;border-radius: 8px;" >
