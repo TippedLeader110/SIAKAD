@@ -8,7 +8,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<div class="container" style="background: white;border-width: 1px;border-color: #d6d6c2;padding-bottom: 70px;">
+				<div class="container" style="background: white;border-width: 1px;border-color: #d6d6c2;padding-bottom: 50px;">
 					<h3  style="color: #2F669F; padding-top:10px; padding-left: 10px;">Tentang</h3>
 					<p style="padding: 10px 10px 10px 10px;">Sistem Informasi Akademin (SIAKAD) adalah sebuah aplikasi yang dibuat untuk Siswa/i yang dapat diakases oleh orangtua siswa/i dan guru/wali kelas agar dapat mengakses informasi seputar lingkungan akademik secara online dimana dan kapan saja.</p>
 					<p style="padding-top: -15px; padding-left: 10px;">
@@ -77,7 +77,7 @@
 							</a>
 						</div>
 					</div>
-				</div>		
+				</div>			
 			</div>
 		</div>
 		</div>

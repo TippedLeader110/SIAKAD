@@ -42,7 +42,7 @@
     .scrollable{
       overflow-y: auto;
       max-height: 580px;
-      
+
     }
     .circle {
       width: 100px;
@@ -124,4 +124,7 @@
     .link-menu a{
       color: #FFFFFF;
       text-decoration: none;
+    }
+    .shadow{
+      box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
     }
