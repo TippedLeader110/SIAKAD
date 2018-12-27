@@ -166,6 +166,170 @@ class Absen extends CI_Controller {
 		$data['profil'] = '';
 		$this->load->view('layout/home', $data);
 	}
+	public function lihat()
+	{
+		$this->db->where('nip', $_SESSION['nip']);
+		$w = $this->db->get('guru')->result();
+		foreach ($w as $key => $v) {
+			$mapel = $v->wali_kelas;
+					}
+			if ($mapel=='IPA1A') {
+				$jurusan = 'IPA';
+			$kelas = 'A';
+			$tahun = date('Y');
+			}
+			if ($mapel=='IPA1B') {
+				$jurusan = 'IPA';
+			$kelas = 'A';
+			$tahun = date('Y');
+			}
+			if ($mapel=='IPA1C') {
+				$jurusan = 'IPA';
+			$kelas = 'A';
+			$tahun = date('Y');
+			}
+			if ($mapel=='IPA2A') {
+				$jurusan = 'IPA';
+			$kelas = 'B';
+			$tahun = date('Y');
+			$tahun = $tahun-1;
+			}
+			if ($mapel=='IPA2B') {
+				$jurusan = 'IPA';
+			$kelas = 'B';
+			$tahun = date('Y');
+			$tahun = $tahun-1;
+			}
+			if ($mapel=='IPA2C') {
+				$jurusan = 'IPA';
+			$kelas = 'B';
+			$tahun = date('Y');
+			$tahun = $tahun-1;
+			}
+			if ($mapel=='IPA3A') {
+				$jurusan = 'IPA';
+			$kelas = 'C';
+			$tahun = date('Y');
+			$tahun = $tahun-2;
+			}
+			if ($mapel=='IPA3B') {
+				$jurusan = 'IPA';
+			$kelas = 'C';
+			$tahun = date('Y');
+			$tahun = $tahun-2;
+			}
+			if ($mapel=='IPA3C') {
+				$jurusan = 'IPA';
+			$kelas = 'C';
+			$tahun = date('Y');
+			$tahun = $tahun-2;
+			}
+			
+			if ($mapel=='IPS1A') {
+				$jurusan = 'IPS';
+			$kelas = 'A';
+			$tahun = date('Y');
+			}
+			if ($mapel=='IPS1B') {
+				$jurusan = 'IPS';
+			$kelas = 'A';
+			$tahun = date('Y');
+			}
+			if ($mapel=='IPS1C') {
+				$jurusan = 'IPS';
+			$kelas = 'A';
+			$tahun = date('Y');
+			}
+			if ($mapel=='IPS2A') {
+				$jurusan = 'IPS';
+			$kelas = 'B';
+			$tahun = date('Y');
+			$tahun = $tahun-1;
+			}
+			if ($mapel=='IPS2B') {
+				$jurusan = 'IPS';
+			$kelas = 'B';
+			$tahun = date('Y');
+			$tahun = $tahun-1;
+			}
+			if ($mapel=='IPS2C') {
+				$jurusan = 'IPS';
+			$kelas = 'B';
+			$tahun = date('Y');
+			$tahun = $tahun-1;
+			}
+			if ($mapel=='IPS3A') {
+				$jurusan = 'IPS';
+			$kelas = 'C';
+			$tahun = date('Y');
+			$tahun = $tahun-2;
+			}
+			if ($mapel=='IPS3B') {
+				$jurusan = 'IPS';
+			$kelas = 'C';
+			$tahun = date('Y');
+			$tahun = $tahun-2;
+			}
+			if ($mapel=='IPS3C') {
+				$jurusan = 'IPS';
+			$kelas = 'C';
+			$tahun = date('Y');
+			$tahun = $tahun-2;
+			}
+			if ($this->input->post('tent')=='nama') {
+				$this->db->like('nama', $this->input->post('cari'));
+			}
+			$this->db->like('kelas', $kelas);
+			$this->db->like('tahun', $tahun);
+			$this->db->like('jurusan', $jurusan);
+		$data['murid'] = $this->db->get('siswa')->result();
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/lihatabsen';
+		$data['nama'] = 'Absensi';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['ab'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
+	public function Tampil()
+	{
+		$nis = $this->input->post('nis');
+		$_SESSION['nisflash'] = $nis;
+		$id = $this->input->post('sub');
+		if ($id!='') {
+			$data['ab1'] = $this->adminmodel->absen($id, $nis, '1');	
+			$data['ab2'] = $this->adminmodel->absen($id, $nis, '2');
+			$data['ab3'] = $this->adminmodel->absen($id, $nis, '3');
+			$data['ab4'] = $this->adminmodel->absen($id, $nis, '4');
+			$data['ab5'] = $this->adminmodel->absen($id, $nis, '5');
+			$data['ab6'] = $this->adminmodel->absen($id, $nis, '6');
+			$data['ab7'] = $this->adminmodel->absen($id, $nis, '7');	
+			$data['ab8'] = $this->adminmodel->absen($id, $nis, '8');
+			$data['ab9'] = $this->adminmodel->absen($id, $nis, '9');
+			$data['ab10'] = $this->adminmodel->absen($id, $nis, '10');
+			$data['ab11'] = $this->adminmodel->absen($id, $nis, '11');
+			$data['ab12'] = $this->adminmodel->absen($id, $nis, '12');	
+			}
+		else {
+			$data['ab1'] = $this->adminmodel->absen($id, $nis, '1');	
+		}
+		$data['t']=$this->input->post('sub');	
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/tampilabsen';
+		$data['nama'] = 'Absensi';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['ab'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function inputabsen()
 	{
 		if ($status=='fail') {

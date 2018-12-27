@@ -1,28 +1,19 @@
 <div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 10px;">
 	<div class="container" style="border-width:1px; background-color:#DCDDE1;padding-bottom: 100px">
 		<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">
-			<h5 align="center"><b>Input Presensi</b></h5>
+			<h5 align="center"><b>Lihat Absensi</b></h5>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
 					<div class="col-md-12" style="margin-left: 14px;">
 						<table>
-							<tr><?php if ($_SESSION['do']!=''): ?>
-								<script type="text/javascript">
-									Swal(
-  'Sukses!',
-  'Data berhasil di simpan!',
-  'success'
-)
-								</script>
-								<?php $_SESSION['do']=''; ?>
-							<?php endif ?>
-								<td><form method="post" action="<?php echo base_url() ?>Absen/walikelas"><input type="text" hidden name="tent" value="nama">
+							<tr>
+								<td><form method="post" action="<?php echo base_url() ?>Absen/lihat"><input type="text" hidden name="tent" value="nama">
 							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Nama" type="text" name="cari" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="cari"></form></td><td>
-							<form method='post' action="<?php echo base_url() ?>Absen/walikelas">
+							<form method='post' action="<?php echo base_url() ?>Absen/lihat">
 								<input hidden type="text" name="tent" value="lain">
-							<button class="btn btn-success" type="submit">Tampilkan Semua</button>
+							<button class="btn btn-primary" type="submit">Tampilkan Semua</button>
 							</form>	
 						</td>
 							</tr>
@@ -47,7 +38,7 @@
 							<td><?php echo $v->nama ?></td>
 							<td><?php echo $v->jurusan ?></td>
 							<td><?php echo $v->kelas ?></td>
-							<td><form method="post" action="<?php echo base_url()?>absen/presensi"><input type="text" hidden name="id" value="<?php echo $v->nis ?>"><button type="submit" class="btn btn-info">Input Rekap Presensi</button></form></td>
+							<td><form method="post" action="<?php echo base_url()?>absen/tampil"><input type="text" hidden name="nis" value="<?php echo $v->nis ?>"><button type="submit" class="btn btn-info">Input Rekap Presensi</button></form></td>
 						</tr>
 							<?php endforeach ?>
 					</table>

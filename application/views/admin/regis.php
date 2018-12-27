@@ -53,7 +53,7 @@
 					</tr>
 					<tr>
 						<td><input type="text" name="pass" placeholder="Password"></td>
-						<td><input type="text" name="aayah" placeholder="Alamat Ayah"></td>
+						<td><textarea class="form-control" name="aayah" style="width: 400px; height: 100px;"></textarea></td>
 					</tr>
 					<tr>
 						<td><h5>Jurusan</h5></td>
@@ -119,7 +119,7 @@
 							<option>Laki-laki</option>
 							<option>Perempuan</option>
 						</select></td>
-						<td><input type="text" name="aibu" placeholder="Alamat Ibu"></td>
+						<td><textarea class="form-control" name="aibu" style="width: 400px; height: 100px;"></textarea></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>

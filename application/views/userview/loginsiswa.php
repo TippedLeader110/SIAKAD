@@ -22,7 +22,7 @@
 					</div>
 					<div class="row">
 						<div class="container-fluid">
-								<h4 style="color: white;">Masuk Siswa/i</h4>
+								<h4 style="color: white;">Masuk Murid</h4>
 								<?php if ($_SESSION['flash']=='no'): ?>
 								<div class="alert alert-danger">
   									<strong>Terjadi Kesalahan!</strong>Username atau Password Salah.

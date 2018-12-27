@@ -2,7 +2,7 @@
 <div class="col-md-10 offset-md-1" >
 <div class="row" style="margin-bottom: 50px;">
 		<div class="container" style="background-color: white; border-width: 1px; border-color: #b8b894; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px white;">
-		<h3 style="color: #2F669F;"><b>Kontrol Murid</b></h3>
+		<h3 style="color: #2F669F;"><b>Dashboard</b></h3>
 	</div>
 </div>
 <div class="container" style="border-width: 1px; border-color: #b8b894; background-color: white; padding: 15px 15px 10px 10px; box-shadow: 0.5px 0.5px 0.5px 0.5px white; margin-top: -40px; margin-bottom: 30px;">

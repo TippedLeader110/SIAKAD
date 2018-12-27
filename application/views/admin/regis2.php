@@ -78,7 +78,7 @@
 					</tr>
 					<tr>
 						<td><input type="text" value="<?php echo $password ?>" name="pass" placeholder="Password"></td>
-						<td><input type="text" name="aayah" placeholder="Alamat Ayah" value="<?php echo $alamat_ayah ?>"></td>
+						<td><textarea class="form-control" name="aayah" style="width: 400px; height: 100px;" value="<?php echo $alamat_ayah ?>"></textarea></td>
 					</tr>
 					<tr>
 						<td><h5>Jurusan</h5></td>
@@ -145,7 +145,7 @@
 					</tr>
 					<tr>
 						<td>
-							<select name="jkel" class="form-control" style="width: 400px;">
+							<select name="jk" class="form-control" style="width: 400px;">
 								<?php if ($v->jk=='Laki-laki'): ?>
 								<option value="Laki-laki">Laki-Laki</option>
 								<option value="Perempuan">Perempuan</option>
@@ -156,14 +156,14 @@
 								<?php endif ?>
 							</select>
 						</td>
-						<td><input type="text" name="aibu" placeholder="Alamat Ibu" value="<?php echo $alamat_ibu ?>"></td>
+						<td><textarea class="form-control" name="aibu" style="width: 400px; height: 100px;" value="<?php echo $alamat_ibu ?>"></textarea></td>
 					</tr>
 					<tr>
 						<td><h5>Alamat Murid</h5></td>
 						<td><h5>Nomor HP Ibu</h5></td>
 					</tr>
 					<tr>
-						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;" value="<?php echo $alamat ?>"></textarea></td>
+						<td><textarea class="form-control" name="alamat" style="width: 400px; height: 100px;" value="<?php echo $alamat?>"></textarea></td>
 						<td><input type="text" name="nohpi" placeholder="Nomor HP Ibu" value="<?php echo $no_hp_ibu ?>"></td>
 					</tr>
 					<tr>
