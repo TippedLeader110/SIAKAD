@@ -103,7 +103,7 @@ class Ubahsandi extends CI_Controller {
 	else{
 		$this->db->set('password', $baru1);
 		$this->db->where('nip' ,$_SESSION['nip']);
-		$this->db->update('nip');
+		$this->db->update('guru');
 		session_destroy();
 		$_SESSION['do'] = 1;
 		redirect('home', location);
