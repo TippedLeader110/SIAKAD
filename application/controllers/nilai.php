@@ -280,6 +280,10 @@ $this->db->where('semester', $this->input->post('semester'));
 			$this->db->where('nis', $bis);
 $data['prakarya_kewirausahaan'] = $this->db->get('prakarya_kewirausahaan')->result();
 
+$this->db->where('semester', $this->input->post('semester'));
+			$this->db->where('nis', $bis);
+$data['absen'] = $this->db->get('absen')->result();
+
 
 $this->db->where('semester', $this->input->post('semester'));
 			$this->db->where('nis', $bis);

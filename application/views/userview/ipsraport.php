@@ -306,22 +306,22 @@
 			<tr>
 				<td>1.</td>
 				<td align="left">Jumlah Kehadiran</td>
-				<td></td>
+				<td><?php echo $vabsen->hadir ?></td>
 			</tr>
 			<tr>
 				<td>2.</td>
 				<td align="left">Izin</td>
-				<td></td>
+				<td><?php echo $vabsen->izin ?></td>
 			</tr>
 			<tr>
 				<td>3.</td>
 				<td align="left">Sakit</td>
-				<td></td>
+				<td><?php echo $vabsen->sakit ?></td>
 			</tr>
 			<tr>
 				<td>4.</td>
 				<td align="left">Tanpa Keterangan</td>
-				<td></td>
+				<td><?php echo $vabsen->alpha ?></td>
 			</tr>
 		</table>
 
