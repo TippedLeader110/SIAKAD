@@ -49,7 +49,7 @@ h2 {
 </head>
 <body>
 <center>
-<h2>Daftar Siswa Per Angkatan</h2>
+<h2>Daftar Murid Per Angkatan</h2>
 <p>Pilih Tahun Angkatan Siswa :</p>
 
 <form action="<?php echo base_url() ?> Daftar/Siswa">
