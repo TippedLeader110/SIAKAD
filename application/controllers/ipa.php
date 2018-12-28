@@ -81,7 +81,7 @@ $this->db->where('semester', $semester);
 $b_jerman_p = $this->db->get('b_jerman_p')->num_rows();
 if($prakarya_kewirausahaan!=0 && $penjas!=0 && $seni_budaya!=0 && $b_ing!=0 && $sejarah_indo!=0 && $matematika!=0 || $akidah_akhlak!=0 && $quran_hadis!=0 && $kimia_p!=0 && $fisika_p!=0 && $biologi_p!=0)
 {
-	
+
 		$data['page2']='userview/iparaport';
 			$data['page']='userview/raportipa';
 				$data['nav'] = 'layout/navbar-kiri-siswa';
@@ -96,7 +96,6 @@ if($prakarya_kewirausahaan!=0 && $penjas!=0 && $seni_budaya!=0 && $b_ing!=0 && $
 				$this->load->view('layout/home', $data); 
 }
 else{
-	$semester='';
 				$_SESSION['do'] = 1;
  				$data['page2']='userview/blank';
 				$data['page']='userview/raportipa';

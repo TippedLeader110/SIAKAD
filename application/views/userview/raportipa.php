@@ -2,7 +2,7 @@
                 <script type="text/javascript">
                   Swal(
   'Kesalahan !',
-  'Raport anda belum bisa diakses!',
+  'Raport anda pada semester ini belum bisa diakses!',
   'warning'
 )
                 </script>

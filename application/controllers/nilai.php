@@ -314,14 +314,31 @@ $data['b_jerman_p'] = $this->db->get('b_jerman_p')->result();
 		$d = $this->db->get('siswa')->result();
 		foreach ($d as $key => $v) {	}
 			$jur = $v->jurusan;
-		if ($jur=='IPA' || $semester!='') {
+		if ($semester=='') {
+			$data['page2']='userview/blank';
+				$data['page']='userview/raportipa';
+				$data['nav'] = 'layout/navbar-kiri-siswa';
+				$data['nama'] = 'Rapot';
+				$data['beranda'] = '';
+				$data['nilai'] = '';
+				$data['absen'] = '';
+				$data['rapot'] = 'aktif';
+				$data['guru'] = '';
+				$data['profil'] = '';
+				$semester='';
+				$this->load->view('layout/home', $data); 
+		}
+		else{
+		if ($jur=='IPA') {
 			include 'ipa.php';
 			
+			
 		}
-		elseif($jur=='IPS' || $semester!='')
+		if($jur=='IPS')
 		{
 		include 'ips.php';
 		
+		}
 		}
 
 
