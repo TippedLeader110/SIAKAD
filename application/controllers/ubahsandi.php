@@ -13,7 +13,7 @@ class Ubahsandi extends CI_Controller {
 
 	public function guru()
 	{
-		$data['nama'] = 'Ubah Sandi Guru';
+		$data['nama'] = 'Ubah Sandi Siswa';
 		$data['border']='transparent';
 		if ($_SESSION['nis']!='') {
 			$data['nav'] = 'layout/navbar-kiri-siswa';
