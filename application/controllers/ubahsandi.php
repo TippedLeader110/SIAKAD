@@ -13,7 +13,7 @@ class Ubahsandi extends CI_Controller {
 
 	public function guru()
 	{
-		$data['nama'] = 'Ubah Sandi Guru';
+		$data['nama'] = 'Ubah Kata Sandi';
 		$data['border']='transparent';
 		if ($_SESSION['nis']!='') {
 			$data['nav'] = 'layout/navbar-kiri-siswa';
@@ -27,13 +27,21 @@ class Ubahsandi extends CI_Controller {
 				$data['nav'] = 'layout/navbar-kiri-guru';
 			}
 		}
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['ini'] = '';
+		$data['profil'] = '';
+		$data['sandi'] ='aktif';
 		$data['page']='userview/ubahsandi';
 		$this->load->view('layout/home', $data);
 	}
 
 	public function siswa()
 	{
-		$data['nama'] = 'Ubah Sandi Siswa';
+		$data['nama'] = 'Ubah Kata Sandi';
 		$data['border']='transparent';
 		if ($_SESSION['nis']!='') {
 			$data['nav'] = 'layout/navbar-kiri-siswa';
@@ -47,6 +55,14 @@ class Ubahsandi extends CI_Controller {
 				$data['nav'] = 'layout/navbar-kiri-guru';
 			}
 		}
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = '';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['ini'] = '';
+		$data['profil'] = '';
+		$data['sandi'] ='aktif';
 		$data['page']='userview/ubahsandi';
 		$this->load->view('layout/home', $data);
 	}
