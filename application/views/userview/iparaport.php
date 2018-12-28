@@ -62,7 +62,7 @@
 <?php foreach ($b_jerman_p as $key => $vb_jerman_p) {
 	# code...
 } ?>
-
+<div id="print">
 <div class="container" style="border-width: 0px;">
 	<div class="row">
 		<div class="container" style="border-width: 2px; border-color:#d6d6c2; margin-left: 20px; margin-right: 20px; ">
@@ -350,4 +350,5 @@
 			</tr>
 		</table>
 	</div>
+</div>
 </div>

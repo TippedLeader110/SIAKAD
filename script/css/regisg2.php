@@ -59,6 +59,10 @@
 							<option value="Perempuan">Perempuan</option>
 							<option value="Laki-laki">Laki-Laki</option>
 							<?php endif ?>
+							<?php if ($v->jk==''): ?>
+								<option value="Perempuan">Perempuan</option>
+							<option value="Laki-laki">Laki-Laki</option>
+							<?php endif ?>
 						</select></td>
 					</tr>
 					<tr>	

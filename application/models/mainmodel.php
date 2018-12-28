@@ -23,7 +23,7 @@ class Mainmodel extends CI_Model {
 			$_SESSION['flash'] = 'no';
 			redirect('login/siswa');
 		}
-		else if ($query==1) {
+		else if ($query>=1) {
 		$this->db->where(['username' => $user, 'password' => $pass]);
 		$query = $this->db->get('siswa');
 		$data = $query->result();
