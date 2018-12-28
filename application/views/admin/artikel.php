@@ -7,7 +7,7 @@
 </div>
 	<div class="container-fluid" style="background: white;padding-top: 20px;margin-left: -10px;" >
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12" style="margin-bottom: 20px;">
 				<h4>Daftar Semua Artikel</h4>
 			</div>
 		</div>
@@ -24,6 +24,28 @@
 							<input  class="form-control" style="max-width: 200px;" placeholder="Cari Isi" type="text" name="angkatan" onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" name="angkatan">
 						</form>
 					</div>
+					<div class="col-md-4">
+						<table border="0" align="right">
+							<tr>
+								<td>
+									<form method="post">
+										<button type="submit" class="btn btn-primary">
+											Tampilkan Semua
+										</button>
+									</form>
+									<?php if (isset($_POST['tampil'])) {
+										redirect("admin/post", location);
+									} ?>
+								</td>
+								<td>
+									<h3>|</h3>
+								</td>
+								<td>
+									<a class="btn btn-primary" href="<?php echo base_url() ?>admin/rpost">Buat Pengumuman</a>
+								</td>		
+						</table>
+						
+					</div>
 					<?php 
 
 					if (isset($_POST['cari'])) {
@@ -36,14 +58,10 @@
 					}
 					
 					 ?>
-					<div class="col-md-1" style="margin-right: 50px;">
-						<form method="post" >
-						<button class="btn btn-primary" name="tampil">Tampil Semua</button>
-						<a class="btn btn-primary" href="<?php echo base_url() ?> admin/rpost">Tampil Semua</button>
-						</form>
-						<?php if (isset($_POST['tampil'])) {
-							redirect("/admin/post", location);
-						} ?>
+					<div class="col-md-4" style="margin-left: 550px;">
+						
+						
+						
 					</div>
 			</div>
 			<div class="row">
