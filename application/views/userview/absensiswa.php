@@ -440,17 +440,17 @@ else {
 <div class='row' style='margin-top: -10px;'>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Januari</h4>			
+			<h4 style='margin-left: 88px'>Januari</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Februari</h4>			
+			<h4 style='margin-left: 85px'>Februari</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Maret</h4>			
+			<h4 style='margin-left: 95px'>Maret</h4>			
 		</div>
 	</div>
 </div>
@@ -561,17 +561,17 @@ else {
 <div class='row' style='margin-top: -10px;'>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>April</h4>			
+			<h4 style='margin-left: 115px'>April</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Mei</h4>			
+			<h4 style='margin-left: 115px'>Mei</h4>			
 		</div>
 	</div>
 	<div class='col-md-4'>
 		<div class='container' style='border-width: 1px;border-color: #d6d6c2;padding-bottom: 1em; margin-right: 16px;padding-top: 1em;background: 	#A9A9A9;'>
-			<h4 style='margin-left: 120px'>Juni</h4>			
+			<h4 style='margin-left: 115px'>Juni</h4>			
 		</div>
 	</div>
 </div>"; 	

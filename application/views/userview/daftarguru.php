@@ -77,7 +77,7 @@ foreach ($gurudaf as $key => $v) {
     echo "<div class='row'>";
   }
 echo"          <div class='col-md-3'>";
-echo"          <div class='card' style='width: 200px; height:320px; background-color: #DCDDE1; margin-top:  30px;'>";
+echo"          <div class='card' style='width: 200px; height:360px; background-color: #DCDDE1; margin-top:  30px;'>";
 echo"          <div style='background-color:#009432; height: 200px; width: 200px;'>";
 echo"          <div class='circle' style='margin: 10px 10px 50px 50px; margin-top: 30px;'>";
 echo"             <img src='".base_url()."gambar/".$v->foto.".png' style='max-width: 100px; max-height: 100px;'>";
