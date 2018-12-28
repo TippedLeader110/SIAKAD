@@ -3,6 +3,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Wali extends CI_Controller {
 
+	public function tampil()
+	{
+		$w = $this->input->post('id');
+		$data['murid'] = $this->adminmodel->ambilspes('siswa', $w , 'nis');
+		$data['border']='black';
+		$data['nav'] = 'layout/navbar-kiri-walikelas';
+		$data['page']='userview/inputnilaiwalikelas';
+		$data['nama'] = 'Absen';
+		$data['mana'] = 'aktif';
+		$data['beranda'] = '';
+		$data['nilai'] = '';
+		$data['absen'] = 'aktif';
+		$data['rapot'] = '';
+		$data['guru'] = '';
+		$data['profil'] = '';
+		$this->load->view('layout/home', $data);
+	}
 	public function SikaEks()
 	{
 	$this->db->where('nip', $_SESSION['nip']);
@@ -122,7 +139,7 @@ class Wali extends CI_Controller {
 		$data['murid'] = $this->db->get('siswa')->result();
 		$data['border']='black';
 		$data['nav'] = 'layout/navbar-kiri-walikelas';
-		$data['page']='userview/inputnilaiwalikelas';
+		$data['page']='userview/sikaptampil';
 		$data['nama'] = 'Ekstrakulikuler dan Sikap';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
