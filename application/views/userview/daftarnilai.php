@@ -5,7 +5,7 @@
 			<table width="200" border="1" style="padding: 5px 5px 5px 5px; margin-right: 20px;">
 			<tr>
 				<td style="padding: 5px 5px 5px 5px;">
-					<h5>Nama</h5>
+					<h5><b>Nama</b></h5>
 				</td>
 				<td style="padding: 5px 5px 5px 5px;  min-width: 300px;">
 					<h5 align="center"><?php echo $_SESSION['user'] ?></h5>
@@ -17,7 +17,7 @@
 			<table width="200" border="1" style="padding: 5px 5px 5px 5px;">
 			<tr>	
 				<td style="padding: 5px 5px 5px 5px; min-width: 50px;">  
-					<h5>NIS</h5>
+					<h5><b>NIS</b></h5>
 				</td>
 				<td style="padding-left: 20px;">
 					<h5 align="center"><?php echo $_SESSION['nis'] ?></h5>		
