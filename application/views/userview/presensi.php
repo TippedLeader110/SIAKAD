@@ -1,7 +1,7 @@
 <div class="container" style="border-width:0px; background-color:#DCDDE1; padding-top: 10px; padding-bottom: 20px;">
 <div class="container" style="border-width:1px; background-color:#DCDDE1;">
 	<div style="background-color:#DCDDE1; width:200px; height:30px; margin-left:350px; margin-top:-15px;">
-		<h5 align="center"><b>INPUT PRESENSI MURID</b></h5>	
+		<h4 align="center"><b>INPUT PRESENSI MURID</b></h4>	
 	</div>
 	<div class="row"><?php foreach ($murid as $key => $v): ?>
 		
@@ -121,7 +121,7 @@
 		<div class="row">
 			<div class="col-md-2">
 				<div class="container" style="border-width:0px; color:white; font-weight:500; margin-left: 365px; margin-top: 30px;">
-					<center><button type="submit" class="btn primary">Simpan</button></center>
+					<center><button type="submit" class="btn btn-primary">Simpan</button></center>
 				</div>
 			</div>
 			<div class="col-md-2">

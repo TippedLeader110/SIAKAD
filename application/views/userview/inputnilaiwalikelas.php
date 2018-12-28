@@ -120,10 +120,6 @@
 			<div class="row">
 				<div class="col-md-6">
 					<table style="min-width: 300px;">
-						<tr>
-							<td>KKM</td>
-							<td><input type="text" class="form-control" placeholder="Masukkan Nilai"style="width: 200px;" ></td>
-						</tr>
 						<tr><td></td></tr>
 						<tr>
 							<td>Ekstrakulikuler</td>
