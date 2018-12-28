@@ -2,28 +2,28 @@
 	<div class="container" style="border-width: 0px; margin-left: 210px; max-width: 600px;">
 		<div class="row">
 			<div>
-			<table width="200" border="1" style="padding: 5px 5px 5px 5px; margin-right: 20px;">
-			<tr>
-				<td style="padding: 5px 5px 5px 5px;">
-					<h5><b>Nama</b></h5>
-				</td>
-				<td style="padding: 5px 5px 5px 5px;  min-width: 300px;">
-					<h5 align="center"><?php echo $_SESSION['user'] ?></h5>
-				</td>				
-			</tr>
-			</table>
-		</div>
-		<div>
-			<table width="200" border="1" style="padding: 5px 5px 5px 5px;">
-			<tr>	
+			<table width="200" border="0" style="padding: 5px 5px 5px 5px; margin-right: 30px; margin-left: 25px;">
+			<br><tr>	
 				<td style="padding: 5px 5px 5px 5px; min-width: 50px;">  
-					<h5><b>NIS</b></h5>
+					<h3><b>NIS</b></h3>
 				</td>
 				<td style="padding-left: 20px;">
 					<h5 align="center"><?php echo $_SESSION['nis'] ?></h5>		
 				</td>
 			</tr>
 			</table>	
+			</div>
+			<div>
+			<table width="200" border="0" style="padding: 5px 5px 5px 5px; ">
+			<br><tr>
+				<td style="padding: 5px 5px 5px 5px;">
+					<h3><b>Nama</b></h3>
+				</td>
+				<td style="padding: 5px 5px 5px 5px;  min-width: 250px;">
+					<h5 align="center"><?php echo $_SESSION['user'] ?></h5>
+				</td>				
+			</tr>
+			</table>
 		</div>
 		</div>
 	</div>
