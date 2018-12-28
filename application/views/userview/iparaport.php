@@ -262,7 +262,7 @@
 				<td><?php if($w>90){echo A;}elseif($w>=84 || $w<=90){echo B;}elseif($w<84 || $w>80){echo C;}elseif($w<80){echo D;} ?></td>
 			</tr>
 		</table>
-		<h5 style="color: #2F669F; margin-top: 20px;"><b>EKSTRAKULIKULER</b></h5>
+		<!-- <h5 style="color: #2F669F; margin-top: 20px;"><b>EKSTRAKULIKULER</b></h5>
 
 		<table border="2" style="width:700px; text-align: center; margin-bottom: 20px;">
 			<tr>
@@ -287,7 +287,7 @@
 				<td align="left">b. </td>
 				<td></td>
 			</tr>
-		</table>
+		</table> -->
 		
 		<h5 style="color: #2F669F; margin-top: 20px;"><b>KEHADIRAN</b></h5>
 		<table border="2" style="width:700px; text-align: center; margin-bottom: 20px;">
