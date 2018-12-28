@@ -120,7 +120,7 @@
 							</td>
 						</tr>
 						<tr align="center">
-							<td style="padding-top: 5px; padding-bottom: 5px;"><h5><a href="<?php echo base_url() ?>admin/Daftar_murid" style="text-decoration: none; color:white;">Lihat Semua Guru</a></h5></td>
+							<td style="padding-top: 5px; padding-bottom: 5px;"><h5><a href="<?php echo base_url() ?>admin/Daftar_guru" style="text-decoration: none; color:white;">Lihat Semua Guru</a></h5></td>
 						</tr>
 					</table>
 				</center>
