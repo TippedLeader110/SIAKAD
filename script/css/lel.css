@@ -1,3 +1,7 @@
+@media print {
+   body *, #main * { display:none; }
+   #main, #main #print, #main #print * { display:block; }
+}
     .container
     {
       border-style: solid;
