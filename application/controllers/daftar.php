@@ -114,7 +114,7 @@ class Daftar extends CI_Controller {
 			$data['nav'] = 'layout/navbar-kiri-walikelas';	
 		};
 		$data['page']='userview/daftarsiswa';
-		$data['nama'] = 'Daftar Siswa';
+		$data['nama'] = 'Daftar Murid';
 		$data['beranda'] = '';
 		$data['nilai'] = '';
 		$data['absen'] = '';
