@@ -119,7 +119,7 @@ class Daftar extends CI_Controller {
 		$data['nilai'] = '';
 		$data['absen'] = '';
 		$data['rapot'] = '';
-		$data['guru'] = 'aktif';
+		$data['guru'] = '';
 		$data['ini'] = 'aktif';
 		$data['profil'] = '';
 

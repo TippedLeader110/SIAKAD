@@ -38,7 +38,7 @@
 							<td><?php echo $v->nama ?></td>
 							<td><?php echo $v->jurusan ?></td>
 							<td><?php echo $v->kelas ?></td>
-							<td><form method="post" action="<?php echo base_url()?>absen/tampil"><input type="text" hidden name="nis" value="<?php echo $v->nis ?>"><button type="submit" class="btn btn-info">Input Rekap Presensi</button></form></td>
+							<td><form method="post" action="<?php echo base_url()?>absen/tampil"><input type="text" hidden name="nis" value="<?php echo $v->nis ?>"><button type="submit" class="btn btn-info">Lihat Rekap Presensi</button></form></td>
 						</tr>
 							<?php endforeach ?>
 					</table>
