@@ -1,0 +1,1 @@
+CREATE TABLE sikap (kedisiplinan varchar(30),kebersihan varchar(30),tang_jwb varchar(30),sopan_santun varchar(30), per_diri varchar(30),kejujuran varchar(30),marcing varchar(30),paskibra varchar(30), pramuka varchar(30), nis bigint,semester varchar (30))
