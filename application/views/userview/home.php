@@ -92,8 +92,8 @@
 		</div>
 		</div>
 		<div class="row">
-			<div class="container-fluid">
-				<div style="background-color: #2F669F; color: #ebebe0; padding: 15px 25px 10px 20px; margin-top: 69px;">
+			<div class="container-fluid fixed-bottom">
+				<div style="background-color: #2F669F; color: #ebebe0; padding: 15px 25px 10px 20px; margin-top: 69px; margin-left: -15px;margin-right: -15px;">
 					<h6>Copyright &reg; Kelompok 1 - Interaksi Manusia dan Komputer 2017 - Teknologi Informasi - Universitas Sumatera Utara - 2018/2019</h6>
 				</div>
 				 
