@@ -347,6 +347,17 @@ $data['b_jerman_p'] = $this->db->get('b_jerman_p')->result();
 
 
 	}
+	public function gettest()
+	{
+		$waw = $this->db->get('siswa')->result();
+		$nisn = '1230417100';
+		foreach ($waw as $key => $value) {
+			$this->db->set('nisn', $nisn);
+			$this->db->where('nis', $value->nis);
+			$this->db->update('siswa');
+			$nisn++;
+		}
+	}
 	public function siswa()
 	{
 		$data['border']='black';
