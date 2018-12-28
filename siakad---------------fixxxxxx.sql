@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2018 at 05:45 AM
+-- Generation Time: Dec 28, 2018 at 08:00 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -21,6 +21,589 @@ SET time_zone = "+00:00";
 --
 -- Database: `siakad`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `absen`
+--
+
+CREATE TABLE `absen` (
+  `nis` bigint(20) NOT NULL,
+  `bulan` varchar(30) DEFAULT NULL,
+  `hadir` int(11) DEFAULT NULL,
+  `alpha` int(11) DEFAULT NULL,
+  `izin` int(11) DEFAULT NULL,
+  `sakit` int(11) DEFAULT NULL,
+  `total` int(11) DEFAULT NULL,
+  `semester` varchar(50) DEFAULT NULL,
+  `tahun` varchar(30) DEFAULT NULL,
+  `kelas` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `nip` bigint(20) NOT NULL,
+  `username` varchar(30) DEFAULT NULL,
+  `password` varchar(30) DEFAULT NULL,
+  `nama` varchar(30) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
+  `foto` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`nip`, `username`, `password`, `nama`, `email`, `foto`) VALUES
+(171402067, 'admin', 'admin', NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `akidah_akhlak`
+--
+
+CREATE TABLE `akidah_akhlak` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `biologi_p`
+--
+
+CREATE TABLE `biologi_p` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `b_arab`
+--
+
+CREATE TABLE `b_arab` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `b_indo`
+--
+
+CREATE TABLE `b_indo` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `b_ing`
+--
+
+CREATE TABLE `b_ing` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `b_jerman_p`
+--
+
+CREATE TABLE `b_jerman_p` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ekonomi_p`
+--
+
+CREATE TABLE `ekonomi_p` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fikih`
+--
+
+CREATE TABLE `fikih` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fisika_p`
+--
+
+CREATE TABLE `fisika_p` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `geografi`
+--
+
+CREATE TABLE `geografi` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `guru`
+--
+
+CREATE TABLE `guru` (
+  `nip` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(10) DEFAULT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `tgl_lahir` varchar(30) DEFAULT NULL,
+  `tmpt_lahir` varchar(30) DEFAULT NULL,
+  `jk` varchar(12) DEFAULT NULL,
+  `alamat` text,
+  `email` varchar(30) DEFAULT NULL,
+  `mapel` varchar(50) DEFAULT NULL,
+  `gol` varchar(12) DEFAULT NULL,
+  `no_hp` varchar(20) DEFAULT NULL,
+  `wali_kelas` varchar(20) DEFAULT NULL,
+  `foto` text,
+  `status` varchar(30) DEFAULT NULL,
+  `mengajar_dikelas` varchar(30) DEFAULT NULL,
+  `agama` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `guru`
+--
+
+INSERT INTO `guru` (`nip`, `kode_mapel`, `username`, `password`, `nama`, `tgl_lahir`, `tmpt_lahir`, `jk`, `alamat`, `email`, `mapel`, `gol`, `no_hp`, `wali_kelas`, `foto`, `status`, `mengajar_dikelas`, `agama`) VALUES
+(12345679114, 'fis11', 'bayhaqi', 'bayhaqi', 'Muhammad Bayhaqi ', '1997-12-17', 'Palembang', 'Laki-laki', 'Jl Prof.Dr Hamka', 'bayhaqi101@gmail.com', 'fisika', '3A', '312313', '12IPA3', NULL, NULL, NULL, 'islam'),
+(123456789103, 'bio12', 'big', 'big', 'Big Smoke', '1960-8-10', 'Los Santos', 'laki_laki', 'jl Grove street', 'BG@gmail.com', 'biologi', '3A', '08145267833', '11IPS1', '', '', '', 'islam'),
+(123456789104, 'fik11', 'aurora', 'aurora', 'Aurora Flower', '1975-9-10', 'Medan', 'perempuan', 'jl bersamamu', 'aurora@gmail.com', 'fikih', '3A', '08145267834', '11IPS3', '', '', '', 'islam'),
+(123456789105, 'fis10', 'mera', 'mera', 'Mera', '1990-9-11', 'Jakarta', 'perempuan', 'jl atlantis', 'mera@gmail.com', 'fisika', '3A', '08145267835', '12IPS2', '', '', '', 'islam'),
+(123456789106, 'sej10', 'peter', 'peter', 'Peter Parker', '1979-9-10', 'Bandung', 'laki_laki', 'jl Bersekata', 'peter@gmail.com', 'sejarah', '3A', '08145267836', '12IPS1', '', '', '', 'islam'),
+(123456789107, 'bi11', 'partok', 'partok', 'Partok', '1967-1-11', 'Jakarta', 'laki_laki', 'jl jalan', 'partok@gmail.com', 'b indo', '3A', '08145267840', '10IPS1', '', '', '', 'islam'),
+(123456789108, 'bin10', 'winter', 'winter', 'Winter Wood', '1979-5-12', 'Solo', 'laki_laki', 'jl opera', 'sule@gmail.com', 'b inggrish', '3A', '08145267841', '10IPA1', '', '', '', 'islam'),
+(123456789109, 'bi12', 'kratos', 'kratos', 'Kratos', '1945-9-7', 'Olimpic', 'laki_laki', 'jl Olimpic', 'kratos@gmail.com', 'b indo', '3A', '08145267842', '12IPS2', '', '', '', 'islam'),
+(123456789110, 'bi10', 'gobi', 'gobi', 'Muhammad Gobi', '1987-9-11', 'Aceh', 'Laki-laki', 'Jl Mu no 3', 'Paksanca@gmail.com', 'b_indo', '3A', '08134567123', '11IPA1', '', NULL, NULL, 'islam'),
+(123456789111, 's10', 'sawaludin', 'sawaludin', 'Sawaludin Sitepu', '1990-8-9', 'Lampung', 'Laki-laki', 'Jl Mu no 3', 'Paksanca@gmail.com', 'b_indo', '3A', '08134567123', '11IPA1', '', NULL, NULL, 'islam'),
+(123456789112, 'mm10', 'Ian', 'Ian', 'Ian Sanca', '1988-7-5', 'Bali', 'Laki-laki', 'Jl Mu no 3', 'Paksanca@gmail.com', 'b_indo', '3A', '08134567123', '11IPA1', '', NULL, NULL, 'islam'),
+(123456789116, 'bi11', 'tony', 'tony', 'Tony Stark', '1967-1-11', 'Jakarta', 'laki_laki', 'jl jalan', 'partok@gmail.com', 'b indo', '3A', '08145267840', '10IPS1', '', '', '', 'islam'),
+(123456789117, 'bin10', 'sule', 'sule', 'Sule sutrisna', '1979-5-12', 'Solo', 'laki_laki', 'jl opera', 'sule@gmail.com', 'b inggrish', '3A', '08145267841', '10IPA1', '', '', '', 'islam'),
+(123456789118, 'mm10', 'sule', 'sule', 'Udin', '1979-5-12', 'Solo', 'laki-laki', 'jl opera', 'sule@gmail.com', 'b inggrish', '3A', '08145267841', '10IPA1', '', '', '', 'islam'),
+(123456789119, 'mm11', 'meta', 'meta', 'Ameta Tarigan', '1990-21-12', 'Medan', 'perempuan', 'jl Bougeinville', 'meta@gmail.com', 'b inggrish', '3A', '08145267841', '10IPA1', '', '', '', 'islam'),
+(123456789120, 'mm12', 'sule', 'sule', 'Cindy', '1979-5-12', 'Solo', 'perempuan', 'jl opera', 'sule@gmail.com', 'b inggrish', '3A', '08145267841', '10IPA1', '', '', '', 'islam'),
+(123456789121, 'sik12', 'kratos', 'kratos', 'Iidaniyah', '1945-9-7', 'Olimpic', 'perempuan', 'jl Olimpic', 'kratos@gmail.com', 'b indo', '3A', '08145267842', '12IPS2', '', '', '', 'islam'),
+(123456789234, 'fis11', 'carl', 'carl', 'Carl Jhonnson', '1970-7-9', 'Los Santos', 'Laki-laki', 'jl Grove street', 'carl@gmail.com', 'fisika', '3A', '08987898789', '10IPA2', NULL, NULL, NULL, 'islam');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kelas`
+--
+
+CREATE TABLE `kelas` (
+  `kelas` varchar(30) DEFAULT NULL,
+  `tingkat` int(11) DEFAULT NULL,
+  `jum_siswa` int(11) DEFAULT NULL,
+  `wali_kelas` text,
+  `jurusan` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kelas`
+--
+
+INSERT INTO `kelas` (`kelas`, `tingkat`, `jum_siswa`, `wali_kelas`, `jurusan`) VALUES
+('A', 1, 0, '', 'IPA'),
+('B', 1, 0, '', 'IPA'),
+('C', 1, 0, '', 'IPA'),
+('A', 2, 0, '', 'IPA'),
+('B', 2, 0, '', 'IPA'),
+('C', 2, 0, '', 'IPA'),
+('A', 3, 0, '', 'IPA'),
+('B', 3, 0, '', 'IPA'),
+('C', 3, 0, '', 'IPA'),
+('A', 1, 0, '', 'IPS'),
+('B', 1, 0, '', 'IPS'),
+('C', 1, 0, '', 'IPS'),
+('A', 2, 0, '', 'IPS'),
+('B', 2, 0, '', 'IPS'),
+('C', 2, 0, '', 'IPS'),
+('A', 3, 0, '', 'IPS'),
+('B', 3, 0, '', 'IPS'),
+('C', 3, 0, '', 'IPS');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kimia_p`
+--
+
+CREATE TABLE `kimia_p` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `marcing_band`
+--
+
+CREATE TABLE `marcing_band` (
+  `nis` bigint(20) NOT NULL,
+  `jum_nilai` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `matematika`
+--
+
+CREATE TABLE `matematika` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `matematika_p`
+--
+
+CREATE TABLE `matematika_p` (
+  `nis` bigint(20) DEFAULT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `paskibra`
+--
+
+CREATE TABLE `paskibra` (
+  `nis` bigint(20) NOT NULL,
+  `jum_nilai` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `penjas`
+--
+
+CREATE TABLE `penjas` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pkn`
+--
+
+CREATE TABLE `pkn` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `prakarya_kewirausahaan`
+--
+
+CREATE TABLE `prakarya_kewirausahaan` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pramuka`
+--
+
+CREATE TABLE `pramuka` (
+  `nis` bigint(20) NOT NULL,
+  `jum_nilai` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quran_hadis`
+--
+
+CREATE TABLE `quran_hadis` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sejarah`
+--
+
+CREATE TABLE `sejarah` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sejarah_indo`
+--
+
+CREATE TABLE `sejarah_indo` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `seni_budaya`
+--
+
+CREATE TABLE `seni_budaya` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sikap`
+--
+
+CREATE TABLE `sikap` (
+  `kedisiplinan` varchar(30) DEFAULT NULL,
+  `kebersihan` varchar(30) DEFAULT NULL,
+  `tang_jwb` varchar(30) DEFAULT NULL,
+  `sopan_santun` varchar(30) DEFAULT NULL,
+  `per_diri` varchar(30) DEFAULT NULL,
+  `kejujuran` varchar(30) DEFAULT NULL,
+  `marcing` varchar(30) DEFAULT NULL,
+  `paskibra` varchar(30) DEFAULT NULL,
+  `pramuka` varchar(30) DEFAULT NULL,
+  `nis` bigint(20) DEFAULT NULL,
+  `semester` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -85,13 +668,13 @@ INSERT INTO `siswa` (`nis`, `nisn`, `username`, `password`, `nama`, `jk`, `agama
 (123711009, 9991234585, 'Lulu', 'luluuu', 'Lulu adilah fasya', 'Perempuan', 'Islam', 'Jl Cemara No 18,Medan', 'luluadilah@gmail.com', 'IPS', 'SMP Nurul \'Ilmi Padangsidimpua', NULL, 'Dwi Laksana Bhakti', 'Siti Nurjanah', 'PNS', 'Wiraswasta', '', '', '087654217655', '082312769088', 'SMA', 'S1 Farmasi', 2, '123711009', '1996-07-09', 'Padangsidimpuan', '2011', 'Alumni'),
 (123711010, 9991234586, 'Sonia', 'soniaa10', 'Sonia Oktaviana ', 'Perempuan', 'Islam', 'Jl Kenanga Raya No 14,Medan', 'sonia@gmail.com', 'IPS', 'MTs N 1 Medan', NULL, 'Muhammad Itsal Septian Rahman', 'Hanasira Afifa', 'PNS', 'Apoteker', 'Jl Kenanga Raya No 14,Medan', 'Jl Kenanga Raya No 14,Medan', '082399816012', '081288761290', 'S1 Farmasi', 'S1 Pertanian', 2, '123711010', '1995-09-17', 'Medan', '2011', 'Alumni'),
 (123712001, 9991234587, 'Hilmy', 'hilmy1', 'Hilmy MaulanaRachmawan', 'Laki-laki', 'Islam', 'Jl Gaharu No 129,Medan', 'hilmy@gmail.com', 'IPA', 'SMP Nurul \'Ilmi Padangsidimpua', NULL, 'Ahmad Hasan N', 'winda ayulia agustina', 'PNS', 'Wiraswasta', 'Jl Gaharu No 129,Medan', 'Jl Gaharu No 129,Medan', '081388761290', '081289445100', 'SMA', 'S1 Pertanian', 2, '123712001', '1997-07-19', 'Padangsidimpuan', '2012', 'Alumni'),
-(123712002, 9991234588, 'furqon', 'furqonn', 'Furqon saefulloh', 'Laki-laki', 'Islam', 'Jl Eka Raya No 29,Medan', 'furqon@gmail.com', 'IPA', 'SMP N 6 Medan', NULL, 'Erwin Bani Adam', 'Isnaeni Handayani Mukti ', 'PNS', 'PNS', 'Jl Eka Raya No 29,Medan', 'Jl Eka Raya No 29,Medan', '081380709311', '081298712088', 'S1 Kebidanan', 'S1 Pertanian', 1, '123712002', '1997-01-23', 'Medan', '2012', 'Alumni'),
+(123712002, 9991234588, 'Furqon', 'furqonn', 'Furqon saefulloh', 'Laki-laki', 'Islam', 'Jl Eka Raya No 29,Medan', 'furqon@gmail.com', 'IPA', 'SMP N 6 Medan', NULL, 'Erwin Bani Adam', 'Isnaeni Handayani Mukti ', 'PNS', 'PNS', 'Jl Eka Raya No 29,Medan', 'Jl Eka Raya No 29,Medan', '081380709311', '081298712088', 'S1 Kebidanan', 'S1 Pertanian', 1, '123712002', '1997-01-23', 'Medan', '2012', 'Alumni'),
 (123712003, 9991234589, 'Doddy', 'doddy', 'Muhammad doddy djakaria ', 'Laki-laki', 'Islam', 'Jl Pendidikan No 23,Medan', 'doddy@gmail.com', 'IPA', 'SMP  Pertiwi', NULL, 'Andrian kusnadi', 'Annisa dessetiani lee', 'Dosen', 'PNS', 'Jl Pendidikan No 23,Medan', 'Jl Pendidikan No 23,Medan', '082178439077', '081278954099', 'S1 Manajemen', 'S2 Ilmu Komputer', 4, '123712003', '1997-08-18', 'Medan', '2012', 'Alumni'),
 (123712004, 9991234580, 'Bellaputri', 'bellaputri', 'Bella Putri Nastiti ', 'Perempuan', 'Islam', 'Jl Abdullah Lubis No 85,Medan', 'bellaputri@gmail.com', 'IPA', 'SMP Shafiyatul Amaliyah', NULL, 'Deri Likandra Triputra ', 'Ristya ariyani', 'Dokter', 'PNS', 'Jl Abdullah Lubis No 85,Medan', 'Jl Abdullah Lubis No 85,Medan', '081280976512', '081287542298', 'S2 Ekonomi', 'S1 Kedokteran', 3, '123712004', '1997-08-06', 'Medan', '2012', 'Alumni'),
 (123712005, 9991234591, 'widya', 'catur', 'Catur Widya Mayangsari ', 'Perempuan', 'Islam', 'Jl pinang No 45,Medan', 'caturwidya@gmail.com', 'IPA', 'SMP N 35 Medan', NULL, 'Fakhri', 'Siti Rohma Fadilah', 'PNS', 'PNS', 'Jl pinang No 45,Medan', 'Jl pinang No 45,Medan', '087762209811', '081278905540', 'S1 Farmasi', 'S1 Farmasi', 4, '123712005', '1997-03-30', 'Binjai', '2012', 'Alumni'),
 (123712006, 9991234592, 'Tasya', 'tasya', 'Tasya Putri Naddia', 'Perempuan', 'Islam', 'Jl Pendidikan No 197,Medan', 'tasyaputri@gmail.com', 'IPS', 'SMP N 3 Medan', NULL, 'Faiz Fauzan', 'Irma Faradila', 'Pengusaha', 'Wiraswasta', 'Jl Pendidikan No 197,Medan', 'Jl Pendidikan No 197,Medan', '082269237021', '082381228856', 'SMA', 'S2 Manajemen', 4, '123712006', '1997-03-11', 'Medan', '2012', 'Alumni'),
 (123712007, 9991234593, 'sindi', 'sindi07', 'Sindi Yulianti', 'Perempuan', 'Islam', 'Jl Iskandar Muda No 17,Medan', 'sindi11@gmail.com', 'IPS', 'MTs N 1 Medan', NULL, 'Walid Abdul Aziz', 'Fany Zahra', 'PNS', 'PNS', 'Jl Iskandar Muda No 17,Medan', 'Jl Iskandar Muda No 17,Medan', '087723119078', '087723008160', 'S1 Kedokteran', 'S1 Teknologi Informasi', 1, '123712007', '1997-01-23', 'Sabang,Aceh', '2012', 'Alumni'),
-(123712008, 9991234594, 'Mutiah', 'muti123', 'Mutiah Maulina', 'Perempuan', 'Islam', 'Jl Pegangsaan No 110,Medan', '', 'IPS', 'MTs N 2 Medan', NULL, 'Wahyu Ali Rasyid', 'Asriana', 'PNS', 'Pengusaha', 'Jl Pegangsaan No 110,Medan', 'Jl Pegangsaan No 110,Medan', '082171223309', '082280217765', 'SMA', 'S1 Teknik Pertambangan', 2, '123712008', '1997-10-18', 'Binjai', '2012', 'Alumni'),
+(123712008, 9991234594, 'Mutiah', 'muti123', 'Mutiah Maulina', 'Perempuan', 'Islam', 'Jl Pegangsaan No 110,Medan', 'mutia@gmail.com', 'IPS', 'MTs N 2 Medan', NULL, 'Wahyu Ali Rasyid', 'Asriana', 'PNS', 'Pengusaha', 'Jl Pegangsaan No 110,Medan', 'Jl Pegangsaan No 110,Medan', '082171223309', '082280217765', 'SMA', 'S1 Teknik Pertambangan', 2, '123712008', '1997-10-18', 'Binjai', '2012', 'Alumni'),
 (123712009, 9991234595, 'Rayhan', 'rehan', 'M.Rayhan', 'Laki-laki', 'Islam', 'Jl Setia Budi No 88,Medan', 'rayhan@gmail.com', 'IPS', 'SMP Dewi Kusuma', NULL, 'Muhammada Ikhwansyah', 'Hera Amalia', 'PNS', 'PNS', 'Jl Setia Budi No 88,Medan', 'Jl Setia Budi No 88,Medan', '087611242190', '081230987622', 'S1 Farmasi', 'S1 Perpajakan', 3, '123712009', NULL, 'Batam', '2012', 'Alumni'),
 (123712010, 9991234596, 'Ardi', 'ardi', 'M.Ardi Khairul', 'Laki-laki', 'Islam', 'Jl Sisimangaraja No 19,Medan', 'ardikhai@gmail.com', 'IPS', 'SMP Insan Rabbani', NULL, '', '', 'Dosen', 'Wiraswasta', 'Jl Sisimangaraja No 19,Medan', 'Jl Sisimangaraja No 19,Medan', '082378009905', '081232345208', 'SMA', 'S2 Ilmu Komputer', 1, '123712010', '1997-08-22', 'Binjai', '2012', 'Alumni'),
 (123713001, 9991234597, 'Andre', 'Andre123', 'Andre Abdi', 'Laki-laki', 'Islam', 'Jl. Cemara', 'andreabdi@gmail.com', 'IPA', 'SMP 10 Medan', NULL, 'Andiko Ardi', 'Era Helvani', 'Guru', 'Penjahit', 'Jl. Cemara', 'Jl. Cemara', '081258749652', '085162798425', 'S1 Pendidikan Biologi', 'SMA', 3, '123713001', '1998-06-03', 'Medan', '2013', 'Alumni'),
@@ -199,11 +782,11 @@ INSERT INTO `siswa` (`nis`, `nisn`, `username`, `password`, `nama`, `jk`, `agama
 (123717027, 9991234708, 'aisyah', 'aisyah17', 'Aisyah nabila', 'Perempuan', 'Islam', 'jl. Universitas', 'aisyah@gmail.com', 'IPS', 'smp 18 medan', NULL, 'ahmad adil', 'Mardilla', 'dosen', 'PNS', 'Jl. universitas', 'jl. universitas', '08214450998', '08534098876', 'D1 pajak', 'SI Pdi', 3, '123722087', '2003-09-29', 'Jakarta', '2017', 'aktif'),
 (123717028, 9991234709, 'Kayla', 'kayla54', 'Kayla nadira', 'Perempuan', 'Islam', 'jl. alumni', 'kayla.nadi@gmail.com', 'IPS', 'smp 1 jabotabek', NULL, 'Alif syahputra', 'ashanty', 'PNS', 'Psikolog', 'jl. alumni', 'jl. alumni', '082344321234', '0877967998765', 'S1 Psikologi', 'SI  teknologi informasi', 2, '123722088', '2002-03-28', 'Jakarta', '2017', 'aktif'),
 (123717029, 9991234710, 'Ahmed', 'ahmed66', 'ahmed zam zam', 'Laki-laki', 'Agama', 'jl. dr mansyur', 'zamzam@gmail.com', 'IPA', 'smp 1 jabotabek', NULL, 'Sohibul ikhlas', 'ruqayyah', 'guru', 'guru ngaji', 'jl. dr mansyur', 'jl. dr mansyur', '082134343212', '08213887645', 'SMA', 'SI Pdi', 1, '123722089', '2003-07-04', 'Padang', '2017', 'aktif'),
-(123717030, 9991234711, 'Jelita', 'jelita65', 'Jelita asmara', 'Perempuan', 'Islam', 'binjai', 'jelita@gmail.com', 'IPA', 'smp 2 binjai', NULL, 'syamsul', 'rosmawarni', 'PNS', 'IRT', 'binjai', 'binjai', '0821345509', '-', 'SMA', 'SI Manajemen', 1, '1237220745', '2003-01-17', 'Pekan baru', '2017', 'aktif'),
+(123717030, 9991234711, 'Jelita', 'jelita65', 'Jelita asmara', 'Perempuan', 'Islam', 'binjai', 'jelita@gmail.com', 'IPA', 'smp 2 binjai', NULL, 'syamsul', 'rosmawarni', 'PNS', 'IRT', 'binjai', 'binjai', '0821345509', '-', 'SMA', 'SI Manajemen', 1, '1237220745', '2003-01-17', 'Pekan baru', '2017', 'aktif');
+INSERT INTO `siswa` (`nis`, `nisn`, `username`, `password`, `nama`, `jk`, `agama`, `alamat`, `email`, `jurusan`, `asal_sekolah`, `kelas`, `nama_ayah`, `nama_ibu`, `pekerjaan_ayah`, `pekerjaan_ibu`, `alamat_ayah`, `alamat_ibu`, `no_hp_ayah`, `no_hp_ibu`, `pendidikan_ibu`, `pendidikan_ayah`, `anak_ke`, `pict`, `tanggal_lahir`, `tempat`, `tahun`, `status`) VALUES
 (123717031, 9991234712, 'Ana altafunnisa', 'ana234', 'ana alta funnisa', 'Perempuan', 'Islam', 'binjai', 'ana.alta@gmail.com', 'IPS', 'smp 1 binjai', NULL, 'abdul ', 'suriati', 'petani', 'guru ngaji', 'binjai', 'binjai', '0823478404421', '087798780132', 'SMA', 'SMA', 3, '123722091', '2000-08-15', 'siantar', '2017', 'aktif'),
 (123717032, 9991234713, 'Ayra dewi', 'aira43', 'Ayra dewi', 'Perempuan', 'Islam', '', 'ayradewi@gmail.com', 'IPA', 'smp 1 medan', NULL, 'Erlangga', 'salsabila', 'TNI', 'IRT', 'medan', 'medan', '08213433046523', '08520708052', 'SMA', 'SMA', 2, '123722092', '2002-11-21', 'medan', '2017', 'aktif'),
-(123717033, 9991234714, 'Leny aggraini', 'leny65', 'Leny aggraini', 'Perempuan', 'Islam', 'jl. jamin ginting', 'leni@gmail.com', 'IPS', 'smp 9 medan', NULL, 'hasannuddin', 'syarifah', 'PNS', 'wiraswasta', 'jl. jamin ginting', 'jl. jamin ginting', '08213050650', '08530090876', 'D1 pajak', 'S2 Ilmu Komputer', 1, '123722093', '2003-09-26', 'medan', '2017', 'aktif');
-INSERT INTO `siswa` (`nis`, `nisn`, `username`, `password`, `nama`, `jk`, `agama`, `alamat`, `email`, `jurusan`, `asal_sekolah`, `kelas`, `nama_ayah`, `nama_ibu`, `pekerjaan_ayah`, `pekerjaan_ibu`, `alamat_ayah`, `alamat_ibu`, `no_hp_ayah`, `no_hp_ibu`, `pendidikan_ibu`, `pendidikan_ayah`, `anak_ke`, `pict`, `tanggal_lahir`, `tempat`, `tahun`, `status`) VALUES
+(123717033, 9991234714, 'Leny aggraini', 'leny65', 'Leny aggraini', 'Perempuan', 'Islam', 'jl. jamin ginting', 'leni@gmail.com', 'IPS', 'smp 9 medan', NULL, 'hasannuddin', 'syarifah', 'PNS', 'wiraswasta', 'jl. jamin ginting', 'jl. jamin ginting', '08213050650', '08530090876', 'D1 pajak', 'S2 Ilmu Komputer', 1, '123722093', '2003-09-26', 'medan', '2017', 'aktif'),
 (123717034, 9991234715, 'ahmadi', 'ahmadi34', 'ahmadi', 'Laki-laki', 'Islam', 'binjai', 'ahmadi@gmail.com', 'IPS', 'smp 2 binjai', NULL, 'Surya darma', 'sulastri', 'guru', 'IRT', 'binjai', 'binjai', '082144007688', '-', 'SMA', 'SI Manajemen', 5, '123722094', '2000-09-06', 'medan', '2017', 'aktif'),
 (123717035, 9991234716, 'Rauzatul jannah', 'rauza12', 'Rauzatul jannah', 'Perempuan', 'Islam', 'medan', 'rauzah@gmail.com', 'IPS', 'smp 9 medan', NULL, 'herlambang', 'Minda pulungan', 'PNS', 'PNS', 'medan', 'medan', '082345453221', '085344876555', 'SI Ilmu komputer', 'SI Manajemen', 3, '123722095', '2002-11-25', 'Medan', '2017', 'aktif'),
 (123717036, 9991234717, 'M. fadly nasution', 'fadly12', 'M. fadly nasution', 'Laki-laki', 'Islam', 'medan', 'fadly@gmail.com', 'IPS', 'smp 9 medan', NULL, 'firza nasution', 'Ulfi handayani', 'Guru', 'PNS', 'medan', 'medan', '081236509876', '082138768765', 'D1 pajak', 'SI Fkip', 1, '123722096', '2003-11-12', 'Medan', '2017', 'aktif'),
@@ -289,15 +872,120 @@ INSERT INTO `siswa` (`nis`, `nisn`, `username`, `password`, `nama`, `jk`, `agama
 (123718044, 9991234797, 'Aldrin', 'aldrin123', 'Aldrin Sanova', 'Laki-laki', 'Islam', 'Jl. Aluminium IV', 'aldrinsanova@gmail.c', 'IPS', 'SMP 1 Medan', NULL, 'Sulaiman', 'Fitriani', 'Wiraswasta', 'Guru', 'Jl. Aluminium IV', 'Jl. Aluminium IV', '082145679832', '0821345676123', 'S1 Pendidikan Matematika', 'SMA', 1, '123722164', '2002-02-05', 'Medan', '2018', 'aktif'),
 (123718045, 9991234798, 'Mawaddah', 'Mawaddah12', 'Nur Mawaddah', 'Perempuan', 'Islam', 'Jl. Sutomo', 'mawaddah@gmail.com', 'IPA', 'SMP 1 Medan', NULL, 'Hanafi Siregar', 'Suci Almira', 'Guru', 'Ibu Rumah Tangga', 'Jl. Sutomo', 'Jl. Sutomo', '081276498776', '081254688776', 'SMA', 'S1 Ekonomi', 2, '123722165', '2003-02-04', 'Medan', '2018', 'aktif');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ski`
+--
+
+CREATE TABLE `ski` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sosiologi`
+--
+
+CREATE TABLE `sosiologi` (
+  `nis` bigint(20) NOT NULL,
+  `kode_mapel` varchar(12) DEFAULT NULL,
+  `jurusan` varchar(20) DEFAULT NULL,
+  `uts` int(11) DEFAULT NULL,
+  `uas` int(11) DEFAULT NULL,
+  `tugas_1` int(11) DEFAULT NULL,
+  `tugas_2` int(11) DEFAULT NULL,
+  `tugas_3` int(11) DEFAULT NULL,
+  `rata_rata` int(11) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `kkm` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `terkini`
+--
+
+CREATE TABLE `terkini` (
+  `id` int(11) NOT NULL,
+  `judul` varchar(60) DEFAULT NULL,
+  `waktu` varchar(30) DEFAULT NULL,
+  `isi` text,
+  `penulis` varchar(50) DEFAULT NULL,
+  `img` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `terkini`
+--
+
+INSERT INTO `terkini` (`id`, `judul`, `waktu`, `isi`, `penulis`, `img`) VALUES
+(1, 'awdbawdjkawnbdwbdnwk', '2018/12/17', NULL, NULL, ''),
+(2, 'awdbawdjkawnbdwbdnwk', '2018/12/17', '<p>kjamnknjadwnjkadnjadwnjadjnawdadawdadaw</p>\r\n', NULL, '');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `absen`
+--
+ALTER TABLE `absen`
+  ADD PRIMARY KEY (`nis`);
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`nip`);
+
+--
+-- Indexes for table `guru`
+--
+ALTER TABLE `guru`
+  ADD PRIMARY KEY (`nip`);
+
+--
+-- Indexes for table `marcing_band`
+--
+ALTER TABLE `marcing_band`
+  ADD PRIMARY KEY (`nis`);
+
+--
+-- Indexes for table `paskibra`
+--
+ALTER TABLE `paskibra`
+  ADD PRIMARY KEY (`nis`);
+
+--
+-- Indexes for table `pramuka`
+--
+ALTER TABLE `pramuka`
+  ADD PRIMARY KEY (`nis`);
 
 --
 -- Indexes for table `siswa`
 --
 ALTER TABLE `siswa`
   ADD PRIMARY KEY (`nis`);
+
+--
+-- Indexes for table `terkini`
+--
+ALTER TABLE `terkini`
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
