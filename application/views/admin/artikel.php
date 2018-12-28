@@ -39,6 +39,7 @@
 					<div class="col-md-1" style="margin-right: 50px;">
 						<form method="post" >
 						<button class="btn btn-primary" name="tampil">Tampil Semua</button>
+						<a class="btn btn-primary" href="<?php echo base_url() ?> admin/rpost">Tampil Semua</button>
 						</form>
 						<?php if (isset($_POST['tampil'])) {
 							redirect("/admin/post", location);
