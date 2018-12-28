@@ -283,17 +283,15 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td rowspan="3">2.</td>
-				<td align="left">Lainnya</td>
+				<td>2.</td>
+				<td align="left">Praskibra</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td align="left">a. </td>
+				<td>3.</td>
+				<td align="left">Marching Band</td>
 				<td></td>
 			</tr>
-			<tr>
-				<td align="left">b. </td>
-				<td></td>
 			</tr>
 		</table> -->
 		
