@@ -44,7 +44,7 @@
 								<h4>Guru Aktif</h4>
 							</td>
 							<td style="padding-left: 10px;  color: white;">
-								<h4>:</h4>
+								<h4>: <?php echo $ak1 ?></h4>
 							</td>
 							<td>
 								<td style="min-width: 500px;" align="right">
@@ -57,7 +57,7 @@
 								<h4  style="padding-left: 10px;  color: white;">Guru Non Aktif	</h4>
 							</td>
 							<td>
-								<h4  style="padding-left: 10px;  color: white;">:</h4>
+								<h4  style="padding-left: 10px;  color: white;">: <?php echo $ak2 ?></h4>
 							</td>
 							<td>
 								<h4  style="padding-left: 10px;  color: white;">

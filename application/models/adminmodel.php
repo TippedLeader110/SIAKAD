@@ -35,6 +35,13 @@ class Adminmodel extends CI_Model {
 		$query = $query->num_rows();
 		return $query;
 	}	
+	public function hitungam($s)
+	{
+		$this->db->where(['status' => $s]);
+		$query = $this->db->get('guru');
+		$query = $query->num_rows();
+		return $query;
+	}	
 	public function hitungda($s, $w)
 	{
 		$this->db->where(['jk' => $w]);
