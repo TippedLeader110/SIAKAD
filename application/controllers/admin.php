@@ -267,6 +267,8 @@ class Admin extends CI_Controller {
 	}
 	public function guru()
 	{
+		$data['ak1'] = $this->adminmodel->hitungam('aktif');
+		$data['ak2'] = $this->adminmodel->hitungam('tidak aktif');
 		$data['jumlahguru'] = $this->adminmodel->hitung('guru');
 		$data['jumlahmurida'] = $this->adminmodel->hitungda('siswa','Laki-laki');
 		$data['jumlahmuridi'] = $this->adminmodel->hitungda('siswa','Perempuan');

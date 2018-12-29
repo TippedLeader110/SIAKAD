@@ -17,7 +17,7 @@
 				<table class="table table-borderless">
 					<?php echo form_open_multipart('admin/do_upload2');?>
 						<tr>
-							<input type="text"  value="<?php echo $nip ?>" name="nip">
+							<input hidden type="text"  value="<?php echo $nip ?>" name="nip">
 							<td><input type="file" name="userfile" size="20" /></td>
 						</tr>
 						<tr>
